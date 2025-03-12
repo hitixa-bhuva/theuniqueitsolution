@@ -48,7 +48,7 @@
         <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-root-nav MuiIconButton-sizeSmall css-wrts35"
             tabindex="0" type="button" title="Menu">
             <img loading="lazy" src="./img/svg/ic-hamburger.svg" alt="Hamburger">
-            <img loading="lazy" src="./img/svg/ic-hamburger-white.svg" class="active" alt="Hamburger">
+            <img loading="lazy" src="./img/svg/ic-hamburger-white.svg" alt="Hamburger">
             <span class="MuiTouchRipple-root css-w0pj6f"></span>
         </button>
         <a class="logo" title="Unique IT Solution" href="/">
@@ -56,9 +56,9 @@
             <img loading="lazy" class="mobile-logo" src="./img/logo/mobile-logo.webp" alt="Unique IT Solution">
         </a>
         <ul>
-            <li><a title="Home" aria-current="page"  href="index.html">Home</a></li>
-            <li><a title="About Us" class="active" href="about.html">About Us</a></li>
-            <li class="has-submenu"><a title="Services" class="menu-expanded" href="/services">Services<img
+            <li><a title="Home" aria-current="page" href="index.html">Home</a></li>
+            <li><a title="About Us" href="about.html">About Us</a></li>
+            <li class="has-submenu"><a title="Services" class="menu-expanded active" href="/services">Services<img
                         loading="lazy" src="./img/svg/arrow-down.svg" alt="Down Arrow"></a>
                 <div class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-entered css-c4sutr"
                     style="min-height: 0px;">
@@ -68,11 +68,11 @@
                                 <li><a title="Custom Software Development" class=""
                                         href="custom-software-development.html">Custom Software Development</a>
                                 </li>
-                                <li><a title="Work Flow Automation" class="" href="work-flow-automation.html">Work
-                                        Flow Automation</a></li>
+                                <li><a title="Work Flow Automation" class="" href="work-flow-automation.html">Work Flow
+                                        Automation</a></li>
                                 <li><a title="CRM &amp; ERP Development" class=""
                                         href="crm-and-erp-development.html">CRM &amp; ERP Development</a></li>
-                                <li><a title="Web Development" class="" href="web-development.html">Web
+                                <li><a title="Web Development" class="active" href="web-development.html">Web
                                         Development</a></li>
                                 <li><a title="Mobile Application Development" class=""
                                         href="mobile-application-development.html">Mobile Application
@@ -87,7 +87,7 @@
                     </div>
                 </div>
             </li>
-            <li><a title="Technologies" class="" href="technologies.html">Technologies</a></li>
+            <li><a title="Technologies" href="technologies.html">Technologies</a></li>
             <li class="has-submenu"><a title="Industries" class="menu-expanded" href="/industries">Industries<img
                         loading="lazy" src="./img/svg/arrow-down.svg" alt="Down Arrow"></a>
                 <div class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-entered css-c4sutr"
@@ -123,133 +123,242 @@
 
     <div class="wrapper">
         <main>
-
-            <!-- 1. hero Who We Are -->
-            <section class="banner page-banner mb-9 aos-init aos-animate" data-aos="fade-in"
-                style="background-image: url(../assest/img/hero/about-us-banner.webp);">
+            <section class="banner service-details-banner bg-light-pink aos-init aos-animate" data-aos="fade-in">
                 <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
                     <div class="banner-content">
-                        <h2 class="MuiTypography-root MuiTypography-h2 pb-3 css-17zkhbb aos-init aos-animate"
-                            data-aos="fade-up" data-aos-delay="100">Who We Are</h2>
-                        <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v aos-init" data-aos="fade-up"
-                            data-aos-delay="200">Learn about our mission, values, and the team dedicated to
-                            delivering exceptional technology solutions for your business</p>
+                        <div class="left">
+                            <nav class="MuiTypography-root MuiTypography-body1 MuiBreadcrumbs-root css-zinzkl aos-init aos-animate"
+                                data-aos="fade-up">
+                                <ol class="MuiBreadcrumbs-ol css-nhb8h9">
+                                    <li class="MuiBreadcrumbs-li"><a title="home" href="/home">Home</a></li>
+                                    <li aria-hidden="true" class="MuiBreadcrumbs-separator css-3mf706"><img
+                                            loading="lazy"
+                                            src="./img/svg/ic-caret-right.svg"
+                                            alt="Caret Right"></li>
+                                    <li class="MuiBreadcrumbs-li">
+                                        <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v">Web Development</p>
+                                    </li>
+                                </ol>
+                            </nav>
+                            <h2 class="MuiTypography-root MuiTypography-h2 css-17zkhbb aos-init aos-animate"
+                                data-aos="fade-up" data-aos-delay="100">Web Development</h2><a
+                                href="/contact-us"><button
+                                    class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus aos-init aos-animate"
+                                    tabindex="0" type="button" data-aos="fade-up" data-aos-delay="200"
+                                    title="Get A Quote"><span class="text">Get A Quote</span><span
+                                        class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
+                        </div>
+                        <div class="right aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
+                                src="./img/web-development/web-development.fa9d6b53210a047963c2d16eac384be7.svg"
+                                alt="Web Development" width="483" height="473"></div>
                     </div>
                 </div>
             </section>
-
             <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
-                <!-- 2.  About IT Solutions That are Unique -->
-                <section class="about-it-solution mb-9">
-                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 MuiGrid-spacing-xl-8 css-ldtpqf">
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
-                            <h3 class="MuiTypography-root MuiTypography-h3 pb-4 css-8ipg8 aos-init" data-aos="fade-up">
-                                About IT Solutions That are Unique</h3>
-                            <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v aos-init" data-aos="fade-up">
-                                Established in 2020, Unique IT Solution has grown with passionate
-                                members. We are dedicated to delivering tailored IT solutions to drive client growth
-                                and transformation. <br><br>Our expertise in developing Custom Web and Mobile
-                                Applications tailored to meet your specific needs, incorporating ERP and CRM
-                                solutions for enhanced business efficiency. we excel in creating bespoke products
-                                that meet specific requirements and keep our clients ahead.<br><br> Our support
-                                teams ensure continuous client success by offering exclusive after-sales services
-                                that go beyond delivering perfect products.</p>
-                        </div>
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd"><span
-                                style="font-size: 0px;"></span>
-                            <section class="vertical-counter">
-                                <ul>
-                                    <li data-aos="fade-up" class="aos-init"><span data-end="40" data-suffix="%">0</span>
-                                        <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v">Client
-                                            Retention Score</p>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li data-aos="fade-up" data-aos-delay="200" class="aos-init"><span data-end="100" data-suffix="+">0</span>
-                                        <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v">Projects
-                                            Completed</p>
-                                    </li>
-                                    <li data-aos="fade-up" class="aos-init"><span data-end="15" data-suffix="+">0</span>
-                                        <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v">Industries We
-                                            Serve</p>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li data-aos="fade-up" class="aos-init"><span data-end="5" data-suffix="+">0</span>
-                                        <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v">Years of
-                                            Experience</p>
-                                    </li>
-                                </ul>
-                            </section>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- 3. Our Vision Mission -->
-                <section class="vision-and-mission">
-                    <h3 class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter pb-3 css-1gpftb1 aos-init"
-                        data-aos="fade-up">Our Vision &amp; Mission</h3>
-                    <p class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter pb-3 css-3sq53o aos-init aos-animate"
-                        data-aos="fade-up">Discover our commitment to driving innovation and excellence, on how we
-                        aim to transform businesses through cutting-edge technology solutions.</p>
+                <section class="service-details-content">
+                    <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v aos-init aos-animate"
+                        data-aos="fade-up">At unique it solution, we provide complete web development services aimed at developing strong, user-friendly, and eye-catching websites that match your business needs. Our solutions are designed to increase your online presence for the purpose of driving growth while achieving your goals with less time and resource outlay.</p>
+                    <h3 class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter pb-7 css-1gpftb1 aos-init aos-animate"
+                        data-aos="fade-up" data-aos-delay="100">How We Build Web Apps</h3>
+                        <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v aos-init aos-animate text-center"
+                        data-aos="fade-up">Firstly, we try to understand your business requirements by getting details from your team. We start by sketching on paper so that the initial ideas correspond with what you envision happening. Experts develop a customized website based on this information, which is then utilized for further refining. This involves creating several versions of the website and testing it during each stage to ensure that it meets customer needs, including their perspectives about what they want. After the website has been built, we launch it without any difficulties as well as continue supporting its smooth operation until it goes down.</p>
+                        <span class="MuiTypography-root MuiTypography-h6 MuiTypography-alignCenter pb-7 css-1t9tuk4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" style="display: block;">Step-by-Step Process for Building your Web App</span>
+                        <!-- Conceptualization and Requirements Gathering -->
                     <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw">
-                            <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
-                                    src="./img/about/empowering-digital-transformation.svg"
-                                    alt="Empowering Digital Transformation"></div>
+                            <div class="image-wrapper aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
+                                    src="./img/web-development/requirement-gathering.bb3d88361a647d290760e9abf27eade9.svg"
+                                    alt="Custom Software"></div>
                         </div>
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw">
                             <div class="content">
-                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
-                                    data-aos="fade-up">Empowering Digital Transformation</h5>
-                                <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v aos-init"
-                                    data-aos="fade-up" data-aos-delay="100">We leverage cutting-edge technologies to
-                                    revolutionize your business operations. Our advanced solutions streamline
-                                    processes and drive innovation, ensuring your business stays ahead in the
-                                    digital age. By integrating these transformative technologies, we empower your
-                                    business to thrive and excel.</p>
+                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init aos-animate"
+                                    data-aos="fade-up">Conceptualization and Requirements Gathering</h5>
+                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                    data-aos="fade-up" data-aos-delay="100">The first step is making sketches on paper borders as an aid in visual brainstorming. It helps us develop our concept perfectly before going digital.</p>
+                                    <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                        data-aos="fade-up" data-aos-delay="100">Our team engages your stakeholders intensively to collect complete requirements. This way we grasp issues of concern about your company.</p>
                             </div>
                         </div>
                     </div>
+
+                    <!-- User Interface Design and Prototyping< -->
                     <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
                             <div class="content">
-                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
-                                    data-aos="fade-up">Code that Power Business Growth</h5>
-                                <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v aos-init"
-                                    data-aos="fade-up" data-aos-delay="100">Our meticulously crafted software
-                                    solutions are designed to propel business growth with scalable, efficient code.
-                                    We focus on optimizing operations, enhancing productivity, and establishing a
-                                    resilient digital foundation that supports sustainable expansion and innovation.
-                                </p>
+                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init aos-animate"
+                                    data-aos="fade-up">User Interface Design and Prototyping</h5>
+                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                    data-aos="fade-up" data-aos-delay="100">This process emphasizes interactive activities and high-quality user interfaces, converting conceptualized ideas into detailed UI designs.</p>
+                                    
+                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                data-aos="fade-up" data-aos-delay="100">Prototypes are made to better understand user flow in terms of aesthetics and usability standards concerning branding.</p>
+                                
+                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                    data-aos="fade-up" data-aos-delay="100">Collaboration with your team ensures that branding is reflected toward modern design trends while considering users’ preferences, too.</p>
+                                    
                             </div>
                         </div>
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
-                            <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
-                                    src="./img/about/power-business-growth.svg"
-                                    alt="Code that Power Business Growth"></div>
+                            <div class="image-wrapper aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
+                                    src="./img/web-development/prototyping.d5ad8ff4d384e36073fc316e4155c13e.svg"
+                                    alt="How We Build Custom Software"></div>
                         </div>
                     </div>
+
+                    <!-- Development and Iterative Testing -->
                     <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw">
-                            <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
-                                    src="./img/about/enhancing-online-visibility.svg"
-                                    alt="Code that Power Business Growth"></div>
+                            <div class="image-wrapper aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
+                                    src="./img/web-development/development-and-testing.44c26640f44cbd695cd4cf17b923e2a4.svg"
+                                    alt="Development and Iterative Testing"></div>
                         </div>
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw">
                             <div class="content">
-                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
-                                    data-aos="fade-up">Enhancing Online Visibility</h5>
-                                <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v aos-init"
-                                    data-aos="fade-up" data-aos-delay="100">We specialize in strategies that amplify
-                                    your online presence, ensuring your business stands out in a competitive digital
-                                    landscape. Through targeted SEO, compelling content, and strategic digital
-                                    marketing, we help you reach and engage your audience effectively.</p>
+                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init aos-animate"
+                                    data-aos="fade-up">Development and Iterative Testing</h5>
+                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                    data-aos="fade-up" data-aos-delay="100">An iterative approach is followed when building the web app. Each web design stage is properly tested to ensure that it improves functionality, performance, and user experience in a step-by-step process. The objective is to optimize the website regarding visibility and content structure and improve metadata effectiveness. Feedback from testing is actively incorporated to refine and enrich the app's features, aligning with SEO strategies to maximize online presence and engagement.</p>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Quality Assurance and Integration< -->
+                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
+                            <div class="content">
+                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init aos-animate"
+                                    data-aos="fade-up">Quality Assurance and Integration</h5>
+                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                    data-aos="fade-up" data-aos-delay="100">For us, high standards are key based on our testing and quality assurance processes, which guarantee the reliability of the web app and its smooth operation.</p>
+                                    <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                        data-aos="fade-up" data-aos-delay="100">We maintain data integrity while integrating with your existing systems to provide a unified user experience across platforms.</p>
+                            </div>
+                        </div>
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
+                            <div class="image-wrapper aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
+                                    src="./img/web-development/quality-assurance.ea740d001242ba4ba1ee23c08d2e8f20.svg"
+                                    alt="How We Build Custom Software"></div>
+                        </div>
+                    </div>
+
+                    <!-- Deployment, Support, and Continuous Improvement -->
+                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw">
+                            <div class="image-wrapper aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
+                                    src="./img/web-development/deployment-support.8185d98435290acda9f4841efbee3360.svg"
+                                    alt="Deployment, Support, and Continuous Improvement"></div>
+                        </div>
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw">
+                            <div class="content">
+                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init aos-animate"
+                                    data-aos="fade-up">Deployment, Support, and Continuous Improvement</h5>
+                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                    data-aos="fade-up" data-aos-delay="100">After finishing the development process and testing phases, managing deployment for a timely and efficient launch is relatively easy.</p>
+                                    <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                        data-aos="fade-up" data-aos-delay="100">Our team provides continuous support after launching. Thus, we will just not create and give it to you, but be with you to maintain the system and address any emergency issues.</p>
+                                        <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                            data-aos="fade-up" data-aos-delay="100">Our aim is that regular updates will keep your web app up-to-date by incorporating new features and enhancements to meet evolving user needs and technological advances.</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </section>
             </div>
+            <!-- 10 FAQ-->
+            <section class="faq mb-9 outer-card aos-init" data-aos="fade-in">
+                <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
+                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-1tz8m30">
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-5 css-1cam9av">
+                            <div class="image-wrapper aos-init" data-aos="fade-up" data-aos-delay="100">
+                                <img src="./img/svg/FAQ.svg" alt="FAQ" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-7 css-hhx1lr">
+                            <h3 class="MuiTypography-root MuiTypography-h3 pb-5 css-8ipg8 aos-init" data-aos="fade-up"
+                                data-aos-delay="100">FAQs</h3>
+                            <div data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">
+                                <div class="accordion" id="faqAccordion">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#faq1">
+                                                What is web development?
+                                            </button>
+                                        </h2>
+                                        <div id="faq1" class="accordion-collapse collapse"
+                                            data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body css-bqexvl">
+                                                Web development is the process of building websites or web applications that people can use online. It includes front-end development, which focuses on the look and feel of the site, and back-end development, which handles the server and database.The goal of web development is to create fast, responsive websites that work well on all devices
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq2">
+                                                What are the benefits of having a custom-built website?
+                                            </button>
+                                        </h2>
+                                        <div id="faq2" class="accordion-collapse collapse"
+                                            data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body css-bqexvl">
+                                                A custom website is designed specifically to meet your business needs and goals.You can incorporate any functionality you need, whether it’s advanced e-commerce features, complex user interactions, or integration with other systems, all built to your exact specifications.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq3">
+                                                What kind of web application have you developed?
+                                            </button>
+                                        </h2>
+                                        <div id="faq3" class="accordion-collapse collapse"
+                                            data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body css-bqexvl"> Work Flow Automation offers several
+                                                Over the years of our development experience, we have had the privilege of working and providing tailored solutions into various industries like Hospitality, Retali and Ecommerce,News & Entertainment, Telecomunication Media and many more.
+                                                <div><li><a href="https://ahmedabadmedia.in/" target="_blank" rel="noopener noreferrer">https://ahmedabadmedia.in/</a></li></div>
+                                                <div><li><a href="https://dicasaceramica.com/" target="_blank" rel="noopener noreferrer">https://dicasaceramica.com/</a></li></div>
+                                                <div><li><a href="https://theasianfresh.com/" target="_blank" rel="noopener noreferrer">https://theasianfresh.com/</a></li></div>
+                                                <div><li><a href="https://slovetiles.com/" target="_blank" rel="noopener noreferrer">https://slovetiles.com/</a></li></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq4">
+                                                How do you ensure the security of my website?
+                                            </button>
+                                        </h2>
+                                        <div id="faq4" class="accordion-collapse collapse"
+                                            data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body css-bqexvl">
+                                                We write code with security in mind and implement industry-standard security practices such as SSL encryption, regular updates, secure coding practices, and vulnerability assessments to protect your website from potential threats.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq5">
+                                                What is the cost of web development?
+                                            </button>
+                                        </h2>
+                                        <div id="faq5" class="accordion-collapse collapse"
+                                            data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body css-bqexvl">
+                                                The cost of web development can vary greatly depending on several key factors.One of the most significant is the size of the website.A simple, single- page site will generally be more budget - friendly compared to a multi - page business site or an extensive e - commerce platform.The more pages and content required, the higher the cost will likely be.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <!-- 11 Ready to build your custom -->
             <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
                 <section class="request-proposal aos-init" data-aos="fade-in">
@@ -340,8 +449,8 @@
                             class="MuiTypography-root MuiTypography-subtitle1 css-3g41r5">Services</strong>
                         <ul class="site-links">
                             <li>
-                                <a title="Custom Software Development"
-                                    href="custom-software-development.html">Custom Software Development
+                                <a title="Custom Software Development" href="custom-software-development.html">Custom
+                                    Software Development
                                 </a>
                             </li>
                             <li>
