@@ -430,11 +430,16 @@ header a button:not(.active):hover:after{
     padding-top: 96px;
     margin-bottom: 80px;
 }
-
+.service-details-banner {
+    padding-top: 96px;
+    margin-bottom: 80px;
+}
 .banner.service-details-banner .MuiBreadcrumbs-root {
     margin-bottom: 12px;
 }
-
+.service-details-banner .MuiBreadcrumbs-root {
+    margin-bottom: 12px;
+}
 .css-zinzkl {
     margin: 0px;
     font-family: Poppins, sans-serif;
@@ -534,6 +539,10 @@ header a button:not(.active):hover:after{
     background: #f1f1ff;
 }
 
+.banner.service-details-banner .banner.bg-light-blue {
+    background: #def4ff;
+}
+
 .banner.service-details-banner .banner.bg-light-purple h2 {
     color: #7b7bb6;
 }
@@ -553,13 +562,11 @@ header a button:not(.active):hover:after{
 .banner.service-details-banner .banner.bg-light-blue h2 {
     color: #4597bf;
 }
-
-.banner.service-details-banner .banner.bg-light-blue .MuiButton-contained {
+.banner.service-details-banner.bg-light-blue .MuiButton-contained {
     background: #4597bf;
 }
-
-.banner.service-details-banner .banner.bg-light-blue .MuiButton-contained .banner::after {
-    background: #306a86;
+.banner.service-details-banner .banner.bg-light-blue .MuiButton-contained {
+    background: #4597bf;
 }
 
 .banner.service-details-banner .banner.bg-light-pink {
@@ -615,7 +622,8 @@ header a button:not(.active):hover:after{
 }
 
 .hero-banner {
-    background-image: url("../assest/img/hero/home-hero-banner.webp");
+    background-image: url("../img/hero/home-hero-banner.webp");
+
     padding-top: 204px;
     padding-bottom: 132px;
 }
@@ -632,7 +640,18 @@ header a button:not(.active):hover:after{
     padding-left: 32px;
     padding-right: 32px;
 }
-
+.overlyshadow:after {
+    background-color: #0000007a;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
 
 /* service-details-content
 --------------------------------------------------------------------------------------------------------*/
@@ -817,9 +836,9 @@ header a button:not(.active):hover:after{
 
 /* slider card
 --------------------------------------------------------------------------------------------------------*/
-.slider-card .top {
+/* .slider-card .top {
     padding-right: 140px;
-}
+} */
 
 .slider-card .top h3 {
     color: var(--primary-text);
@@ -1072,7 +1091,7 @@ header a button:not(.active):hover:after{
     border-radius: 24px;
     padding: 80px;
     min-height: 629px;
-    background-image: url("../assest/img/home/software-development-technologies.webp");
+    background-image: url("../img/home/software-development-technologies.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1242,7 +1261,7 @@ header a button:not(.active):hover:after{
     width: 1px;
     top: 2px;
     bottom: -2px;
-    background: var(--primary);
+    background: #999;
     z-index: 0;
 }
 
@@ -1326,7 +1345,7 @@ header a button:not(.active):hover:after{
     right: 0;
     bottom: 0;
     top: 0;
-    border: 1px solid var(--primary-100);
+    border: 1px solid #e6f3ff;
 }
 
 .why-choose-us .MuiCard-root {
@@ -2228,7 +2247,7 @@ footer .bottom .MuiIconButton-root img {
 /* technologies content
 --------------------------------------------------------------------------------------------------------*/
 .technologies-content .image-wrapper img {
-    max-width: 480px;
+    max-width: 490px;
 }
 
 
@@ -2921,17 +2940,17 @@ footer .bottom .MuiIconButton-root img {
         margin-bottom: 8px;
     }
 
-    header ul li.has-submenu a.menu-expanded {
+    /* header ul li.has-submenu a.menu-expanded {
         background: var(--primary-100);
         color: var(--primary);
-    }
+    } */
 
     header ul li.has-submenu a img {
         display: block;
     }
 
     header ul li.has-submenu a.menu-expanded img {
-        transform: rotate(180deg);
+        transform: rotate(365deg);
     }
 
     header ul li .submenu {
