@@ -54,7 +54,7 @@
             <img loading="lazy" src="./assest/img/svg/ic-hamburger-white.svg" class="" alt="Hamburger">
             <span class="MuiTouchRipple-root css-w0pj6f"></span>
         </button>
-        <a class="logo" title="Unique IT Solution" href="/">
+        <a class="logo" title="Unique IT Solution" href="index.html">
             <img loading="lazy" src="./assest/img/logo/logo.webp" alt="Unique IT Solution">
             <img loading="lazy" class="mobile-logo" src="./assest/img/logo/mobile-logo.webp" alt="Unique IT Solution">
         </a>
@@ -126,7 +126,6 @@
 
     <div class="wrapper">
         <main>
-
             <!-- 1. hero Contact Us -->
             <section class="banner overlyshadow page-banner mb-9 aos-init aos-animate" data-aos="fade-in"
                 style="background-image: url(./assest/img/hero/contact-us-banner.webp);">
@@ -148,153 +147,126 @@
                             <div class="contact-info">
                                 <ul>
                                     <li><a href="tel:+917874579457" title="+917874579457"><img loading="lazy"
-                                                src="./assest/img/contact-us/ic-call.svg"
-                                                alt="Call"><span
+                                                src="./assest/img/contact-us/ic-call.svg" alt="Call"><span
                                                 class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">+917874579457</span></a>
                                     </li>
                                     <li><a href="tel:+12156027044" title="+917874579457"><img loading="lazy"
-                                                src="./assest/img/contact-us/ic-call.svg"
-                                                alt="Call"><span
+                                                src="./assest/img/contact-us/ic-call.svg" alt="Call"><span
                                                 class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">+1 (215)
                                                 602-7044</span></a></li>
                                     <li><a href="mailto:info@theuniqueitsolution.com"
                                             title="info@theuniqueitsolution.com"><img loading="lazy"
-                                                src="./assest/img/contact-us/ic-email.svg"
-                                                alt="Email"><span
+                                                src="./assest/img/contact-us/ic-email.svg" alt="Email"><span
                                                 class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">info@theuniqueitsolution.com</span></a>
                                     </li>
-                                    <li><img loading="lazy"
-                                            src="./assest/img/contact-us/ic-location.svg"
+                                    <li><img loading="lazy" src="./assest/img/contact-us/ic-location.svg"
                                             alt="Location"><span
                                             class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">Titanium Business
                                             Park, C-806, Ahemedabad, Gujarat 380051</span></li>
-                                    <li><img loading="lazy"
-                                            src="./assest/img/contact-us/ic-location.svg"
+                                    <li><img loading="lazy" src="./assest/img/contact-us/ic-location.svg"
                                             alt="Location"><span
                                             class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">2462 Brandon Ct,
                                             Bensalem, PA- 19020</span></li>
-                                </ul><img loading="lazy"
-                                    src="./assest/img/contact-us/contact-us.svg"
-                                    alt="Contact Us">
+                                </ul><img loading="lazy" src="./assest/img/contact-us/contact-us.svg" alt="Contact Us">
                             </div>
                         </div>
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
-                            <form>
+                            <form id="contact-form" class="needs-validation" novalidate>
                                 <h3 class="MuiTypography-root MuiTypography-h3 pb-4 css-8ipg8">Get in Touch</h3>
-                                <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-1h77wgb">
-                                    <div
-                                        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 css-ltxmnd">
-                                        <div class="MuiFormControl-root MuiFormControl-fullWidth css-m6aug5"><label
-                                                class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-filled MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-filled css-91edt0"
-                                                data-shrink="false" for="name">Name</label>
-                                            <div
-                                                class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedEnd css-1yhpq3q">
-                                                <input aria-invalid="false" id="name" type="text"
-                                                    class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputAdornedEnd css-1u74i6w"
-                                                    value="">
-                                                <div
-                                                    class="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-filled MuiInputAdornment-sizeMedium css-r2md6h">
-                                                    <img loading="lazy"
-                                                        src="./assest/img/contact-us/ic-user-black.svg"
-                                                        alt="User">
-                                                </div>
-                                            </div>
+                                <div class="row g-4">
+                                    <!-- Name -->
+                                    <div class="col-md-6 position-relative">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control " id="fullName" placeholder=" " required>
+                                            <label for="name">Name</label>
+                                            <span class="position-absolute top-50 translate-middle-y ps-3 pe-2">
+                                                <img loading="lazy" src="./assest/img/contact-us/ic-user-black.svg"
+                                                    alt="User">
+                                            </span>
                                         </div>
                                     </div>
-                                    <div
-                                        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 css-ltxmnd">
-                                        <div class="MuiFormControl-root MuiFormControl-fullWidth css-m6aug5"><label
-                                                class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-filled MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-filled css-91edt0"
-                                                data-shrink="false" for="email">Email</label>
-                                            <div
-                                                class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedEnd css-1yhpq3q">
-                                                <input aria-invalid="false" id="email" type="text"
-                                                    class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputAdornedEnd css-1u74i6w"
-                                                    value="">
-                                                <div
-                                                    class="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-filled MuiInputAdornment-sizeMedium css-r2md6h">
-                                                    <img loading="lazy"
-                                                        src="./assest/img/contact-us/ic-email-black.svg"
-                                                        alt="Email">
-                                                </div>
-                                            </div>
+                                    <!-- Email -->
+                                    <div class="col-md-6 position-relative">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control " id="email" placeholder=" "
+                                                required>
+                                            <label for="email">Email</label>
+                                            <span class="position-absolute top-50 translate-middle-y ps-3 pe-2">
+                                                <img loading="lazy" src="./assest/img/contact-us/ic-email-black.svg"
+                                                alt="Email">
+                                            </span>
                                         </div>
                                     </div>
-                                    <div
-                                        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 css-ltxmnd">
-                                        <div class="MuiFormControl-root MuiFormControl-fullWidth css-m6aug5"><label
-                                                class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-filled MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-filled css-91edt0"
-                                                data-shrink="false" for="subject">Subject</label>
-                                            <div
-                                                class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-16800kg">
-                                                <input aria-invalid="false" id="subject" type="text"
-                                                    class="MuiInputBase-input MuiFilledInput-input css-gtx6gk" value="">
-                                            </div>
+                                    <!-- Subject -->
+                                    <div class="col-md-6 position-relative">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control " id="subject" placeholder=" "
+                                                required>
+                                            <label for="subject">Subject</label>
                                         </div>
                                     </div>
-                                    <div
-                                        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 css-ltxmnd">
-                                        <div class="MuiFormControl-root MuiFormControl-fullWidth css-m6aug5"><label
-                                                class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-filled MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-filled css-91edt0"
-                                                data-shrink="false" for="phone">Phone</label>
-                                            <div
-                                                class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedEnd css-1yhpq3q">
-                                                <input aria-invalid="false" id="phone" type="number"
-                                                    class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputAdornedEnd css-1u74i6w"
-                                                    value="">
-                                                <div
-                                                    class="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-filled MuiInputAdornment-sizeMedium css-r2md6h">
-                                                    <img loading="lazy"
-                                                        src="./assest/img/contact-us/ic-call-black.svg"
-                                                        alt="Phone">
-                                                </div>
-                                            </div>
+                                    <!-- Phone -->
+                                    <div class="col-md-6 position-relative">
+                                        <div class="form-floating">
+                                            <input type="number" class="form-control" id="phone" placeholder=" "
+                                                required>
+                                            <label for="phone">Phone</label>
+                                            <span class="position-absolute top-50 translate-middle-y ps-3 pe-2">
+                                                <img loading="lazy" src="./assest/img/contact-us/ic-call-black.svg"
+                                                alt="Phone">
+                                            </span>
                                         </div>
                                     </div>
+                                    <!-- Company Name -->
+                                    <div class="col-12 position-relative">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="company" placeholder=" "
+                                                required>
+                                            <label for="company">Company Name</label>
+                                        </div>
+                                    </div>
+                                    <!-- Description -->
+                                    <div class="col-12 position-relative">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder=" " id="description" 
+                                                style="height: 100px;" required></textarea>
+                                            <label for="description">Description</label>
+                                        </div>
+                                    </div>
+                                    <!-- File Upload -->
+                                    <div class="file-upload" id="drop-area">
+                                        <div id="upload-prompt">
+                                            <img src="./assest/img/contact-us/ic-upload..svg" alt="Upload Icon">
+                                            <p>Drag & drop here, or 
+                                                <label   style="color: blue; cursor: pointer;">choose file</label>
+                                            </p>
+                                            <span>Max size: 4 MB, Allowed Types: .doc, .pdf, .xls, .txt</span>
+                                        </div>
+
+                                        <div id="file-preview" class="hidden">
+                                            <div id="upload-prompt">
+                                                <img src="./assest/img/contact-us/ic-file.svg" alt="Upload">
+                                                <p>How to write a better.pdf</p>
+                                                <span>632.74 KB</span>
+                                                <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                                                <button id="remove-file" class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-wrts35" tabindex="0" type="button">
+                                                    <img src="./assest/img/contact-us/ic-delete.svg" alt="Delete">
+                                                  </button>
+                                            </div>
+                                        </div>
+
+                                        <input accept=".doc,.pdf,.xls,.txt" type="file" id="file-upload" required
+                                            hidden>
+                                    </div>
+                                    <!-- Submit Button -->
                                     <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-mfstbn">
-                                        <div class="MuiFormControl-root MuiFormControl-fullWidth css-m6aug5"><label
-                                                class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-filled MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-filled css-91edt0"
-                                                data-shrink="false" for="company">Company Name</label>
-                                            <div
-                                                class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-16800kg">
-                                                <input aria-invalid="false" id="company" type="text"
-                                                    class="MuiInputBase-input MuiFilledInput-input css-gtx6gk" value="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-mfstbn">
-                                        <div class="MuiFormControl-root MuiFormControl-fullWidth css-m6aug5"><label
-                                                class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-filled MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-filled css-91edt0"
-                                                data-shrink="false" for="description">Description</label>
-                                            <div
-                                                class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-multiline css-th5e90">
-                                                <textarea rows="3" aria-invalid="false" id="description"
-                                                    class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputMultiline css-1kbxtr1"
-                                                    style="height: 84px;"></textarea><textarea aria-hidden="true"
-                                                    class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputMultiline css-1kbxtr1"
-                                                    readonly="" tabindex="-1"
-                                                    style="visibility: hidden; position: absolute; overflow: hidden; height: 0px; top: 0px; left: 0px; transform: translateZ(0px); padding-top: 0px; padding-bottom: 0px; width: 568px;"></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-mfstbn">
-                                        <div class="file-upload "><img
-                                                src="./assest/img/contact-us/ic-upload..svg"
-                                                alt="Upload">
-                                            <p>Drag &amp; drop here, or <label for="file-upload">choose file</label></p>
-                                            <span>Max size: 4 MB, Allowed Type: .doc, .pdf, .xls, .txt</span><input
-                                                accept=".doc,.pdf,.xls,.txt" type="file" id="file-upload">
-                                        </div>
-                                    </div>
-                                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-mfstbn"><button
-                                            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus"
-                                            tabindex="0" type="submit" title="Send Message"><span class="text">Send
-                                                Message</span><span
-                                                class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img
-                                                    loading="lazy"
-                                                    src="/static/media/ic-right-arrow-white.051c3bb2608660626c7a65502f866cdb.svg"
-                                                    alt="Right Arrow"></span><span
-                                                class="MuiTouchRipple-root css-w0pj6f"></span></button>
+                                        <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus" tabindex="0" type="submit" title="Send Message">
+                                            <span class="text">Send Message</span>
+                                            <span class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br">
+                                                <img loading="lazy" src="./assest/img/svg/ic-right-arrow-whit.svg" alt="Right Arrow">
+                                            </span>
+                                                <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                                        </button>
                                         <div></div>
                                     </div>
                                 </div>
@@ -319,12 +291,12 @@
                                 <div class="accordion" id="faqAccordion">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#faq1">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq1">
                                                 How can I get in touch with Unique IT Solution?
                                             </button>
                                         </h2>
-                                        <div id="faq1" class="accordion-collapse collapse show"
+                                        <div id="faq1" class="accordion-collapse collapse"
                                             data-bs-parent="#faqAccordion">
                                             <div class="accordion-body css-bqexvl">
                                                 You can reach out to us through the Contact Us page by
@@ -339,7 +311,7 @@
                                         <h2 class="accordion-header">
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#faq2">
-                                               What information is required to contact Unique IT Solution?
+                                                What information is required to contact Unique IT Solution?
                                             </button>
                                         </h2>
                                         <div id="faq2" class="accordion-collapse collapse"
@@ -358,12 +330,13 @@
                                         <h2 class="accordion-header">
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#faq3">
-                                                What services can I inquire about through the Contact Us page?  
+                                                What services can I inquire about through the Contact Us page?
                                             </button>
                                         </h2>
                                         <div id="faq3" class="accordion-collapse collapse"
                                             data-bs-parent="#faqAccordion">
-                                            <div class="accordion-body css-bqexvl"> You can reach out to inquire about a variety of services
+                                            <div class="accordion-body css-bqexvl"> You can reach out to inquire about a
+                                                variety of services
                                                 provided by Unique IT Solution, including but not limited to
                                                 Custom Software Development, Web Development, Mobile
                                                 Application Development, and Workflow Automation. No matter
@@ -382,10 +355,10 @@
                                             data-bs-parent="#faqAccordion">
                                             <div class="accordion-body css-bqexvl">
                                                 After submitting your inquiry, a representative from Unique
-                                                            IT Solution will reach out to gather more details, clarify
-                                                            your requirements, and discuss the best solution for your
-                                                            project. We aim to provide clear communication and guidance
-                                                            at every step.
+                                                IT Solution will reach out to gather more details, clarify
+                                                your requirements, and discuss the best solution for your
+                                                project. We aim to provide clear communication and guidance
+                                                at every step.
                                             </div>
                                         </div>
                                     </div>
@@ -400,10 +373,10 @@
                                             data-bs-parent="#faqAccordion">
                                             <div class="accordion-body css-bqexvl">
                                                 Absolutely. Unique IT Solution provides ongoing support and
-                                                            maintenance services after project delivery. Whether it’s
-                                                            for Web Development, Mobile App Development, or Custom
-                                                            Software Solutions, we ensure long-term success for your
-                                                            projects.
+                                                maintenance services after project delivery. Whether it’s
+                                                for Web Development, Mobile App Development, or Custom
+                                                Software Solutions, we ensure long-term success for your
+                                                projects.
                                             </div>
                                         </div>
                                     </div>
@@ -413,7 +386,7 @@
                     </div>
                 </div>
             </section>
-           
+
             <!-- 11 Ready to build your custom -->
             <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
                 <section class="request-proposal aos-init" data-aos="fade-in">
@@ -461,7 +434,7 @@
                 <div
                     class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 MuiGrid-spacing-sm-6 MuiGrid-spacing-lg-8 css-mb90x6">
                     <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4 css-1oaod6a"><a
-                            class="pb-3" title="Unique IT Solution" href="/"><img loading="lazy"
+                            class="pb-3" title="Unique IT Solution" href="index.html"><img loading="lazy"
                                 src="./assest/img/logo/logo.webp" alt="Unique IT Solution"></a>
                         <p class="MuiTypography-root MuiTypography-body1 company-description pb-5 css-1b7jm6v">Visit our
                             website to communicate and connect with us. Contact us to develop unique websites</p>
@@ -638,7 +611,6 @@
     </script>
 
     <script>
-        // Ensure jQuery is loaded before using $
         if (window.jQuery) {
             $(document).ready(function () {
                 var slider = $('.slider').slick({
@@ -665,20 +637,25 @@
             console.error("jQuery failed to load!");
         }
     </script>
+
     <script>
         function gtag() {
             dataLayer.push(arguments)
         }
         window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-CF5WXSGXNK")
     </script>
+
     <script src="https://embed.tawk.to/67931682825083258e0a5d6e/1iib8vs7v" async="" charset="UTF-8"
         crossorigin="*"></script>
     <!-- jQuery & Slick JS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assest/js/drag-drop.js"></script>
+    <script src="./assest/js/validation.js"></script>
     <script src="./assest/js/dev-script.js"></script>
     <script src="./assest/js/dev-navbar.js"></script>
+    <script src="./assest/js/email.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

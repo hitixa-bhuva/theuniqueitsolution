@@ -31,3 +31,16 @@ submenuLinks.forEach(link => {
         parentLi.classList.toggle('open');
     });
 });
+
+
+// Force navigate open industries
+function goToIndustries(event) {
+  event.preventDefault(); 
+  window.location.href = event.currentTarget.href; 
+}
+
+// Force navigate open services
+function goToServices(event) {
+    event.preventDefault();
+    window.location.href = event.currentTarget.href;
+  }

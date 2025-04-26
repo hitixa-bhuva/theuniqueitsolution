@@ -1,6 +1,206 @@
-@media (max-width: 435px) {
+/* 1024 screen size */
+@media (max-width: 1035px) {
+    .css-hj4xil {
+        flex-basis: 41.6667%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 41.6667%;
+    }
+    .css-dbmn0s {
+        flex-basis: 58.3333%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 58.3333%;
+    }
+    .css-14ipkzi {
+        flex-basis: 33.3333%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 33.3333%;
+    }
+    .css-1tz8m30{
+        display: flex;
+        justify-content: center;
+    }
+    .MuiCard-root.service-card {
+        height: 100%;
+        max-height: 100%;
+    }
+  }
+  
+/* 768 screen size */
+@media (max-width: 790px) {
+    .css-1tz8m30 {
+      display: flex;
+      justify-content: center;
+    }
+    .css-k4xlog {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
     .css-8ipg8 {
-        font-size: 32px;
+        font-size: 40px;
+        line-height: 56px;
+        letter-spacing: 0.25px;
+    }
+    .css-1b7jm6v {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.25px;
+    }
+    .MuiCard-root.service-card {
+        max-height: 100%;
+    }
+    .css-14ipkzi {
+        flex-basis: 50%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 50%;
+    }
+    .request-proposal ul {
+        flex-direction: column;
+    }
+    .css-mb90x6 > .MuiGrid-item {
+        padding-left: 40px;
+    }
+    .css-1oaod6a {
+        flex-basis: 100%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 100%;
+    }
+    .css-mb90x6 {
+        width: calc(100% + 40px);
+        margin-left: -40px;
+    }
+    .css-mb90x6 {
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: wrap;
+        width: 100%;
+    }
+    .css-1gpftb1 {
+        font-size: 40px;
+        line-height: 56px;
+        letter-spacing: 0.25px;
+    }
+    .css-3sq53o {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.25px;
+    }
+    .css-17zkhbb {
+        font-size: 48px;
+        line-height: 60px;
+        letter-spacing: 0px;
+    }
+    .css-16rxbyr {
+        width: calc(100% + 24px);
+        margin-left: -24px;
+    }
+    .css-16rxbyr {
+        margin-top: -24px;
+    }
+    .css-18xehxy {
+         flex-basis: 50% !important; 
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+         max-width: 50% !important; 
+    }
+    .request-proposal .oval-right{
+        width: 26% !important;
+    }
+    .request-proposal .oval-left{
+        width: 30% !important; 
+    }
+    .service-details-content .css-1tz8m30{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .visit-our-portfolio img.section-img{
+        width: 568px !important;
+    }
+    .visit-our-portfolio img.oval-one {
+        top: -122px;
+        width: 26% !important;
+    }
+    .visit-our-portfolio img.oval-two{
+        width: 29% !important;
+    }
+    .visit-our-portfolio img.oval-three{
+        width: 30% !important;
+    }
+    .css-1gpftb1 {
+        font-size: 40px;
+        line-height: 56px;
+        letter-spacing: 0.25px;
+    }
+    .outer-card {
+        margin: 0;
+    }
+    .css-hrdle6 {
+        width: calc(100% + 24px);
+        margin-left: -24px;
+    }
+    .css-4lx7hw {
+        flex-basis: 100%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 100%;
+    }
+    .flex-direction-col{
+        display: flex;
+    flex-direction: column-reverse;
+    }
+    
+  }
+  
+/* 425 screen size */
+@media (max-width: 435px) {
+    .consider-hiring-developer img{
+        width: 50% !important;
+    }
+    .pricing-methods .MuiCard-root .top {
+        padding: 24px;
+    }
+    .css-stzg0q {
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: 0.15px;
+    }
+    .css-xgs5wp > .MuiGrid-item {
+        padding-top: 40px;
+    }
+    header ul li .submenu {
+        padding: 19px 0 0 !important;
+    }
+    .css-ltxmnd {
+        flex-basis: 100% !important;
+        max-width: 100% !important;
+    }
+    .contact-us-form-wrapper .css-xgs5wp{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .css-dbmn0s {
+        flex-basis: 100%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 100%;
+    }
+    .slider-controls {
+        margin-top: 0 !important;
+    }
+    .css-hj4xil {
+        flex-basis: 100%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 100%;
+    }
+    .css-8ipg8 {
+        font-size: 30px;
         line-height: 44px;
         letter-spacing: 0.04px;
     }
@@ -86,10 +286,10 @@
     .mb-9 {
         margin-bottom: 47px !important;
     }
-    .css-1tz8m30{
+    /* .css-1tz8m30{
         display: flex !important;
         flex-flow: column-reverse !important;
-    }
+    } */
     .css-i3gkby {
         font-size: 24px;
         line-height: 32px;
@@ -164,7 +364,7 @@
         padding: 30px !important;
     }
     .css-64t9a5 {
-        font-size: 32px;
+        font-size: 30px;
         line-height: 48px;
         letter-spacing: 0.25px;
     }
@@ -204,7 +404,55 @@
     .solution-impact img.right{
         width: 30%;
     }
+    .css-xgs5wp {
+        width: calc(100% + -10px) !important;
+        margin-left: 0px !important;
+    }
+    .css-k4xlog {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .css-14ipkzi {
+        flex-basis: 100%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 100%;
+    }
+    .css-ldtpqf > .MuiGrid-item {
+        padding-top: 32px;
+    }
     
+    .service-details-content .css-1t9tuk4{
+        font-size: 19px;
+    }
+    .Wireframing-Prototyping{
+        display: flex !important;
+        flex-flow: column !important;
+    }
+    .Usability-Testing{
+        display: flex !important;
+        flex-flow: column !important;
+    }
+    .accordion-button {
+        gap: 5px;
+    }
+    .accordion-button {
+        font-size: 18px;
+    }
+    .css-fnn40u {
+        font-size: 20px !important;
+        line-height: 32px !important;
+        letter-spacing: 0.15px !important;
+    }
+    header ul .has-submenu{
+        margin-bottom: 0 !important;
+    }
+    /* header ul li {
+        margin-top: 12px;
+    } */
+    .CustomSoftwareDevelopment{
+        margin-top: 15px;
+    }
 }
 
 /* Default styles */
@@ -343,7 +591,6 @@
     position: absolute;
     right: 0px;
     pointer-events: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.42);
     transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .css-1u74i6w {
@@ -410,8 +657,24 @@
     position: absolute;
     right: 0px;
     pointer-events: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.42);
     transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.css-16800kg::after {
+    border: 2px solid rgb(4, 135, 255);
+    border-radius: 8px;
+    top: 0px;
+    transition: none;
+}
+.css-16800kg::after {
+    left: 0px;
+    bottom: 0px;
+    content: "";
+    position: absolute;
+    right: 0px;
+    transform: scaleX(0);
+    pointer-events: none;
+    border-bottom: 2px solid rgb(4, 135, 255);
+    transition: transform 200ms cubic-bezier(0, 0, 0.2, 1);
 }
 .css-gtx6gk {
     font: inherit;
@@ -461,9 +724,9 @@
     position: absolute;
     right: 0px;
     pointer-events: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.42);
     transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .css-1kbxtr1 {
     letter-spacing: inherit;
     -webkit-tap-highlight-color: transparent;
@@ -536,4 +799,68 @@
     right: -999px;
     visibility: 0;
     width: 0;
+}
+.servicer-slider .slick-slide{
+    outline: none; 
+    width: 411px !important;
+}
+.css-fnn40u {
+    margin: 0px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+}
+.industry-solutions .subtext {
+    color: rgb(77, 77, 77);
+}
+.css-ckkn3t {
+    margin: 0px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.15px;
+    text-align: center;
+}
+.css-1yhpq3q:hover:not(.Mui-disabled, .Mui-error)::before {
+    border: 1px solid rgb(4, 135, 255);
+}
+.css-1yhpq3q::after {
+    top: 0px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(4, 135, 255);
+    border-image: initial;
+    border-radius: 8px;
+    transition: none;
+}
+.css-1yhpq3q::after {
+    left: 0px;
+    bottom: 0px;
+    content: "";
+    position: absolute;
+    right: 0px;
+    transform: scaleX(0);
+    pointer-events: none;
+    border-bottom: 2px solid rgb(4, 135, 255);
+    transition: transform 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+.css-1yhpq3q::before {
+    border: 1px solid rgb(225, 231, 236);
+    border-radius: 8px;
+    top: 0px;
+    transition: none;
+}
+
+.css-1yhpq3q::before {
+    left: 0px;
+    bottom: 0px;
+    content: " ";
+    position: absolute;
+    right: 0px;
+    pointer-events: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+    transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }

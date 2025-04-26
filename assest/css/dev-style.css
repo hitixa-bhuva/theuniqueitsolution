@@ -76,7 +76,7 @@ header.page-scrolled {
 .logo img {
     display: block;
     height: 48px;
-    width: 210px;
+    width: 192px;
 }
 
 .logo .mobile-logo {
@@ -140,7 +140,7 @@ header ul.submenu li a{
     border-radius: 0;
     color: #1a1a1a;
     font-family: Poppins, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     letter-spacing: .25px;
     line-height: 28px;
@@ -369,7 +369,18 @@ header a button:not(.active):hover:after{
     background-size: cover;
     position: relative;
 }
-
+/* .banner:after {
+    background-color: #0000007a;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+} */
 .technologies-banner::after {
     content: "";
     display: block;
@@ -656,7 +667,7 @@ header a button:not(.active):hover:after{
 /* service-details-content
 --------------------------------------------------------------------------------------------------------*/
 .service-details-content>p {
-    padding-bottom: 80px;
+    padding-bottom: 50px;
     color: var(--secondary-text);
 }
 
@@ -797,10 +808,12 @@ header a button:not(.active):hover:after{
 }
 
 .MuiButtonBase-root.slick-arrow:hover::before {
-    background: #0487ff; /* hover background */
+    background: #0487ff; 
     transform: perspective(600px) rotateY(180deg);
 }
-
+.prev-btn:hover, .next-btn:hover{
+    border: 1px solid #0487ff;
+}
 .MuiButtonBase-root.slick-arrow > * {
     position: relative;
     z-index: 1;
@@ -876,6 +889,7 @@ header a button:not(.active):hover:after{
 --------------------------------------------------------------------------------------------------------*/
 .MuiCard-root.service-card {
     height: 100%;
+    max-height: 486px;
     border: 1px solid var(--light-border);
     display: flex;
     flex-direction: column;
@@ -1330,26 +1344,29 @@ header a button:not(.active):hover:after{
     margin: 0 auto;
     text-align: center;
 }
-
+/* .why-choose-us .MuiCardContent-root{
+    background-color: red !important;
+} */
 .why-choose-us .MuiGrid-container {
     overflow: hidden;
     border-radius: 24px;
     position: relative;
 }
 
-.why-choose-us .MuiGrid-container::before {
+/* .why-choose-us .MuiGrid-container::before {
+    border: 1px solid #e6f3ff;
+    bottom: 0;
     content: "";
     display: block;
-    position: absolute;
     left: 0;
+    position: absolute;
     right: 0;
-    bottom: 0;
     top: 0;
-    border: 1px solid #e6f3ff;
-}
+    
+} */
 
 .why-choose-us .MuiCard-root {
-    background: var(--primary-100);
+    background: #e6f3ff;
     height: 100%;
     border-radius: 0;
     border-bottom: 1px solid var(--primary-150);
@@ -2524,7 +2541,7 @@ footer .bottom .MuiIconButton-root img {
 /* contact us form wrapper
 --------------------------------------------------------------------------------------------------------*/
 .contact-us-form-wrapper .contact-info {
-    background: var(--primary-100);
+    background: #e6f3ff;
     border-radius: 24px;
     padding: 40px 32px 0;
     position: relative;
@@ -2598,78 +2615,6 @@ footer .bottom .MuiIconButton-root img {
 
 /* portfolio card
 --------------------------------------------------------------------------------------------------------*/
-.contact-us-form-wrapper .contact-info {
-    background: var(--primary-100);
-    border-radius: 24px;
-    padding: 40px 32px 0;
-    position: relative;
-    max-width: 480px;
-    margin: 0 auto;
-    min-height: 532px;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.contact-us-form-wrapper .contact-info>img {
-    width: auto;
-    height: auto;
-}
-
-.contact-us-form-wrapper .contact-info>img.border {
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: rotateY(180deg);
-}
-
-.contact-us-form-wrapper .contact-info>img:not(.border) {
-    display: block;
-    margin: auto auto 0;
-    max-width: 100%;
-}
-
-.contact-us-form-wrapper .contact-info ul {
-    padding-bottom: 24px;
-}
-
-.contact-us-form-wrapper .contact-info ul li {
-    display: flex;
-    gap: 12px;
-    margin-bottom: 24px;
-}
-
-.contact-us-form-wrapper .contact-info ul li span {
-    color: var(--secondary-text);
-}
-
-.contact-us-form-wrapper .contact-info ul li img {
-    display: block;
-    height: 28px;
-    width: 28px;
-}
-
-.contact-us-form-wrapper .contact-info ul li a {
-    display: flex;
-    gap: 12px;
-}
-
-.contact-us-form-wrapper .contact-info ul li a:hover {
-    text-decoration: underline;
-}
-
-.contact-us-form-wrapper .contact-info ul li a:hover span {
-    color: var(--primary);
-}
-
-.contact-us-form-wrapper .contact-us-form {
-    max-width: 536px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-}
-
 .MuiCard-root.portfolio-card {
     border-radius: 0;
 }
@@ -3213,7 +3158,7 @@ footer .bottom .MuiIconButton-root img {
     }
 
     .service-details-content>p {
-        padding-bottom: 64px;
+        padding-bottom: 38px;
     }
 
     .pricing-methods {
@@ -3486,7 +3431,7 @@ footer .bottom .MuiIconButton-root img {
     }
 
     .service-details-content>p {
-        padding-bottom: 48px;
+        padding-bottom: 28px;
     }
 
     .section-details .image-wrapper {
@@ -4556,4 +4501,163 @@ footer .bottom .MuiIconButton-root img {
     letter-spacing: 0.1px;
     padding: 0px;
     font-family: Montserrat, sans-serif;
+}
+
+/* contact form style */
+.form-floating {
+    position: relative;
+    display: flex;
+    justify-content: end;
+}
+
+.form-floating>label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.2s ease;
+    pointer-events: none;
+    font-size: 1rem;
+    color: #999;
+}
+
+.form-control {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1.5rem 0.75rem 0.5rem 2.5rem;
+    /* Left space for icon */
+}
+
+.form-floating input:focus,
+.form-floating textarea:focus {
+    border-color: #0d6efd;
+    /* Bootstrap blue */
+    box-shadow: none;
+}
+
+.form-floating>.form-control:focus~label,
+.form-floating>.form-control:not(:placeholder-shown)~label {
+    top: 0.1rem;
+    font-size: 0.75rem;
+    color: #0d6efd;
+}
+
+/* Icon inside input */
+.form-floating .input-icon {
+    position: absolute;
+    top: 50%;
+    left: 0.75rem;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+#drop-area {
+    border: 2px dashed #ccc;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+#drop-area.highlight {
+    border-color: #007bff;
+    background-color: #f0f8ff;
+    transform: scale(0.98);
+    /* 👈 Slight Zoom-Out */
+}
+
+#drop-area {
+    border: 2px dashed #cce5ff;
+    background: #f0f8ff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#drop-area.highlight {
+    border-color: #66b0ff;
+    transform: scale(1.02);
+}
+
+#upload-prompt {
+    transition: all 0.3s ease;
+}
+
+#file-preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+    text-align: left;
+    padding: 20px;
+}
+
+.file-icon {
+    width: 40px;
+}
+
+.file-details {
+    text-align: left;
+}
+
+#file-name-text {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+#file-size-text {
+    font-size: 14px;
+    color: gray;
+}
+
+.remove-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none !important;
+}
+.file-upload>img {
+display: block;
+height: 40px;
+margin: 0 auto 12px;
+width: 40px;
+}
+.file-upload {
+border: 2px dashed #ccc;
+padding: 30px;
+text-align: center;
+border-radius: 10px;
+cursor: pointer;
+}
+.file-upload.highlight {
+border-color: #4285f4;
+background-color: #e8f0fe;
+}
+.hidden {
+display: none;
+}
+.file-info {
+display: flex;
+align-items: center;
+gap: 10px;
+justify-content: center;
+}
+.solution-highlight{
+    font-size: 19px;
+    font-weight: 700;
+    margin-top: 10px;
 }
