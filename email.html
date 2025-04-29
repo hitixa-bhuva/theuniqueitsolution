@@ -1,33 +1,4 @@
-const contactform = document.getElementById("contact-form");
-contactform.addEventListener("submit", function (event) {
-    event.preventDefault();
-    console.log("Form submitted event triggered.");
-
-    // Gather data from the form
- // Accessing the form field values
-const fullName = document.getElementById("fullName").value;
-const email = document.getElementById("email").value;
-const phone = document.getElementById("phone").value;
-const subject = document.getElementById("subject").value;
-const company = document.getElementById("company").value;
-const description = document.getElementById("description").value;
-const fileupload = document.getElementById("fileupload").value;
-
-
-console.log("Collected form data:", { fullName, email, phone, subject, company, description, fileupload });
-
-
-    // Create email data
-    const emailData = {
-        "Host": "216.10.241.228",
-        "Port": "587",
-        "SMTPSecure": "ssl",
-        "SenderEmail": "hitixa.bhuva@uniqueconsumerservices.com",
-        "SenderEmailPassword": "1f1UOc{3U*64",
-        "ReciverEmail": "patelhitixa4439@gmail.com",
-        "Subject": subject,
-        "Body": `
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -87,7 +58,7 @@ console.log("Collected form data:", { fullName, email, phone, subject, company, 
         @media (prefers-color-scheme: dark) {
             .darkmode-bg { background-color: #222222 !important; }
             .darkmode-text { color: #f1f1f1 !important; }
-            .darkmode-button { background-color: #e42c3b !important; border-color: #e42c3b !important; }
+            .darkmode-button { background-color: #0487ff !important; border-color: #0487ff !important; }
             .darkmode-link { color: #e67981 !important; }
             .darkmode-border { border-color: #444444 !important; }
             .darkmode-secondary-bg { background-color: #333333 !important; }
@@ -195,7 +166,7 @@ console.log("Collected form data:", { fullName, email, phone, subject, company, 
                     <td style="padding: 0;">
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                             <tr>
-                                <td bgcolor="#e42c3b" style="height: 5px; font-size: 0; line-height: 0;">&nbsp;</td>
+                                <td bgcolor="#0487ff" style="height: 5px; font-size: 0; line-height: 0;">&nbsp;</td>
                             </tr>
                         </table>
                     </td>
@@ -216,7 +187,7 @@ console.log("Collected form data:", { fullName, email, phone, subject, company, 
                
                 <!-- Hero Section -->
                 <tr>
-                    <td bgcolor="#e42c3b" style="padding: 40px 30px; color: #ffffff; text-align: center;">
+                    <td bgcolor="#0487ff" style="padding: 40px 30px; color: #ffffff; text-align: center;">
                         <h1 style="margin: 0 0 10px 0; font-weight: 700; font-size: 28px; line-height: 36px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; letter-spacing: -0.5px;">Contact Details</h1>
                         <p style="margin: 0; font-size: 16px; line-height: 24px;">Below is a summary of the information you provided in your request. We'll be in touch shortly to discuss your needs.</p>
                     </td>
@@ -233,9 +204,9 @@ console.log("Collected form data:", { fullName, email, phone, subject, company, 
                                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" class="data-table">
                                             <!-- Table Header -->
                                             <tr style="background-color: #f8f8f8;" class="darkmode-table-header">
-                                                <th style="text-align: left; padding: 12px 15px; font-size: 13px; font-weight: 600; color: #333333; border-bottom: 2px solid #e42c3b; width: 10%;" class="darkmode-text">#</th>
-                                                <th style="text-align: left; padding: 12px 15px; font-size: 13px; font-weight: 600; color: #333333; border-bottom: 2px solid #e42c3b; width: 35%;" class="darkmode-text">Contact Form Data</th>
-                                                <th style="text-align: left; padding: 12px 15px; font-size: 13px; font-weight: 600; color: #333333; border-bottom: 2px solid #e42c3b; width: 55%;" class="darkmode-text">Profile Details</th>
+                                                <th style="text-align: left; padding: 12px 15px; font-size: 13px; font-weight: 600; color: #333333; border-bottom: 2px solid #0487ff; width: 10%;" class="darkmode-text">#</th>
+                                                <th style="text-align: left; padding: 12px 15px; font-size: 13px; font-weight: 600; color: #333333; border-bottom: 2px solid #0487ff; width: 35%;" class="darkmode-text">Contact Form Data</th>
+                                                <th style="text-align: left; padding: 12px 15px; font-size: 13px; font-weight: 600; color: #333333; border-bottom: 2px solid #0487ff; width: 55%;" class="darkmode-text">Profile Details</th>
                                             </tr>
                                            
                                             <!-- Table Row 1 -->
@@ -286,130 +257,3 @@ console.log("Collected form data:", { fullName, email, phone, subject, company, 
     </center>
 </body>
 </html>
-    `,
-    };
-
-    console.log("Email data prepared:", emailData);
-
-    const apiUrl = "./Mail/test.php";
-    const headers = {
-        "Content-Type": "application/json",
-    };
-
-    console.log("API URL:", apiUrl);
-
-    function toggleClassForField(fieldId, className, duration) {
-        console.log(`Adding class ${className} to ${fieldId} for ${duration}ms`);
-        const field = document.getElementById(fieldId);
-        field.classList.add(className);
-        setTimeout(() => {
-            field.classList.remove(className);
-            console.log(`Removed class ${className} from ${fieldId}`);
-        }, duration);
-    }
-
-    console.log("Checking form validation...");
-
-    if (!fullName || !email || !phone || !subject || !company ) {
-      // || !description || !fileupload
-        console.log("Validation failed: Missing required fields.");
-    
-        if (!fullName) {
-            toggleClassForField('fullName', 'border-danger', 3000);
-        }
-        if (!company) {   // OPTIONAL: if you want to validate company name too
-            toggleClassForField('company', 'border-danger', 3000);
-        }
-        if (!subject) {
-            toggleClassForField('subject', 'border-danger', 3000);
-        }
-        if (!email) {
-            toggleClassForField('email', 'border-danger', 3000);
-        }
-        if (!phone) {
-            toggleClassForField('phone', 'border-danger', 3000);
-        }
-    //     if (!description) {
-    //       toggleClassForField('description', 'border-danger', 3000);
-    //   }
-    //   if (!fileupload) {
-    //     toggleClassForField('fileupload', 'border-danger', 3000);
-    // }
-    
-        showFeedback('Please fill in all required fields.', 'col-12 text-center py-2 border-danger border text-danger mt-3');
-        return;
-    }
-    
-
-    console.log("Validating email...");
-    if (!isValidEmail(email)) {
-        console.log("Invalid email entered.");
-        showFeedback('Please enter a valid email address.', 'col-12 text-center border-1 py-2 border-info border text-info mt-3');
-        return;
-    }
-
-    console.log("Sending email request...");
-    // Sending the email using fetch
-    fetch(apiUrl, {
-        method: "POST",
-        headers: headers,
-        body: JSON.stringify(emailData),
-    })
-        .then((response) => response.json()) // Ensure we parse the JSON response
-        .then((data) => {
-            if (data.status) {
-                console.log(data);
-                console.log("Message sent successfully");
-                showFeedback(
-                    "Message sent successfully",
-                    "col-12 text-center border-1 my-2 py-2 border-primary border text-primary"
-                );
-                clearForm();
-            } else {
-                console.log(data);
-                showFeedback(
-                    "Message sending failed. Please try again later.",
-                    "col-12 text-center border-1 py-2 border-danger border text-danger"
-                );
-            }
-        })
-        .catch((error) => {
-            showFeedback(
-                // "An error occurred while sending the message. Please try again later.",
-                "Message sent successfully",
-                "col-12 text-center border-1 error"
-            );
-        });
-});
-
-function isValidEmail(email) {
-    console.log("Checking email format...");
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const isValid = emailRegex.test(email);
-    console.log(`Email validation result for ${email}: ${isValid}`);
-    return isValid;
-}
-
-function showFeedback(message, classNames) {
-    console.log(`Showing feedback: "${message}"`);
-    const feedback = document.getElementById('feedback');
-    feedback.textContent = message;
-    feedback.className = classNames;
-    setTimeout(() => {
-        console.log("Clearing feedback message.");
-        feedback.textContent = '';
-        feedback.className = ''; // Remove all classes
-    }, 3000); // Remove feedback after 3 seconds 
-}
-
-function clearForm() {
-    console.log("Clearing form fields...");
-    document.getElementById('fullName').value = '';
-    document.getElementById('email').value = '';
-    document.getElementById('phone').value = '';
-    document.getElementById('subject').value = '';
-    document.getElementById('company').value = '';
-    // document.getElementById('description').value = '';
-    // document.getElementById('fileupload').value = '';
-    console.log("Form reset successfully.");
-}

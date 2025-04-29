@@ -17,7 +17,7 @@ class SendMail
 
 
         $mail = new PHPMailer();
-        $mail->SMTPDebug = 2; 
+        $mail->SMTPDebug = 2; // Change to 3 for detailed debug output
         $mail->isSMTP();
         $mail->SMTPAuth = true;
         $mail->SMTPSecure = '';
@@ -27,7 +27,7 @@ class SendMail
         $mail->CharSet = 'UTF-8';
         $mail->Username = $this->SenderEmail;
         $mail->Password = $this->SenderEmailPassword;
-        $mail->setFrom($this->SenderEmail, 'Your Name or Company'); 
+        $mail->setFrom($this->SenderEmail, 'Your Name or Company'); // Add a name for better identification
         $mail->Subject = $subject;
         $mail->Body = $body;
         $mail->addAddress($this->ReciverEmail);
