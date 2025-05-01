@@ -2674,25 +2674,35 @@ footer .bottom .MuiIconButton-root img {
 --------------------------------------------------------------------------------------------------------*/
 .loader {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.88);
-    z-index: 999;
-    backdrop-filter: blur(8px);
-}
-
-.loader img {
-    display: block;
-    height: 48px;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    z-index: 9999;
+  }
+  
+  .loader .logo {
+    height: 60px;
     margin-bottom: 40px;
-}
+    width: 200px;
+  }
+  
+  .progress-bar {
+    width: 200px;
+    height: 6px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 100%;
+    width: 0%;
+    background-color: #007bff;
+    transition: width 0.3s ease;
+  }
 
 /* portfolio projects
 --------------------------------------------------------------------------------------------------------*/

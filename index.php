@@ -1,157 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+  $Title = "Software Development Company Ahmedabad | Custom Software Development";
+  $MetaDescription = "Unique IT Solution is a leading software development company in Ahmedabad, offering custom web, mobile, and enterprise solutions globally.";
+  $MetaKeywords = "Software Development Company Ahmedabad, Custom Software Development, Mobile App Development, Web Development , enterprise solutions";
+?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="icon" href="./assest/img/logo/favicon.ico">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="theme-color" content="#000000">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description"
-        content="Unique IT Solution - Providing innovative IT solutions to transform your business.">
-    <meta name="keywords" content="IT Solutions, Software Development, Web Development, Mobile App Development">
-    <meta property="og:title" content="Unique IT Solution">
-    <meta property="og:description" content="Providing innovative IT solutions to transform your business.">
-    <meta property="og:image" content="./assest/img/logo/favicon.ico">
-    <link rel="apple-touch-icon" href="./assest/img/logo/favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-        rel="stylesheet">
-
-    <title>Home | Unique IT Solutions</title>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-
-
-    <!-- <link rel="stylesheet" href="./assest/css/dev-navbar.css"> -->
-    <link rel="stylesheet" href="./assest/css/dev-style.css">
-    <!-- <link rel="stylesheet" href="./assest/css/style.css"> -->
-    <link rel="stylesheet" href="./assest/css/slick-slider.css">
-    <link rel="stylesheet" href="./assest/css/dev-custom.css">
-    <link rel="stylesheet" href="./assest/css/dev-responsiv.css">
-    <link rel="stylesheet" href="./assest/css/dev-responsiv-nav.css">
-    <!-- <link rel="stylesheet" href="./assest/css/dev-navbar.css"> -->
-    <!-- <link rel="stylesheet" href="./assest/css/reset.css"> -->
-    <link rel="stylesheet" href="./assest/css/spacing.css">
-    <link rel="stylesheet" href="./assest/css/variables.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <style>
-        /* Navigation arrow fixes */
-        .slider-controls {
-            margin-top: 2rem;
-            display: flex;
-            justify-content: flex-end;
-            gap: 10px;
-            margin-bottom: 15px;
-        }
-
-        .prev-btn,
-        .next-btn {
-            background: transparent;
-            padding: 10px;
-            border-radius: 50%;
-            transform: none;
-            cursor: pointer;
-            width: 44px;
-            height: 44px;
-            border: 2px solid #999;
-        }
-
-        .prev-btn img,
-        .next-btn img {
-            width: 20px;
-            height: 20px;
-        }
-        </style>
-</head>
-
-<body>
-
-    <!-- 1 navbar -->
-    <header class="page-scrolled aos-init aos-animate" data-aos="fade-in">
-        <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-root-nav MuiIconButton-sizeSmall css-wrts35"
-            tabindex="0" type="button" title="Menu">
-            <img loading="lazy" src="./assest/img/svg/ic-hamburger.svg" alt="Hamburger">
-            <img loading="lazy" src="./assest/img/svg/ic-hamburger-white.svg" class="active" alt="Hamburger">
-            <span class="MuiTouchRipple-root css-w0pj6f"></span>
-        </button>
-        <a class="logo" title="Unique IT Solution" href="index.html">
-            <img loading="lazy" src="./assest/img/logo/logo.webp" alt="Unique IT Solution">
-            <img loading="lazy" class="mobile-logo" src="./assest/img/logo/mobile-logo.webp" alt="Unique IT Solution">
-        </a>
-        <ul>
-            <li><a title="Home" aria-current="page" class="active" href="index.html">Home</a></li>
-            <li><a title="About Us" class="" href="about.html">About Us</a></li>
-            <li class="has-submenu"><a title="Services" class="menu-expanded" href="services.html" onclick="goToServices(event)">Services<img
-                        loading="lazy" src="./assest/img/svg/arrow-down.svg" alt="Down Arrow"></a>
-                <div class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-entered css-c4sutr"
-                    style="min-height: 0px;">
-                    <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
-                        <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb">
-                            <ul class="submenu">
-                                <li><a title="Custom Software Development" class="CustomSoftwareDevelopment"
-                                        href="custom-software-development.html">Custom Software Development</a>
-                                </li>
-                                <li><a title="Work Flow Automation" class="" href="work-flow-automation.html">Work
-                                        Flow Automation</a></li>
-                                <li><a title="CRM &amp; ERP Development" class=""
-                                        href="crm-and-erp-development.html">CRM &amp; ERP Development</a></li>
-                                <li><a title="Web Development" class="" href="web-development.html">Web
-                                        Development</a></li>
-                                <li><a title="Mobile Application Development" class=""
-                                        href="mobile-application-development.html">Mobile Application
-                                        Development</a></li>
-                                <li><a title="UI/UX Design" class="" href="ui-ux-design.html">UI/UX Design</a></li>
-                                <li><a title="Hire Dedicated Developers" class=""
-                                        href="hire-dedicated-developers.html">Hire Dedicated Developers</a></li>
-                                <li><a title="IT Consulting" class="" href="it-consulting.html">IT Consulting</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li><a title="Technologies" class="" href="technologies.html">Technologies</a></li>
-            <li class="has-submenu">
-                <a title="Industries" class="menu-expanded" href="industries.html" onclick="goToIndustries(event)">Industries<img
-                        loading="lazy" src="./assest/img/svg/arrow-down.svg" alt="Down Arrow"></a>
-                
-                <div class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-entered css-c4sutr"
-                    style="min-height: 0px;">
-                    <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
-                        <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb">
-                            <ul class="submenu">
-                                <li><a title="Hospitality Industry" class=""
-                                        href="hospitality-industry.html">Hospitality Industry</a></li>
-                                <li><a title="Retail &amp; Ecommerce Solution" class=""
-                                        href="retail-and-ecommerce-solution.html">Retail &amp; Ecommerce
-                                        Solution</a></li>
-                                <li><a title="News &amp; Entertainment" class="" href="news-and-entertainment.html">News
-                                        &amp; Entertainment</a></li>
-                                <li><a title="Production &amp; Service Assurance" class=""
-                                        href="production-and-service-assurance.html">Production &amp; Service
-                                        Assurance</a></li>
-                                <li><a title="Telecommunication Media" class=""
-                                        href="telecommunication-media.html">Telecommunication Media</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ul>
-        <a href="contact-us.html">
-            <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-colorPrimary css-7dp2l8"
-                tabindex="0" type="button" title="Contact Us"><span class="text">Contact Us</span><span
-                    class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
-        <div class="sidebar-overlay"></div>
-    </header>
+<?php
+include __DIR__ . '/A_Layout/Header/header.php';
+?>
     <div class="wrapper">
         <main>
             <!-- 2 Your Challenges Our Expertise -->
@@ -163,7 +18,7 @@
                         <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v aos-init aos-animate"
                             data-aos="fade-up" data-aos-delay="200">Welcome to Unique IT Solution, your foremost partner
                             in innovative IT services. We lead with state-of-the-art solutions, setting industry
-                            benchmarks and revolutionizing business activities.</p><a href="services.html">
+                            benchmarks and revolutionizing business activities.</p><a href="services">
                             <button
                                 class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus aos-init aos-animate"
                                 tabindex="0" type="button" data-aos="fade-up" data-aos-delay="300"
@@ -268,7 +123,7 @@
                                                     and robust solutions grow with your company.</p>
                                             </div>
                                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                                    href="custom-software-development.html"><button
+                                                    href="custom-software-development"><button
                                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                                         tabindex="0" type="button" title="Discover More">Discover
                                                         More<span
@@ -298,7 +153,7 @@
                                                     high-impact activities.</p>
                                             </div>
                                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                                    href="work-flow-automation.html"><button
+                                                    href="work-flow-automation"><button
                                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                                         tabindex="0" type="button" title="Discover More">Discover
                                                         More<span
@@ -327,7 +182,7 @@
                                                     enhances customer interaction for smoother operations</p>
                                             </div>
                                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                                    href="./assest/img/svg/ic-crm-erp-development.svg"><button
+                                                    href="crm-and-erp-development"><button
                                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                                         tabindex="0" type="button" title="Discover More">Discover
                                                         More<span
@@ -357,7 +212,7 @@
                                                     purposes, enhancing the online user experience</p>
                                             </div>
                                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                                    href="web-development.html"><button
+                                                    href="web-development"><button
                                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                                         tabindex="0" type="button" title="Discover More">Discover
                                                         More<span
@@ -387,7 +242,7 @@
                                                     user experiences across platforms.</p>
                                             </div>
                                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                                    href="mobile-application-development.html"><button
+                                                    href="mobile-application-development"><button
                                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                                         tabindex="0" type="button" title="Discover More">Discover
                                                         More<span
@@ -416,7 +271,7 @@
                                                     functionality.</p>
                                             </div>
                                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                                    href="ui-ux-design.html"><button
+                                                    href="ui-ux-design"><button
                                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                                         tabindex="0" type="button" title="Discover More">Discover
                                                         More<span
@@ -444,7 +299,7 @@
                                                     hiring models to enhance your workforce effectively.</p>
                                             </div>
                                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                                    href="hire-dedicated-developers.html"><button
+                                                    href="hire-dedicated-developers"><button
                                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                                         tabindex="0" type="button" title="Discover More">Discover
                                                         More<span
@@ -475,7 +330,7 @@
                                                 </p>
                                             </div>
                                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                                    href="it-consulting.html"><button
+                                                    href="it-consulting"><button
                                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                                         tabindex="0" type="button" title="Discover More">Discover
                                                         More<span
@@ -491,7 +346,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="services.html">
+                    <a href="services">
                         <button
                             class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus aos-init aos-animate"
                             tabindex="0" type="button" title="Explore More" data-aos="fade-up">
@@ -540,7 +395,7 @@
                                                     and robust solutions grow with your company.</p>
                                             </div>
                                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                                    href="custom-software-development.html"><button
+                                                    href="custom-software-development"><button
                                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                                         tabindex="0" type="button" title="Discover More">Discover
                                                         More<span
@@ -571,7 +426,7 @@
                                                     high-impact activities.</p>
                                             </div>
                                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                                    href="work-flow-automation.html"><button
+                                                    href="work-flow-automation"><button
                                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                                         tabindex="0" type="button" title="Discover More">Discover
                                                         More<span
@@ -632,7 +487,7 @@
                                                     purposes, enhancing the online user experience</p>
                                             </div>
                                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                                    href="web-development.html"><button
+                                                    href="web-development"><button
                                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                                         tabindex="0" type="button" title="Discover More">Discover
                                                         More<span
@@ -663,7 +518,7 @@
                                                     user experiences across platforms.</p>
                                             </div>
                                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                                    href="mobile-application-development.html"><button
+                                                    href="mobile-application-development"><button
                                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                                         tabindex="0" type="button" title="Discover More">Discover
                                                         More<span
@@ -693,7 +548,7 @@
                                                     functionality.</p>
                                             </div>
                                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                                    href="ui-ux-design.html"><button
+                                                    href="ui-ux-design"><button
                                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                                         tabindex="0" type="button" title="Discover More">Discover
                                                         More<span
@@ -722,7 +577,7 @@
                                                     hiring models to enhance your workforce effectively.</p>
                                             </div>
                                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                                    href="hire-dedicated-developers.html"><button
+                                                    href="hire-dedicated-developers"><button
                                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                                         tabindex="0" type="button" title="Discover More">Discover
                                                         More<span
@@ -754,7 +609,7 @@
                                                 </p>
                                             </div>
                                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                                    href="it-consulting.html"><button
+                                                    href="it-consulting"><button
                                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                                         tabindex="0" type="button" title="Discover More">Discover
                                                         More<span
@@ -788,7 +643,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="services.html">
+                    <a href="services">
                         <button
                             class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus aos-init aos-animate"
                             tabindex="0" type="button" title="Explore More" data-aos="fade-up">
@@ -844,7 +699,7 @@
                                         <div
                                             class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root industry-card css-dde1j9">
                                             <div class="MuiCardContent-root css-1qw96cp"><a title="Hospitality Industry"
-                                                    href="hospitality-industry.html">
+                                                    href="hospitality-industry">
                                                     <p class="MuiTypography-root MuiTypography-subtitle1 css-3g41r5">
                                                         Hospitality Industry</p><button
                                                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-wrts35"
@@ -862,7 +717,7 @@
                                         <div
                                             class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root industry-card css-c6llss">
                                             <div class="MuiCardContent-root css-1qw96cp"><a
-                                                    title="News &amp; Entertainment" href="news-and-entertainment.html">
+                                                    title="News &amp; Entertainment" href="news-and-entertainment">
                                                     <p class="MuiTypography-root MuiTypography-subtitle1 css-3g41r5">
                                                         News &amp; Entertainment</p><button
                                                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-wrts35"
@@ -881,7 +736,7 @@
                                             class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root industry-card css-kikq3z">
                                             <div class="MuiCardContent-root css-1qw96cp"><a
                                                     title="Retail &amp; Ecommerce Solution"
-                                                    href="retail-and-ecommerce-solution.html">
+                                                    href="retail-and-ecommerce-solution">
                                                     <p class="MuiTypography-root MuiTypography-subtitle1 css-3g41r5">
                                                         Retail &amp; Ecommerce Solution</p><button
                                                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-wrts35"
@@ -900,7 +755,7 @@
                                             class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root industry-card css-1cdsvfk">
                                             <div class="MuiCardContent-root css-1qw96cp"><a
                                                     title="Production &amp; Service Assurance"
-                                                    href="production-and-service-assurance.html">
+                                                    href="production-and-service-assurance">
                                                     <p class="MuiTypography-root MuiTypography-subtitle1 css-3g41r5">
                                                         Production &amp; Service Assurance</p><button
                                                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-wrts35"
@@ -918,7 +773,7 @@
                                         <div
                                             class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root industry-card css-cuq6v3">
                                             <div class="MuiCardContent-root css-1qw96cp"><a
-                                                    title="Telecommunication Media" href="telecommunication-media.html">
+                                                    title="Telecommunication Media" href="telecommunication-media">
                                                     <p class="MuiTypography-root MuiTypography-subtitle1 css-3g41r5">
                                                         Telecommunication Media</p>
                                                     <button
@@ -937,7 +792,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="industries.html"><button
+                    <a href="industries"><button
                             class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus aos-init"
                             tabindex="0" type="button" title="Explore More" data-aos="fade-up"><span
                                 class="text">Explore More</span><span
@@ -976,7 +831,7 @@
                                         <div
                                             class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root industry-card css-dde1j9">
                                             <div class="MuiCardContent-root css-1qw96cp"><a title="Hospitality Industry"
-                                                    href="hospitality-industry.html">
+                                                    href="hospitality-industry">
                                                     <p class="MuiTypography-root MuiTypography-subtitle1 css-3g41r5">
                                                         Hospitality Industry</p><button
                                                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-wrts35"
@@ -994,7 +849,7 @@
                                         <div
                                             class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root industry-card css-c6llss">
                                             <div class="MuiCardContent-root css-1qw96cp"><a
-                                                    title="News &amp; Entertainment" href="news-and-entertainment.html">
+                                                    title="News &amp; Entertainment" href="news-and-entertainment">
                                                     <p class="MuiTypography-root MuiTypography-subtitle1 css-3g41r5">
                                                         News &amp; Entertainment</p><button
                                                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-wrts35"
@@ -1013,7 +868,7 @@
                                             class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root industry-card css-kikq3z">
                                             <div class="MuiCardContent-root css-1qw96cp"><a
                                                     title="Retail &amp; Ecommerce Solution"
-                                                    href="retail-and-ecommerce-solution.html">
+                                                    href="retail-and-ecommerce-solution">
                                                     <p class="MuiTypography-root MuiTypography-subtitle1 css-3g41r5">
                                                         Retail &amp; Ecommerce Solution</p><button
                                                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-wrts35"
@@ -1032,7 +887,7 @@
                                             class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root industry-card css-1cdsvfk">
                                             <div class="MuiCardContent-root css-1qw96cp"><a
                                                     title="Production &amp; Service Assurance"
-                                                    href="production-and-service-assurance.html">
+                                                    href="production-and-service-assurance">
                                                     <p class="MuiTypography-root MuiTypography-subtitle1 css-3g41r5">
                                                         Production &amp; Service Assurance</p><button
                                                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-wrts35"
@@ -1050,7 +905,7 @@
                                         <div
                                             class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root industry-card css-cuq6v3">
                                             <div class="MuiCardContent-root css-1qw96cp"><a
-                                                    title="Telecommunication Media" href="telecommunication-media.html">
+                                                    title="Telecommunication Media" href="telecommunication-media">
                                                     <p class="MuiTypography-root MuiTypography-subtitle1 css-3g41r5">
                                                         Telecommunication Media</p>
                                                     <button
@@ -1087,7 +942,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="industries.html"><button
+                    <a href="industries"><button
                             class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus aos-init"
                             tabindex="0" type="button" title="Explore More" data-aos="fade-up"><span
                                 class="text">Explore More</span><span
@@ -1110,7 +965,7 @@
                             create advanced software and mobile apps to simplify business challenges. Using the latest
                             tech, agile methods, and DevOps, we deliver cost-effective solutions to boost performance.
                             We specialize in various front-end and back-end technologies.</span><a
-                            href="technologies.html"><button
+                            href="technologies"><button
                                 class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus aos-init"
                                 tabindex="0" type="button" title="View All Technologies" data-aos="fade-up"><span
                                     class="text">View All Technologies</span><span
@@ -1339,7 +1194,7 @@
                                         <span class="MuiTypography-root MuiTypography-subtitle2 css-4s5e1">Scrum</span>
                                     </li>
                                 </ul>
-                                <a href="about.html">
+                                <a href="about-us">
                                     <button
                                         class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus aos-init"
                                         tabindex="0" type="button" title="Learn More" data-aos="fade-up"
@@ -1505,7 +1360,7 @@
                                     src="./assest/img/svg/ic-call-white.svg" alt="Call"><span
                                     class="MuiTypography-root MuiTypography-subtitle1 css-3g41r5">+1
                                     (215) 602-7044</span></a></li>
-                    </ul><a href="contact-us.html">
+                    </ul><a href="contact-us">
                         <button
                             class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedInherit MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorInherit css-bzz2as aos-init aos-animate"
                             tabindex="0" type="button" title="Request a Proposal" data-aos="fade-up"
@@ -1515,209 +1370,7 @@
             </div>
         </main>
     </div>
-        <!-- 12 footer -->
-        <footer data-aos="fade-up" class="aos-init">
-            <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
-                <div class="top">
-                    <div
-                        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 MuiGrid-spacing-sm-6 MuiGrid-spacing-lg-8 css-mb90x6">
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4 css-1oaod6a"><a
-                                class="pb-3" title="Unique IT Solution" href="index.html"><img loading="lazy"
-                                    src="./assest/img/logo/logo.webp" alt="Unique IT Solution"></a>
-                            <p class="MuiTypography-root MuiTypography-body1 company-description pb-5 css-1b7jm6v">Visit our
-                                website to communicate and connect with us. Contact us to develop unique websites</p>
-                            <ul class="contact-info">
-                                <li><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1bcpry4"
-                                        href="tel:+917874579457" title="+917874579457">
-                                        <img loading="lazy" src="./assest/img/svg/ic-call-primary.svg" alt="Call">
-                                        <span
-                                            class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">+917874579457</span>
-                                    </a>
-                                </li>
-                                <li><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1bcpry4"
-                                        href="tel:+12156027044" title="+917874579457">
-                                        <img loading="lazy" src="./assest/img/svg/ic-call-primary.svg" alt="Call"><span
-                                            class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">+1 (215)
-                                            602-7044</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1bcpry4"
-                                        href="mailto:info@theuniqueitsolution.com" title="info@theuniqueitsolution.com">
-                                        <img loading="lazy" src="./assest/img/svg/ic-email-primary.svg" alt="Email">
-                                        <span
-                                            class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">info@theuniqueitsolution.com</span></a>
-                                </li>
-                                <li>
-                                    <img loading="lazy" src="./assest/img/svg/ic-location-primary.svg" alt="Location">
-                                    <span class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">C-806, Titanium
-                                        Business Park, Divyabhaskar Press, B/h nr. Railway Under Bridge, Makarba,
-                                        Ahemedabad, Gujarat 380051</span>
-                                </li>
-                                <li>
-                                    <img loading="lazy" src="./assest/img/svg/ic-location-primary.svg" alt="Location">
-                                    <span class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">2462 Brandon Ct,
-                                        Bensalem, PA- 19020</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-sm-6 MuiGrid-grid-lg-4 css-1ksritl"><strong
-                                class="MuiTypography-root MuiTypography-subtitle1 css-3g41r5">Services</strong>
-                            <ul class="site-links">
-                                <li>
-                                    <a title="Custom Software Development"
-                                        href="custom-software-development.html">Custom Software Development
-                                    </a>
-                                </li>
-                                <li>
-                                    <a title="Work Flow Automation" href="work-flow-automation.html">Work Flow
-                                        Automation</a>
-                                </li>
-                                <li>
-                                    <a title="CRM &amp; ERP Development" href="crm-and-erp-development.html">CRM &amp;
-                                        ERP Development</a>
-                                </li>
-                                <li>
-                                    <a title="Web Development" href="web-development.html">Web Development</a>
-                                </li>
-                                <li>
-                                    <a title="Mobile Application Development"
-                                        href="mobile-application-development.html">Mobile Application Development</a>
-                                </li>
-                                <li>
-                                    <a title="UI/UX Design" href="ui-ux-design.html">UI/UX Design</a>
-                                </li>
-                                <li>
-                                    <a title="Hire Dedicated Developers" href="hire-dedicated-developers.html">Hire
-                                        Dedicated Developers</a>
-                                </li>
-                                <li>
-                                    <a title="IT Consulting" href="it-consulting.html">IT Consulting</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-sm-6 MuiGrid-grid-lg-4 css-1ksritl"><strong
-                                class="MuiTypography-root MuiTypography-subtitle1 css-3g41r5">Industries</strong>
-                            <ul class="site-links">
-                                <li>
-                                    <a title="Hospitality Industry" href="hospitality-industry.html">Hospitality
-                                        Industry</a>
-                                </li>
-                                <li>
-                                    <a title="Retail &amp; Ecommerce Solution"
-                                        href="retail-and-ecommerce-solution.html">Retail &amp; Ecommerce Solution</a>
-        
-                                </li>
-                                <li>
-                                    <a title="News &amp; Entertainment" href="news-and-entertainment.html">News &amp;
-                                        Entertainment</a>
-                                </li>
-                                <li>
-                                    <a title="Production &amp; Service Assurance"
-                                        href="production-and-service-assurance.html">Production &amp; Service
-                                        Assurance</a>
-                                </li>
-                                <li>
-                                    <a title="Telecommunication Media"
-                                        href="telecommunication-media.html">Telecommunication Media</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
-                <div class="bottom">
-                    <small class="MuiTypography-root MuiTypography-body1 css-1b7jm6v">© 2020 Unique It
-                        Solution. All rights reserved</small>
-                    <div class="social-links " style="display: flex; justify-content: flex-end;">
-                        <a href="https://www.instagram.com/unique_it_solutions?igsh=MWUzZm43aThvaXR6Ng==" target="_blank"
-                            rel="noopener noreferrer" style="text-decoration: none;">
-                            <button
-                                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall button-ins css-wrts35"
-                                tabindex="0" type="button" title="Instagram">
-                                <img loading="lazy" src="./assest/img/svg/ic-instagram.svg" alt="Instagram">
-                               
-                                <span class="MuiTouchRipple-root css-w0pj6f"></span>
-                            </button>
-                        </a>
-                        <a href="https://www.linkedin.com/company/unique-it-solution/mycompany/" target="_blank"
-                            rel="noopener noreferrer" style="text-decoration: none;">
-        
-                            <button
-                                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall button-fac css-wrts35"
-                                tabindex="0" type="button" title="LinkedIn">
-                                <img src="./assest/img/svg/ic-linkedin.svg" alt="LinkedIn" loading="lazy">
-                                
-                                <span class="MuiTouchRipple-root css-w0pj6f"></span>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    <button
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeSmall scroll-to-top-btn show css-1fw8sa6"
-        tabindex="0" type="button" title="Scroll to Top">
-        <img src="./assest/img/svg/ic-arrow-up.svg" alt="Arrow Up">
-        <span class="MuiTouchRipple-root css-w0pj6f"></span>
-    </button>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        setTimeout(() => {
-  AOS.refresh();
-}, 1000);
-
-      </script>
-     
-
-    <!-- Your custom script -->
-<script src="./assest/js/services-slider.js"></script>
-<script src="./assest/js/industries-slider.js"></script>
-<script src="./assest/js/dev-script.js"></script>
-<script src="./assest/js/dev-navbar.js"></script>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Google Tag Manager script -->
-    <script src="https://www.googletagmanager.com/gtag/js?id=G-CF5WXSGXNK"></script>             
-
-    <script>
-   document.addEventListener("DOMContentLoaded", function () {
-    const scrollBtn = document.querySelector(".scroll-to-top-btn");
-
-    function toggleScrollButton() {
-        if (window.scrollY > 200) {
-            scrollBtn.classList.add("show");
-        } else {
-            scrollBtn.classList.remove("show");
-        }
-    }
-
-    // Check once immediately on page load
-    toggleScrollButton();
-
-    // Listen to scroll event
-    window.addEventListener("scroll", toggleScrollButton);
-
-    // Scroll to top on button click
-    scrollBtn.addEventListener("click", function () {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    });
-});
-
-    </script>
-
-</body>
-
-</html>
+    
+    <?php
+include __DIR__ . '/A_Layout/Footer/footer.php';
+?>  

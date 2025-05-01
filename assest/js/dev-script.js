@@ -82,3 +82,51 @@ document.addEventListener("DOMContentLoaded", function () {
 
     counters.forEach(counter => observer.observe(counter));
 });
+
+// bottom to top
+document.addEventListener("DOMContentLoaded", function () {
+    const scrollBtn = document.querySelector(".scroll-to-top-btn");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 200) {
+            scrollBtn.classList.add("show");
+        } else {
+            scrollBtn.classList.remove("show");
+        }
+    });
+
+    scrollBtn.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+});
+
+// slider
+if (window.jQuery) {
+    $(document).ready(function () {
+        var slider = $(".slider").slick({
+            dots: false,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            autoplay: false,
+            arrows: false,
+            draggable: false,
+            swipe: false
+        });
+
+        // Custom Navigation Buttons
+        $(".prev").click(function () {
+            slider.slick("slickPrev");
+        });
+
+        $(".next").click(function () {
+            slider.slick("slickNext");
+        });
+    });
+} else {
+    console.error("jQuery failed to load!");
+}
+

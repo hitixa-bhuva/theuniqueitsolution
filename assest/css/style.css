@@ -18,7 +18,7 @@
 
 .outer-card {
   margin: 0 24px;
-  background: $background;
+  background: background;
   border-radius: 24px;
 }
 
@@ -42,7 +42,7 @@ header {
   justify-content: space-between;
   padding: 16px 40px;
   min-height: 96px;
-  background: $white;
+  background: white;
   position: fixed;
   z-index: 99;
   top: 0;
@@ -61,7 +61,7 @@ header {
   }
 
   .MuiLink-root {
-    color: $secondary-text;
+    color: secondary-text;
     font-size: 16px;
     line-height: 28px;
     font-weight: 500;
@@ -97,7 +97,7 @@ header {
           padding-right: 12px;
 
           &.menu-expanded {
-            color: $secondary-text;
+            color: secondary-text;
           }
 
           img {
@@ -114,7 +114,7 @@ header {
       position: absolute;
       box-shadow: 0px 20px 50px -12px rgba(0, 0, 0, 0.25);
       border-radius: 16px;
-      background-color: $white;
+      background-color: white;
       padding: 12px 0;
       width: 320px;
       border-radius: 16px;
@@ -125,13 +125,13 @@ header {
       li {
         a {
           @include body-2();
-          color: $primary-text;
+          color: primary-text;
           padding: 8px 24px;
           transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
           border-radius: 0;
 
           &:hover {
-            background: $primary-50;
+            background: primary-50;
           }
 
           &::after {
@@ -146,7 +146,7 @@ header {
 
       a {
         @include body-2-medium();
-        color: $secondary-text;
+        color: secondary-text;
         padding: 8px 16px;
         border-radius: 24px;
         display: block;
@@ -154,8 +154,8 @@ header {
         z-index: 1;
 
         &.active {
-          background: $primary-50;
-          color: $primary;
+          background: primary-50;
+          color: primary;
         }
 
         &:not(.active) {
@@ -163,7 +163,7 @@ header {
             content: "";
             display: block;
             position: absolute;
-            background: $primary-50;
+            background: primary-50;
             left: 50%;
             height: 100%;
             width: 100%;
@@ -234,11 +234,11 @@ header {
 
         .MuiBreadcrumbs-li {
           a {
-            color: $white;
+            color: white;
           }
 
           p {
-            color: $white;
+            color: white;
             opacity: 0.88;
           }
         }
@@ -356,10 +356,10 @@ header {
     z-index: 1;
 
     h2 {
-      color: $white;
+      color: white;
 
       span {
-        color: $primary;
+        color: primary;
       }
     }
 
@@ -393,7 +393,7 @@ header {
 .service-details-content {
   > p {
     padding-bottom: 80px;
-    color: $secondary-text;
+    color: secondary-text;
   }
 }
 
@@ -412,11 +412,11 @@ header {
   }
 
   h3 {
-    color: $primary-text;
+    color: primary-text;
   }
 
   p {
-    color: $secondary-text;
+    color: secondary-text;
   }
 }
 
@@ -424,7 +424,7 @@ header {
 --------------------------------------------------------------------------------------------------------*/
 .counter {
   border-radius: 24px;
-  background: $primary;
+  background: primary;
   padding: 60px 0;
 
   ul {
@@ -441,7 +441,7 @@ header {
 
       span {
         @include heading-2();
-        color: $white;
+        color: white;
         display: block;
         text-align: center;
         padding-bottom: 8px;
@@ -450,7 +450,7 @@ header {
       p {
         font-weight: 500;
         text-align: center;
-        color: $white;
+        color: white;
         opacity: 0.8;
       }
     }
@@ -537,11 +537,11 @@ header {
     padding-right: 140px;
 
     h3 {
-      color: $primary-text;
+      color: primary-text;
     }
 
     p {
-      color: $secondary-text;
+      color: secondary-text;
     }
   }
 
@@ -583,7 +583,7 @@ header {
 --------------------------------------------------------------------------------------------------------*/
 .MuiCard-root.service-card {
   height: 100%;
-  border: 1px solid $light-border;
+  border: 1px solid light-border;
   display: flex;
   flex-direction: column;
   transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -616,7 +616,7 @@ header {
       }
 
       &.blue {
-        background-color: $primary-50;
+        background-color: primary-50;
       }
 
       &.pink {
@@ -636,12 +636,12 @@ header {
 
     h6 {
       font-weight: 700;
-      color: $primary-text;
+      color: primary-text;
       padding-bottom: 12px;
     }
 
     p {
-      color: $secondary-text;
+      color: secondary-text;
     }
   }
 
@@ -730,7 +730,7 @@ header {
     padding: 0;
 
     p {
-      color: $white;
+      color: white;
     }
 
     a {
@@ -824,7 +824,7 @@ header {
   }
 
   h4 {
-    color: $white;
+    color: white;
     text-align: center;
   }
 
@@ -848,14 +848,14 @@ header {
   h3 {
     max-width: 800px;
     text-align: center;
-    color: $primary-text;
+    color: primary-text;
     margin: 0 auto;
   }
 
   p {
     max-width: 800px;
     text-align: center;
-    color: $secondary-text;
+    color: secondary-text;
     margin: 0 auto;
   }
 
@@ -873,8 +873,8 @@ header {
             width: 1px;
             top: 2px;
             bottom: -2px;
-            background: $primary;
-            background: $dark-border;
+            background: primary;
+            background: dark-border;
             z-index: 0;
           }
         }
@@ -888,12 +888,12 @@ header {
         p {
           @include subtitle-3();
           text-transform: uppercase;
-          color: $primary;
+          color: primary;
         }
 
         span {
           font-weight: 600;
-          color: $primary-text;
+          color: primary-text;
           display: block;
         }
 
@@ -904,9 +904,9 @@ header {
           height: 10px;
           width: 10px;
           border-radius: 24px;
-          border: 4px solid $background;
+          border: 4px solid background;
           top: 2px;
-          background: $primary;
+          background: primary;
           z-index: 1;
         }
       }
@@ -980,12 +980,12 @@ header {
 --------------------------------------------------------------------------------------------------------*/
 .why-choose-us {
   h3 {
-    color: $primary-text;
+    color: primary-text;
     text-align: center;
   }
 
   p {
-    color: $secondary-text;
+    color: secondary-text;
     margin: 0 auto;
     text-align: center;
   }
@@ -1003,16 +1003,16 @@ header {
       right: 0;
       bottom: 0;
       top: 0;
-      border: 1px solid $primary-50;
+      border: 1px solid primary-50;
     }
   }
 
   .MuiCard-root {
-    background: $primary-50;
+    background: primary-50;
     height: 100%;
     border-radius: 0;
-    border-bottom: 1px solid $primary-150;
-    border-right: 1px solid $primary-150;
+    border-bottom: 1px solid primary-150;
+    border-right: 1px solid primary-150;
 
     .MuiCardContent-root {
       padding: 32px;
@@ -1025,12 +1025,12 @@ header {
       }
 
       p {
-        color: $primary-text;
+        color: primary-text;
         text-align: left;
       }
 
       span {
-        color: $secondary-text;
+        color: secondary-text;
       }
     }
   }
@@ -1043,7 +1043,7 @@ header {
   overflow: hidden;
 
   h3 {
-    color: $primary-text;
+    color: primary-text;
     text-align: center;
   }
 
@@ -1051,7 +1051,7 @@ header {
     max-width: 800px;
     text-align: center;
     margin: 0 auto 40px;
-    color: $secondary-text;
+    color: secondary-text;
   }
 
   ul {
@@ -1066,7 +1066,7 @@ header {
     a {
       text-decoration: none;
       @include body-3-medium();
-      color: $primary;
+      color: primary;
       padding: 0 12px 0 24px;
       margin-bottom: 12px;
       display: block;
@@ -1079,7 +1079,7 @@ header {
         height: 4px;
         width: 4px;
         border-radius: 10px;
-        background: $primary;
+        background: primary;
         left: 12px;
         top: 9px;
       }
@@ -1132,11 +1132,11 @@ header {
     padding-top: 90px;
 
     h3 {
-      color: $primary-text;
+      color: primary-text;
     }
 
     p {
-      color: $secondary-text;
+      color: secondary-text;
     }
   }
 
@@ -1188,7 +1188,7 @@ header {
 --------------------------------------------------------------------------------------------------------*/
 .MuiCard-root {
   &.testimonial-card {
-    background: $primary-50;
+    background: primary-50;
     height: 100%;
 
     .MuiCardContent-root {
@@ -1206,7 +1206,7 @@ header {
 
       p {
         font-weight: 600;
-        color: $primary-text;
+        color: primary-text;
         padding-bottom: 24px;
       }
 
@@ -1219,13 +1219,13 @@ header {
         span {
           display: block;
           font-weight: 600;
-          color: $primary;
+          color: primary;
         }
 
         small {
           display: block;
           font-weight: 400;
-          color: $secondary-text;
+          color: secondary-text;
         }
 
         img {
@@ -1255,11 +1255,11 @@ header {
   }
 
   h3 {
-    color: $primary-text;
+    color: primary-text;
   }
 
   p {
-    color: $secondary-text;
+    color: secondary-text;
   }
 
   ul {
@@ -1281,7 +1281,7 @@ header {
       }
 
       span {
-        color: $secondary-text;
+        color: secondary-text;
       }
     }
   }
@@ -1308,7 +1308,7 @@ header {
 --------------------------------------------------------------------------------------------------------*/
 .request-proposal {
   border-radius: 24px;
-  background: $primary;
+  background: primary;
   padding: 80px 60px 60px;
   display: flex;
   flex-direction: column;
@@ -1318,7 +1318,7 @@ header {
   overflow: hidden;
 
   h3 {
-    color: $white;
+    color: white;
     max-width: 962px;
     text-align: center;
   }
@@ -1347,7 +1347,7 @@ header {
       a {
         display: flex;
         gap: 8px;
-        color: $white;
+        color: white;
 
         &:hover {
           text-decoration: underline;
@@ -1361,7 +1361,7 @@ header {
         }
 
         span {
-          color: $white;
+          color: white;
           padding-bottom: 0;
         }
       }
@@ -1372,21 +1372,21 @@ header {
     min-width: 248px;
 
     &::after {
-      background: $primary;
+      background: primary;
       width: calc(100% - 4px);
       height: calc(100% - 4px);
     }
 
     .text {
-      color: $primary;
+      color: primary;
       transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     &:hover {
-      background-color: $white;
+      background-color: white;
 
       .text {
-        color: $white;
+        color: white;
       }
     }
   }
@@ -1419,11 +1419,11 @@ footer {
 
   .company-description {
     @include body-3();
-    color: $secondary-text;
+    color: secondary-text;
   }
 
   strong {
-    color: $primary-text;
+    color: primary-text;
     padding-bottom: 6px;
   }
 
@@ -1431,11 +1431,11 @@ footer {
     a {
       padding: 6px 0;
       @include body-2();
-      color: $secondary-text;
+      color: secondary-text;
       transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
 
       &:hover {
-        color: $primary;
+        color: primary;
         text-decoration: underline;
       }
     }
@@ -1457,27 +1457,27 @@ footer {
         display: flex;
         gap: 12px;
         margin-bottom: 16px;
-        color: $secondary-text;
+        color: secondary-text;
         transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover {
-          color: $primary;
+          color: primary;
           text-decoration: underline;
 
           span {
-            color: $primary;
+            color: primary;
           }
         }
       }
 
       span {
-        color: $secondary-text;
+        color: secondary-text;
       }
     }
   }
 
   hr {
-    border: 1px solid $light-border;
+    border: 1px solid light-border;
     margin: 48px 0 0;
   }
 
@@ -1489,7 +1489,7 @@ footer {
 
     small {
       @include body-3();
-      color: $tertiary-text;
+      color: tertiary-text;
     }
 
     .MuiIconButton-root {
@@ -1526,7 +1526,7 @@ footer {
     li {
       min-height: 228px;
       border-radius: 24px;
-      background: $primary;
+      background: primary;
       padding: 0 24px;
       display: flex;
       align-items: center;
@@ -1535,7 +1535,7 @@ footer {
 
       span {
         @include heading-3();
-        color: $white;
+        color: white;
         display: block;
         padding-bottom: 16px;
       }
@@ -1575,7 +1575,7 @@ footer {
     padding-left: 48px;
 
     p {
-      color: $secondary-text;
+      color: secondary-text;
     }
 
     .bullet-point {
@@ -1602,7 +1602,7 @@ footer {
   &.it-consulting-card {
     padding: 32px;
     border-radius: 24px;
-    border: 1px solid $light-border;
+    border: 1px solid light-border;
     position: relative;
     height: 100%;
     transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1625,20 +1625,20 @@ footer {
 
       h6 {
         font-weight: 700;
-        color: $primary-text;
+        color: primary-text;
         padding-bottom: 16px;
       }
 
       p {
-        color: $secondary-text;
+        color: secondary-text;
       }
 
       span {
-        color: $white;
-        text-shadow: -2px -2px 0 $light-border, 2px -2px 0 $light-border,
-          -2px 2px 0 $light-border, 2px 2px 0 $light-border,
-          0 -2px 0 $light-border, 0 2px 0 $light-border, -2px 0 0 $light-border,
-          2px 0 0 $light-border;
+        color: white;
+        text-shadow: -2px -2px 0 light-border, 2px -2px 0 light-border,
+          -2px 2px 0 light-border, 2px 2px 0 light-border,
+          0 -2px 0 light-border, 0 2px 0 light-border, -2px 0 0 light-border,
+          2px 0 0 light-border;
         position: absolute;
         right: 32px;
         top: 32px;
@@ -1651,13 +1651,13 @@ footer {
 --------------------------------------------------------------------------------------------------------*/
 .consider-hiring-developer {
   border-radius: 24px;
-  background: $primary;
+  background: primary;
   padding: 60px;
   position: relative;
   overflow: hidden;
 
   h5 {
-    color: $white;
+    color: white;
     max-width: 1024px;
     margin: 0 auto;
   }
@@ -1704,7 +1704,7 @@ footer {
       }
 
       p {
-        color: $secondary-text;
+        color: secondary-text;
       }
     }
   }
@@ -1720,7 +1720,7 @@ footer {
     height: 100%;
     display: flex;
     flex-direction: column;
-    border: 1px solid $light-border;
+    border: 1px solid light-border;
     transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
@@ -1733,7 +1733,7 @@ footer {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      border-bottom: 1px solid $light-border;
+      border-bottom: 1px solid light-border;
       padding: 40px 40px 32px;
 
       h6 {
@@ -1786,13 +1786,13 @@ footer {
           }
 
           p {
-            color: $primary-text;
+            color: primary-text;
           }
         }
 
         &:not(.title) {
           @include body-2();
-          color: $secondary-text;
+          color: secondary-text;
           padding-left: 37px;
 
           &::after {
@@ -1803,7 +1803,7 @@ footer {
             width: 6px;
             left: 15px;
             top: 10px;
-            background: $tertiary-text;
+            background: tertiary-text;
             border-radius: 10px;
           }
         }
@@ -1843,7 +1843,7 @@ footer {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
-    color: $white;
+    color: white;
     padding-bottom: 40px;
     position: relative;
     z-index: 1;
@@ -1903,7 +1903,7 @@ footer {
 
   > p {
     padding-bottom: 80px;
-    color: $primary-text;
+    color: primary-text;
   }
 
   .MuiChip-root {
@@ -1912,7 +1912,7 @@ footer {
   }
 
   .MuiCard-root {
-    border: 1px solid $light-border;
+    border: 1px solid light-border;
     height: 100%;
     transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -1930,17 +1930,17 @@ footer {
           -4px 4px 0px #0487ff, 4px 4px 0px #0487ff, 0px 4px 0px #0487ff,
           0px -4px 0px #0487ff, 4px 0px 0px #0487ff, -4px 0px 0px #0487ff;
         opacity: 0.16;
-        color: $white;
+        color: white;
       }
 
       h6 {
         font-weight: 700;
         padding-bottom: 12px;
-        color: $primary-text;
+        color: primary-text;
       }
 
       span {
-        color: $secondary-text;
+        color: secondary-text;
         display: block;
       }
 
@@ -1981,7 +1981,7 @@ footer {
   padding-bottom: 100px;
 
   .subtext {
-    color: $secondary-text;
+    color: secondary-text;
   }
 
   .MuiContainer-root {
@@ -2002,11 +2002,11 @@ footer {
     height: 100%;
 
     h5 {
-      color: $primary-text;
+      color: primary-text;
     }
 
     p {
-      color: $secondary-text;
+      color: secondary-text;
     }
   }
 
@@ -2025,7 +2025,7 @@ footer {
       border-radius: 12px;
       display: flex;
       gap: 12px;
-      background: $white;
+      background: white;
       transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
 
       &:hover {
@@ -2042,7 +2042,7 @@ footer {
       }
 
       p {
-        color: $secondary-text;
+        color: secondary-text;
       }
     }
   }
@@ -2053,7 +2053,7 @@ footer {
 .solution-impact {
   border-radius: 24px;
   padding: 64px 80px;
-  background: $primary-50;
+  background: primary-50;
   position: relative;
   overflow: hidden;
 
@@ -2072,7 +2072,7 @@ footer {
   }
 
   h4 {
-    color: $primary;
+    color: primary;
     padding-bottom: 32px;
   }
 
@@ -2093,7 +2093,7 @@ footer {
       }
 
       p {
-        color: $secondary-text;
+        color: secondary-text;
       }
     }
   }
@@ -2103,7 +2103,7 @@ footer {
 --------------------------------------------------------------------------------------------------------*/
 .contact-us-form-wrapper {
   .contact-info {
-    background: $primary-50;
+    background: primary-50;
     border-radius: 24px;
     padding: 40px 32px 0;
     position: relative;
@@ -2141,7 +2141,7 @@ footer {
         margin-bottom: 24px;
 
         span {
-          color: $secondary-text;
+          color: secondary-text;
         }
 
         img {
@@ -2158,7 +2158,7 @@ footer {
             text-decoration: underline;
 
             span {
-              color: $primary;
+              color: primary;
             }
           }
         }
@@ -2222,7 +2222,7 @@ footer {
       }
 
       p {
-        color: $primary-text;
+        color: primary-text;
       }
     }
 
@@ -2237,29 +2237,6 @@ footer {
   }
 }
 
-/* site loader
---------------------------------------------------------------------------------------------------------*/
-.loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.88);
-  z-index: 999;
-  backdrop-filter: blur(8px);
-}
-
-.loader img {
-  display: block;
-  height: 48px;
-  margin-bottom: 40px;
-}
 
 /* portfolio projects
 --------------------------------------------------------------------------------------------------------*/
@@ -2321,13 +2298,13 @@ footer {
 .file-upload {
   width: 100%;
   padding: 24px;
-  background: $primary-50;
-  border: 2px dashed $primary-200;
+  background: primary-50;
+  border: 2px dashed primary-200;
   border-radius: 8px;
   position: relative;
 
   &.dragging {
-    border-color: $primary;
+    border-color: primary;
   }
 
   > img {
@@ -2340,13 +2317,13 @@ footer {
 
   p {
     @include subtitle-3();
-    color: $primary-text;
+    color: primary-text;
     text-align: center;
     padding-bottom: 4px;
   }
 
   label {
-    color: $primary;
+    color: primary;
     cursor: pointer;
   }
 
@@ -2354,7 +2331,7 @@ footer {
     display: block;
     text-align: center;
     @include body-3();
-    color: $secondary-text;
+    color: secondary-text;
   }
 
   input {
@@ -2370,7 +2347,7 @@ footer {
     position: absolute;
     top: 12px;
     right: 12px;
-    background: $white;
+    background: white;
     padding: 6px;
 
     img {
@@ -2470,7 +2447,7 @@ footer {
       top: 0;
       left: -280px;
       bottom: 0;
-      background: $white;
+      background: white;
       display: block;
       width: 280px;
       z-index: 1;
@@ -2486,8 +2463,8 @@ footer {
         &.has-submenu {
           a {
             &.menu-expanded {
-              background: $primary-50;
-              color: $primary;
+              background: primary-50;
+              color: primary;
 
               img {
                 transform: rotate(180deg);
@@ -2525,7 +2502,7 @@ footer {
                 height: 4px;
                 width: 4px;
                 border-radius: 10px;
-                background: $tertiary-text;
+                background: tertiary-text;
                 left: 18px;
                 top: 20px;
                 position: absolute;
@@ -2533,17 +2510,17 @@ footer {
               }
 
               &:hover {
-                color: $primary;
+                color: primary;
                 background: transparent;
 
                 &::before {
-                  background: $primary;
+                  background: primary;
                 }
               }
 
               &.active {
                 &::before {
-                  background: $primary;
+                  background: primary;
                 }
               }
             }
@@ -2969,7 +2946,7 @@ footer {
       overflow: visible;
 
       > .MuiButtonBase-root {
-        border: 2px solid $light-border;
+        border: 2px solid light-border;
         border-radius: 4px;
 
         &.Mui-disabled {
@@ -3025,7 +3002,7 @@ footer {
       flex-wrap: wrap;
 
       li {
-        // max-width: 50%;
+         max-width: 50%;
         flex-basis: 50%;
         margin-top: 24px;
         margin-bottom: 24px;
