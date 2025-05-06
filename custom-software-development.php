@@ -10,33 +10,34 @@ include __DIR__ . '/A_Layout/Header/header.php';
 
     <div class="wrapper">
         <main>
-            <section class="banner banner-development  service-details-banner bg-light-purple aos-init aos-animate" data-aos="fade-in">
+            <section class="banner banner-development  service-details-banner bg-light-purple">
                 <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
                     <div class="banner-content">
                         <div class="left">
-                            <nav class="MuiTypography-root MuiTypography-body1 MuiBreadcrumbs-root css-zinzkl aos-init aos-animate"
-                                data-aos="fade-up">
-                                <ol class="MuiBreadcrumbs-ol css-nhb8h9">
-                                    <li class="MuiBreadcrumbs-li"><a title="home" href="/home">Home</a></li>
+                            <nav class="MuiTypography-root MuiTypography-body1 MuiBreadcrumbs-root css-zinzkl"
+                               >
+                                <ol class="MuiBreadcrumbs-ol css-nhb8h9" id="hero-title">
+                                    <li class="MuiBreadcrumbs-li" ><a title="home" href="/home">Home</a></li>
                                     <li aria-hidden="true" class="MuiBreadcrumbs-separator css-3mf706"><img
                                             loading="lazy"
                                             src="./assest/img/svg/ic-caret-right.svg"
                                             alt="Caret Right"></li>
                                     <li class="MuiBreadcrumbs-li">
-                                        <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v">Custom
+                                        <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v" >Custom
                                             Software Development</p>
                                     </li>
                                 </ol>
                             </nav>
-                            <h2 class="MuiTypography-root MuiTypography-h2 css-17zkhbb aos-init aos-animate"
-                                data-aos="fade-up" data-aos-delay="100">Custom Software Development</h2><a
-                                href="contact-us"><button
-                                    class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus aos-init aos-animate"
-                                    tabindex="0" type="button" data-aos="fade-up" data-aos-delay="200"
+                            <h2 class="MuiTypography-root MuiTypography-h2 css-17zkhbb" id="hero-text"
+                                >Custom Software Development</h2><a
+                                href="contact-us">
+                                <button id="hero-btn"
+                                    class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus aos-init "
+                                    tabindex="0" type="button" 
                                     title="Get A Quote"><span class="text">Get A Quote</span><span
                                         class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
                         </div>
-                        <div class="right aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
+                        <div class="right" ><img loading="lazy" id="hero-img"
                                 src="./assest/img/hero/custom-software-development.svg"
                                 alt="Custom Software Development" width="483" height="473"></div>
                     </div>
@@ -44,7 +45,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
             </section>
             <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
                 <section class="service-details-content">
-                    <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v aos-init aos-animate"
+                    <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v aos-init "
                         data-aos="fade-up">Before designing your software, our business development team will
                         collaborate with you to understand your exact requirements. Based on your present problems,
                         our expert team will offer you personalized solutions to help your business grow. We offer
@@ -57,17 +58,17 @@ include __DIR__ . '/A_Layout/Header/header.php';
 
                     <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
-                            <div class="image-wrapper aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
+                            <div class="image-wrapper aos-init " data-aos="fade-up"><img loading="lazy"
                                     src="./assest/img/custom-software-development/custom-software.svg"
                                     alt="How We Build Custom Software"></div>
                         </div>
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
                             <div class="content">
-                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init aos-animate"
+                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init "
                                     data-aos="fade-up">What is Custom Software?</h5>
-                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init "
                                     data-aos="fade-up" data-aos-delay="100">Custom software development refers to the process of creating a tailored software solution designed for a specific business. This software is usually more aligned with the workflows, processes, and goals of the company than off-the-shelf systems. It targets particular problems and requirements that generic software may not adequately address.<br><br> Some features of these software are:</p>
-                                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 css-isbt42 aos-init aos-animate"
+                                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 css-isbt42 aos-init "
                                     data-aos="fade-up" data-aos-delay="200">
                                     <div
                                         class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1pdy5ci">
@@ -140,9 +141,9 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
                             <div class="content">
-                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init aos-animate"
+                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init "
                                     data-aos="fade-up">How We Develop Custom Software</h5>
-                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init "
                                     data-aos="fade-up" data-aos-delay="100">Firstly, we gather your detailed
                                     requirements from your team to better understand the needs. Thereafter, our
                                     experts design a custom software solution that suits your unique processes.
@@ -152,7 +153,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                             </div>
                         </div>
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
-                            <div class="image-wrapper aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
+                            <div class="image-wrapper aos-init " data-aos="fade-up"><img loading="lazy"
                                     src="./assest/img/custom-software-development/build-custom-software.svg"
                                     alt="How We Build Custom Software"></div>
                         </div>
@@ -161,15 +162,15 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     <!-- Impact of Custom Software -->
                     <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
-                            <div class="image-wrapper aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
+                            <div class="image-wrapper aos-init " data-aos="fade-up"><img loading="lazy"
                                     src="./assest/img/custom-software-development/power-business-growth.svg"
                                     alt="Impact of Custom Software"></div>
                         </div>
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
                             <div class="content">
-                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init aos-animate"
+                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init "
                                     data-aos="fade-up">Impact of Custom Software</h5>
-                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init "
                                     data-aos="fade-up" data-aos-delay="100">Custom-built applications enhance
                                     efficiency through fit-to-purpose workflows, which reduce manual workloads and
                                     increase productivity. In addition, these automated tasks minimize human error,
@@ -195,7 +196,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-7 css-hhx1lr">
                             <h3 class="MuiTypography-root MuiTypography-h3 pb-5 css-8ipg8 aos-init" data-aos="fade-up"
                                 data-aos-delay="100">FAQs</h3>
-                            <div data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">
+                            <div data-aos="fade-up" data-aos-delay="200" class="aos-init ">
                                 <div class="accordion" id="faqAccordion">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
@@ -302,7 +303,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                     (215) 602-7044</span></a></li>
                     </ul><a href="contact-us">
                         <button
-                            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedInherit MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorInherit css-bzz2as aos-init aos-animate"
+                            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedInherit MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorInherit css-bzz2as aos-init"
                             tabindex="0" type="button" title="Request a Proposal" data-aos="fade-up"
                             data-aos-delay="400"><span class="text">Request a Proposal</span><span
                                 class="MuiTouchRipple-root css-w0pj6f"></span></button></a>

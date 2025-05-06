@@ -10,13 +10,13 @@ include __DIR__ . '/A_Layout/Header/header.php';
 
     <div class="wrapper">
         <main>
-            <section class="banner service-details-banner bg-light-blue aos-init aos-animate" data-aos="fade-in">
+            <section class="banner service-details-banner bg-light-blue" >
                 <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
                     <div class="banner-content">
                         <div class="left">
-                            <nav class="MuiTypography-root MuiTypography-body1 MuiBreadcrumbs-root css-zinzkl aos-init aos-animate"
-                                data-aos="fade-up">
-                                <ol class="MuiBreadcrumbs-ol css-nhb8h9">
+                            <nav class="MuiTypography-root MuiTypography-body1 MuiBreadcrumbs-root css-zinzkl"
+                                >
+                                <ol class="MuiBreadcrumbs-ol css-nhb8h9" id="hero-title">
                                     <li class="MuiBreadcrumbs-li"><a title="home" href="/home">Home</a></li>
                                     <li aria-hidden="true" class="MuiBreadcrumbs-separator css-3mf706"><img
                                             loading="lazy"
@@ -27,15 +27,15 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                     </li>
                                 </ol>
                             </nav>
-                            <h2 class="MuiTypography-root MuiTypography-h2 css-17zkhbb aos-init aos-animate"
-                                data-aos="fade-up" data-aos-delay="100">UI/UX Design</h2><a
-                                href="contact-us"><button
-                                    class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus aos-init aos-animate"
-                                    tabindex="0" type="button" data-aos="fade-up" data-aos-delay="200"
+                            <h2 class="MuiTypography-root MuiTypography-h2 css-17zkhbb" id="hero-text"
+                                 data-aos-delay="100">UI/UX Design</h2><a
+                                href="contact-us"><button id="hero-btn" 
+                                    class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus"
+                                    tabindex="0" type="button"  data-aos-delay="200"
                                     title="Get A Quote"><span class="text">Get A Quote</span><span
                                         class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
                         </div>
-                        <div class="right aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
+                        <div class="right" ><img loading="lazy" id="hero-img"
                                 src="./assest/img/ui-ux-design/ui-ux-design.0a5cf778383329ffc390337ec2ae21b2.svg"
                                 alt="UI/UX Design" width="483" height="473"></div>
                     </div>
@@ -43,22 +43,22 @@ include __DIR__ . '/A_Layout/Header/header.php';
             </section>
             <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
                 <section class="service-details-content">
-                    <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v aos-init aos-animate"
+                    <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v aos-init"
                         data-aos="fade-up">Firstly, we begin our UI/UX design process by conducting in-depth user research into demographics, behaviors, and requirements. This follows with intuitive user flows along with wireframes, which are prioritized for functionality purposes. Additionally, we create high-fidelity mockups of designs that polish the visual side of the applications, aiming at making the user experience more seamless and engaging. Iterative testing, as well as user feedback, enhances continuous improvement, hence producing refined UI/UX that aligns well with all your business objectives as well as those of the users.</p>
-                    <h3 class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter pb-7 css-1gpftb1 aos-init aos-animate"
+                    <h3 class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter pb-7 css-1gpftb1 aos-init"
                         data-aos="fade-up" data-aos-delay="100">UI/UX Design Process</h3>
                     <!-- User-Centered Design Approach -->
                     <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details  User-Centered css-1tz8m30">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw">
-                            <div class="image-wrapper aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
+                            <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
                                     src="./assest/img/ui-ux-design/user-centered-design.171cc4959371a784633a364b142bb81f.svg"
                                     alt="Custom Software"></div>
                         </div>
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw">
                             <div class="content">
-                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init aos-animate"
+                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
                                     data-aos="fade-up">User-Centered Design Approach</h5>
-                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init"
                                     data-aos="fade-up" data-aos-delay="100">We analyze interviews, surveys, plus analytical data to obtain insights on user demographics, behaviors, and requirements, thus guiding design decisions. The findings inform specific personas development for each design decision made. These maps help determine how an app should be able to meet every need a customer has while optimizing their user experience.</p>
                             </div>
                         </div>
@@ -68,14 +68,14 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30 Wireframing-Prototyping">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
                             <div class="content">
-                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init aos-animate"
+                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
                                     data-aos="fade-up">Wireframing and Prototyping</h5>
-                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init"
                                     data-aos="fade-up" data-aos-delay="100">For mobile and web app development, we begin with brainstorming or sketching to outline the structure and features. Then, we create detailed wireframes for layouts and navigation, and build an interactive prototype to test usability and gather feedback. This process helps refine the design before actual development starts.</p>
                             </div>
                         </div>
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
-                            <div class="image-wrapper aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
+                            <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
                                     src="./assest/img/ui-ux-design/prototyping.d5ad8ff4d384e36073fc316e4155c13e.svg"
                                     alt="How We Build Custom Software"></div>
                         </div>
@@ -84,15 +84,15 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     <!-- Visual Design and Brand Integration -->
                     <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw">
-                            <div class="image-wrapper aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
+                            <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
                                     src="./assest/img/ui-ux-design/visual-design.39e0033feef75704fb6ec93e5a7f9420.svg"
                                     alt="Visual Design and Brand Integration"></div>
                         </div>
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw">
                             <div class="content">
-                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init aos-animate"
+                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
                                     data-aos="fade-up">Visual Design and Brand Integration</h5>
-                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init"
                                     data-aos="fade-up" data-aos-delay="100">Develop a unified system of colours, typography, and other visuals that reflect your brand identity. Using fidelity mockups produced from wireframes ensures uniformity in UI representation and clarity throughout interfaces that display content. It is also recommended that priority be given to improved accessibility elements such as contrast ratios and font sizes to enhance usability.</p>
                             </div>
                         </div>
@@ -102,14 +102,14 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30 Usability-Testing">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
                             <div class="content">
-                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init aos-animate"
+                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
                                     data-aos="fade-up">Usability Testing and Iterative Refinement</h5>
-                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init"
                                     data-aos="fade-up" data-aos-delay="100">Test the app with real users to check usability and navigation. Use their feedback to make design improvements. Continue to enhance the UI/UX through regular updates based on analytics and user data.</p>
                             </div>
                         </div>
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
-                            <div class="image-wrapper aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
+                            <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
                                     src="./assest/img/ui-ux-design/usability-testing.5a144f46c2b705ac9394bdde23997c4a.svg"
                                     alt="How We Build Custom Software"></div>
                         </div>
@@ -129,7 +129,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-7 css-hhx1lr">
                             <h3 class="MuiTypography-root MuiTypography-h3 pb-5 css-8ipg8 aos-init" data-aos="fade-up"
                                 data-aos-delay="100">FAQs</h3>
-                            <div data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">
+                            <div data-aos="fade-up" data-aos-delay="200" class="aos-init">
                                 <div class="accordion" id="faqAccordion">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
@@ -237,7 +237,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                     (215) 602-7044</span></a></li>
                     </ul><a href="contact-us">
                         <button
-                            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedInherit MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorInherit css-bzz2as aos-init aos-animate"
+                            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedInherit MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorInherit css-bzz2as aos-init"
                             tabindex="0" type="button" title="Request a Proposal" data-aos="fade-up"
                             data-aos-delay="400"><span class="text">Request a Proposal</span><span
                                 class="MuiTouchRipple-root css-w0pj6f"></span></button></a>

@@ -10,13 +10,13 @@ include __DIR__ . '/A_Layout/Header/header.php';
 
     <div class="wrapper">
         <main>
-            <section class="banner service-details-banner bg-light-purple aos-init aos-animate" data-aos="fade-in">
+            <section class="banner service-details-banner bg-light-purple " >
                 <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
                     <div class="banner-content">
                         <div class="left">
-                            <nav class="MuiTypography-root MuiTypography-body1 MuiBreadcrumbs-root css-zinzkl aos-init aos-animate"
-                                data-aos="fade-up">
-                                <ol class="MuiBreadcrumbs-ol css-nhb8h9">
+                            <nav class="MuiTypography-root MuiTypography-body1 MuiBreadcrumbs-root css-zinzkl "
+                                >
+                                <ol class="MuiBreadcrumbs-ol css-nhb8h9" id="hero-title">
                                     <li class="MuiBreadcrumbs-li"><a title="home" href="/home">Home</a></li>
                                     <li aria-hidden="true" class="MuiBreadcrumbs-separator css-3mf706"><img
                                             loading="lazy" src="./assest/img/svg/ic-caret-right.svg" alt="Caret Right"></li>
@@ -26,40 +26,40 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                     </li>
                                 </ol>
                             </nav>
-                            <h2 class="MuiTypography-root MuiTypography-h2 css-17zkhbb aos-init aos-animate"
-                                data-aos="fade-up" data-aos-delay="100">Hiring a Dedicated Developer</h2><a
-                                href="contact-us"><button
-                                    class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus aos-init aos-animate"
-                                    tabindex="0" type="button" data-aos="fade-up" data-aos-delay="200"
+                            <h2 class="MuiTypography-root MuiTypography-h2 css-17zkhbb " id="hero-text"
+                                >Hiring a Dedicated Developer</h2><a
+                                href="contact-us"><button id="hero-btn"
+                                    class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus "
+                                    tabindex="0" type="button" 
                                     title="Get A Quote"><span class="text">Get A Quote</span><span
                                         class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
                         </div>
-                        <div class="right aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
+                        <div class="right " ><img loading="lazy" id="hero-img"
                                 src="./assest/img/hire-dedicated-developers/dedicated-developer.a31b1bf35b253bd9c54aeecb16731f36.svg"
                                 alt="Web Development" width="483" height="473"></div>
                     </div>
                 </div>
             </section>
             <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
-                <section class="consider-hiring-developer mb-9 aos-init aos-animate" data-aos="fade-in">
-                    <img src="./assest/img/svg/oval-left..svg" alt="Oval" class="left aos-init aos-animate" data-aos="fade-in"
-                        style="width: 18%;">
-                    <img src="./assest/img/svg/oval-right.svg" alt="Oval" class="right aos-init aos-animate" data-aos="fade-in"
-                        style="width: 18%;">
-                    <h5 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter pb-4 css-4mcfl aos-init aos-animate"
+                <section class="consider-hiring-developer mb-9 aos-init " data-aos="fade-in">
+                    <img src="./assest/img/svg/oval-left..svg" alt="Oval" class="left aos-init " data-aos="fade-in"
+                        style="width: 17%;">
+                    <img src="./assest/img/svg/oval-right.svg" alt="Oval" class="right aos-init " data-aos="fade-in"
+                        style="width: 17%;">
+                    <h5 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter pb-4 css-4mcfl aos-init "
                         data-aos="fade-up">Are you thinking about hiring a dedicated developer who can improve your
                         team’s skills and boost your projects’ success?</h5>
-                    <p class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-3sq53o aos-init aos-animate"
+                    <p class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-3sq53o aos-init "
                         data-aos="fade-up" data-aos-delay="100">Understanding the various pricing models—hourly versus
                         monthly—can help you make the right choice.</p>
                 </section>
             </div>
             <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
                 <section class="benefits-of-hiring mb-9">
-                    <h4 class="MuiTypography-root MuiTypography-h4 MuiTypography-alignCenter pb-6 css-64t9a5 aos-init aos-animate"
+                    <h4 class="MuiTypography-root MuiTypography-h4 MuiTypography-alignCenter pb-6 css-64t9a5 aos-init "
                         data-aos="fade-up">Importance of Hiring a Truly Dedicated and Skilled Developer</h4>
                     <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 MuiGrid-spacing-xl-6 css-opks6z">
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4 css-1oaod6a aos-init aos-animate"
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4 css-1oaod6a aos-init "
                             data-aos="fade-up">
                             <div
                                 class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh">
@@ -76,7 +76,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                 </div>
                             </div>
                         </div>
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4 css-1oaod6a aos-init aos-animate"
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4 css-1oaod6a aos-init "
                             data-aos="fade-up" data-aos-delay="100">
                             <div
                                 class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh">
@@ -116,10 +116,10 @@ include __DIR__ . '/A_Layout/Header/header.php';
             </div>
             <section class="outer-card pricing-methods mb-9">
                 <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
-                    <h3 class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter pb-6 css-1gpftb1 aos-init aos-animate"
+                    <h3 class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter pb-6 css-1gpftb1 aos-init "
                         data-aos="fade-up">Pricing Strategies</h3>
                     <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-1tz8m30">
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw aos-init aos-animate"
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw aos-init "
                             data-aos="fade-up">
                             <div
                                 class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh">
@@ -181,7 +181,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                 </div>
                             </div>
                         </div>
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw aos-init aos-animate"
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw aos-init "
                             data-aos="fade-up" data-aos-delay="100">
                             <div
                                 class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh">
@@ -250,9 +250,9 @@ include __DIR__ . '/A_Layout/Header/header.php';
                 <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
                     <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
                         <div class="content">
-                            <h3 class="MuiTypography-root MuiTypography-h3 pb-4 css-8ipg8 aos-init aos-animate"
+                            <h3 class="MuiTypography-root MuiTypography-h3 pb-4 css-8ipg8 aos-init "
                                 data-aos="fade-up">Choosing the Right Model</h3>
-                            <ul class="bullet-points-list aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                            <ul class="bullet-points-list aos-init " data-aos="fade-up" data-aos-delay="100">
                                 <li>
                                     <ul>
                                         <li class="title"><img loading="lazy"
@@ -296,7 +296,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         </div>
                     </div>
                     <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
-                        <div class="image-wrapper aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
+                        <div class="image-wrapper aos-init " data-aos="fade-up"><img loading="lazy"
                                 src="./assest/img/hire-dedicated-developers/choosing-model.93eb3b7a2d6ff33b92542f418dc573d1.svg"
                                 alt="Choosing the Right Model"></div>
                     </div>
@@ -314,7 +314,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-7 css-hhx1lr">
                             <h3 class="MuiTypography-root MuiTypography-h3 pb-5 css-8ipg8 aos-init" data-aos="fade-up"
                                 data-aos-delay="100">FAQs</h3>
-                            <div data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">
+                            <div data-aos="fade-up" data-aos-delay="200" class="aos-init ">
                                 <div class="accordion" id="faqAccordion">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
@@ -422,7 +422,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                     (215) 602-7044</span></a></li>
                     </ul><a href="contact-us">
                         <button
-                            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedInherit MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorInherit css-bzz2as aos-init aos-animate"
+                            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedInherit MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorInherit css-bzz2as aos-init "
                             tabindex="0" type="button" title="Request a Proposal" data-aos="fade-up"
                             data-aos-delay="400"><span class="text">Request a Proposal</span><span
                                 class="MuiTouchRipple-root css-w0pj6f"></span></button></a>

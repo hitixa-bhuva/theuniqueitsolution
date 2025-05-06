@@ -10,23 +10,27 @@ include __DIR__ . '/A_Layout/Header/header.php';
     <div class="wrapper">
         <main>
             <!-- 2 Your Challenges Our Expertise -->
-            <section class="banner overlyshadow hero-banner mb-9 aos-init aos-animate" data-aos="fade-in">
-                <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
-                    <div class="banner-content">
-                        <h2 class="MuiTypography-root MuiTypography-h2 css-17zkhbb aos-init aos-animate"
-                            data-aos="fade-up" data-aos-delay="100">Your Challenges <span>Our Expertise</span></h2>
-                        <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v aos-init aos-animate"
-                            data-aos="fade-up" data-aos-delay="200">Welcome to Unique IT Solution, your foremost partner
-                            in innovative IT services. We lead with state-of-the-art solutions, setting industry
-                            benchmarks and revolutionizing business activities.</p><a href="services">
-                            <button
-                                class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus aos-init aos-animate"
-                                tabindex="0" type="button" data-aos="fade-up" data-aos-delay="300"
-                                title="View Our Services"><span class="text">View Our Services</span><span
-                                    class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
-                    </div>
-                </div>
-            </section>
+            <section class="banner overlyshadow hero-banner mb-9" >
+    <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
+        <div class="banner-content">
+            <h2 class="MuiTypography-root MuiTypography-h2 css-17zkhbb" id="hero-title">
+                Your Challenges <span>Our Expertise</span>
+            </h2>
+            <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v" id="hero-text">
+                Welcome to Unique IT Solution, your foremost partner in innovative IT services. We lead with
+                state-of-the-art solutions, setting industry benchmarks and revolutionizing business activities.
+            </p>
+            <a href="service">
+                <button id="hero-btn"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus aos-init aos-animate"
+                    tabindex="0" type="button" title="View Our Services">
+                    <span class="text">View Our Services</span>
+                    <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                </button>
+            </a>
+        </div>
+    </div>
+</section>
 
             <!-- 3  About IT Solutions That are Unique-->
             <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
@@ -70,11 +74,12 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     </ul>
                 </section>
             </div>
+
             <!-- 5 our Services -->
             <section class="our-services slider-card outer-card mb-9 aos-init desktop-view-show" data-aos="fade-in">
                 <div class="MuiContainer-root MuiContainer-maxWidthXl css-tq2bi6">
                     <div class="row">
-                        <div class="col-md-10">
+                        <div class="col-md-11">
                             <div class="top pb-6">
                                 <h3 class="MuiTypography-root MuiTypography-h3 pb-3 css-8ipg8 aos-init"
                                     data-aos="fade-up">Our
@@ -86,11 +91,11 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                     Development, leveraging the latest technologies to deliver exceptional results.</p>
                             </div>
                         </div>
-                        <div class="col-md-2 d-flex justify-content-center align-items-center">
-                            <div class="slider-controls">
+                        <div class="col-md-1 d-flex justify-content-center align-items-center">
+                            <div class="slider-controls aos-init" data-aos="fade-up">
                                 <button
                                     class="slick-arrow MuiButtonBase-root prev-btn slick-arrow slick-disabled  servies-prev-btn"
-                                    type="button">
+                                    type="button" >
                                     <img src="./assest/img/svg/ic-nav-arrow-left.svg" alt="Previous">
                                     <img src="./assest/img/svg/ic-nav-arrow-left-white.svg" alt="Previous">
                                 </button>
@@ -346,17 +351,19 @@ include __DIR__ . '/A_Layout/Header/header.php';
                             </div>
                         </div>
                     </div>
-                    <a href="services">
-                        <button
-                            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus aos-init aos-animate"
-                            tabindex="0" type="button" title="Explore More" data-aos="fade-up">
-                            <span class="text">Explore More</span>
-                            <span class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br">
-                                <img loading="lazy" src="./assest/img/svg/ic-right-arrow-whit.svg" alt="Right Arrow">
-                            </span>
-                            <span class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
+                    <a href="service"><button
+                            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus aos-init"
+                            tabindex="0" type="button" title="Explore More" data-aos="fade-up"><span
+                                class="text">Explore More</span><span
+                                class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img
+                                    loading="lazy" src="./assest/img/svg/ic-right-arrow-whit.svg"
+                                    alt="Right Arrow"></span><span
+                                class="MuiTouchRipple-root css-w0pj6f"></span></button>
+                    </a>
+                    
                 </div>
             </section>
+
             <!-- 425 our Services -->
             <section class="our-services slider-card outer-card mb-9 aos-init phone-view-show" data-aos="fade-in">
                 <div class="MuiContainer-root MuiContainer-maxWidthXl css-tq2bi6">
@@ -627,7 +634,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     </div>
                     <div class="row">
                         <div class="col-md-2 d-flex justify-content-center align-items-center">
-                            <div class="slider-controls">
+                            <div class="slider-controls aos-init" data-aos="fade-up">
                                 <button
                                     class="slick-arrow MuiButtonBase-root prev-btn slick-arrow slick-disabled  servies-prev-btn"
                                     type="button">
@@ -643,7 +650,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                             </div>
                         </div>
                     </div>
-                    <a href="services">
+                    <a href="service">
                         <button
                             class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus aos-init aos-animate"
                             tabindex="0" type="button" title="Explore More" data-aos="fade-up">
@@ -659,7 +666,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
             <section class="industries-we-serve slider-card aos-init desktop-view-show" data-aos="fade-up">
                 <div class="MuiContainer-root MuiContainer-maxWidthXl css-tq2bi6">
                     <div class="row">
-                        <div class="col-md-10">
+                        <div class="col-md-11">
                             <div class="top pb-6">
                                 <div class="left">
                                     <h3 class="MuiTypography-root MuiTypography-h3 pb-3 css-8ipg8 aos-init"
@@ -673,8 +680,8 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 d-flex justify-content-center align-items-center">
-                            <div class="slider-controls">
+                        <div class="col-md-1 d-flex justify-content-center align-items-center">
+                            <div class="slider-controls aos-init" data-aos="fade-up">
                                 <button
                                     class="slick-arrow MuiButtonBase-root prev-btn slick-arrow slick-disabled industries-prev-btn"
                                     type="button">
@@ -803,6 +810,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     </a>
                 </div>
             </section>
+
             <!-- 425 Industries We Serve-->
             <section class="industries-we-serve slider-card aos-init phone-view-show" data-aos="fade-up">   
                 <div class="MuiContainer-root MuiContainer-maxWidthXl css-tq2bi6">
@@ -926,7 +934,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     </div>
                     <div class="row">
                         <div class="col-md-2 d-flex justify-content-center align-items-center">
-                            <div class="slider-controls">
+                            <div class="slider-controls aos-init" data-aos="fade-up">
                                 <button
                                     class="slick-arrow MuiButtonBase-root prev-btn slick-arrow slick-disabled industries-prev-btn"
                                     type="button">
@@ -983,64 +991,64 @@ include __DIR__ . '/A_Layout/Header/header.php';
                             Explore our streamlined process that ensures efficient and high-quality project delivery
                             from start to finish.</p>
                         <ul>
-                            <li data-aos="fade-up" class="aos-init aos-animate">
-                                <div class="step">
+                            <li  class="aos-init aos-animate">
+                                <div class="step" data-aos="fade-up">
                                     <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v">Step 1</p><span
                                         class="MuiTypography-root MuiTypography-subtitle2 css-4s5e1">Obtain the client's
                                         project requirements.</span>
                                 </div>
                             </li>
-                            <li data-aos="fade-up" class="aos-init aos-animate">
-                                <div class="step">
+                            <li class="aos-init aos-animate">
+                                <div class="step" data-aos="fade-up">
                                     <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v">Step 2</p><span
                                         class="MuiTypography-root MuiTypography-subtitle2 css-4s5e1">Analyze client's
                                         business problem with paper and pen</span>
                                 </div>
                             </li>
-                            <li data-aos="fade-up" class="aos-init aos-animate">
-                                <div class="step">
+                            <li class="aos-init aos-animate">
+                                <div class="step" data-aos="fade-up">
                                     <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v">Step 3</p><span
                                         class="MuiTypography-root MuiTypography-subtitle2 css-4s5e1">Provide a plan with
                                         divergent solutions.</span>
                                 </div>
                             </li>
-                            <li data-aos="fade-up" class="aos-init aos-animate">
-                                <div class="step">
+                            <li class="aos-init aos-animate">
+                                <div class="step" data-aos="fade-up">
                                     <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v">Step 4</p><span
                                         class="MuiTypography-root MuiTypography-subtitle2 css-4s5e1">Prepare the scope
                                         document and share it with the client.</span>
                                 </div>
                             </li>
-                            <li data-aos="fade-up" class="aos-init aos-animate">
-                                <div class="step">
+                            <li class="aos-init aos-animate">
+                                <div class="step" data-aos="fade-up">
                                     <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v">Step 5</p><span
                                         class="MuiTypography-root MuiTypography-subtitle2 css-4s5e1">Estimate the
                                         project duration and share it with the clients.</span>
                                 </div>
                             </li>
-                            <li data-aos="fade-up" class="aos-init aos-animate">
-                                <div class="step">
+                            <li class="aos-init aos-animate">
+                                <div class="step" data-aos="fade-up">
                                     <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v">Step 6</p><span
                                         class="MuiTypography-root MuiTypography-subtitle2 css-4s5e1">Client
                                         Approval.</span>
                                 </div>
                             </li>
-                            <li data-aos="fade-up" class="aos-init aos-animate">
-                                <div class="step">
+                            <li class="aos-init aos-animate">
+                                <div class="step" data-aos="fade-up">
                                     <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v">Step 7</p><span
                                         class="MuiTypography-root MuiTypography-subtitle2 css-4s5e1">Design, Development
                                         &amp; Testing</span>
                                 </div>
                             </li>
-                            <li data-aos="fade-up" class="aos-init aos-animate">
-                                <div class="step">
+                            <li class="aos-init aos-animate">
+                                <div class="step" data-aos="fade-up">
                                     <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v">Step 8</p><span
                                         class="MuiTypography-root MuiTypography-subtitle2 css-4s5e1">Live
                                         Deployment</span>
                                 </div>
                             </li>
-                            <li data-aos="fade-up" class="aos-init aos-animate">
-                                <div class="step">
+                            <li class="aos-init aos-animate">
+                                <div class="step" data-aos="fade-up">
                                     <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v">Step 9</p><span
                                         class="MuiTypography-root MuiTypography-subtitle2 css-4s5e1">Client’s
                                         Feedback</span>
@@ -1097,7 +1105,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         <div
                             class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-lg-4 css-14ipkzi">
                             <div
-                                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh">
+                                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh" style="border-right: 0">
                                 <div class="MuiCardContent-root css-1qw96cp">
                                     <div class="icon">
                                         <img loading="lazy" src="./assest/img/svg/3-Customized-Solution.svg"
@@ -1113,7 +1121,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         <div
                             class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-lg-4 css-14ipkzi">
                             <div
-                                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh">
+                                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh" style="border-bottom: 0">
                                 <div class="MuiCardContent-root css-1qw96cp">
                                     <div class="icon"><img loading="lazy"
                                             src="./assest/img/svg/4.Agile-Based-Decision.svg"
@@ -1128,7 +1136,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         <div
                             class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-lg-4 css-14ipkzi">
                             <div
-                                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh">
+                                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh" style="border-bottom: 0">
                                 <div class="MuiCardContent-root css-1qw96cp">
                                     <div class="icon"><img loading="lazy"
                                             src="./assest/img/svg/5.Innovative-Approach.svg" alt="Innovative Approach">
@@ -1143,7 +1151,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         <div
                             class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-lg-4 css-14ipkzi">
                             <div
-                                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh">
+                                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh"  style="border-right: 0 border-bottom: 0">
                                 <div class="MuiCardContent-root css-1qw96cp">
                                     <div class="icon"><img loading="lazy"
                                             src="./assest/img/svg/6.High-Customer-Satisfaction.svg"
@@ -1225,7 +1233,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-7 css-hhx1lr">
                             <h3 class="MuiTypography-root MuiTypography-h3 pb-5 css-8ipg8 aos-init" data-aos="fade-up"
                                 data-aos-delay="100">FAQs</h3>
-                            <div data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">
+                            <div data-aos="fade-up" data-aos-delay="200" class="aos-init">
                                 <div class="accordion" id="faqAccordion">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
@@ -1362,7 +1370,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                     (215) 602-7044</span></a></li>
                     </ul><a href="contact-us">
                         <button
-                            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedInherit MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorInherit css-bzz2as aos-init aos-animate"
+                            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedInherit MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorInherit css-bzz2as aos-init"
                             tabindex="0" type="button" title="Request a Proposal" data-aos="fade-up"
                             data-aos-delay="400"><span class="text">Request a Proposal</span><span
                                 class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
@@ -1370,7 +1378,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
             </div>
         </main>
     </div>
-    
+
     <?php
 include __DIR__ . '/A_Layout/Footer/footer.php';
 ?>  

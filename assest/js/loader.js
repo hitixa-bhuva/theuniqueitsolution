@@ -12,10 +12,15 @@ let interval = setInterval(() => {
 
 window.onload = () => {
   clearInterval(interval);
-  progress.style.width = "100%";
+  
+  // Smoothly animate from 95% to 100%
+  setTimeout(() => {
+    progress.style.width = "100%";
+  }, 100); // slight delay before animating to 100%
 
+  // Wait for the transition to complete, then show content
   setTimeout(() => {
     loader.style.display = "none";
     content.style.display = "block";
-  }, 300); // optional: small delay for smooth transition
+  }, 1200); // wait 1.2s for the transition (matching CSS duration)
 };

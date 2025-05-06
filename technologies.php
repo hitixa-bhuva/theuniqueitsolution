@@ -12,14 +12,14 @@ include __DIR__ . '/A_Layout/Header/header.php';
     <div class="wrapper">
         <main>
             <!-- 1. Technologies hero -->
-            <section class="banner overlyshadow technologies-banner page-banner mb-9 aos-init aos-animate" data-aos="fade-in"
+            <section class="banner overlyshadow technologies-banner page-banner mb-9 " 
                 style="background-image: url(./assest/img/hero/technologies-banner.webp)!important;">
                 <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
                     <div class="banner-content">
-                        <h2 class="MuiTypography-root MuiTypography-h2 pb-3 css-17zkhbb aos-init aos-animate"
-                            data-aos="fade-up" data-aos-delay="100">Technologies</h2>
-                        <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v aos-init aos-animate"
-                            data-aos="fade-up" data-aos-delay="200">Transform your business with our holistic approach
+                        <h2 class="MuiTypography-root MuiTypography-h2 pb-3 css-17zkhbb " id="hero-title"
+                             >Technologies</h2>
+                        <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v " id="hero-text"
+                             >Transform your business with our holistic approach
                             to innovation. We enhance backend efficiency, create elegant user-centric UI/UX designs,
                             develop innovative mobile apps, and offer seamless cloud solutions to drive operational
                             excellence and strategic growth.</p>
@@ -162,7 +162,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
 
                 <section class="visit-our-portfolio mb-9 aos-init aos-animate" data-aos="fade-in">
                     <img src="./assest/img/svg/technologies/oval-left.svg"
-                        class="oval-one aos-init aos-animate" alt="Oval" style="width: 16%;" data-aos="fade-in">
+                        class="oval-one aos-init aos-animate" alt="Oval" style="width: 17%;" data-aos="fade-in">
                     <img src="./assest/img/svg/technologies/oval-left.e.svg"
                         class="oval-two aos-init aos-animate" alt="Oval" style="width: 16%;" data-aos="fade-in">
                     <img src="./assest/img/svg/technologies/oval-left.e8.svg"
@@ -173,7 +173,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         Visit our portfolio to see how we are utilizing these technologies to fulfill your business
                         requirements.</h4>
                     <img src="./assest/img/technologies/visit-our-portfolio.webp"
-                        class="section-img aos-init aos-animate" alt="Laptop &amp; Mobile" data-aos="fade-up" style="width: 61%;"
+                        class="section-img aos-init aos-animate" alt="Laptop &amp; Mobile" data-aos="fade-up" style="width: 60%;"
                         data-aos-delay="200">
                 </section>
             </div>
@@ -298,7 +298,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                     (215) 602-7044</span></a></li>
                     </ul><a href="contact-us">
                         <button
-                            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedInherit MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorInherit css-bzz2as aos-init aos-animate"
+                            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedInherit MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorInherit css-bzz2as aos-init"
                             tabindex="0" type="button" title="Request a Proposal" data-aos="fade-up"
                             data-aos-delay="400"><span class="text">Request a Proposal</span><span
                                 class="MuiTouchRipple-root css-w0pj6f"></span></button></a>

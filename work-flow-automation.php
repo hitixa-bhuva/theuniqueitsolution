@@ -10,13 +10,13 @@ include __DIR__ . '/A_Layout/Header/header.php';
 
     <div class="wrapper">
         <main>
-            <section class="banner banner-development  service-details-banner bg-light-purple aos-init aos-animate" data-aos="fade-in">
+            <section class="banner banner-development  service-details-banner bg-light-purple">
                 <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
                     <div class="banner-content">
                         <div class="left">
-                            <nav class="MuiTypography-root MuiTypography-body1 MuiBreadcrumbs-root css-zinzkl aos-init aos-animate"
-                                data-aos="fade-up">
-                                <ol class="MuiBreadcrumbs-ol css-nhb8h9">
+                            <nav class="MuiTypography-root MuiTypography-body1 MuiBreadcrumbs-root css-zinzkl"
+                               >
+                                <ol class="MuiBreadcrumbs-ol css-nhb8h9" id="hero-title">
                                     <li class="MuiBreadcrumbs-li"><a title="home" href="/home">Home</a></li>
                                     <li aria-hidden="true" class="MuiBreadcrumbs-separator css-3mf706"><img
                                             loading="lazy"
@@ -27,15 +27,15 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                     </li>
                                 </ol>
                             </nav>
-                            <h2 class="MuiTypography-root MuiTypography-h2 css-17zkhbb aos-init aos-animate"
-                                data-aos="fade-up" data-aos-delay="100">Work Flow Automation</h2><a
-                                href="contact-us"><button
-                                    class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus aos-init aos-animate"
-                                    tabindex="0" type="button" data-aos="fade-up" data-aos-delay="200"
+                            <h2 class="MuiTypography-root MuiTypography-h2 css-17zkhbb"
+                            id="hero-text">Work Flow Automation</h2><a
+                                href="contact-us"><button id="hero-btn"
+                                    class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus"
+                                    tabindex="0" type="button" data-aos-delay="200"
                                     title="Get A Quote"><span class="text">Get A Quote</span><span
                                         class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
                         </div>
-                        <div class="right aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
+                        <div class="right"><img loading="lazy" id="hero-img"
                                 src="./assest/img/work-flow-automation/1.work-flow-automation.6f3a167f68bc2c6f399022c04d328c51.svg"
                                 alt="Custom Software Development" width="483" height="473"></div>
                     </div>
@@ -44,21 +44,21 @@ include __DIR__ . '/A_Layout/Header/header.php';
 
             <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
                 <section class="service-details-content">
-                    <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v aos-init aos-animate"
+                    <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v aos-init"
                         data-aos="fade-up">Our company, Unique IT Solution, offers a complete workflow automation solution that improves business processes and enables growth. These systems are advanced to fit each client, hence ensuring that businesses reach their goals with minimum effort and cost.</p>
-                        <h3 class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter pb-7 css-1gpftb1 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">Our Expertise Includes</h3>
+                        <h3 class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter pb-7 css-1gpftb1 aos-init" data-aos="fade-up" data-aos-delay="100">Our Expertise Includes</h3>
                         <!-- Customer Service and Support -->
                         <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
                             <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
-                                <div class="image-wrapper aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
+                                <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
                                         src="./assest/img/work-flow-automation/customer-service-support.4c54fb07221c3adaafb4de4bbdfd17a0.svg"
                                         alt="How We Build Custom Software"></div>
                             </div>
                             <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
                                 <div class="content">
-                                    <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init aos-animate"
+                                    <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
                                         data-aos="fade-up">Customer Service and Support</h5>
-                                    <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                    <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init"
                                         data-aos="fade-up" data-aos-delay="100">Our first step is to understand your needs to deliver the utmost customer satisfaction. For this, we create a paper plan and analyse the strengths and weaknesses. This plan helps us identify your problems. In most cases, businesses lack time because they are busy doing repetitive tasks. So, if tasks are repetitive and time-consuming, we automate the repetitive duties and helpdesk management work to reduce resolution periods and improve customer satisfaction.</p>
                                 </div>
                             </div>
@@ -68,14 +68,14 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
                             <div class="content">
-                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init aos-animate"
+                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
                                     data-aos="fade-up">Automating Repetitive Tasks</h5>
-                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init"
                                     data-aos="fade-up" data-aos-delay="100">Unique IT Solution specifically excels at automating monotonous duties to increase productivity while minimizing mistakes. Our office workflow automation services involve activities such as scheduling, reminding, or generating reports, which generally saves time and ensures accuracy. For a seamless process, we develop customized workflows that take care of approvals, notifications, task assignments, and escalations. A recurring task scheduler helps maintain regularity in handling daily work, thus enhancing dependability across the business.</p>
                             </div>
                         </div>
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
-                            <div class="image-wrapper aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
+                            <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
                                     src="./assest/img/work-flow-automation/automating-repetitive-tasks.32e8fe9f6744702a84f5b545bbf519df.svg"
                                     alt="How We Build Custom Software"></div>
                         </div>
@@ -84,15 +84,15 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     <!-- Data Entry and Management -->
                     <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
-                            <div class="image-wrapper aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
+                            <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
                                     src="./assest/img/work-flow-automation/data-entry.fcaecbd3169a8834accc9aecd76ce76a.svg"
                                     alt="How We Build Custom Software"></div>
                         </div>
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
                             <div class="content">
-                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init aos-animate"
+                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
                                     data-aos="fade-up">Data Entry and Management</h5>
-                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init"
                                     data-aos="fade-up" data-aos-delay="100">At unique it solution, we have automated data entry and management systems that assist in reducing inaccuracies by humans and increasing precision in data entry. Our solutions include automated data entry to make sure there is no mistake during information processing. We have implemented strong systems for real-time data synchronization across various platforms, thereby guaranteeing uniformity and accessibility of information from different sources when needed. In addition to this, our automatic procedures ensure high-quality data validation/correction/cleansing, which allows the organization to make informed choices about its programs or services and operate more efficiently.</p>
                             </div>
                         </div>
@@ -102,14 +102,14 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
                             <div class="content">
-                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init aos-animate"
+                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
                                     data-aos="fade-up">Automatic Error Detection and System Reset</h5>
-                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init"
                                     data-aos="fade-up" data-aos-delay="100">At unique it solution, we specialize in automatic error detection and system resetting. It helps in maintaining operational continuity with minimum disruptions. We provide continuous error monitoring services to identify potential issues proactively. Further, we have automated error reporting and logging to facilitate quick resolution of problems, hence improving system reliability. Besides, we have put into place recovery systems that automatically minimize downtime while ensuring smooth business continuation, thereby boosting overall operational resilience.</p>
                             </div>
                         </div>
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
-                            <div class="image-wrapper aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
+                            <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
                                     src="./assest/img/work-flow-automation/error-detection.5cbf3b3a34368904fee249e76c5268dc.svg"
                                     alt="How We Build Custom Software"></div>
                         </div>
@@ -118,17 +118,17 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     <!-- Supply Chain and Logistics -->
                     <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
-                            <div class="image-wrapper aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
+                            <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
                                     src="./assest/img/work-flow-automation/supply-chain.5ed1409801fe5b13ebc1d6d8720d5cfe.svg"
                                     alt="Supply Chain and Logistics"></div>
                         </div>
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
                             <div class="content">
-                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init aos-animate"
+                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
                                     data-aos="fade-up">Supply Chain and Logistics</h5>
-                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init"
                                     data-aos="fade-up" data-aos-delay="100">unique it solution specializes in automating supply chain and logistics for optimized operations. We improve efficiency throughout the supply chain by automating procurement, production, inventory management, and more. Therefore, we enhance overall operational efficiency by streamlining logistics planning and execution. Furthermore, we boost shipment tracking and visibility across the supply chain so that deliveries are made on time with informed decision-making.</p>
-                                    <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                    <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init"
                                         data-aos="fade-up" data-aos-delay="100">Our solutions help businesses achieve their goals faster and more economically than ever before.</p>
                             </div>
                         </div>
@@ -148,7 +148,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-7 css-hhx1lr">
                             <h3 class="MuiTypography-root MuiTypography-h3 pb-5 css-8ipg8 aos-init" data-aos="fade-up"
                                 data-aos-delay="100">FAQs</h3>
-                            <div data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">
+                            <div data-aos="fade-up" data-aos-delay="200" class="aos-init">
                                 <div class="accordion" id="faqAccordion">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
@@ -255,7 +255,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                     (215) 602-7044</span></a></li>
                     </ul><a href="contact-us">
                         <button
-                            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedInherit MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorInherit css-bzz2as aos-init aos-animate"
+                            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedInherit MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorInherit css-bzz2as aos-init"
                             tabindex="0" type="button" title="Request a Proposal" data-aos="fade-up"
                             data-aos-delay="400"><span class="text">Request a Proposal</span><span
                                 class="MuiTouchRipple-root css-w0pj6f"></span></button></a>

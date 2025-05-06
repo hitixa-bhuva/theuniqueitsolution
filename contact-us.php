@@ -11,23 +11,25 @@ include __DIR__ . '/A_Layout/Header/header.php';
     <div class="wrapper">
         <main>
             <!-- 1. hero Contact Us -->
-            <section class="banner overlyshadow page-banner mb-9 aos-init aos-animate" data-aos="fade-in"
-                style="background-image: url(./assest/img/hero/contact-us-banner.webp);">
-                <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
-                    <div class="banner-content">
-                        <h2 class="MuiTypography-root MuiTypography-h2 pb-3 css-17zkhbb aos-init aos-animate"
-                            data-aos="fade-up" data-aos-delay="100">Contact Us</h2>
-                        <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v aos-init" data-aos="fade-up"
-                            data-aos-delay="200">Learn about our mission, values, and the team dedicated to delivering
-                            exceptional technology solutions for your business</p>
-                    </div>
-                </div>
-            </section>
+            <section class="banner overlyshadow page-banner mb-9" 
+    style="background-image: url(./assest/img/hero/contact-us-banner.webp);">
+    <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
+        <div class="banner-content">
+            <h2 class="MuiTypography-root MuiTypography-h2 pb-3 css-17zkhbb" id="hero-title"
+                 >Contact Us</h2>
+            <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v" id="hero-text"
+                 >
+                Learn about our mission, values, and the team dedicated to delivering
+                exceptional technology solutions for your business
+            </p>
+        </div>
+    </div>
+</section>
 
             <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
                 <section class="contact-us-form-wrapper mb-9">
                     <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-6 css-xgs5wp">
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut pt-5">
                             <div class="contact-info">
                                 <ul>
                                     <li><a href="tel:+917874579457" title="+917874579457"><img loading="lazy"
@@ -54,7 +56,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                 </ul><img loading="lazy" src="./assest/img/contact-us/contact-us.svg" alt="Contact Us">
                             </div>
                         </div>
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd pt-5">
                             <form id="contact-form" class="needs-validation" novalidate>
                                 <h3 class="MuiTypography-root MuiTypography-h3 pb-4 css-8ipg8">Get in Touch</h3>
                                 <div class="row g-4">
@@ -172,7 +174,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-7 css-hhx1lr">
                             <h3 class="MuiTypography-root MuiTypography-h3 pb-5 css-8ipg8 aos-init" data-aos="fade-up"
                                 data-aos-delay="100">FAQs</h3>
-                            <div data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">
+                            <div data-aos="fade-up" data-aos-delay="200" class="aos-init">
                                 <div class="accordion" id="faqAccordion">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
@@ -303,7 +305,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                     (215) 602-7044</span></a></li>
                     </ul><a href="contact-us">
                         <button
-                            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedInherit MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorInherit css-bzz2as aos-init aos-animate"
+                            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedInherit MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorInherit css-bzz2as aos-init"
                             tabindex="0" type="button" title="Request a Proposal" data-aos="fade-up"
                             data-aos-delay="400"><span class="text">Request a Proposal</span><span
                                 class="MuiTouchRipple-root css-w0pj6f"></span></button></a>

@@ -4,6 +4,7 @@
 
 /* misc
 --------------------------------------------------------------------------------------------------------*/
+
 .image-wrapper {
     display: flex;
     align-items: center;
@@ -22,7 +23,6 @@ img {
     border-radius: 24px;
 }
 
-
 .sidebar-overlay {
     position: fixed;
     top: 0;
@@ -35,8 +35,10 @@ img {
     transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
 /* header
 --------------------------------------------------------------------------------------------------------*/
+
 header {
     display: flex;
     align-items: center;
@@ -136,17 +138,19 @@ li.has-submenu a img {
 .submenu li a::after {
     opacity: 0;
 }
-header ul.submenu li a{
+
+header ul.submenu li a {
     border-radius: 0;
     color: #1a1a1a;
     font-family: Poppins, sans-serif;
-    font-size: 14px;
+    font-size: 16   px;
     font-weight: 400;
     letter-spacing: .25px;
     line-height: 28px;
     padding: 8px 24px;
-    transition: all .25scubic-bezier(.4,0,.2,1);
+    transition: all .25scubic-bezier(.4, 0, .2, 1);
 }
+
 header ul li.has-submenu a {
     align-items: center;
     display: flex;
@@ -154,6 +158,7 @@ header ul li.has-submenu a {
     justify-content: space-between;
     padding-right: 12px;
 }
+
 header li {
     position: relative;
 }
@@ -169,8 +174,9 @@ header li a {
 
 header li a.active {
     background: #e6f3ff;
-    color: var(--primary);
+    color: var(--primary) !important;
 }
+
 header ul li a {
     border-radius: 24px;
     color: #4d4d4d;
@@ -183,6 +189,23 @@ header ul li a {
     padding: 8px 16px;
     z-index: 1;
 }
+
+header li .header-sub-menu:not(.active)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #e6f3ff;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0, 1);
+    transform-origin: center;
+    border-radius: 30px;
+    z-index: -1;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 header li a:not(.active)::after {
     content: "";
     display: block;
@@ -199,67 +222,44 @@ header li a:not(.active)::after {
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+header li .header-sub-menu:not(.active):hover::after {
+    transform: translate(-50%, -50%) scale(1, 1);
+}
+
 header li a:not(.active):hover::after {
     transform: translate(-50%, -50%) scale(1, 1);
 }
 
-.banner-content a button:not(.active)::after{
+header-sub-menu:hover {
+    --bs-link-color-rgb: var(--bs-link-hover-color-rgb);
+}
+
+.banner-content a button:not(.active)::after {
     content: "";
     display: block;
     position: absolute;
-    background: rgb(3, 108, 204);
-    left: 50%;
-    width: 100%;
-    height: 100%;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
     top: 50%;
-    transform: translate(-50%, -50%) scale(0, 1);
-    transform-origin: center;
+    left: 50%;
+    background: rgb(3, 108, 204);
     border-radius: 30px;
-    z-index: -1;
+    z-index: 0;
+    transform: translate(-50%, -50%) scale(0, 1);
+    transform-origin: center center;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.banner-content a button:not(.active):hover:after{
+
+.banner-content a button:not(.active):hover:after {
     transform: translate(-50%, -50%) scale(1, 1);
 }
+
 li:hover .submenu {
     opacity: 1;
     visibility: visible;
 }
-.our-services .css-tq2bi6 a button:not(.active):after{
-    content: "";
-    display: block;
-    position: absolute;
-    background: rgb(3, 108, 204);
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(0, 1);
-    transform-origin: center;
-    border-radius: 30px;
-    z-index: -1;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.software-development-technologies .content a button:not(.active):after{
-    content: "";
-    display: block;
-    position: absolute;
-    background: rgb(3, 108, 204);
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(0, 1);
-    transform-origin: center;
-    border-radius: 30px;
-    z-index: -1;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-}
-.software-development-technologies .content a button:not(.active):hover:after{
-    transform: translate(-50%, -50%) scale(1, 1);
-}
-.engineering-culture .css-1tz8m30 .content a button:not(.active):after{
+.our-services .css-tq2bi6 a button:not(.active):after {
     content: "";
     display: block;
     position: absolute;
@@ -273,15 +273,53 @@ li:hover .submenu {
     border-radius: 30px;
     z-index: -1;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.software-development-technologies .content a button:not(.active):after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: rgb(3, 108, 204);
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0, 1);
+    transform-origin: center;
+    border-radius: 30px;
+    z-index: -1;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.engineering-culture .css-1tz8m30 .content a button:not(.active):hover:after{
+
+.software-development-technologies .content a button:not(.active):hover:after {
     transform: translate(-50%, -50%) scale(1, 1);
 }
-.css-tq2bi6 a button:not(.active):hover:after{
+
+.engineering-culture .css-1tz8m30 .content a button:not(.active):after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: rgb(3, 108, 204);
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0, 1);
+    transform-origin: center;
+    border-radius: 30px;
+    z-index: -1;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.engineering-culture .css-1tz8m30 .content a button:not(.active):hover:after {
     transform: translate(-50%, -50%) scale(1, 1);
 }
-.request-proposal a button:not(.active):after{
+
+.css-tq2bi6 a button:not(.active):hover:after {
+    transform: translate(-50%, -50%) scale(1, 1);
+}
+
+.request-proposal a button:not(.active):after {
     content: "";
     display: block;
     position: absolute;
@@ -297,9 +335,12 @@ li:hover .submenu {
     z-index: -1;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.request-proposal a button:not(.active):hover:after{
+
+.request-proposal a button:not(.active):hover:after {
     transform: translate(-50%, -50%) scale(1, 1);
 }
+
+
 /* .social-links  a .button-ins:not(.active):after{
     content: "";
     display: block;
@@ -339,7 +380,7 @@ li:hover .submenu {
     transform: translate(-50%, -50%) scale(1, 1);
 } */
 
-.engineering-cultur .content a button:not(.active):after{
+.engineering-cultur .content a button:not(.active):after {
     content: "";
     display: block;
     position: absolute;
@@ -355,20 +396,27 @@ li:hover .submenu {
     transform-origin: center center;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.engineering-cultur .content a button:not(.active):hover:after{
+
+.engineering-cultur .content a button:not(.active):hover:after {
     transform: translate(-50%, -50%) scale(1, 1);
 }
-header a button:not(.active):hover:after{
+
+a button:not(.active):hover:after {
     transform: translate(-50%, -50%) scale(1, 1);
 }
+
+
 /* hero banner
 --------------------------------------------------------------------------------------------------------*/
+
 .banner {
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
+
+
 /* .banner:after {
     background-color: #0000007a;
     bottom: 0;
@@ -381,6 +429,7 @@ header a button:not(.active):hover:after{
     width: 100%;
     z-index: 0;
 } */
+
 .technologies-banner::after {
     content: "";
     display: block;
@@ -402,7 +451,6 @@ header a button:not(.active):hover:after{
     align-items: center;
     justify-content: center;
 }
-
 
 .MuiBreadcrumbs-root {
     margin-bottom: 12px;
@@ -441,16 +489,20 @@ header a button:not(.active):hover:after{
     padding-top: 96px;
     margin-bottom: 80px;
 }
+
 .service-details-banner {
     padding-top: 96px;
     margin-bottom: 80px;
 }
+
 .banner.service-details-banner .MuiBreadcrumbs-root {
     margin-bottom: 12px;
 }
+
 .service-details-banner .MuiBreadcrumbs-root {
     margin-bottom: 12px;
 }
+
 .css-zinzkl {
     margin: 0px;
     font-family: Poppins, sans-serif;
@@ -480,13 +532,14 @@ header a button:not(.active):hover:after{
     display: block;
     color: rgb(26, 26, 26);
 }
+
 .css-3mf706 {
-    display: flex
-;
+    display: flex;
     user-select: none;
     margin-left: 8px;
     margin-right: 8px;
 }
+
 .css-zinzkl .MuiBreadcrumbs-li p {
     font-size: 14px;
     line-height: 22px;
@@ -494,26 +547,33 @@ header a button:not(.active):hover:after{
     font-weight: 500;
     color: #4d4d4d !important;
 }
+
 .banner.service-details-banner.bg-light-purple h2 {
     color: #7b7bb6;
 }
+
 .banner.service-details-banner.bg-light-purple a {
     text-decoration: none;
-    transition: all .18s cubic-bezier(.4,0,.2,1);
+    transition: all .18s cubic-bezier(.4, 0, .2, 1);
 }
+
 .banner.service-details-banner.bg-light-purple .MuiButton-contained {
     background: #7b7bb6;
 }
+
 .banner.service-details-banner .MuiButton-contained {
     min-width: 190px;
 }
+
 .css-107tsus .text {
     position: relative;
     z-index: 1;
 }
+
 .banner.service-details-banner.bg-light-purple .MuiButton-contained:after {
     background: #56567f;
 }
+
 .css-107tsus::after {
     content: "";
     display: block;
@@ -529,11 +589,13 @@ header a button:not(.active):hover:after{
     transform-origin: center center;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .banner.service-details-banner .banner-content .right img {
     display: block;
     height: 471px;
     width: auto;
 }
+
 .banner.service-details-banner h2 {
     padding-bottom: 40px;
 }
@@ -573,9 +635,11 @@ header a button:not(.active):hover:after{
 .banner.service-details-banner .banner.bg-light-blue h2 {
     color: #4597bf;
 }
+
 .banner.service-details-banner.bg-light-blue .MuiButton-contained {
     background: #4597bf;
 }
+
 .banner.service-details-banner .banner.bg-light-blue .MuiButton-contained {
     background: #4597bf;
 }
@@ -613,7 +677,6 @@ header a button:not(.active):hover:after{
     width: auto;
 }
 
-
 .banner-content {
     max-width: 800px;
     position: relative;
@@ -634,7 +697,6 @@ header a button:not(.active):hover:after{
 
 .hero-banner {
     background-image: url("../img/hero/home-hero-banner.webp");
-
     padding-top: 204px;
     padding-bottom: 132px;
 }
@@ -651,6 +713,7 @@ header a button:not(.active):hover:after{
     padding-left: 32px;
     padding-right: 32px;
 }
+
 .overlyshadow:after {
     background-color: #0000007a;
     bottom: 0;
@@ -664,15 +727,19 @@ header a button:not(.active):hover:after{
     z-index: 0;
 }
 
+
 /* service-details-content
 --------------------------------------------------------------------------------------------------------*/
+
 .service-details-content>p {
-    padding-bottom: 50px;
+    padding-bottom: 80px;
     color: var(--secondary-text);
 }
 
+
 /* about-it-solution
 --------------------------------------------------------------------------------------------------------*/
+
 .about-it-solution img {
     display: block;
     width: 100%;
@@ -684,11 +751,13 @@ header a button:not(.active):hover:after{
 }
 
 .about-it-solution p {
-    color: var(--secondary-text);
+    color: #4d4d4d;
 }
+
 
 /* counter
 --------------------------------------------------------------------------------------------------------*/
+
 .counter {
     border-radius: 24px;
     background: var(--primary);
@@ -719,6 +788,7 @@ header a button:not(.active):hover:after{
     text-align: center;
     padding-bottom: 8px;
 }
+
 .counter ul li span {
     color: #fff;
     display: block;
@@ -730,6 +800,7 @@ header a button:not(.active):hover:after{
     padding-bottom: 8px;
     text-align: center;
 }
+
 .counter ul li p {
     font-weight: 500;
     text-align: center;
@@ -737,8 +808,10 @@ header a button:not(.active):hover:after{
     opacity: 0.8;
 }
 
+
 /* slick-slider
 --------------------------------------------------------------------------------------------------------*/
+
 .slick-slider {
     margin-bottom: 48px;
 }
@@ -780,7 +853,7 @@ header a button:not(.active):hover:after{
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
- .MuiButtonBase-root.slick-arrow::before {
+.MuiButtonBase-root.slick-arrow::before {
     content: none;
 }
 
@@ -792,7 +865,8 @@ header a button:not(.active):hover:after{
     position: relative;
     overflow: hidden;
     background: transparent;
-    color: black; /* default icon color */
+    color: black;
+    /* default icon color */
     transition: color 0.6s;
 }
 
@@ -800,7 +874,8 @@ header a button:not(.active):hover:after{
     content: "";
     position: absolute;
     inset: 0;
-    background: #ffffff; /* normal background */
+    background: transparent;
+    /* normal background */
     transition: transform 0.6s, background 0.6s;
     transform: perspective(600px) rotateY(0deg);
     transform-origin: center;
@@ -808,47 +883,52 @@ header a button:not(.active):hover:after{
 }
 
 .MuiButtonBase-root.slick-arrow:hover::before {
-    background: #0487ff; 
+    background: #0487ff;
     transform: perspective(600px) rotateY(180deg);
 }
-.prev-btn:hover, .next-btn:hover{
+
+.prev-btn:hover,
+.next-btn:hover {
     border: 1px solid #0487ff;
 }
-.MuiButtonBase-root.slick-arrow > * {
+
+.MuiButtonBase-root.slick-arrow>* {
     position: relative;
     z-index: 1;
     transition: color 0.6s;
 }
 
-.MuiButtonBase-root.slick-arrow:hover > * {
-    color: #ffffff; /* hover ma icon white thase */
+.MuiButtonBase-root.slick-arrow:hover>* {
+    color: #ffffff;
+    /* hover ma icon white thase */
 }
 
-
-
- .MuiButtonBase-root.slick-arrow:hover img {
+.MuiButtonBase-root.slick-arrow:hover img {
     width: auto;
     height: auto;
     color: #ffffff !important;
 }
 
- .MuiButtonBase-root.slick-arrow:hover img.active {
+.MuiButtonBase-root.slick-arrow:hover img.active {
     opacity: 1;
     visibility: visible;
 }
 
- /* .MuiButtonBase-root.slick-arrow:hover img:not(.active) {
+
+/* .MuiButtonBase-root.slick-arrow:hover img:not(.active) {
     opacity: 0;
     visibility: hidden;
 } */
 
- .MuiButtonBase-root.slick-arrow:hover::after {
+.MuiButtonBase-root.slick-arrow:hover::after {
     transform: translate(-50%, -50%) scale(1, 1);
 }
 
 
 /* slider card
 --------------------------------------------------------------------------------------------------------*/
+
+
 /* .slider-card .top {
     padding-right: 140px;
 } */
@@ -879,14 +959,17 @@ header a button:not(.active):hover:after{
 
 /* our services
 --------------------------------------------------------------------------------------------------------*/
+
 .our-services {
     padding-top: 100px;
     padding-bottom: 60px;
     overflow: hidden;
 }
 
+
 /* service card
 --------------------------------------------------------------------------------------------------------*/
+
 .MuiCard-root.service-card {
     height: 100%;
     max-height: 486px;
@@ -894,6 +977,7 @@ header a button:not(.active):hover:after{
     display: flex;
     flex-direction: column;
     transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 374px;
 }
 
 .MuiCard-root.service-card:hover {
@@ -925,9 +1009,12 @@ header a button:not(.active):hover:after{
 }
 
 .MuiCard-root.service-card .MuiCardContent-root .icon.blue {
-    background-color: var(--primary-100);
+    background-color: #e6f3ff;
 }
-
+.accordion-item:first-of-type {
+    border-top-left-radius: 12px !important;
+    border-top-right-radius: 12px !important;
+}
 .MuiCard-root.service-card .MuiCardContent-root .icon.pink {
     background-color: #fee5ff;
 }
@@ -986,15 +1073,19 @@ header a button:not(.active):hover:after{
     transform: translateX(8px);
 }
 
+
 /* industries we serve
 --------------------------------------------------------------------------------------------------------*/
+
 .industries-we-serve {
     overflow: hidden;
     padding-bottom: 120px;
 }
 
+
 /* industry card
 --------------------------------------------------------------------------------------------------------*/
+
 .MuiCard-root.industry-card {
     background-repeat: no-repeat;
     background-position: center;
@@ -1007,7 +1098,9 @@ header a button:not(.active):hover:after{
     transform: translateY(-10px);
     box-shadow: rgb(0 0 0 / 10%) 0px 20px 25px -5px, rgb(0 0 0 / 4%) 0px 10px 10px -5px;
 }
-.MuiCard-root.industry-card .MuiCardContent-root, .MuiCard-root.industry-card:before{
+
+.MuiCard-root.industry-card .MuiCardContent-root,
+.MuiCard-root.industry-card:before {
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     bottom: 0;
@@ -1015,6 +1108,7 @@ header a button:not(.active):hover:after{
     position: absolute;
     right: 0;
 }
+
 .MuiCard-root.industry-card .MuiCardContent-root:before {
     background: linear-gradient(90deg, #fff0 0, #fff 50%, #fff0);
     content: "";
@@ -1026,6 +1120,7 @@ header a button:not(.active):hover:after{
     top: 0;
     z-index: 1;
 }
+
 .MuiCard-root.industry-card:before {
     background: #0003;
     border-radius: 24px;
@@ -1034,6 +1129,7 @@ header a button:not(.active):hover:after{
     top: 0;
     z-index: 1;
 }
+
 .MuiCard-root.industry-card::before {
     content: "";
     display: block;
@@ -1080,7 +1176,6 @@ header a button:not(.active):hover:after{
     transform: translate(-50%, -50%) scale(1, 1);
 }
 
-
 .MuiCard-root.industry-card .MuiCardContent-root::before {
     content: "";
     display: block;
@@ -1101,6 +1196,7 @@ header a button:not(.active):hover:after{
 
 /* software development technologies
 --------------------------------------------------------------------------------------------------------*/
+
 .software-development-technologies {
     border-radius: 24px;
     padding: 80px;
@@ -1120,7 +1216,7 @@ header a button:not(.active):hover:after{
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(180deg,#00427ee0,#00427e29);
+    background: linear-gradient(180deg, #00427ee0, #00427e29);
     border-radius: 24px;
     z-index: 0;
 }
@@ -1155,6 +1251,7 @@ header a button:not(.active):hover:after{
 
 /* how we work
 --------------------------------------------------------------------------------------------------------*/
+
 .how-we-work {
     overflow: hidden;
 }
@@ -1190,12 +1287,15 @@ header a button:not(.active):hover:after{
     position: relative;
     padding-bottom: 16px;
 }
+
 .how-we-work ul li:nth-child(odd) .step:before {
     left: -4px;
 }
+
 .how-we-work ul li:nth-child(odd) .step:after {
     left: 4.5px;
 }
+
 .how-we-work ul li:not(:last-child) .step:after {
     background: #0487ff;
     background: #999;
@@ -1207,6 +1307,7 @@ header a button:not(.active):hover:after{
     width: 1px;
     z-index: 0;
 }
+
 .how-we-work ul li .step:before {
     background: #0487ff;
     border: 4px solid #f2f2f2;
@@ -1219,25 +1320,32 @@ header a button:not(.active):hover:after{
     width: 10px;
     z-index: 1;
 }
-.how-we-work ul li:nth-child(2n) .step p, .how-we-work ul li:nth-child(2n) .step span {
+
+.how-we-work ul li:nth-child(2n) .step p,
+.how-we-work ul li:nth-child(2n) .step span {
     text-align: end;
 }
+
 .how-we-work ul li:nth-child(2n) .step:after {
     right: 4.5px;
 }
+
 .how-we-work ul li:nth-child(2n) .step {
     margin-right: auto;
     padding-right: 22px;
 }
+
 .how-we-work ul li .step {
     max-width: 305px;
     padding-bottom: 16px;
     position: relative;
 }
+
 .how-we-work ul li .step p {
     text-transform: uppercase;
     color: var(--primary);
 }
+
 .how-we-work ul li .step p {
     color: #0487ff;
     font-family: Montserrat, sans-serif;
@@ -1247,6 +1355,7 @@ header a button:not(.active):hover:after{
     line-height: 22px;
     text-transform: uppercase;
 }
+
 .how-we-work ul li .step span {
     font-weight: 600;
     color: var(--primary-text);
@@ -1334,6 +1443,7 @@ header a button:not(.active):hover:after{
 
 /* why choose us
 --------------------------------------------------------------------------------------------------------*/
+
 .why-choose-us h3 {
     color: var(--primary-text);
     text-align: center;
@@ -1344,14 +1454,18 @@ header a button:not(.active):hover:after{
     margin: 0 auto;
     text-align: center;
 }
+
+
 /* .why-choose-us .MuiCardContent-root{
     background-color: red !important;
 } */
+
 .why-choose-us .MuiGrid-container {
     overflow: hidden;
     border-radius: 24px;
     position: relative;
 }
+
 
 /* .why-choose-us .MuiGrid-container::before {
     border: 1px solid #e6f3ff;
@@ -1396,6 +1510,7 @@ header a button:not(.active):hover:after{
 
 /* our-clients
 --------------------------------------------------------------------------------------------------------*/
+
 .our-clients {
     padding: 80px 0;
     overflow: hidden;
@@ -1466,6 +1581,7 @@ header a button:not(.active):hover:after{
 
 /* testimonials
 --------------------------------------------------------------------------------------------------------*/
+
 .testimonials {
     position: relative;
 }
@@ -1540,6 +1656,7 @@ header a button:not(.active):hover:after{
 
 /* testimonial-card
 --------------------------------------------------------------------------------------------------------*/
+
 .MuiCard-root.testimonial-card {
     background: var(--primary-100);
     height: 100%;
@@ -1593,6 +1710,7 @@ header a button:not(.active):hover:after{
 
 /* engineering culture
 --------------------------------------------------------------------------------------------------------*/
+
 .engineering-culture .image-wrapper {
     justify-content: flex-start;
 }
@@ -1639,11 +1757,18 @@ header a button:not(.active):hover:after{
     color: var(--secondary-text);
 }
 
+
 /* faq
 --------------------------------------------------------------------------------------------------------*/
+
 .faq {
     padding-top: 100px;
     padding-bottom: 100px;
+}
+
+.accordion-item:last-of-type {
+    border-bottom-right-radius: 12px !important;
+    border-bottom-left-radius: 12px !important;
 }
 
 .faq .image-wrapper {
@@ -1660,6 +1785,7 @@ header a button:not(.active):hover:after{
 
 /* request proposal
 --------------------------------------------------------------------------------------------------------*/
+
 .request-proposal {
     border-radius: 24px;
     background: var(--primary);
@@ -1668,7 +1794,7 @@ header a button:not(.active):hover:after{
     flex-direction: column;
     align-items: center;
     position: relative;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     overflow: hidden;
 }
 
@@ -1698,6 +1824,7 @@ header a button:not(.active):hover:after{
     color: rgba(255, 255, 255, 0.88);
     text-transform: uppercase;
 }
+
 .request-proposal ul li small {
     color: #ffffffe0;
     font-family: Montserrat, sans-serif;
@@ -1768,6 +1895,7 @@ header a button:not(.active):hover:after{
 
 /* footer
 --------------------------------------------------------------------------------------------------------*/
+
 footer a {
     display: block;
 }
@@ -1834,9 +1962,7 @@ footer .contact-info li span {
 }
 
 footer hr {
-    border: 1px solid
-        /* Replace '$light-border' with the actual color value */
-    ;
+    border: 1px solid #adb4b9;
     margin: 48px 0 0;
 }
 
@@ -1850,9 +1976,10 @@ footer .bottom {
 footer .bottom small {
     /* Replace '@include body-3();' with the actual CSS properties from the 'body-3' mixin */
     color: var(--tertiary-text)
-        /* Replace '$tertiary-text' with the actual color value */
+    /* Replace '$tertiary-text' with the actual color value */
     ;
 }
+
 footer .bottom small {
     color: gray;
     font-family: Poppins, sans-serif;
@@ -1861,6 +1988,7 @@ footer .bottom small {
     letter-spacing: .15px;
     line-height: 22px;
 }
+
 footer .bottom .MuiIconButton-root img {
     height: 24px;
     width: 24px;
@@ -1869,6 +1997,7 @@ footer .bottom .MuiIconButton-root img {
 
 /* vertical counter
 --------------------------------------------------------------------------------------------------------*/
+
 .vertical-counter {
     display: flex;
     justify-content: center;
@@ -1917,6 +2046,7 @@ footer .bottom .MuiIconButton-root img {
     color: rgba(255, 255, 255, 0.8);
     text-align: center;
 }
+
 .vertical-counter ul li p {
     color: #fffc;
     font-family: Poppins, sans-serif;
@@ -1927,12 +2057,15 @@ footer .bottom .MuiIconButton-root img {
     text-align: center;
 }
 
+
 /* vision and mission
 --------------------------------------------------------------------------------------------------------*/
+
 .vision-and-mission p {
     max-width: 1024px;
     margin: 0 auto;
 }
+
 .css-3sq53o {
     margin: 0px;
     font-family: Poppins, sans-serif;
@@ -1942,6 +2075,7 @@ footer .bottom .MuiIconButton-root img {
     letter-spacing: 0.5px;
     text-align: center;
 }
+
 .css-1gpftb1 {
     margin: 0px;
     font-family: Montserrat, sans-serif;
@@ -1951,6 +2085,7 @@ footer .bottom .MuiIconButton-root img {
     letter-spacing: 0px;
     text-align: center;
 }
+
 @media (min-width: 1200px) {
     .css-4lx7hw {
         flex-basis: 50%;
@@ -1959,6 +2094,7 @@ footer .bottom .MuiIconButton-root img {
         max-width: 50%;
     }
 }
+
 @media (min-width: 992px) {
     .css-4lx7hw {
         flex-basis: 50%;
@@ -1967,6 +2103,7 @@ footer .bottom .MuiIconButton-root img {
         max-width: 50%;
     }
 }
+
 @media (min-width: 768px) {
     .css-4lx7hw {
         flex-basis: 100%;
@@ -1975,6 +2112,7 @@ footer .bottom .MuiIconButton-root img {
         max-width: 50%;
     }
 }
+
 @media (min-width: 576px) {
     .css-4lx7hw {
         flex-basis: 100%;
@@ -1983,6 +2121,7 @@ footer .bottom .MuiIconButton-root img {
         max-width: 50%;
     }
 }
+
 .css-i3gkby {
     margin: 0px;
     font-family: Montserrat, sans-serif;
@@ -1991,6 +2130,7 @@ footer .bottom .MuiIconButton-root img {
     line-height: 48px;
     letter-spacing: 0.25px;
 }
+
 .css-4lx7hw {
     box-sizing: border-box;
     margin: 0px;
@@ -2000,16 +2140,20 @@ footer .bottom .MuiIconButton-root img {
     flex-grow: 0;
     max-width: 50%;
 }
+
 .section-details .image-wrapper img {
     max-width: 480px;
 }
+
 .image-wrapper img {
     display: block;
     width: 100%;
 }
 
+
 /* section details
 --------------------------------------------------------------------------------------------------------*/
+
 .section-details .image-wrapper img {
     max-width: 480px;
 }
@@ -2042,8 +2186,10 @@ footer .bottom .MuiIconButton-root img {
     font-weight: 500;
 }
 
+
 /* it consulting card
 --------------------------------------------------------------------------------------------------------*/
+
 .MuiCard-root.it-consulting-card {
     padding: 32px;
     border-radius: 24px;
@@ -2051,12 +2197,12 @@ footer .bottom .MuiIconButton-root img {
     position: relative;
     height: 100%;
     transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 375px;
 }
 
 .MuiCard-root.it-consulting-card:hover {
     transform: translateY(-10px);
-    box-shadow: rgb(0 0 0 / 10%) 0px 20px 25px -5px,
-        rgb(0 0 0 / 4%) 0px 10px 10px -5px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 20px 25px -5px, rgb(0 0 0 / 4%) 0px 10px 10px -5px;
 }
 
 .MuiCard-root.it-consulting-card .MuiCardContent-root {
@@ -2082,10 +2228,7 @@ footer .bottom .MuiIconButton-root img {
 
 .MuiCard-root.it-consulting-card .MuiCardContent-root span {
     color: var(--white);
-    text-shadow: -2px -2px 0 var(--light-border), 2px -2px 0 var(--light-border),
-        -2px 2px 0 var(--light-border), 2px 2px 0 var(--light-border),
-        0 -2px 0 var(--light-border), 0 2px 0 var(--light-border),
-        -2px 0 0 var(--light-border), 2px 0 0 var(--light-border);
+    text-shadow: -2px -2px 0 var(--light-border), 2px -2px 0 var(--light-border), -2px 2px 0 var(--light-border), 2px 2px 0 var(--light-border), 0 -2px 0 var(--light-border), 0 2px 0 var(--light-border), -2px 0 0 var(--light-border), 2px 0 0 var(--light-border);
     position: absolute;
     right: 32px;
     top: 32px;
@@ -2094,6 +2237,7 @@ footer .bottom .MuiIconButton-root img {
 
 /* consider hiring developer
 --------------------------------------------------------------------------------------------------------*/
+
 .consider-hiring-developer {
     border-radius: 24px;
     background: var(--primary);
@@ -2134,6 +2278,7 @@ footer .bottom .MuiIconButton-root img {
 
 /* benefits of hiring
 --------------------------------------------------------------------------------------------------------*/
+
 .benefits-of-hiring .MuiCard-root .MuiCardContent-root {
     display: flex;
     align-content: center;
@@ -2155,6 +2300,7 @@ footer .bottom .MuiIconButton-root img {
 
 /* pricing methods
 --------------------------------------------------------------------------------------------------------*/
+
 .pricing-methods {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -2170,8 +2316,7 @@ footer .bottom .MuiIconButton-root img {
 
 .pricing-methods .MuiCard-root:hover {
     transform: translateY(-10px);
-    box-shadow: rgb(0 0 0 / 10%) 0px 20px 25px -5px,
-        rgb(0 0 0 / 4%) 0px 10px 10px -5px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 20px 25px -5px, rgb(0 0 0 / 4%) 0px 10px 10px -5px;
 }
 
 .pricing-methods .MuiCard-root .top {
@@ -2210,6 +2355,7 @@ footer .bottom .MuiIconButton-root img {
 
 /* bullet-points-list
 --------------------------------------------------------------------------------------------------------*/
+
 .bullet-points-list li {
     margin-bottom: 24px;
 }
@@ -2263,13 +2409,15 @@ footer .bottom .MuiIconButton-root img {
 
 /* technologies content
 --------------------------------------------------------------------------------------------------------*/
+
 .technologies-content .image-wrapper img {
-    max-width: 490px;
+    max-width: 480px;
 }
 
 
 /* visit our portfolio
 --------------------------------------------------------------------------------------------------------*/
+
 .visit-our-portfolio {
     background: #004b8f;
     padding: 80px 60px 0;
@@ -2331,8 +2479,10 @@ footer .bottom .MuiIconButton-root img {
     width: 100%;
 }
 
+
 /* industry problems
 --------------------------------------------------------------------------------------------------------*/
+
 .industry-problems {
     display: flex;
     flex-direction: column;
@@ -2356,8 +2506,7 @@ footer .bottom .MuiIconButton-root img {
 
 .industry-problems .MuiCard-root:hover {
     transform: translateY(-10px);
-    box-shadow: rgb(0 0 0 / 10%) 0px 20px 25px -5px,
-        rgb(0 0 0 / 4%) 0px 10px 10px -5px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 20px 25px -5px, rgb(0 0 0 / 4%) 0px 10px 10px -5px;
 }
 
 .industry-problems .MuiCard-root .MuiCardContent-root {
@@ -2365,10 +2514,7 @@ footer .bottom .MuiIconButton-root img {
 }
 
 .industry-problems .MuiCard-root .MuiCardContent-root p {
-    text-shadow: -4px -4px 0px #0487ff, 4px -4px 0px #0487ff,
-        -4px 4px 0px #0487ff, 4px 4px 0px #0487ff,
-        0px 4px 0px #0487ff, 0px -4px 0px #0487ff,
-        4px 0px 0px #0487ff, -4px 0px 0px #0487ff;
+    text-shadow: -4px -4px 0px #0487ff, 4px -4px 0px #0487ff, -4px 4px 0px #0487ff, 4px 4px 0px #0487ff, 0px 4px 0px #0487ff, 0px -4px 0px #0487ff, 4px 0px 0px #0487ff, -4px 0px 0px #0487ff;
     opacity: 0.16;
     color: var(--white);
 }
@@ -2414,6 +2560,7 @@ footer .bottom .MuiIconButton-root img {
 
 /* industry solutions
 --------------------------------------------------------------------------------------------------------*/
+
 .industry-solutions {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -2471,8 +2618,7 @@ footer .bottom .MuiIconButton-root img {
 
 .industry-solutions ul li:hover {
     transform: translateY(-10px);
-    box-shadow: rgb(0 0 0 / 10%) 0px 20px 25px -5px,
-        rgb(0 0 0 / 4%) 0px 10px 10px -5px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 20px 25px -5px, rgb(0 0 0 / 4%) 0px 10px 10px -5px;
 }
 
 .industry-solutions ul li img {
@@ -2489,6 +2635,7 @@ footer .bottom .MuiIconButton-root img {
 
 /* solution impact
 --------------------------------------------------------------------------------------------------------*/
+
 .solution-impact {
     border-radius: 24px;
     padding: 64px 80px;
@@ -2538,8 +2685,10 @@ footer .bottom .MuiIconButton-root img {
     color: #4d4d4d;
 }
 
+
 /* contact us form wrapper
 --------------------------------------------------------------------------------------------------------*/
+
 .contact-us-form-wrapper .contact-info {
     background: #e6f3ff;
     border-radius: 24px;
@@ -2615,6 +2764,7 @@ footer .bottom .MuiIconButton-root img {
 
 /* portfolio card
 --------------------------------------------------------------------------------------------------------*/
+
 .MuiCard-root.portfolio-card {
     border-radius: 0;
 }
@@ -2672,6 +2822,7 @@ footer .bottom .MuiIconButton-root img {
 
 /* site loader
 --------------------------------------------------------------------------------------------------------*/
+
 .loader {
     position: fixed;
     inset: 0;
@@ -2681,31 +2832,33 @@ footer .bottom .MuiIconButton-root img {
     align-items: center;
     background: #fff;
     z-index: 9999;
-  }
-  
-  .loader .logo {
-    height: 60px;
+}
+
+.loader .logo {
+    height: 48px;
     margin-bottom: 40px;
     width: 200px;
-  }
-  
-  .progress-bar {
+}
+
+.progress-bar {
     width: 200px;
     height: 6px;
     background: #e0e0e0;
     border-radius: 4px;
     overflow: hidden;
-  }
-  
-  .progress {
+}
+
+.progress {
     height: 100%;
     width: 0%;
     background-color: #007bff;
     transition: width 0.3s ease;
-  }
+}
+
 
 /* portfolio projects
 --------------------------------------------------------------------------------------------------------*/
+
 .portfolio-projects .MuiPagination-root {
     margin-top: 48px;
 }
@@ -2714,8 +2867,10 @@ footer .bottom .MuiIconButton-root img {
     justify-content: center;
 }
 
+
 /* scroll to top button
 --------------------------------------------------------------------------------------------------------*/
+
 .MuiIconButton-root.scroll-to-top-btn {
     position: fixed;
     bottom: 40px;
@@ -2726,13 +2881,16 @@ footer .bottom .MuiIconButton-root img {
     transform: scale(0.5);
     transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.MuiIconButton-root.scroll-to-top-btn:hover{
-    background-color: rgb(3, 108, 204);
-}
+
 .MuiIconButton-root.scroll-to-top-btn.show {
     opacity: 1;
     visibility: visible;
     transform: scale(1);
+}
+
+/* Additional styles for the button */
+.MuiIconButton-root.scroll-to-top-btn:hover {
+    background-color: rgb(3, 108, 204);
 }
 
 .MuiIconButton-root.scroll-to-top-btn::before {
@@ -2757,6 +2915,7 @@ footer .bottom .MuiIconButton-root img {
 
 /* file upload
 --------------------------------------------------------------------------------------------------------*/
+
 .file-upload {
     width: 100%;
     padding: 24px;
@@ -2823,12 +2982,12 @@ footer .bottom .MuiIconButton-root img {
 
 /* media queries
 --------------------------------------------------------------------------------------------------------*/
+
 @media (min-width: 1200px) {
     header ul li.has-submenu a:hover img {
         transform: rotate(180deg);
     }
 }
-
 
 @media (max-width: 1439px) {
     .MuiCard-root.portfolio-card .MuiCardContent-root .card-image {
@@ -2836,46 +2995,37 @@ footer .bottom .MuiIconButton-root img {
     }
 }
 
-
 @media (max-width: 1199px) {
     body.show-sidebar {
         overflow: hidden;
     }
-
     .show-sidebar header ul {
         left: 0;
         z-index: 99;
     }
-
     .show-sidebar header .sidebar-overlay {
         opacity: 1;
         visibility: visible;
         z-index: 48;
     }
-
     header {
         min-height: 76px;
         padding: 8px 24px;
         justify-content: flex-start;
     }
-
     header .MuiIconButton-root {
         display: inline-flex;
     }
-
     header>a:not(.logo) {
         margin-left: auto;
     }
-
     header .logo {
         margin-left: 16px;
     }
-
     header .logo img {
         height: 40px;
         width: 160px;
     }
-
     header ul {
         position: fixed;
         top: 0;
@@ -2890,37 +3040,30 @@ footer .bottom .MuiIconButton-root img {
         transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
         overflow-y: auto;
     }
-
     header ul li {
         margin-bottom: 8px;
     }
-
     /* header ul li.has-submenu a.menu-expanded {
         background: var(--primary-100);
         color: var(--primary);
     } */
-
     header ul li.has-submenu a img {
         display: block;
     }
-
     header ul li.has-submenu a.menu-expanded img {
         transform: rotate(365deg);
     }
-
     header ul li .submenu {
         opacity: 1;
         visibility: visible;
         padding: 8px 0 0;
     }
-
     header ul li .submenu li a {
         padding-left: 34px;
         padding-right: 16px;
         position: relative;
         border-radius: 30px;
     }
-
     header ul li .submenu li a::before {
         content: "";
         display: block;
@@ -2933,253 +3076,195 @@ footer .bottom .MuiIconButton-root img {
         position: absolute;
         transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-
     header ul li .submenu li a:hover {
         color: var(--primary);
         background: transparent;
     }
-
     header ul li .submenu li a:hover::before {
         background: var(--primary);
     }
-
     header ul li .submenu li a.active::before {
         background: var(--primary);
     }
-
     .banner.hero-banner {
         padding-top: 180px;
         padding-bottom: 120px;
     }
-
     .banner.hero-banner h2 {
         padding-bottom: 24px;
     }
-
     .banner.hero-banner p {
         padding-bottom: 48px;
     }
-
     .banner.industry-details-banner {
         margin-bottom: 80px;
     }
-
     .banner.service-details-banner {
         padding-top: 76px;
     }
-
     .banner.service-details-banner .banner-content .right img {
         height: 400px;
     }
-
     .outer-card {
         margin: 0;
         border-radius: 0;
     }
-
     .our-services {
         padding-top: 80px;
     }
-
     .industries-we-serve {
         padding-bottom: 80px;
     }
-
     .how-we-work ul {
         max-width: 480px;
     }
-
     .how-we-work ul li .step {
         max-width: 245px;
     }
-
     .how-we-work img {
         width: 320px;
     }
-
     .how-we-work img.illustration-2 {
         right: -100px;
     }
-
     .how-we-work img.illustration-1 {
         left: -100px;
     }
-
     .vertical-counter {
         gap: 16px;
     }
-
     .vertical-counter ul {
         gap: 16px;
     }
-
     .banner.page-banner {
         padding-top: 124px;
         min-height: 456px;
         padding-bottom: 48px;
     }
-
     .section-details .content {
         padding-left: 24px;
     }
-
     .pricing-methods {
         padding-top: 80px;
         padding-bottom: 80px;
     }
-
     .pricing-methods .MuiCard-root .top {
         padding: 32px 32px 24px;
     }
-
     .pricing-methods .MuiCard-root .MuiCardContent-root {
         padding: 24px 32px 40px;
     }
-
     .engineering-culture .image-wrapper {
         justify-content: center;
     }
-
     .engineering-culture .image-wrapper img {
         max-width: 100%;
     }
-
     .engineering-culture .content {
         padding-left: 0;
     }
-
     .industry-problems .MuiCard-root .MuiCardContent-root ul {
         display: block;
     }
-
     .industry-problems .MuiCard-root .MuiCardContent-root ul li {
         max-width: 100%;
         padding-right: 0;
     }
-
     .industry-solutions {
         padding-top: 80px;
         padding-bottom: 80px;
     }
-
     .industry-solutions .content {
         padding-left: 16px;
     }
-
     .industry-solutions ul {
         padding-left: 16px;
         padding-right: 16px;
     }
-
     .solution-impact {
         padding: 64px 48px;
     }
-
     .MuiIconButton-root.scroll-to-top-btn {
         bottom: 24px;
         right: 24px;
     }
 }
 
-
 @media (max-width: 991px) {
     .banner {
         padding-top: 124px;
     }
-
     .banner.page-banner {
         min-height: 360px;
     }
-
     .banner.service-details-banner h2 {
         padding-bottom: 32px;
     }
-
     .banner.service-details-banner .banner-content .right img {
         height: 300px;
     }
-
     .about-it-solution .image-wrapper img {
         max-width: 480px;
     }
-
     .counter {
         padding-top: 40px;
         padding-bottom: 40px;
     }
-
     .counter ul li span {
         font-size: 40px;
         line-height: 56px;
         letter-spacing: 0.25px;
         padding-bottom: 4px;
     }
-
     .our-services {
         padding-top: 64px;
     }
-
     .software-development-technologies {
         padding: 64px;
     }
-
     .how-we-work img {
         width: 260px;
     }
-
     .faq {
         padding-top: 80px;
         padding-bottom: 80px;
     }
-
     .faq .MuiGrid-root .MuiGrid-item:first-child {
         display: none;
     }
-
     .faq h3 {
         text-align: center;
     }
-
     .request-proposal {
         padding-top: 64px;
         padding-bottom: 48px;
     }
-
     .vertical-counter {
         max-width: 600px;
-        margin: 0 auto 16px;
+        margin: 40px auto 16px;
     }
-
     .vertical-counter ul li {
         min-height: 180px;
     }
-
-
     .section-details .image-wrapper {
         margin-bottom: 16px;
     }
-
     .section-details .image-wrapper img {
         max-width: 400px;
     }
-
     .section-details .content {
         padding-left: 0;
     }
-
     .service-details-content>p {
         padding-bottom: 38px;
     }
-
     .pricing-methods {
         padding-top: 64px;
         padding-bottom: 64px;
     }
-
     .testimonials {
         padding-bottom: 76px;
     }
-
     .testimonials::after {
         content: "";
         position: absolute;
@@ -3191,108 +3276,85 @@ footer .bottom .MuiIconButton-root img {
         background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
         z-index: 1;
     }
-
     .testimonials .content {
         padding-top: 0;
         max-width: 100%;
     }
-
     .testimonials .content h3 {
         text-align: center;
         padding-bottom: 16px !important;
     }
-
     .testimonials .content p {
         text-align: center;
         padding-bottom: 16px;
     }
-
     .testimonials .slider-wrapper {
         display: flex;
         align-items: center;
         justify-content: center;
         margin-left: -40px;
     }
-
     .testimonials .slider-wrapper .slick-slider {
         max-width: 408px;
     }
-
     .testimonials .slider-wrapper .slick-slider .MuiButtonBase-root.slick-arrow {
         bottom: 0;
         top: unset;
         left: 50%;
     }
-
     .testimonials .slider-wrapper .slick-slider .MuiButtonBase-root.slick-arrow.slick-next {
         transform: translateX(calc(-50% + 28px));
     }
-
     .testimonials .slider-wrapper .slick-slider .MuiButtonBase-root.slick-arrow.slick-prev {
         transform: translateX(calc(-50% - 28px));
     }
-
     .testimonials .slider-wrapper .slick-slider .slick-list .slick-track .slick-slide {
         margin-right: 0;
     }
-
     .industry-problems>p {
         padding-bottom: 64px;
     }
-
     .industry-problems .MuiCard-root .MuiCardContent-root {
         padding: 24px;
     }
-
     .industry-solutions .content {
         padding-left: 0;
     }
-
     .industry-solutions ul {
         padding-left: 0;
         padding-right: 0;
         width: 100%;
         gap: 16px;
     }
-
     .industry-solutions ul li {
         max-width: 100%;
     }
-
     .solution-impact {
         padding: 48px;
     }
-
     .contact-us-form-wrapper .contact-info {
         max-width: 100%;
         min-height: auto;
     }
-
     .contact-us-form-wrapper .contact-us-form {
         max-width: 100%;
     }
-
     .MuiCard-root.portfolio-card .MuiCardContent-root .card-image {
         min-height: 280px;
     }
-
     .portfolio-projects {
         margin-top: -24px;
     }
-
     .portfolio-projects .MuiTabs-root {
         overflow: visible;
     }
-
     .portfolio-projects .MuiTabs-root>.MuiButtonBase-root {
         border: 2px solid var(--light-border);
         border-radius: 4px;
     }
-
     .portfolio-projects .MuiTabs-root>.MuiButtonBase-root.Mui-disabled {
         display: none;
     }
-
     .portfolio-projects .MuiTabs-root .MuiTabs-flexContainer {
         gap: 12px;
     }
@@ -3303,24 +3365,19 @@ footer .bottom .MuiIconButton-root img {
         padding-bottom: 64px;
         padding-top: 144px;
     }
-
     .banner.industry-details-banner {
         margin-bottom: 64px;
     }
-
     .banner.service-details-banner {
         margin-bottom: 64px;
     }
-
     .banner.service-details-banner h2 {
         text-align: center;
     }
-
     .banner.service-details-banner .banner-content {
         flex-direction: column;
         padding-bottom: 24px;
     }
-
     .banner.service-details-banner .banner-content .left {
         padding-right: 0;
         display: flex;
@@ -3328,62 +3385,49 @@ footer .bottom .MuiIconButton-root img {
         align-items: center;
         padding-bottom: 24px;
     }
-
     .counter {
         padding-top: 24px;
         padding-bottom: 24px;
     }
-
     .counter ul {
         flex-wrap: wrap;
     }
-
     .counter ul li {
         max-width: 50%;
         flex-basis: 50%;
         margin-top: 24px;
         margin-bottom: 24px;
     }
-
     .industries-we-serve {
         padding-bottom: 64px;
     }
-
     .slider-card .top {
         padding-right: 0;
     }
-
     .slick-slider {
         margin-bottom: 116px;
     }
-
     .slick-slider .MuiButtonBase-root.slick-arrow {
         top: unset;
         bottom: -76px;
         left: 50%;
     }
-
     .slick-slider .MuiButtonBase-root.slick-arrow.slick-prev {
         right: unset;
         transform: translateX(calc(-50% - 28px));
     }
-
     .slick-slider .MuiButtonBase-root.slick-arrow.slick-next {
         transform: translateX(calc(-50% + 28px));
     }
-
     .MuiCard-root.industry-card {
         height: 480px;
     }
-
     .software-development-technologies {
         padding: 60px 48px;
     }
-
     .software-development-technologies .content {
         z-index: 2;
     }
-
     .software-development-technologies::after {
         content: "";
         display: block;
@@ -3396,131 +3440,105 @@ footer .bottom .MuiIconButton-root img {
         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.32) 100%);
         z-index: 1;
     }
-
     .how-we-work .outer-card {
         padding-top: 64px;
         padding-bottom: 42px;
     }
-
     .how-we-work img {
         width: 200px;
     }
-
     .how-we-work img.illustration-2 {
         right: -80px;
     }
-
     .how-we-work img.illustration-1 {
         left: -80px;
     }
-
+    .css-ldtpqf>.MuiGrid-item {
+        padding-top: 32px;
+    }
     .our-clients {
         padding: 64px 0;
     }
-
     .our-clients ul {
         margin-bottom: 48px;
     }
-
     .faq {
         padding-top: 64px;
         padding-bottom: 64px;
     }
-
     .request-proposal {
-        padding: 48px;
+        padding-bottom: 48px;
+        padding-top: 64px;
     }
-
     .request-proposal ul {
         flex-direction: column;
         gap: 4px;
     }
-
     .vertical-counter {
         margin-bottom: 8px;
     }
-
     .service-details-content>p {
         padding-bottom: 28px;
     }
-
     .section-details .image-wrapper {
         margin-bottom: 0;
     }
-
     footer hr {
         margin-top: 32px;
     }
-
     .consider-hiring-developer {
         padding: 48px;
     }
-
     .consider-hiring-developer h5 {
         font-size: 24px;
         line-height: 32px;
         letter-spacing: 0.1px;
         padding-bottom: 16px !important;
     }
-
     .testimonials::after {
         left: -24px;
     }
-
     .testimonials::before {
         right: -24px;
     }
-
     .testimonials .slider-wrapper {
         margin-left: -24px;
         margin-right: -24px;
     }
-
     .visit-our-portfolio {
         padding: 48px 48px 0;
     }
-
     .visit-our-portfolio h4 {
         padding-bottom: 24px;
     }
-
     .visit-our-portfolio .MuiButton-root {
         margin-bottom: 48px;
     }
-
     .visit-our-portfolio img.oval-two {
         left: -152px;
     }
-
     .visit-our-portfolio img.oval-three {
         bottom: -110px;
     }
-
     .visit-our-portfolio img.grid-bg {
         bottom: 0;
     }
-
     .industry-problems>p {
         padding-bottom: 48px;
     }
-
     .industry-solutions {
         padding-top: 64px;
         padding-bottom: 64px;
     }
-
     .solution-impact {
         padding: 32px 40px;
     }
-
     .solution-impact ul li:not(:last-child) {
         margin-bottom: 24px;
     }
-
     .MuiCard-root.portfolio-card .MuiCardContent-root .card-image {
         min-height: 220px;
     }
-
     .portfolio-projects .MuiPagination-root {
         margin-top: 40px;
     }
@@ -3531,72 +3549,56 @@ footer .bottom .MuiIconButton-root img {
         padding-left: 16px;
         padding-right: 16px;
     }
-
     header .logo {
         margin-left: 8px;
     }
-
     header .logo img:not(.mobile-logo) {
         display: none;
     }
-
     header .logo img.mobile-logo {
         display: block;
         width: 100%;
     }
-
     .banner.hero-banner {
         padding-bottom: 48px;
         padding-top: 124px;
     }
-
     .banner h2 {
         font-size: 32px;
         line-height: 44px;
         letter-spacing: 0.04px;
     }
-
     .MuiCard-root.service-card .MuiCardContent-root {
         padding: 24px 24px 8px;
     }
-
     .MuiCard-root.service-card .MuiCardActions-root {
         padding: 0 24px 24px;
     }
-
     .MuiCard-root.industry-card {
         height: 480px;
     }
-
     .MuiCard-root.it-consulting-card {
         padding: 24px;
     }
-
     .software-development-technologies {
         padding: 48px 24px;
     }
-
     .how-we-work ul {
         max-width: 320px;
     }
-
     .how-we-work ul li .step {
         max-width: 165px;
     }
-
     .how-we-work img {
         display: none;
     }
-
     .why-choose-us .MuiCard-root .MuiCardContent-root {
         padding: 24px;
     }
-
     .request-proposal {
         padding-left: 24px;
         padding-right: 24px;
     }
-
     .request-proposal>span {
         font-size: 14px;
         line-height: 22px;
@@ -3607,28 +3609,23 @@ footer .bottom .MuiIconButton-root img {
         align-items: center;
         background: #0487ff;
         border-radius: 24px;
-        display: flex
-    ;
+        display: flex;
         flex-direction: column;
         margin-bottom: 80px;
         overflow: hidden;
         padding: 80px 60px 60px;
         position: relative;
     }
-   
     .request-proposal ul {
         margin-bottom: 32px;
     }
-
     .request-proposal ul li a {
         align-items: center;
         gap: 6px;
     }
-
     .request-proposal ul li a img {
         margin-top: 0;
     }
-
     .request-proposal ul li a span {
         word-break: break-all;
         font-size: 16px;
@@ -3636,18 +3633,15 @@ footer .bottom .MuiIconButton-root img {
         letter-spacing: 0.25px;
         padding-bottom: 0;
     }
-
     .vertical-counter {
         flex-wrap: wrap;
         margin-left: -8px;
         margin-right: -8px;
     }
-
     .vertical-counter ul {
         flex-basis: calc(50% - 16px);
         max-width: calc(50% - 16px);
     }
-
     .vertical-counter ul:nth-child(3) {
         align-self: flex-end;
         margin-top: 0;
@@ -3656,112 +3650,97 @@ footer .bottom .MuiIconButton-root img {
         margin-left: 8px;
         margin-right: 8px;
     }
-
     .vertical-counter ul:nth-child(1) {
         margin-top: 0;
     }
-
     footer hr {
         margin-top: 24px;
     }
-
     footer .bottom {
         flex-direction: column-reverse;
         padding-bottom: 24px;
     }
-
     footer .bottom .social-links {
         margin-bottom: 4px;
     }
-
     .consider-hiring-developer {
         padding: 32px;
     }
-
     .pricing-methods .MuiCard-root .top {
         padding: 24px;
     }
-
     .pricing-methods .MuiCard-root .MuiCardContent-root {
         padding: 24px 24px 32px;
     }
-
     .pricing-methods .MuiCard-root .MuiCardContent-root .bullet-points-list {
         margin-bottom: 24px;
     }
-
     .MuiCard-root.testimonial-card .MuiCardContent-root {
         padding: 24px;
     }
-
     .MuiCard-root.testimonial-card .MuiCardContent-root p {
         font-size: 16px;
         line-height: 28px;
         letter-spacing: 0.25px;
     }
-
     .testimonials::before {
         right: -16px;
         width: 16px;
     }
-
     .testimonials::after {
         width: 16px;
         left: -16px;
     }
-
     .testimonials .slider-wrapper {
         margin-left: -16px;
         margin-right: -16px;
     }
-
     .testimonials .slider-wrapper .slick-slider {
         max-width: 340px;
     }
-
     .testimonials .slider-wrapper .slick-slider .slick-list .slick-track .slick-slide {
         min-height: 440px;
     }
-
     .visit-our-portfolio {
         padding-left: 24px;
         padding-right: 24px;
     }
-
     .solution-impact {
         padding-left: 24px;
         padding-right: 24px;
     }
-
     .solution-impact h4 {
         padding-bottom: 24px;
     }
-
     .solution-impact>img.left {
         left: -10px;
         top: -10px;
     }
-
     .solution-impact>img.right {
         right: -10px;
         bottom: -10px;
     }
-
     .MuiIconButton-root.scroll-to-top-btn {
         bottom: 16px;
         right: 16px;
     }
 }
 
+
 /* about us page  */
+
+
 /* ============================================================================ */
+
 .banner.page-banner .banner-content {
     margin: -4px auto 0;
 }
 
-.banner.page-banner .banner-content h2, .banner.page-banner .banner-content p {
+.banner.page-banner .banner-content h2,
+.banner.page-banner .banner-content p {
     text-align: center;
 }
+
 .banner-development:after {
     background-color: #f1f1ff !important;
     bottom: 0;
@@ -3774,6 +3753,7 @@ footer .bottom .MuiIconButton-root img {
     width: 100%;
     z-index: 0;
 }
+
 @media (min-width: 1200px) {
     .css-ldtpqf {
         width: calc(100% + 64px);
@@ -3792,9 +3772,11 @@ footer .bottom .MuiIconButton-root img {
     display: flex;
     flex-flow: wrap;
 }
+
 @media (min-width: 1200px) {
-    .css-ldtpqf > .MuiGrid-item {
+    .css-ldtpqf>.MuiGrid-item {
         padding-left: 64px;
+        padding-top: 64px;
     }
 }
 
@@ -3803,6 +3785,7 @@ footer .bottom .MuiIconButton-root img {
         order: 1;
     }
 }
+
 @media (min-width: 1200px) {
     .css-yzz2ut {
         flex-basis: 50%;
@@ -3811,6 +3794,7 @@ footer .bottom .MuiIconButton-root img {
         max-width: 50%;
     }
 }
+
 @media (min-width: 992px) {
     .css-yzz2ut {
         flex-basis: 50%;
@@ -3819,6 +3803,7 @@ footer .bottom .MuiIconButton-root img {
         max-width: 50%;
     }
 }
+
 @media (min-width: 768px) {
     .css-yzz2ut {
         flex-basis: 100%;
@@ -3826,6 +3811,7 @@ footer .bottom .MuiIconButton-root img {
         flex-grow: 0;
     }
 }
+
 @media (min-width: 576px) {
     .css-yzz2ut {
         flex-basis: 100%;
@@ -3833,6 +3819,7 @@ footer .bottom .MuiIconButton-root img {
         flex-grow: 0;
     }
 }
+
 .css-yzz2ut {
     box-sizing: border-box;
     margin: 0px;
@@ -3844,11 +3831,13 @@ footer .bottom .MuiIconButton-root img {
         order: 2;
     }
 }
+
 @media (min-width: 0px) {
     .css-1lo6hd {
         order: 1;
     }
 }
+
 @media (min-width: 1200px) {
     .css-1lo6hd {
         flex-basis: 50%;
@@ -3857,6 +3846,7 @@ footer .bottom .MuiIconButton-root img {
         max-width: 50%;
     }
 }
+
 @media (min-width: 992px) {
     .css-1lo6hd {
         flex-basis: 50%;
@@ -3865,6 +3855,7 @@ footer .bottom .MuiIconButton-root img {
         max-width: 50%;
     }
 }
+
 @media (min-width: 768px) {
     .css-1lo6hd {
         flex-basis: 100%;
@@ -3872,6 +3863,7 @@ footer .bottom .MuiIconButton-root img {
         flex-grow: 0;
     }
 }
+
 @media (min-width: 576px) {
     .css-1lo6hd {
         flex-basis: 100%;
@@ -3879,6 +3871,7 @@ footer .bottom .MuiIconButton-root img {
         flex-grow: 0;
     }
 }
+
 .css-1lo6hd {
     box-sizing: border-box;
     margin: 0px;
@@ -3888,35 +3881,48 @@ footer .bottom .MuiIconButton-root img {
     flex-grow: 0;
 }
 
+
 /* custom-software-development */
+
 .banner.service-details-banner.bg-light-purple {
     background: rgb(241, 241, 255);
 }
+
 .banner.service-details-banner {
     margin-bottom: 80px;
     padding-top: 96px;
 }
+
 .banner {
     position: relative;
 }
 
+
 /* crm-and-erp-development */
+
 .banner.service-details-banner.bg-light-blue {
     background: #def4ff;
 }
+
 .banner.service-details-banner.bg-light-blue h2 {
     color: #4597bf !important;
 }
+
+
 /* Web Development */
+
 .banner.service-details-banner.bg-light-pink {
     background: #f6edff;
 }
+
 .banner.service-details-banner.bg-light-pink h2 {
     color: #8f71ad;
 }
+
 .banner.service-details-banner.bg-light-pink .MuiButton-contained {
     background: #8f71ad;
 }
+
 .css-1t9tuk4 {
     margin: 0px;
     font-family: Montserrat, sans-serif;
@@ -3927,14 +3933,7 @@ footer .bottom .MuiIconButton-root img {
     text-align: center;
     color: rgb(4, 135, 255);
 }
-.css-i3gkby{
-    margin: 0px;
-    font-family: Montserrat, sans-serif;
-    font-weight: 800;
-    font-size: 34px;
-    line-height: 48px;
-    letter-spacing: 0.25px;
-}
+
 .css-1i5tpjv {
     margin: 0px;
     font-family: Poppins, sans-serif;
@@ -3944,7 +3943,9 @@ footer .bottom .MuiIconButton-root img {
     letter-spacing: 0.25px;
 }
 
+
 /* hire dedicated development  */
+
 .consider-hiring-developer {
     background: #0487ff;
     border-radius: 24px;
@@ -3952,11 +3953,13 @@ footer .bottom .MuiIconButton-root img {
     padding: 60px;
     position: relative;
 }
+
 .consider-hiring-developer h5 {
     color: #fff;
     margin: 0 auto;
     max-width: 1024px;
 }
+
 .css-4mcfl {
     margin: 0px;
     font-family: Montserrat, sans-serif;
@@ -3966,6 +3969,7 @@ footer .bottom .MuiIconButton-root img {
     letter-spacing: 0.25px;
     text-align: center;
 }
+
 .css-3sq53o {
     margin: 0px;
     font-family: Poppins, sans-serif;
@@ -3975,6 +3979,7 @@ footer .bottom .MuiIconButton-root img {
     letter-spacing: 0.5px;
     text-align: center;
 }
+
 .consider-hiring-developer p {
     color: #ffffffe0;
     font-weight: 500;
@@ -3982,17 +3987,20 @@ footer .bottom .MuiIconButton-root img {
     max-width: 948px;
 }
 
-
 .consider-hiring-developer img {
     height: auto;
     position: absolute;
     width: auto;
 }
+
 .consider-hiring-developer img.left {
     bottom: -92px;
     left: -66px;
 }
+
+
 /* hire-dedicated-developers */
+
 .css-64t9a5 {
     margin: 0px;
     font-family: Montserrat, sans-serif;
@@ -4002,6 +4010,7 @@ footer .bottom .MuiIconButton-root img {
     letter-spacing: 0.25px;
     text-align: center;
 }
+
 .css-1a4bul5 {
     margin: 0px;
     font-family: Montserrat, sans-serif;
@@ -4011,6 +4020,7 @@ footer .bottom .MuiIconButton-root img {
     letter-spacing: 0.1px;
     text-align: center;
 }
+
 .css-12xbt9p {
     margin: 0px;
     font-family: Poppins, sans-serif;
@@ -4020,9 +4030,11 @@ footer .bottom .MuiIconButton-root img {
     letter-spacing: 0.25px;
     text-align: center;
 }
+
 .benefits-of-hiring .MuiCard-root .MuiCardContent-root p {
     color: #4d4d4d;
 }
+
 @media (min-width: 1200px) {
     .css-opks6z {
         width: calc(100% + 40px);
@@ -4055,30 +4067,36 @@ footer .bottom .MuiIconButton-root img {
     flex-flow: wrap;
     width: 100%;
 }
+
 @media (min-width: 1200px) {
-    .css-opks6z > .MuiGrid-item {
+    .css-opks6z>.MuiGrid-item {
         padding-left: 40px;
     }
 }
+
 @media (min-width: 0px) {
-    .css-opks6z > .MuiGrid-item {
-        padding-left: 32px;
+    .css-opks6z>.MuiGrid-item {
+        padding-left: 40px;
     }
 }
+
 @media (min-width: 1200px) {
-    .css-opks6z > .MuiGrid-item {
+    .css-opks6z>.MuiGrid-item {
         padding-top: 40px;
     }
 }
+
 @media (min-width: 0px) {
-    .css-opks6z > .MuiGrid-item {
-        padding-top: 32px;
+    .css-opks6z>.MuiGrid-item {
+        padding-top: 40px;
     }
 }
+
 [data-aos^=fade][data-aos^=fade] {
     opacity: 0;
     transition-property: opacity, transform;
 }
+
 @media (min-width: 1200px) {
     .css-1oaod6a {
         flex-basis: 33.3333%;
@@ -4087,6 +4105,7 @@ footer .bottom .MuiIconButton-root img {
         max-width: 33.3333%;
     }
 }
+
 .css-167ndxh {
     background-color: rgb(255, 255, 255);
     color: rgba(0, 0, 0, 0.87);
@@ -4095,15 +4114,18 @@ footer .bottom .MuiIconButton-root img {
     overflow: hidden;
     border-radius: 24px;
 }
+
 .benefits-of-hiring .MuiCard-root .MuiCardContent-root {
     align-content: center;
     display: flex;
     flex-direction: column;
     padding: 0;
 }
+
 .css-107tsus:hover::after {
     transform: translate(-50%, -50%) scale(1, 1);
 }
+
 .css-107tsus::after {
     content: "";
     display: block;
@@ -4119,6 +4141,7 @@ footer .bottom .MuiIconButton-root img {
     transform-origin: center center;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .pricing-methods .MuiCard-root .top {
     align-items: center;
     border-bottom: 1px solid #e1e7ec;
@@ -4126,9 +4149,11 @@ footer .bottom .MuiIconButton-root img {
     justify-content: space-between;
     padding: 40px 40px 32px;
 }
+
 .pricing-methods .MuiCard-root .top h6 {
     text-transform: uppercase;
 }
+
 .css-stzg0q {
     margin: 0px;
     font-family: Montserrat, sans-serif;
@@ -4138,6 +4163,7 @@ footer .bottom .MuiIconButton-root img {
     letter-spacing: 0.1px;
     color: rgb(4, 135, 255);
 }
+
 .pricing-methods .MuiCard-root .MuiCardContent-root {
     display: flex;
     flex-direction: column;
@@ -4150,33 +4176,40 @@ footer .bottom .MuiIconButton-root img {
     height: 48px;
     width: 48px;
 }
+
 .pricing-methods .MuiCard-root .MuiCardContent-root {
-    display: flex
-;
+    display: flex;
     flex-direction: column;
     flex-grow: 1;
     padding: 24px 40px 40px;
 }
+
 .bullet-points-list li {
     margin-bottom: 24px;
 }
+
 .pricing-methods .MuiCard-root .MuiCardContent-root .bullet-points-list {
     margin-bottom: 40px;
 }
+
 .bullet-points-list li ul li.title {
     display: flex;
     gap: 12px;
 }
+
 .bullet-points-list li ul li {
     margin-bottom: 8px;
     position: relative;
 }
+
 .bullet-points-list li {
     margin-bottom: 24px;
 }
+
 .bullet-points-list li ul li.title p {
     color: #1a1a1a;
 }
+
 .css-4s5e1 {
     margin: 0px;
     font-family: Montserrat, sans-serif;
@@ -4185,15 +4218,18 @@ footer .bottom .MuiIconButton-root img {
     line-height: 28px;
     letter-spacing: 0.1px;
 }
+
 .bullet-points-list li ul li.title img {
     display: block;
     height: 24px;
     margin-top: 2px;
     width: 24px;
 }
+
 .pricing-methods .MuiCard-root .MuiCardContent-root a {
     margin: auto auto 0;
 }
+
 .css-4s5e1 {
     margin: 0px;
     font-family: Montserrat, sans-serif;
@@ -4202,6 +4238,7 @@ footer .bottom .MuiIconButton-root img {
     line-height: 28px;
     letter-spacing: 0.1px;
 }
+
 .bullet-points-list li ul li:not(.title) {
     color: #4d4d4d;
     font-family: Poppins, sans-serif;
@@ -4211,55 +4248,65 @@ footer .bottom .MuiIconButton-root img {
     line-height: 28px;
     padding-left: 37px;
 }
+
+
 /* it-consulting */
+
 @media (max-width: 1200px) {
     .css-16rxbyr {
         width: calc(100% + 40px);
         margin-left: -40px;
     }
 }
+
 @media (max-width: 576px) {
     .css-16rxbyr {
         width: calc(100% + 24px);
         margin-left: -24px;
     }
 }
+
 @media (max-width: 0px) {
     .css-16rxbyr {
         width: calc(100% + 16px);
         margin-left: -16px;
     }
 }
+
 @media (max-width: 1200px) {
     .css-16rxbyr {
         margin-top: -40px;
     }
 }
+
 @media (max-width: 576px) {
     .css-16rxbyr {
         margin-top: -24px;
     }
 }
+
 @media (max-width: 0px) {
     .css-16rxbyr {
         margin-top: -16px;
     }
 }
+
 .css-16rxbyr {
     box-sizing: border-box;
-    display: flex
-;
+    display: flex;
     flex-flow: wrap;
     width: 100%;
 }
+
 .MuiCard-root.it-consulting-card {
     border: 1px solid #e1e7ec;
     border-radius: 24px;
     height: 100%;
     padding: 32px;
     position: relative;
-    transition: all .18s cubic-bezier(.4,0,.2,1);
+    transition: all .18s cubic-bezier(.4, 0, .2, 1);
 }
+
 .css-167ndxh {
     background-color: rgb(255, 255, 255);
     color: rgba(0, 0, 0, 0.87);
@@ -4268,25 +4315,30 @@ footer .bottom .MuiIconButton-root img {
     overflow: hidden;
     border-radius: 24px;
 }
+
 .MuiCard-root.it-consulting-card .MuiCardContent-root {
     padding: 0;
 }
+
 .MuiCard-root.it-consulting-card .MuiCardContent-root img {
     display: block;
     height: auto;
     margin-bottom: 22px;
     width: 59px;
 }
+
 .css-18xehxy {
     flex-basis: 33.3333% !important;
     -webkit-box-flex: 0;
     flex-grow: 0;
     max-width: 33.3333% !important;
 }
-.css-16rxbyr > .MuiGrid-item {
+
+.css-16rxbyr>.MuiGrid-item {
     padding-left: 40px;
     padding-top: 40px;
 }
+
 @media (max-width: 1200px) {
     .css-18xehxy {
         flex-basis: 33.3333%;
@@ -4295,6 +4347,7 @@ footer .bottom .MuiIconButton-root img {
         max-width: 33.3333%;
     }
 }
+
 @media (max-width: 992px) {
     .css-18xehxy {
         flex-basis: 33.3333%;
@@ -4303,6 +4356,7 @@ footer .bottom .MuiIconButton-root img {
         max-width: 33.3333%;
     }
 }
+
 @media (max-width: 768px) {
     .css-18xehxy {
         flex-basis: 50%;
@@ -4311,6 +4365,7 @@ footer .bottom .MuiIconButton-root img {
         max-width: 50%;
     }
 }
+
 @media (max-width: 576px) {
     .css-18xehxy {
         flex-basis: 100%;
@@ -4319,6 +4374,7 @@ footer .bottom .MuiIconButton-root img {
         max-width: 100%;
     }
 }
+
 .css-18xehxy {
     box-sizing: border-box;
     margin: 0px;
@@ -4328,13 +4384,14 @@ footer .bottom .MuiIconButton-root img {
     flex-grow: 0;
     max-width: 100%;
 }
+
 .MuiCard-root.it-consulting-card {
     border: 1px solid #e1e7ec;
     border-radius: 24px;
     height: 100%;
     padding: 32px;
     position: relative;
-    transition: all .18s cubic-bezier(.4,0,.2,1);
+    transition: all .18s cubic-bezier(.4, 0, .2, 1);
 }
 
 .css-167ndxh {
@@ -4346,10 +4403,13 @@ footer .bottom .MuiIconButton-root img {
     border-radius: 24px;
 }
 
+
 /* Hospitality Industry */
+
 .banner.page-banner .banner-content .MuiBreadcrumbs-root {
     margin-bottom: 12px;
 }
+
 .css-zinzkl {
     margin: 0px;
     font-family: Poppins, sans-serif;
@@ -4365,8 +4425,7 @@ footer .bottom .MuiIconButton-root img {
 }
 
 .css-nhb8h9 {
-    display: flex
-;
+    display: flex;
     flex-wrap: wrap;
     -webkit-box-align: center;
     align-items: center;
@@ -4374,26 +4433,30 @@ footer .bottom .MuiIconButton-root img {
     margin: 0px;
     list-style: none;
 }
-.banner.page-banner .banner-content .MuiBreadcrumbs-root .MuiBreadcrumbs-li p{
+
+.banner.page-banner .banner-content .MuiBreadcrumbs-root .MuiBreadcrumbs-li p {
     color: #fff !important;
     opacity: .88;
 }
 
+
 /* hospitality-industry */
+
 .industry-problems {
     display: flex;
     flex-direction: column;
 }
+
 .industry-problems .MuiChip-root {
     margin-left: auto;
     margin-right: auto;
 }
+
 .css-5g400l {
     max-width: 100%;
     font-family: Roboto, Helvetica, Arial, sans-serif;
     font-size: 0.8125rem;
-    display: inline-flex
-;
+    display: inline-flex;
     -webkit-box-align: center;
     align-items: center;
     -webkit-box-pack: center;
@@ -4415,11 +4478,13 @@ footer .bottom .MuiIconButton-root img {
     border-radius: 100px;
     border-width: 2px;
 }
+
 .css-5g400l .MuiChip-icon {
     margin-left: 0px;
     margin-right: 8px;
     width: 24px;
 }
+
 .css-sqlmkz {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -4431,50 +4496,57 @@ footer .bottom .MuiIconButton-root img {
     padding: 0px;
     font-family: Montserrat, sans-serif;
 }
+
 .css-hrdle6 {
     box-sizing: border-box;
-    display: flex
-;
+    display: flex;
     flex-flow: wrap;
     width: 100%;
 }
+
 .css-hrdle6 {
     width: calc(100% + 32px);
     margin-left: -32px;
 }
+
 .css-1pdy5ci {
     flex-basis: 50%;
     -webkit-box-flex: 0;
     flex-grow: 0;
     max-width: 50%;
 }
-.css-hrdle6 > .MuiGrid-item {
+
+.css-hrdle6>.MuiGrid-item {
     padding-left: 32px;
     padding-top: 32px;
 }
+
 .industry-solutions {
     padding-bottom: 100px;
     padding-top: 100px;
 }
+
 .outer-card {
     background: #f2f2f2;
     border-radius: 24px;
     margin: 0 24px;
 }
+
 .industry-solutions .MuiContainer-root {
     display: flex;
     flex-direction: column;
 }
+
 .industry-solutions .MuiChip-root {
     margin-left: auto;
     margin-right: auto;
 }
+
 .css-770t7w {
     max-width: 100%;
     font-family: Roboto, Helvetica, Arial, sans-serif;
     font-size: 0.8125rem;
-    display: inline-flex
-;
+    display: inline-flex;
     -webkit-box-align: center;
     align-items: center;
     -webkit-box-pack: center;
@@ -4496,11 +4568,13 @@ footer .bottom .MuiIconButton-root img {
     border-radius: 100px;
     border-width: 2px;
 }
+
 .css-770t7w .MuiChip-icon {
     margin-left: 0px;
     margin-right: 8px;
     width: 24px;
 }
+
 .css-sqlmkz {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -4513,7 +4587,9 @@ footer .bottom .MuiIconButton-root img {
     font-family: Montserrat, sans-serif;
 }
 
+
 /* contact form style */
+
 .form-floating {
     position: relative;
     display: flex;
@@ -4551,7 +4627,9 @@ footer .bottom .MuiIconButton-root img {
     color: #0d6efd;
 }
 
+
 /* Icon inside input */
+
 .form-floating .input-icon {
     position: absolute;
     top: 50%;
@@ -4640,33 +4718,39 @@ footer .bottom .MuiIconButton-root img {
 .hidden {
     display: none !important;
 }
+
 .file-upload>img {
-display: block;
-height: 40px;
-margin: 0 auto 12px;
-width: 40px;
+    display: block;
+    height: 40px;
+    margin: 0 auto 12px;
+    width: 40px;
 }
+
 .file-upload {
-border: 2px dashed #ccc;
-padding: 30px;
-text-align: center;
-border-radius: 10px;
-cursor: pointer;
+    border: 2px dashed #ccc;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
 }
+
 .file-upload.highlight {
-border-color: #4285f4;
-background-color: #e8f0fe;
+    border-color: #4285f4;
+    background-color: #e8f0fe;
 }
+
 .hidden {
-display: none;
+    display: none;
 }
+
 .file-info {
-display: flex;
-align-items: center;
-gap: 10px;
-justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
 }
-.solution-highlight{
+
+.solution-highlight {
     font-size: 19px;
     font-weight: 700;
     margin-top: 10px;

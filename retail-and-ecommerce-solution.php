@@ -10,40 +10,40 @@ include __DIR__ . '/A_Layout/Header/header.php';
 
     <div class="wrapper">
         <main>
-            <section class="banner technologies-banner page-banner industry-details-banner aos-init aos-animate" data-aos="fade-in"
+            <section class="banner technologies-banner page-banner industry-details-banner" 
                 style="background-image: url(./assest/img/hero/retail-and-ecommerce-solution-banner.a5ebf15e55cfccbf18fa.webp);">
                 <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
                     <div class="banner-content">
-                        <nav class="MuiTypography-root MuiTypography-body1 MuiBreadcrumbs-root css-zinzkl aos-init aos-animate"
-                            data-aos="fade-up">
-                            <ol class="MuiBreadcrumbs-ol css-nhb8h9">
+                        <nav class="MuiTypography-root MuiTypography-body1 MuiBreadcrumbs-root css-zinzkl"
+                            >
+                            <ol class="MuiBreadcrumbs-ol css-nhb8h9" id="hero-title">
                                 <li class="MuiBreadcrumbs-li"><a title="home" class="text-white" href="/home">Home</a></li>
                                 <li aria-hidden="true" class="MuiBreadcrumbs-separator css-3mf706"><img loading="lazy"
                                         src="./assest/img/svg/ic-caret-right-white.a949eb719491cf488fb6f5760a533d51.svg"
                                         alt="Caret Right"></li>
                                 <li class="MuiBreadcrumbs-li">
-                                    <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v">Retail &amp; Ecommerce
+                                    <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v" >Retail &amp; Ecommerce
                                         Solution</p>
                                 </li>
                             </ol>
                         </nav>
-                        <h2 class="MuiTypography-root MuiTypography-h2 css-17zkhbb aos-init aos-animate"
-                            data-aos="fade-up" data-aos-delay="100">Retail &amp; Ecommerce Solution</h2>
+                        <h2 class="MuiTypography-root MuiTypography-h2 css-17zkhbb" id="hero-text"
+                             >Retail &amp; Ecommerce Solution</h2>
                     </div>
                 </div>
             </section>
             <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
                 <section class="industry-problems mb-9">
-                    <div class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorError MuiChip-outlinedError mb-4 css-5g400l aos-init aos-animate"
+                    <div class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorError MuiChip-outlinedError mb-4 css-5g400l aos-init"
                         data-aos="fade-up" data-aos-delay="200"><img loading="lazy"
                             src="./assest/img/industries/hospitality-industry/ic-question.8c125b684501424122328a5b28c3e21c.svg" alt="Question"
                             class="MuiChip-icon MuiChip-iconMedium MuiChip-iconColorError"><span
                             class="MuiChip-label MuiChip-labelMedium css-sqlmkz">Industry Problems</span></div>
-                    <h3 class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter pb-7 css-1gpftb1 aos-init aos-animate"
+                    <h3 class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter pb-7 css-1gpftb1 aos-init"
                         data-aos="fade-up" data-aos-delay="300">Retail &amp; Ecommerce Solution Industries Challenges
                     </h3>
                     <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 MuiGrid-spacing-lg-5 css-hrdle6">
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1pdy5ci aos-init aos-animate"
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1pdy5ci aos-init pt-0"
                             data-aos="fade-up" data-aos-delay="400">
                             <div
                                 class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh">
@@ -89,7 +89,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                 </div>
                             </div>
                         </div>
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1pdy5ci aos-init aos-animate"
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1pdy5ci aos-init pt-0"
                             data-aos="fade-up" data-aos-delay="500">
                             <div
                                 class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh">
@@ -134,7 +134,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                 </div>
                             </div>
                         </div>
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1pdy5ci aos-init aos-animate"
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1pdy5ci aos-init"
                             data-aos="fade-up">
                             <div
                                 class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh">
@@ -179,7 +179,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                 </div>
                             </div>
                         </div>
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1pdy5ci aos-init aos-animate"
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1pdy5ci aos-init"
                             data-aos="fade-up" data-aos-delay="100">
                             <div
                                 class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh">
@@ -227,22 +227,22 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     </div>
                 </section>
             </div>
-            <section class="industry-solutions outer-card mb-9 aos-init aos-animate" data-aos="fade-in">
+            <section class="industry-solutions outer-card mb-9 aos-init" data-aos="fade-in">
                 <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
-                    <div class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-outlinedSuccess mb-4 css-770t7w aos-init aos-animate"
+                    <div class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorSuccess MuiChip-outlinedSuccess mb-4 css-770t7w aos-init"
                         data-aos="fade-up"><img loading="lazy"
                             src="./assest/img/industries/hospitality-industry/ic-bulb.60ae452813945d57c135c6ab58df5f06.svg" alt="Bulb"
                             class="MuiChip-icon MuiChip-iconMedium MuiChip-iconColorSuccess"><span
                             class="MuiChip-label MuiChip-labelMedium css-sqlmkz">Our Solutions</span></div>
-                    <h3 class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter pb-7 css-1gpftb1 aos-init aos-animate"
+                    <h3 class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter pb-7 css-1gpftb1 aos-init"
                         data-aos="fade-up" data-aos-delay="100">Our Solution</h3>
                     <div
                         class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 MuiGrid-spacing-lg-5 mb-9 css-hrdle6">
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw">
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw pt-0">
                             <div class="content">
-                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init aos-animate"
+                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
                                     data-aos="fade-up">Optimized Inventory Control and Order Fulfillment</h5>
-                                <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv aos-init aos-animate"
+                                <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv aos-init"
                                     data-aos="fade-up" data-aos-delay="100">Unique IR Solutions has especially been
                                     effective in controlling the stock and in processing orders. Inventory can be
                                     categorized, the amount of stock checked, and changes made where necessary by the
@@ -251,8 +251,8 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                     are well done.</p>
                             </div>
                         </div>
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw">
-                            <ul data-aos="fade-up" class="aos-init aos-animate">
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw pt-0">
+                            <ul data-aos="fade-up" class="aos-init">
                                 <li><img loading="lazy"
                                         src="./assest/img/industries/hospitality-industry/ic-outlined-checkmark-primary.c302358bbbf93430059890a8fa556c63.svg"
                                         alt="Checkmark">
@@ -288,8 +288,8 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     </div>
                     <div
                         class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 MuiGrid-spacing-lg-5 mb-9 css-hrdle6 flex-direction-col">
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
-                            <ul data-aos="fade-up" class="aos-init aos-animate">
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut pt-0">
+                            <ul data-aos="fade-up" class="aos-init">
                                 <li><img loading="lazy"
                                         src="./assest/img/industries/hospitality-industry/ic-outlined-checkmark-primary.c302358bbbf93430059890a8fa556c63.svg"
                                         alt="Checkmark">
@@ -316,11 +316,11 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                 </li>
                             </ul>
                         </div>
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd pt-0">
                             <div class="content">
-                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init aos-animate"
+                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
                                     data-aos="fade-up">Enhanced Sales Performance and Dealer Coordination</h5>
-                                <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv aos-init aos-animate"
+                                <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv aos-init"
                                     data-aos="fade-up" data-aos-delay="100">Our solution is to improve sales
                                     effectiveness and cooperation among dealers. Dealers receive a reliable platform to
                                     sort out the relations and performance. Activities can be logged, site visits can be
@@ -333,11 +333,11 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     </div>
                     <div
                         class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 MuiGrid-spacing-lg-5 mb-9 css-hrdle6 ">
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw">
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw pt-0">
                             <div class="content">
-                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init aos-animate"
+                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
                                     data-aos="fade-up">Comprehensive User and Workforce Administration</h5>
-                                <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv aos-init aos-animate"
+                                <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv aos-init"
                                     data-aos="fade-up" data-aos-delay="100">We automate both the client and the employee
                                     interface. The system provides for a secure way of authenticating the user and
                                     protecting data. For workforce management it deals with the roles, work schedules,
@@ -345,8 +345,8 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                     support features and guarantees integration with other business processes.</p>
                             </div>
                         </div>
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw">
-                            <ul data-aos="fade-up" class="aos-init aos-animate">
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw pt-0">
+                            <ul data-aos="fade-up" class="aos-init">
                                 <li><img loading="lazy"
                                         src="./assest/img/industries/hospitality-industry/ic-outlined-checkmark-primary.c302358bbbf93430059890a8fa556c63.svg"
                                         alt="Checkmark">
@@ -381,8 +381,8 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         </div>
                     </div>
                     <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 MuiGrid-spacing-lg-5 css-hrdle6 flex-direction-col">
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
-                            <ul data-aos="fade-up" class="aos-init aos-animate">
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut pt-0">
+                            <ul data-aos="fade-up" class="aos-init">
                                 <li><img loading="lazy"
                                         src="./assest/img/industries/hospitality-industry/ic-outlined-checkmark-primary.c302358bbbf93430059890a8fa556c63.svg"
                                         alt="Checkmark">
@@ -415,11 +415,11 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                 </li>
                             </ul>
                         </div>
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd pt-0">
                             <div class="content">
-                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init aos-animate"
+                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
                                     data-aos="fade-up">Enhanced User Experience and Marketing Strategies</h5>
-                                <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv aos-init aos-animate"
+                                <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv aos-init"
                                     data-aos="fade-up" data-aos-delay="100">In this respect, the proposed solution is
                                     aimed at enhancing the usability of the website and applying proper marketing
                                     tactics. It has excellent product selection and customized promotions. It is very
@@ -435,14 +435,14 @@ include __DIR__ . '/A_Layout/Header/header.php';
                 </div>
             </section>
             <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
-                <section class="solution-impact mb-9 aos-init aos-animate" data-aos="fade-in"><img loading="lazy"
+                <section class="solution-impact mb-9 aos-init" data-aos="fade-in"><img loading="lazy"
                         src="./assest/img/industries/hospitality-industry/dash-border-left.c8d0969a20ea375863e25e0c32af32d6.svg" class="left"
                         alt="Border"><img loading="lazy"
                         src="./assest/img/industries/hospitality-industry/dash-border-right.9969314957ab3e2785c360d2e93a1f54.svg" class="right"
                         alt="Border">
-                    <h4 class="MuiTypography-root MuiTypography-h4 css-pe15c2 aos-init aos-animate" data-aos="fade-up">
+                    <h4 class="MuiTypography-root MuiTypography-h4 css-pe15c2 aos-init" data-aos="fade-up">
                         Impact</h4>
-                    <ul data-aos="fade-up" class="aos-init aos-animate">
+                    <ul data-aos="fade-up" class="aos-init">
                         <li><img loading="lazy"
                                 src="./assest/img/industries/hospitality-industry/ic-outlined-checkmark-primary.c302358bbbf93430059890a8fa556c63.svg"
                                 alt="Checkmark" class="position-relative">
@@ -480,19 +480,19 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     </ul>
                 </section>
             </div>
-            <section class="faq mb-9 outer-card aos-init aos-animate" data-aos="fade-in">
+            <section class="faq mb-9 outer-card aos-init" data-aos="fade-in">
                 <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
                     <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-1tz8m30">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-5 css-1cam9av">
-                            <div class="image-wrapper aos-init aos-animate" data-aos="fade-up" data-aos-delay="100"><img
+                            <div class="image-wrapper aos-init" data-aos="fade-up" data-aos-delay="100"><img
                                     src="./assest/img/svg/FAQ.svg" alt="FAQ"
                                     loading="lazy"></div>
                         </div>
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-7 css-hhx1lr">
-                            <h3 class="MuiTypography-root MuiTypography-h3 pb-5 css-8ipg8 aos-init aos-animate"
+                            <h3 class="MuiTypography-root MuiTypography-h3 pb-5 css-8ipg8 aos-init"
                                 data-aos="fade-up" data-aos-delay="100">FAQs</h3>
                            
-                            <div data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">
+                            <div data-aos="fade-up" data-aos-delay="200" class="aos-init">
                                 <div class="accordion" id="faqAccordion">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
@@ -607,7 +607,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                 (215) 602-7044</span></a></li>
                 </ul><a href="contact-us">
                     <button
-                        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedInherit MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorInherit css-bzz2as aos-init aos-animate"
+                        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedInherit MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorInherit css-bzz2as aos-init"
                         tabindex="0" type="button" title="Request a Proposal" data-aos="fade-up"
                         data-aos-delay="400"><span class="text">Request a Proposal</span><span
                             class="MuiTouchRipple-root css-w0pj6f"></span></button></a>

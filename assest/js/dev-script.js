@@ -1,35 +1,40 @@
 // 1 counter
-        document.addEventListener("DOMContentLoaded", function () {
-            const counters = document.querySelectorAll(".count");
-            const options = { threshold: 0.5 };
+document.addEventListener("DOMContentLoaded", function () {
+    const counters = document.querySelectorAll(".count");
+    const options = { threshold: 0.5 };
 
-            const startCounter = (entry) => {
-                if (entry.isIntersecting) {
-                    counters.forEach(counter => {
-                        let endValue = parseInt(counter.getAttribute("data-end"));
-                        let suffix = counter.getAttribute("data-suffix") || "";
-                        let currentValue = 0;
-                        let duration = 2000; // 2 seconds
-                        let increment = endValue / (duration / 30);
+    const startCounter = (entry, observer) => {
+        if (entry.isIntersecting) {
+            counters.forEach(counter => {
+                let endValue = parseInt(counter.getAttribute("data-end"));
+                let suffix = counter.getAttribute("data-suffix") || "";
+                let currentValue = 0;
+                let duration = 2000;
+                let increment = endValue / (duration / 30);
 
-                        let interval = setInterval(() => {
-                            currentValue += increment;
-                            if (currentValue >= endValue) {
-                                currentValue = endValue;
-                                clearInterval(interval);
-                            }
-                            counter.textContent = Math.floor(currentValue) + suffix;
-                        }, 30);
-                    });
-                }
-            };
+                let interval = setInterval(() => {
+                    currentValue += increment;
+                    if (currentValue >= endValue) {
+                        currentValue = endValue;
+                        clearInterval(interval);
+                    }
+                    counter.textContent = Math.floor(currentValue) + suffix;
+                }, 30);
+            });
 
-            let observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => startCounter(entry));
-            }, options);
+            // 👇 Stop observing after animation runs once
+            observer.unobserve(entry.target);
+        }
+    };
 
-            observer.observe(document.querySelector(".counter"));
-        });
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => startCounter(entry, observer));
+    }, options);
+
+    const counterSection = document.querySelector(".counter");
+    if (counterSection) observer.observe(counterSection);
+});
+
 
         // <!--2  slick slider Our Services -->
         document.addEventListener("DOMContentLoaded", function () {
@@ -88,7 +93,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const scrollBtn = document.querySelector(".scroll-to-top-btn");
 
     window.addEventListener("scroll", function () {
-        if (window.scrollY > 200) {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrolledPercent = (scrollTop / totalHeight) * 100;
+
+        // Show button only when scrolled past 75% of page
+        if (scrolledPercent >= 75) {
             scrollBtn.classList.add("show");
         } else {
             scrollBtn.classList.remove("show");
@@ -102,6 +112,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
 
 // slider
 if (window.jQuery) {

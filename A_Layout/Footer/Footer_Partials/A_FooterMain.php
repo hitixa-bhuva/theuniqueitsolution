@@ -37,9 +37,7 @@ echo
                             </li>
                             <li>
                                 <img loading="lazy" src="./assest/img/svg/ic-location-primary.svg" alt="Location">
-                                <span class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">C-806, Titanium
-                                    Business Park, Divyabhaskar Press, B/h nr. Railway Under Bridge, Makarba,
-                                    Ahemedabad, Gujarat 380051</span>
+                                <span class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">KP Epitome, B-615, near Dav International School, Makarba, Ahmedabad, Gujarat 380051</span>
                             </li>
                             <li>
                                 <img loading="lazy" src="./assest/img/svg/ic-location-primary.svg" alt="Location">

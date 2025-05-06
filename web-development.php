@@ -10,13 +10,13 @@ include __DIR__ . '/A_Layout/Header/header.php';
 
     <div class="wrapper">
         <main>
-            <section class="banner service-details-banner bg-light-pink aos-init aos-animate" data-aos="fade-in">
+            <section class="banner service-details-banner bg-light-pink" >
                 <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
                     <div class="banner-content">
                         <div class="left">
-                            <nav class="MuiTypography-root MuiTypography-body1 MuiBreadcrumbs-root css-zinzkl aos-init aos-animate"
-                                data-aos="fade-up">
-                                <ol class="MuiBreadcrumbs-ol css-nhb8h9">
+                            <nav class="MuiTypography-root MuiTypography-body1 MuiBreadcrumbs-root css-zinzkl"
+                                >
+                                <ol class="MuiBreadcrumbs-ol css-nhb8h9" id="hero-title">
                                     <li class="MuiBreadcrumbs-li"><a title="home" href="/home">Home</a></li>
                                     <li aria-hidden="true" class="MuiBreadcrumbs-separator css-3mf706"><img
                                             loading="lazy"
@@ -27,15 +27,15 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                     </li>
                                 </ol>
                             </nav>
-                            <h2 class="MuiTypography-root MuiTypography-h2 css-17zkhbb aos-init aos-animate"
-                                data-aos="fade-up" data-aos-delay="100">Web Development</h2><a
-                                href="contact-us"><button
-                                    class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus aos-init aos-animate"
-                                    tabindex="0" type="button" data-aos="fade-up" data-aos-delay="200"
+                            <h2 class="MuiTypography-root MuiTypography-h2 css-17zkhbb" id="hero-text"
+                                 >Web Development</h2><a
+                                href="contact-us"><button id="hero-btn"
+                                    class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus"
+                                    tabindex="0" type="button"  
                                     title="Get A Quote"><span class="text">Get A Quote</span><span
                                         class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
                         </div>
-                        <div class="right aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
+                        <div class="right" ><img loading="lazy" id="hero-img"
                                 src="./assest/img/web-development/web-development.fa9d6b53210a047963c2d16eac384be7.svg"
                                 alt="Web Development" width="483" height="473"></div>
                     </div>
@@ -43,30 +43,32 @@ include __DIR__ . '/A_Layout/Header/header.php';
             </section>
             <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
                 <section class="service-details-content">
-                    <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v aos-init aos-animate"
+                    <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v aos-init"
                         data-aos="fade-up">At unique it solution, we provide complete web development services aimed at developing strong, user-friendly, and eye-catching websites that match your business needs. Our solutions are designed to increase your online presence for the purpose of driving growth while achieving your goals with less time and resource outlay.</p>
-                    <h3 class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter css-1gpftb1 aos-init aos-animate"
+                    <h3 class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter pb-3 css-1gpftb1 aos-init"
                         data-aos="fade-up" data-aos-delay="100">How We Build Web Apps</h3>
-                        <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v aos-init aos-animate text-center"
+                        <p class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter pb-6 css-3sq53o aos-init"
                         data-aos="fade-up">Firstly, we try to understand your business requirements by getting details from your team. We start by sketching on paper so that the initial ideas correspond with what you envision happening. Experts develop a customized website based on this information, which is then utilized for further refining. This involves creating several versions of the website and testing it during each stage to ensure that it meets customer needs, including their perspectives about what they want. After the website has been built, we launch it without any difficulties as well as continue supporting its smooth operation until it goes down.</p>
-                        <span class="MuiTypography-root MuiTypography-h6 MuiTypography-alignCenter pb-7 css-1t9tuk4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" style="display: block;">Step-by-Step Process for Building your Web App</span>
+                        <span class="MuiTypography-root MuiTypography-h6 MuiTypography-alignCenter pb-7 css-1t9tuk4 aos-init" data-aos="fade-up" data-aos-delay="100" style="display: block;">Step-by-Step Process for Building your Web App</span>
                         <!-- Conceptualization and Requirements Gathering -->
                         <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
                             <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
-                                <div class="image-wrapper aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
+                                <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
                                         src="./assest/img/web-development/requirement-gathering.bb3d88361a647d290760e9abf27eade9.svg"
                                         alt="How We Build Custom Software"></div>
                             </div>
                             <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
                                 <div class="content">
-                                    <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init aos-animate"
+                                    <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
                                         data-aos="fade-up">Conceptualization and Requirements Gathering</h5>
-                                    <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
-                                        data-aos="fade-up" data-aos-delay="100">The first step is making sketches on paper borders as an aid in visual brainstorming. It helps us develop our concept perfectly before going digital.</p>
-                                        
-                                    <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
-                                    data-aos="fade-up" data-aos-delay="100">Our team engages your stakeholders intensively to collect complete requirements. This way we grasp issues of concern about your company.</p>
-                                   
+                                    <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init"
+                                        data-aos="fade-up" data-aos-delay="100">The first step is making sketches on paper borders as an aid in visual brainstorming. It helps us develop our concept perfectly before going digital.
+                                    
+                                    <br>
+                                    <br>
+                                    Our team engages your stakeholders intensively to collect complete requirements. This way we grasp issues of concern about your company.
+                                    </p>
+                                     
                                 </div>
                             </div>
                         </div>
@@ -75,21 +77,21 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
                             <div class="content">
-                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init aos-animate"
+                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
                                     data-aos="fade-up">User Interface Design and Prototyping</h5>
-                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init"
                                     data-aos="fade-up" data-aos-delay="100">This process emphasizes interactive activities and high-quality user interfaces, converting conceptualized ideas into detailed UI designs.</p>
                                     
-                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init"
                                 data-aos="fade-up" data-aos-delay="100">Prototypes are made to better understand user flow in terms of aesthetics and usability standards concerning branding.</p>
                                 
-                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init"
                                     data-aos="fade-up" data-aos-delay="100">Collaboration with your team ensures that branding is reflected toward modern design trends while considering users’ preferences, too.</p>
                                     
                             </div>
                         </div>
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
-                            <div class="image-wrapper aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
+                            <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
                                     src="./assest/img/web-development/prototyping.d5ad8ff4d384e36073fc316e4155c13e.svg"
                                     alt="How We Build Custom Software"></div>
                         </div>
@@ -98,15 +100,15 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     <!-- Development and Iterative Testing -->
                     <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
-                            <div class="image-wrapper aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
+                            <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
                                     src="./assest/img/web-development/development-and-testing.44c26640f44cbd695cd4cf17b923e2a4.svg"
                                     alt="Development and Iterative Testing"></div>
                         </div>
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
                             <div class="content">
-                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init aos-animate"
+                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
                                     data-aos="fade-up">Development and Iterative Testing</h5>
-                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init"
                                     data-aos="fade-up" data-aos-delay="100">An iterative approach is followed when building the web app. Each web design stage is properly tested to ensure that it improves functionality, performance, and user experience in a step-by-step process. The objective is to optimize the website regarding visibility and content structure and improve metadata effectiveness. Feedback from testing is actively incorporated to refine and enrich the app's features, aligning with SEO strategies to maximize online presence and engagement.</p>
                                                             
                             </div>
@@ -117,16 +119,16 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
                             <div class="content">
-                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init aos-animate"
+                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
                                     data-aos="fade-up">Quality Assurance and Integration</h5>
-                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init"
                                     data-aos="fade-up" data-aos-delay="100">For us, high standards are key based on our testing and quality assurance processes, which guarantee the reliability of the web app and its smooth operation.</p>
-                                    <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                    <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init"
                                         data-aos="fade-up" data-aos-delay="100">We maintain data integrity while integrating with your existing systems to provide a unified user experience across platforms.</p>
                             </div>
                         </div>
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
-                            <div class="image-wrapper aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
+                            <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
                                     src="./assest/img/web-development/quality-assurance.ea740d001242ba4ba1ee23c08d2e8f20.svg"
                                     alt="How We Build Custom Software"></div>
                         </div>
@@ -135,21 +137,21 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     <!-- Deployment, Support, and Continuous Improvement -->
                     <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
-                            <div class="image-wrapper aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
+                            <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
                                     src="./assest/img/web-development/deployment-support.8185d98435290acda9f4841efbee3360.svg"
                                     alt="Deployment, Support, and Continuous Improvement"></div>
                         </div>
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
                             <div class="content">
-                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init aos-animate"
+                                <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
                                     data-aos="fade-up">Deployment, Support, and Continuous Improvement</h5>
-                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init"
                                     data-aos="fade-up" data-aos-delay="100">After finishing the development process and testing phases, managing deployment for a timely and efficient launch is relatively easy.</p>
                                     
-                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init"
                                 data-aos="fade-up" data-aos-delay="100">Our team provides continuous support after launching. Thus, we will just not create and give it to you, but be with you to maintain the system and address any emergency issues.</p>
                                 
-                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init aos-animate"
+                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init"
                                     data-aos="fade-up" data-aos-delay="100">Our aim is that regular updates will keep your web app up-to-date by incorporating new features and enhancements to meet evolving user needs and technological advances.</p>
                                     
                             </div>
@@ -169,7 +171,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-7 css-hhx1lr">
                             <h3 class="MuiTypography-root MuiTypography-h3 pb-5 css-8ipg8 aos-init" data-aos="fade-up"
                                 data-aos-delay="100">FAQs</h3>
-                            <div data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">
+                            <div data-aos="fade-up" data-aos-delay="200" class="aos-init">
                                 <div class="accordion" id="faqAccordion">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
@@ -282,7 +284,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                     (215) 602-7044</span></a></li>
                     </ul><a href="contact-us">
                         <button
-                            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedInherit MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorInherit css-bzz2as aos-init aos-animate"
+                            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedInherit MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorInherit css-bzz2as aos-init"
                             tabindex="0" type="button" title="Request a Proposal" data-aos="fade-up"
                             data-aos-delay="400"><span class="text">Request a Proposal</span><span
                                 class="MuiTouchRipple-root css-w0pj6f"></span></button></a>

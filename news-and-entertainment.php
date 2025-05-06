@@ -9,14 +9,14 @@ include __DIR__ . '/A_Layout/Header/header.php';
 ?>
     <div class="wrapper">
         <main>
-            <section class="banner technologies-banner page-banner industry-details-banner aos-init aos-animate"
-                data-aos="fade-in"
+            <section class="banner technologies-banner page-banner industry-details-banner"
+               
                 style="background-image: url(./assest/img/hero/news-and-entertainment-banner.cbd74412bfd253ae74b5.webp);">
                 <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
                     <div class="banner-content">
-                        <nav class="MuiTypography-root MuiTypography-body1 MuiBreadcrumbs-root css-zinzkl aos-init aos-animate"
-                            data-aos="fade-up">
-                            <ol class="MuiBreadcrumbs-ol css-nhb8h9">
+                        <nav class="MuiTypography-root MuiTypography-body1 MuiBreadcrumbs-root css-zinzkl"
+                           >
+                            <ol class="MuiBreadcrumbs-ol css-nhb8h9" id="hero-title">
                                 <li class="MuiBreadcrumbs-li"><a title="home" class="text-white" href="/home">Home</a>
                                 </li>
                                 <li aria-hidden="true" class="MuiBreadcrumbs-separator css-3mf706"><img loading="lazy"
@@ -28,27 +28,27 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                 </li>
                             </ol>
                         </nav>
-                        <h2 class="MuiTypography-root MuiTypography-h2 css-17zkhbb aos-init aos-animate"
-                            data-aos="fade-up" data-aos-delay="100">News &amp; Entertainment</h2>
+                        <h2 class="MuiTypography-root MuiTypography-h2 css-17zkhbb" id="hero-text"
+                            >News &amp; Entertainment</h2>
                     </div>
                 </div>
             </section>
             <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
                 <section class="industry-problems mb-9">
-                    <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v aos-init aos-animate"
+                    <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v aos-init"
                         data-aos="fade-up" data-aos-delay="200">Small businesses, particularly social media news pages
                         with a sizable audience, encounter several critical issues in today’s rapidly changing news and
                         entertainment environment. Our business analyst team and industry experts have identified these
                         main areas that need strategic focus:</p>
-                    <div class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorError MuiChip-outlinedError mb-4 css-5g400l aos-init aos-animate"
+                    <div class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorError MuiChip-outlinedError mb-4 css-5g400l aos-init"
                         data-aos="fade-up" data-aos-delay="300"><img loading="lazy"
                             src="./assest/img/industries/hospitality-industry/ic-question.8c125b684501424122328a5b28c3e21c.svg"
                             alt="Question" class="MuiChip-icon MuiChip-iconMedium MuiChip-iconColorError"><span
                             class="MuiChip-label MuiChip-labelMedium css-sqlmkz">Industry Problems</span></div>
-                    <h3 class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter pb-7 css-1gpftb1 aos-init aos-animate"
+                    <h3 class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter pb-7 css-1gpftb1 aos-init"
                         data-aos="fade-up">News &amp; Entertainment Industries Challenges</h3>
                     <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 MuiGrid-spacing-lg-5 css-hrdle6">
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1pdy5ci aos-init aos-animate"
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1pdy5ci aos-init pt-0"
                             data-aos="fade-up">
                             <div
                                 class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh">
@@ -65,7 +65,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                 </div>
                             </div>
                         </div>
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1pdy5ci aos-init aos-animate"
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1pdy5ci aos-init pt-0"
                             data-aos="fade-up" data-aos-delay="100">
                             <div
                                 class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh">
@@ -80,7 +80,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                 </div>
                             </div>
                         </div>
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1pdy5ci aos-init aos-animate"
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1pdy5ci aos-init"
                             data-aos="fade-up">
                             <div
                                 class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh">
@@ -95,7 +95,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                 </div>
                             </div>
                         </div>
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1pdy5ci aos-init aos-animate"
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1pdy5ci aos-init"
                             data-aos="fade-up" data-aos-delay="100">
                             <div
                                 class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh">
@@ -153,7 +153,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         data-aos="fade-up" data-aos-delay="100">Our Solution</h3>
                     <div
                         class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 MuiGrid-spacing-lg-5 mb-9 css-hrdle6">
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw">
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw pt-0">
                             <div class="content">
                                 <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
                                     data-aos="fade-up">Unified Digital Platform</h5>
@@ -164,7 +164,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                     incorporate Social Media Optimization to increase its prominence and activity.</p>
                             </div>
                         </div>
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw">
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw pt-0">
                             <ul data-aos="fade-up" class="aos-init">
                                 <li><img loading="lazy"
                                         src="./assest/img/industries/hospitality-industry/ic-outlined-checkmark-primary.c302358bbbf93430059890a8fa556c63.svg"
@@ -187,7 +187,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     </div>
                     <div
                         class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 MuiGrid-spacing-lg-5 mb-9 css-hrdle6 flex-direction-col">
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut pt-0">
                             <ul data-aos="fade-up" class="aos-init">
                                 <li><img loading="lazy"
                                         src="./assest/img/industries/hospitality-industry/ic-outlined-checkmark-primary.c302358bbbf93430059890a8fa556c63.svg"
@@ -207,7 +207,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                 </li>
                             </ul>
                         </div>
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd pt-0">
                             <div class="content">
                                 <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
                                     data-aos="fade-up">Advanced Content Management</h5>
@@ -221,7 +221,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     </div>
                     <div
                         class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 MuiGrid-spacing-lg-5 mb-9 css-hrdle6">
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw">
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw pt-0">
                             <div class="content">
                                 <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
                                     data-aos="fade-up">Innovative Monetization Strategies</h5>
@@ -232,7 +232,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                 </p>
                             </div>
                         </div>
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw">
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw pt-0">
                             <ul data-aos="fade-up" class="aos-init">
                                 <li><img loading="lazy"
                                         src="./assest/img/industries/hospitality-industry/ic-outlined-checkmark-primary.c302358bbbf93430059890a8fa556c63.svg"
@@ -261,7 +261,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     </div>
                     <div
                         class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 MuiGrid-spacing-lg-5 mb-9 css-hrdle6 flex-direction-col">
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut pt-0">
                             <ul data-aos="fade-up" class="aos-init">
                                 <li><img loading="lazy"
                                         src="./assest/img/industries/hospitality-industry/ic-outlined-checkmark-primary.c302358bbbf93430059890a8fa556c63.svg"
@@ -282,7 +282,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                 </li>
                             </ul>
                         </div>
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd pt-0">
                             <div class="content">
                                 <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
                                     data-aos="fade-up">Enhanced User Engagement</h5>
@@ -295,7 +295,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         </div>
                     </div>
                     <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 MuiGrid-spacing-lg-5 css-hrdle6">
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw">
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw pt-0">
                             <div class="content">
                                 <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
                                     data-aos="fade-up">Streamlined Operations and Access Management</h5>
@@ -307,7 +307,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                     increases the rate of overall efficiency, scheduling, and data security.</p>
                             </div>
                         </div>
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw">
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw pt-0">
                             <ul data-aos="fade-up" class="aos-init">
                                 <li><img loading="lazy"
                                         src="./assest/img/industries/hospitality-industry/ic-outlined-checkmark-primary.c302358bbbf93430059890a8fa556c63.svg"
@@ -399,7 +399,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-7 css-hhx1lr">
                             <h3 class="MuiTypography-root MuiTypography-h3 pb-5 css-8ipg8 aos-init" data-aos="fade-up"
                                 data-aos-delay="100">FAQs</h3>
-                                <div data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">
+                                <div data-aos="fade-up" data-aos-delay="200" class="aos-init">
                                     <div class="accordion" id="faqAccordion">
                                         <div class="accordion-item">
                                             <h2 class="accordion-header">
@@ -516,7 +516,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                 (215) 602-7044</span></a></li>
                 </ul><a href="contact-us">
                     <button
-                        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedInherit MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorInherit css-bzz2as aos-init aos-animate"
+                        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedInherit MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorInherit css-bzz2as aos-init"
                         tabindex="0" type="button" title="Request a Proposal" data-aos="fade-up"
                         data-aos-delay="400"><span class="text">Request a Proposal</span><span
                             class="MuiTouchRipple-root css-w0pj6f"></span></button></a>

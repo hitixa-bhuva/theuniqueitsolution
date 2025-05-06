@@ -1,10 +1,6 @@
 RewriteEngine On
-
-# Redirect HTTP to HTTPS
 RewriteCond %{HTTPS} !=on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
-
-# Force all requests to use secure content
 Header always set Content-Security-Policy "upgrade-insecure-requests"
 
 # Custom error page
@@ -13,12 +9,12 @@ ErrorDocument 404 /error-page.php
 # Clean URLs rewrite rules
 RewriteRule ^home$ index.php [L,NC]
 RewriteRule ^about-us$ about.php [L,NC]
-RewriteRule ^services$ services.php [L,NC]
 RewriteRule ^technologies$ technologies.php [L,NC]
+RewriteRule ^service$ services-main.php [L,NC]
 RewriteRule ^industries$ industries.php [L,NC]
 RewriteRule ^contact-us$ contact-us.php [L,NC]
 
-# Services URLs
+# ServicesPage URLs
 RewriteRule ^custom-software-development$ custom-software-development.php [L,NC]
 RewriteRule ^work-flow-automation$ work-flow-automation.php [L,NC]
 RewriteRule ^crm-and-erp-development$ crm-and-erp-development.php [L,NC]

@@ -1,4 +1,3 @@
-
 const menuButton = document.querySelector('.MuiIconButton-root-nav');
 const sidebarOverlay = document.querySelector('.sidebar-overlay');
 const body = document.body;
@@ -33,14 +32,34 @@ submenuLinks.forEach(link => {
 });
 
 
-// Force navigate open industries
+//Force navigate open industries
 function goToIndustries(event) {
-  event.preventDefault(); 
-  window.location.href = event.currentTarget.href; 
+    if (window.innerWidth <= 2560) {
+        event.preventDefault();
+        window.location.href = event.currentTarget.href;
+    }
 }
 
-// Force navigate open services
-function goToServices(event) {
+function toggleSubmenuIndustries(event) {
+    event.stopPropagation(); 
     event.preventDefault();
-    window.location.href = event.currentTarget.href;
-  }
+
+    const parentLi = event.currentTarget.closest('.has-submenu');
+    parentLi.classList.toggle('open');
+}
+
+//Force navigate open services
+function goToServices(event) {
+    if (window.innerWidth <= 2560) {
+        event.preventDefault();
+        window.location.href = event.currentTarget.href;
+    }
+}
+
+function toggleSubmenu(event) {
+    event.stopPropagation(); 
+    event.preventDefault();
+
+    const parentLi = event.currentTarget.closest('.has-submenu');
+    parentLi.classList.toggle('open');
+}
