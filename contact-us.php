@@ -28,8 +28,8 @@ include __DIR__ . '/A_Layout/Header/header.php';
 
             <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
                 <section class="contact-us-form-wrapper mb-9">
-                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-6 css-xgs5wp">
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut pt-5">
+                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-6 css-xgs5wp contact-form-flex">
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut form-padding pt-5">
                             <div class="contact-info">
                                 <ul>
                                     <li><a href="tel:+917874579457" title="+917874579457"><img loading="lazy"
@@ -57,7 +57,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                             </div>
                         </div>
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd pt-5">
-                            <form id="contact-form" class="needs-validation" novalidate>
+                            <form id="contact-form" class="needs-validation form-padding" novalidate>
                                 <h3 class="MuiTypography-root MuiTypography-h3 pb-4 css-8ipg8">Get in Touch</h3>
                                 <div class="row g-4">
                                     <!-- Name -->

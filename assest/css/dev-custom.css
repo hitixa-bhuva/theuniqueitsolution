@@ -78,8 +78,8 @@
     transition-duration: .7s !important;
 }
 .css-k4xlog {
-    padding-left: 40px !important;
-    padding-right: 40px !important;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 @media (min-width: 1200px) {
     .css-k4xlog {
@@ -251,6 +251,67 @@
 
 .slick-slider {
     margin-bottom: 48px;
+}
+.css-wrts356{
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    margin: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    text-align: center;
+    flex: 0 0 auto;
+    overflow: visible;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 1.125rem;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    transition: 250mscubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.css-wrts356:hover {
+    background: transparent;
+    border-color: rgb(4, 135, 255);
+    border-radius: 30px;
+}
+
+.css-wrts356 img.active {
+    margin-left: -24px;
+}
+
+.css-wrts356 img.active {
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.css-wrts356 img {
+    height: 24px;
+    width: 24px;
+}
+
+.css-wrts356 img {
+    position: relative;
+    z-index: 1;
+    transition: 250mscubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.css-wrts356 img {
+    height: 24px;
+    width: 24px;
+}
+
+.css-wrts356 img {
+    position: relative;
+    z-index: 1;
+    transition: 250mscubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .css-wrts35 {
@@ -539,6 +600,39 @@ a {
 }
 
 .css-wrts35 img {
+    position: relative;
+    z-index: 1;
+    transition: 250mscubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.css-wrts356 img {
+    height: 24px;
+    width: 24px;
+}
+
+.css-wrts356 img {
+    position: relative;
+    z-index: 1;
+    transition: 250mscubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.css-wrts356 img.active {
+    margin-left: -24px;
+}
+
+.css-wrts356 img.active {
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.css-wrts356 img {
+    height: 24px;
+    width: 24px;
+}
+
+.css-wrts356 img {
     position: relative;
     z-index: 1;
     transition: 250mscubic-bezier(0.4, 0, 0.2, 1);

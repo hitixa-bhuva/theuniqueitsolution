@@ -48,7 +48,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         data-aos="fade-up">Our company, Unique IT Solution, offers a complete workflow automation solution that improves business processes and enables growth. These systems are advanced to fit each client, hence ensuring that businesses reach their goals with minimum effort and cost.</p>
                         <h3 class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter pb-7 css-1gpftb1 aos-init" data-aos="fade-up" data-aos-delay="100">Our Expertise Includes</h3>
                         <!-- Customer Service and Support -->
-                        <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
+                        <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30 Customer-Service-Support">
                             <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
                                 <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
                                         src="./assest/img/work-flow-automation/customer-service-support.4c54fb07221c3adaafb4de4bbdfd17a0.svg"
@@ -65,7 +65,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         </div>
 
                     <!-- Automating Repetitive Tasks< -->
-                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
+                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30 Automating-Repetitive-Tasks">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
                             <div class="content">
                                 <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
@@ -82,7 +82,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     </div>
 
                     <!-- Data Entry and Management -->
-                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
+                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30 Data-Entry-Management">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
                             <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
                                     src="./assest/img/work-flow-automation/data-entry.fcaecbd3169a8834accc9aecd76ce76a.svg"
@@ -116,7 +116,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     </div>
 
                     <!-- Supply Chain and Logistics -->
-                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
+                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30 Supply-Chain-Logistics">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
                             <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
                                     src="./assest/img/work-flow-automation/supply-chain.5ed1409801fe5b13ebc1d6d8720d5cfe.svg"

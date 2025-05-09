@@ -49,7 +49,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         data-aos="fade-up" data-aos-delay="100">How We Build Mobile Apps</h3>
                         
                         <!-- Strong business analysis and Requirements Gathering -->
-                        <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
+                        <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30 business-analysis-Requirements-Gathering">
                             <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
                                 <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
                                         src="./assest/img/web-development/requirement-gathering.bb3d88361a647d290760e9abf27eade9.svg"
@@ -85,7 +85,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     </div>
 
                     <!-- Quality Assurance and Integration -->
-                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
+                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30 Quality-Assurance-Integration">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
                             <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
                                     src="./assest/img/web-development/quality-assurance.ea740d001242ba4ba1ee23c08d2e8f20.svg"

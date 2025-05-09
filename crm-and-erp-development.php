@@ -50,7 +50,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     <h3 class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter pb-7 css-1gpftb1 aos-init"
                         data-aos="fade-up" data-aos-delay="100">Our Expertise Includes</h3>
                     <!-- Customer Interaction System -->
-                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
+                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30 Customer-Interaction-System">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
                             <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
                                     src="./assest/img/crm-and-erp-development/customer-interaction-system.b7243021d728175728fe3fb2a1a1d000.svg"
@@ -67,7 +67,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     </div>
 
                     <!-- Support Ticket Management< -->
-                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
+                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30 ">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
                             <div class="content">
                                 <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
@@ -84,7 +84,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     </div>
 
                     <!-- Regular Customer Notifications -->
-                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
+                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30 Regular-Customer-Notifications">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
                             <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
                                     src="./assest/img/crm-and-erp-development/customer-notification.a3eea244ce3897838f7db395ff1a494c.svg"
@@ -118,7 +118,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     </div>
 
                     <!-- Inventory Management -->
-                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
+                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30 Inventory-Management">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
                             <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
                                     src="./assest/img/crm-and-erp-development/inventory-management.485f25e758855ad8bb34b1b65b4158de.svg"

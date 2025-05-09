@@ -2880,12 +2880,14 @@ footer .bottom .MuiIconButton-root img {
     visibility: hidden;
     transform: scale(0.5);
     transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none; /* Prevent click when hidden */
 }
 
 .MuiIconButton-root.scroll-to-top-btn.show {
     opacity: 1;
     visibility: visible;
     transform: scale(1);
+    pointer-events: auto; /* Enable click when visible */
 }
 
 /* Additional styles for the button */
@@ -2912,6 +2914,7 @@ footer .bottom .MuiIconButton-root img {
     filter: blur(0);
     bottom: 0;
 }
+
 
 /* file upload
 --------------------------------------------------------------------------------------------------------*/
@@ -4754,4 +4757,14 @@ footer .bottom .MuiIconButton-root img {
     font-size: 19px;
     font-weight: 700;
     margin-top: 10px;
+}
+.border-right{
+    border: 0;
+}
+.border-bottom{
+    border: 0;
+}
+.hire-oval-right,
+.hire-oval-left{
+    width: 18%;
 }

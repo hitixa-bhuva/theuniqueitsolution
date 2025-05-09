@@ -120,7 +120,7 @@ echo
                     <a href="https://www.instagram.com/unique_it_solutions?igsh=MWUzZm43aThvaXR6Ng==" target="_blank"
                         rel="noopener noreferrer" style="text-decoration: none;">
                         <button
-                            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall button-ins css-wrts35"
+                            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall button-ins css-wrts356"
                             tabindex="0" type="button" title="Instagram">
                             <img loading="lazy" src="./assest/img/svg/ic-instagram.svg" alt="Instagram">
                             <span class="MuiTouchRipple-root css-w0pj6f"></span>
@@ -130,7 +130,7 @@ echo
                         rel="noopener noreferrer" style="text-decoration: none;">
 
                         <button
-                            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall button-fac css-wrts35"
+                            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall button-fac css-wrts356"
                             tabindex="0" type="button" title="LinkedIn">
                             <img src="./assest/img/svg/ic-linkedin.svg" alt="LinkedIn" loading="lazy">
                             
@@ -142,7 +142,7 @@ echo
         </div>
     </footer>
     <button
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeSmall scroll-to-top-btn show css-1fw8sa6"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeSmall scroll-to-top-btn css-1fw8sa6"
         tabindex="0" type="button" title="Scroll to Top">
         <img src="./assest/img/svg/ic-arrow-up.svg" alt="Arrow Up">
         <span class="MuiTouchRipple-root css-w0pj6f"></span>

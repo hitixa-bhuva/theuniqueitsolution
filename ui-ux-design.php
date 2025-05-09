@@ -48,7 +48,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     <h3 class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter pb-7 css-1gpftb1 aos-init"
                         data-aos="fade-up" data-aos-delay="100">UI/UX Design Process</h3>
                     <!-- User-Centered Design Approach -->
-                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details  User-Centered css-1tz8m30">
+                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details  User-Centered css-1tz8m30 Centered-Design-Approach">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw">
                             <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
                                     src="./assest/img/ui-ux-design/user-centered-design.171cc4959371a784633a364b142bb81f.svg"
@@ -82,7 +82,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     </div>
 
                     <!-- Visual Design and Brand Integration -->
-                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
+                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30 Visual-Design-Brand-Integration">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-4lx7hw">
                             <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
                                     src="./assest/img/ui-ux-design/visual-design.39e0033feef75704fb6ec93e5a7f9420.svg"

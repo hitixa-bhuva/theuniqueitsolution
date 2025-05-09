@@ -79,7 +79,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
             <section class="our-services slider-card outer-card mb-9 aos-init desktop-view-show" data-aos="fade-in">
                 <div class="MuiContainer-root MuiContainer-maxWidthXl css-tq2bi6">
                     <div class="row">
-                        <div class="col-md-11">
+                        <div class="col-md-10 col-xl-11">
                             <div class="top pb-6">
                                 <h3 class="MuiTypography-root MuiTypography-h3 pb-3 css-8ipg8 aos-init"
                                     data-aos="fade-up">Our
@@ -91,7 +91,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                     Development, leveraging the latest technologies to deliver exceptional results.</p>
                             </div>
                         </div>
-                        <div class="col-md-1 d-flex justify-content-center align-items-center">
+                        <div class="col-md-2 col-xl-1 d-flex justify-content-center align-items-center">
                             <div class="slider-controls aos-init" data-aos="fade-up">
                                 <button
                                     class="slick-arrow MuiButtonBase-root prev-btn slick-arrow slick-disabled  servies-prev-btn"
@@ -111,7 +111,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
 
                     <div data-aos="fade-up" class="aos-init">
                         <div class="slider-wrapper" data-aos="fade-up">
-                            <div class="servicer-slider">
+                            <div class="servicer-slider home-service-crad">
                                 <div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false">
                                     <div>
                                         <div
@@ -384,7 +384,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
 
                     <div data-aos="fade-up" class="aos-init">
                         <div class="slider-wrapper" data-aos="fade-up">
-                            <div class="servicer-slider">
+                            <div class="servicer-slider home-service-crad">
                                 <div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1"
                                     aria-hidden="false" style="outline: none; width: 488px;">
                                     <div>
@@ -633,7 +633,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-2 d-flex justify-content-center align-items-center">
+                        <div class="col-md-2 d-flex justify-content-center align-items-center prenet-btn-margin">
                             <div class="slider-controls aos-init" data-aos="fade-up">
                                 <button
                                     class="slick-arrow MuiButtonBase-root prev-btn slick-arrow slick-disabled  servies-prev-btn"
@@ -666,7 +666,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
             <section class="industries-we-serve slider-card aos-init desktop-view-show" data-aos="fade-up">
                 <div class="MuiContainer-root MuiContainer-maxWidthXl css-tq2bi6">
                     <div class="row">
-                        <div class="col-md-11">
+                        <div class="col-md-10 col-xl-11">
                             <div class="top pb-6">
                                 <div class="left">
                                     <h3 class="MuiTypography-root MuiTypography-h3 pb-3 css-8ipg8 aos-init"
@@ -680,7 +680,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-1 d-flex justify-content-center align-items-center">
+                        <div class="col-md-2 col-xl-1  d-flex justify-content-center align-items-center">
                             <div class="slider-controls aos-init" data-aos="fade-up">
                                 <button
                                     class="slick-arrow MuiButtonBase-root prev-btn slick-arrow slick-disabled industries-prev-btn"
@@ -983,7 +983,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
             </div>
             <!-- 7 how We Work -->
             <section class="how-we-work">
-                <div class="outer-card mb-9 aos-init" data-aos="fade-in">
+                <div class="outer-card mb-9 hoe-we-work aos-init" data-aos="fade-in">
                     <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
                         <h3 class="MuiTypography-root MuiTypography-h3 pb-3 css-8ipg8 aos-init" data-aos="fade-up">How
                             We Work</h3>
@@ -1074,7 +1074,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         <div
                             class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-lg-4 css-14ipkzi">
                             <div
-                                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh">
+                                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh box-right">
                                 <div class="MuiCardContent-root css-1qw96cp">
                                     <div class="icon">
                                         <img loading="lazy" src="./assest/img/svg/1-Strongly-Believe-Paper.svg"
@@ -1090,7 +1090,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         <div
                             class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-lg-4 css-14ipkzi">
                             <div
-                                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh">
+                                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh box-right">
                                 <div class="MuiCardContent-root css-1qw96cp">
                                     <div class="icon"><img loading="lazy"
                                             src="./assest/img/svg/2.Business-Centric-Approach.svg"
@@ -1105,7 +1105,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         <div
                             class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-lg-4 css-14ipkzi">
                             <div
-                                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh" style="border-right: 0">
+                                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh border-right box-right">
                                 <div class="MuiCardContent-root css-1qw96cp">
                                     <div class="icon">
                                         <img loading="lazy" src="./assest/img/svg/3-Customized-Solution.svg"
@@ -1121,7 +1121,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         <div
                             class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-lg-4 css-14ipkzi">
                             <div
-                                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh" style="border-bottom: 0">
+                                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh border-bottom box-right">
                                 <div class="MuiCardContent-root css-1qw96cp">
                                     <div class="icon"><img loading="lazy"
                                             src="./assest/img/svg/4.Agile-Based-Decision.svg"
@@ -1136,7 +1136,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         <div
                             class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-lg-4 css-14ipkzi">
                             <div
-                                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh" style="border-bottom: 0">
+                                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh border-bottom box-right">
                                 <div class="MuiCardContent-root css-1qw96cp">
                                     <div class="icon"><img loading="lazy"
                                             src="./assest/img/svg/5.Innovative-Approach.svg" alt="Innovative Approach">
@@ -1151,7 +1151,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         <div
                             class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-lg-4 css-14ipkzi">
                             <div
-                                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh"  style="border-right: 0 border-bottom: 0">
+                                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-167ndxh border-bottom border-right box-right box-bottom">
                                 <div class="MuiCardContent-root css-1qw96cp">
                                     <div class="icon"><img loading="lazy"
                                             src="./assest/img/svg/6.High-Customer-Satisfaction.svg"

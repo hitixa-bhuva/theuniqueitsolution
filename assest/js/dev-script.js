@@ -92,18 +92,20 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     const scrollBtn = document.querySelector(".scroll-to-top-btn");
 
-    window.addEventListener("scroll", function () {
+    function toggleScrollBtn() {
         const scrollTop = window.scrollY || document.documentElement.scrollTop;
         const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
         const scrolledPercent = (scrollTop / totalHeight) * 100;
 
-        // Show button only when scrolled past 75% of page
-        if (scrolledPercent >= 75) {
+        if (scrolledPercent >= 10) {
             scrollBtn.classList.add("show");
         } else {
             scrollBtn.classList.remove("show");
         }
-    });
+    }
+
+    window.addEventListener("scroll", toggleScrollBtn);
+    toggleScrollBtn(); // ✅ Check immediately on load
 
     scrollBtn.addEventListener("click", function () {
         window.scrollTo({

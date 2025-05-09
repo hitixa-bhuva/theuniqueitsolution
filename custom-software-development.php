@@ -56,7 +56,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
 
                         <!-- What is Custom Software? -->
 
-                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
+                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30 What-Custom-Software">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
                             <div class="image-wrapper aos-init " data-aos="fade-up"><img loading="lazy"
                                     src="./assest/img/custom-software-development/custom-software.svg"
@@ -138,7 +138,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     </div>
 
                     <!-- How We Develop Custom Software< -->
-                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
+                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30 Develop-Custom-Software">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
                             <div class="content">
                                 <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init "
@@ -160,7 +160,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     </div>
 
                     <!-- Impact of Custom Software -->
-                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
+                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30 Impact-Custom-Software">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
                             <div class="image-wrapper aos-init " data-aos="fade-up"><img loading="lazy"
                                     src="./assest/img/custom-software-development/power-business-growth.svg"

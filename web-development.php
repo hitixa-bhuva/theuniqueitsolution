@@ -51,7 +51,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         data-aos="fade-up">Firstly, we try to understand your business requirements by getting details from your team. We start by sketching on paper so that the initial ideas correspond with what you envision happening. Experts develop a customized website based on this information, which is then utilized for further refining. This involves creating several versions of the website and testing it during each stage to ensure that it meets customer needs, including their perspectives about what they want. After the website has been built, we launch it without any difficulties as well as continue supporting its smooth operation until it goes down.</p>
                         <span class="MuiTypography-root MuiTypography-h6 MuiTypography-alignCenter pb-7 css-1t9tuk4 aos-init" data-aos="fade-up" data-aos-delay="100" style="display: block;">Step-by-Step Process for Building your Web App</span>
                         <!-- Conceptualization and Requirements Gathering -->
-                        <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
+                        <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30 Conceptualization-Requirements-Gathering">
                             <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
                                 <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
                                         src="./assest/img/web-development/requirement-gathering.bb3d88361a647d290760e9abf27eade9.svg"
@@ -98,7 +98,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     </div>
 
                     <!-- Development and Iterative Testing -->
-                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
+                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30 Development-Iterative-Testing">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
                             <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
                                     src="./assest/img/web-development/development-and-testing.44c26640f44cbd695cd4cf17b923e2a4.svg"
@@ -116,7 +116,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     </div>
 
                     <!-- Quality Assurance and Integration< -->
-                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
+                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30 ">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
                             <div class="content">
                                 <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
@@ -135,7 +135,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     </div>
 
                     <!-- Deployment, Support, and Continuous Improvement -->
-                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
+                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30 Deployment-Continuous-Improvement">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
                             <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
                                     src="./assest/img/web-development/deployment-support.8185d98435290acda9f4841efbee3360.svg"

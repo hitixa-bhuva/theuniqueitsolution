@@ -42,10 +42,10 @@ include __DIR__ . '/A_Layout/Header/header.php';
             </section>
             <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
                 <section class="consider-hiring-developer mb-9 aos-init " data-aos="fade-in">
-                    <img src="./assest/img/svg/oval-left..svg" alt="Oval" class="left aos-init " data-aos="fade-in"
-                        style="width: 17%;">
-                    <img src="./assest/img/svg/oval-right.svg" alt="Oval" class="right aos-init " data-aos="fade-in"
-                        style="width: 17%;">
+                    <img src="./assest/img/svg/oval-left..svg" alt="Oval" class="left aos-init hire-oval-left" data-aos="fade-in"
+                        >
+                    <img src="./assest/img/svg/oval-right.svg" alt="Oval" class="hire-oval-right right aos-init " data-aos="fade-in"
+                        >
                     <h5 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter pb-4 css-4mcfl aos-init "
                         data-aos="fade-up">Are you thinking about hiring a dedicated developer who can improve your
                         team’s skills and boost your projects’ success?</h5>
@@ -394,10 +394,10 @@ include __DIR__ . '/A_Layout/Header/header.php';
             <!-- 11 Ready to build your custom -->
             <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
                 <section class="request-proposal aos-init" data-aos="fade-in">
-                    <img src="./assest/img/svg/oval-left..svg" alt="Oval" class="oval-left aos-init" data-aos="fade-in"
-                        style="width: 18%;">
-                    <img src="./assest/img/svg/oval-right.svg" alt="Oval" class="oval-right aos-init" data-aos="fade-in"
-                        style="width: 18%;">
+                    <img src="./assest/img/svg/oval-left..svg" alt="Oval" class="oval-left aos-init hire-oval-left" data-aos="fade-in"
+                        >
+                    <img src="./assest/img/svg/oval-right.svg" alt="Oval" class="hire-oval-right oval-right aos-init" data-aos="fade-in"
+                     >
                     <h3 class="MuiTypography-root MuiTypography-h3 pb-4 css-8ipg8 aos-init" data-aos="fade-up"
                         data-aos-delay="100">Ready to build your custom application solution</h3><span
                         class="MuiTypography-root MuiTypography-subtitle2 css-4s5e1 aos-init" data-aos="fade-up"

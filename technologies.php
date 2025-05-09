@@ -52,7 +52,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     </div>
 
                     <!-- 1.2 Backend -->
-                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
+                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30 Backend-flex-dir">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
                             <div class="image-wrapper aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
                                     src="./assest/img/svg/technologies/backend-technologies.svg" alt="Backend Technologies">
@@ -98,7 +98,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     </div>
 
                     <!-- 1.4 database -->
-                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
+                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30 tech-Mobile-Application-Development">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
                             <div class="image-wrapper aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
                                     src="./assest/img/svg/technologies/mobile-application-development-technologies.svg" alt="Mobile Application Development">
@@ -139,7 +139,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                     </div>
 
                     <!-- 1.6 UI/UX Designing -->
-                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
+                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30 UI-UX-Designing">
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
                             <div class="image-wrapper aos-init aos-animate" data-aos="fade-up"><img loading="lazy"
                                     src="./assest/img/svg/technologies/ui-ux-technologies.svg" alt="UI/UX Designing Technologies">

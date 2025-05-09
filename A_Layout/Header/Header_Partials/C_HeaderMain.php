@@ -13,7 +13,7 @@ echo
   </div>
     <!-- 1 navbar -->
     <header class="page-scrolled aos-init aos-animate" data-aos="fade-in">
-        <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-root-nav MuiIconButton-sizeSmall css-wrts35"
+        <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-root-nav MuiIconButton-sizeSmall css-wrts35 ps-0"
             tabindex="0" type="button" title="Menu">
             <img loading="lazy" src="./assest/img/svg/ic-hamburger.svg" alt="Hamburger">
             <img loading="lazy" src="./assest/img/svg/ic-hamburger-white.svg" class="active" alt="Hamburger">
@@ -44,7 +44,7 @@ echo
                 <div class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-entered css-c4sutr"
                     style="min-height: 0px;">
                     <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
-                        <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb">
+                        <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb menu-sub-top">
                             <ul class="submenu">
                                 <li><a title="Custom Software Development"  class="' ?><?php if ($page == "custom-software-development.php") {
                                    echo 'active';

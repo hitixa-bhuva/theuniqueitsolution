@@ -31,10 +31,186 @@
         line-height: 60px;
         letter-spacing: 0px;
     }
+    .css-1b7jm6v{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.25px;
+    }
+    .banner.hero-banner h2 {
+        padding-bottom: 24px;
+    }
+    .banner.hero-banner p {
+        padding-bottom: 48px;
+    }
+    .outer-card{
+        margin: 0;
+    }
+    .outer-card {
+        border-radius: 0px;
+    }
+    .servicer-slider .slick-slide {
+        outline: none;
+        width: 488px !important;
+    }
+    .home-service-crad .MuiCard-root.service-card {
+        width: 456px;
+    }
+    .MuiCard-root.service-card {
+        width: 290px;
+    }
+    .request-proposal ul {
+        flex-direction: column;
+    }
+    .oval-left {
+        width: 21% !important;
+    }
+    .oval-right{
+        width: 21% !important;
+    }
+    
+    .css-yzz2ut {
+        order: 1;
+    }
+    .css-ldtpqf > .MuiGrid-item {
+        padding-left: 32px;
+    }
+    .css-yzz2ut {
+        flex-basis: 50%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 50%;
+    }
+    .css-8ipg8 {
+        font-size: 49px;
+    }
+    .css-3sq53o {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.25px;
+    }
+    .css-16rxbyr>.MuiGrid-item {
+        padding-left: 40px;
+        padding-top: 24px;
+    }
+    .banner.service-details-banner {
+        padding-top: 76px;
+    }
+    .menu-sub-top{
+        padding-top: 8px;
+    }
   }
   
 /* 768 screen size */
 @media (max-width: 790px) {
+    .contact-form-flex,
+    .UI-UX-Designing,
+    .tech-Mobile-Application-Development,
+    .Backend-flex-dir,
+    .Visual-Design-Brand-Integration,
+    .Centered-Design-Approach,
+    .Quality-Assurance-Integration,
+    .business-analysis-Requirements-Gathering,
+    .Conceptualization-Requirements-Gathering,
+    .Development-Iterative-Testing,
+    .Deployment-Continuous-Improvement,
+    .Regular-Customer-Notifications,
+    .Inventory-Management,
+    .Customer-Interaction-System,
+    .Impact-Custom-Software,
+    .What-Custom-Software,
+    .Supply-Chain-Logistics,
+    .Data-Entry-Management,
+    .Customer-Service-Support{
+        display: flex;
+        flex-direction: column-reverse !important;
+    }
+    .form-padding{
+        padding-top: 40px;
+        padding-left: 40px;
+    }
+    .industry-solutions {
+        padding-bottom: 80px;
+        padding-top: 80px;
+    }
+    .css-hrdle6 > .MuiGrid-item {
+        padding-top: 24px !important;
+    }
+    .mb-9 {
+        margin-bottom: 60px !important;
+    }
+    .MuiCard-root.it-consulting-card{
+        width: 100%;
+    }
+    .hire-oval-right,
+    .hire-oval-left{
+    width: 27%;
+}
+    .service-details-content>p {
+        padding-bottom: 64px;
+    }
+    .intro-about{
+        display: flex;
+        flex-direction: column-reverse !important;
+    }
+    .Empowering-Digital-Transformation{
+    display: flex;
+    flex-direction: column-reverse !important;
+    }
+    .Enhancing-Online-Visibility{
+        display: flex;
+    flex-direction: column-reverse !important;
+    }
+    .css-16rxbyr>.MuiGrid-item {
+        padding-top: 24px !important;
+        padding-left: 24px;
+    }
+    .Automating-Repetitive-Tasks{
+        display: flex;
+        flex-direction: column;
+    }
+    .Develop-Custom-Software{
+        display: flex;
+        flex-direction: column !important;
+    }
+    .MuiCard-root.service-card {
+        width: 331px;
+    }
+    .vertical-counter ul li span {
+        font-size: 40px;
+        letter-spacing: .25px;
+        line-height: 56px;
+        padding-bottom: 8px;
+    }
+    .css-ldtpqf > .MuiGrid-item{
+        padding-left: 0;
+    }
+    .css-ldtpqf > .MuiGrid-item {
+        padding-top: 32px;
+    }
+    .vertical-counter {
+        margin-top: 0;
+    }
+    .css-yzz2ut {
+        flex-basis: 100%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 100%;
+    }
+    .border-right{
+        border-right: 1px solid var(--primary-150);
+    }
+    .border-bottom{
+        border-bottom: 1px solid var(--primary-150) !important;
+    }
+    .css-tq2bi6 {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .home-service-crad .MuiCard-root.service-card{
+        width: 100%;
+    }
     .css-dbmn0s {
         flex-basis: 100%;
         -webkit-box-flex: 0;
@@ -142,10 +318,10 @@
     .request-proposal .oval-left{
         width: 30% !important; 
     }
-    .service-details-content .css-1tz8m30{
+    /* .service-details-content .css-1tz8m30{
         display: flex;
         flex-direction: column-reverse;
-    }
+    } */
     .service-details-content .Wireframing-Prototyping{
         display: flex;
         flex-direction: row-reverse;
@@ -195,7 +371,14 @@
   }
   
 /* 425 screen size */
-@media (max-width: 435px) {
+@media (max-width: 450px) {
+    .form-padding {
+        padding-top: 0;
+        padding-left: 0;
+    }
+    .slider-controls {
+        margin-bottom: 26px;
+    }
     .consider-hiring-developer img{
         width: 50% !important;
     }
@@ -230,16 +413,51 @@
     .slider-controls {
         margin-top: 0 !important;
     }
+    .padding-top-small{
+        padding-top: 0 !important;
+    }
+    .box-right{
+        border-right: 0 !important;
+    }
+    .banner.page-banner{
+        margin-bottom: 64px;
+    }
+    .services-main-card .service-card{
+        width: 100%;
+    }
+    .prenet-btn-margin{
+        margin-bottom: 19px;
+    }
+    .box-bottom{
+        border-bottom: 0 !important;
+    }
+    .css-1tz8m30>.MuiGrid-item {
+        padding-top: 36px;
+    }
+    .banner.page-banner {
+        margin-bottom: 64px !important;
+        padding-bottom: 48px !important;
+    }
     .css-hj4xil {
         flex-basis: 100%;
         -webkit-box-flex: 0;
         flex-grow: 0;
         max-width: 100%;
     }
+    .hoe-we-work{
+        margin-bottom: 64px !important;
+    }
     .css-8ipg8 {
-        font-size: 30px;
+        font-size: 32px;
         line-height: 44px;
         letter-spacing: 0.04px;
+    }
+    .css-tq2bi6 {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .our-services {
+        padding-bottom: 64px;
     }
     .outer-card {
         margin: 0;
@@ -442,7 +660,7 @@
         width: 30%;
     }
     .css-xgs5wp {
-        width: calc(100% + -10px) !important;
+        width: calc(100% + -3px) !important;
         margin-left: 0px !important;
     }
     .css-k4xlog {
@@ -839,7 +1057,7 @@
 }
 .servicer-slider .slick-slide{
     outline: none; 
-    width: 411px !important;
+    width: 411px;
 }
 .css-fnn40u {
     margin: 0px;

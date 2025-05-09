@@ -28,11 +28,10 @@ include __DIR__ . '/A_Layout/Header/header.php';
             
             <div class="MuiContainer-root MuiContainer-maxWidthXl mb-9 css-k4xlog">
                 <div
-                    class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 MuiGrid-spacing-sm-4 MuiGrid-spacing-xl-6 css-16rxbyr">
+                    class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 MuiGrid-spacing-sm-4 MuiGrid-spacing-xl-6 css-16rxbyr services-main-card">
                     <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 css-18xehxy aos-init  pt-0"
                         data-aos="fade-up">
-                        <div
-                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
+                        <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
                             <div class="MuiCardContent-root css-1qw96cp">
                                 <div class="icon yellow"><img
                                         src="./assest/img/svg/ic-custom-software-development.svg"

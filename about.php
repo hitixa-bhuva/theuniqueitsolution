@@ -29,8 +29,8 @@ include __DIR__ . '/A_Layout/Header/header.php';
         <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
             <!-- 2.  About IT Solutions That are Unique -->
             <section class="about-it-solution mb-9">
-                <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 MuiGrid-spacing-xl-8 css-ldtpqf">
-                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
+                <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 MuiGrid-spacing-xl-8 css-ldtpqf intro-about">
+                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut ps-0">
                         <h3 class="MuiTypography-root MuiTypography-h3 pb-4 css-8ipg8 aos-init" data-aos="fade-up">
                             About IT Solutions That are Unique</h3>
                         <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v aos-init" data-aos="fade-up">
@@ -43,7 +43,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                             teams ensure continuous client success by offering exclusive after-sales services
                             that go beyond delivering perfect products.</p>
                     </div>
-                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd"><span
+                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd padding-top-small"><span
                             style="font-size: 0px;"></span>
                         <section class="vertical-counter">
                             <ul>
@@ -81,7 +81,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                 <p class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter pb-7 css-3sq53o aos-init"
                     data-aos="fade-up">Discover our commitment to driving innovation and excellence, on how we
                     aim to transform businesses through cutting-edge technology solutions.</p>
-                <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
+                <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30 Empowering-Digital-Transformation">
                     <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
                         <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
                                 src="./assest/img/about/empowering-digital-transformation.svg"
@@ -120,7 +120,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                 alt="Code that Power Business Growth"></div>
                     </div>
                 </div>
-                <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30">
+                <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 mb-9 section-details css-1tz8m30 Enhancing-Online-Visibility">
                     <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
                         <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
                                 src="./assest/img/about/enhancing-online-visibility.svg"
