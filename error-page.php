@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 Page Not Found</title>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arvo', serif;
+      background: #fff;
+    }
+
+    .page_404 {
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .four_zero_four_bg {
+      background-image: url('https://cdn.dribbble.com/users/722246/screenshots/3066818/404-page.gif');
+      height: 500px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .four_zero_four_bg h1, .four_zero_four_bg h3 {
+      font-size: 80px;
+      margin: 0;
+    }
+
+    .contant_box_404 {
+      margin-top: -50px;
+    }
+
+    .link_404 {
+        display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+    min-width: 64px;
+    color: rgb(255, 255, 255);
+    background-color: #0487ff;
+    text-transform: none;
+    box-shadow: none;
+    position: relative;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.15px;
+    min-height: 44px;
+    outline: 0px;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    margin: 0px;
+    text-decoration: none;
+    padding: 4px 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 30px;
+    }
+
+    .link_404:hover {
+      background: transparent;
+      border: 1px solid #0487ff;
+      color: #0487ff;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="page_404">
+    <div class="four_zero_four_bg"></div>
+    <div class="contant_box_404">
+      <h3>Looks like you're lost</h3>
+      <p>The page you are looking for is not available!</p>
+      <a href="home" class="link_404">Go to Home</a>
+    </div>
+  </section>
+
+</body>
+</html>

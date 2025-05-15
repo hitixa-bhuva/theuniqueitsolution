@@ -1,0 +1,32 @@
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+Header always set Content-Security-Policy "upgrade-insecure-requests"
+
+# Custom error page
+ErrorDocument 404 /error-page.php	
+
+# Clean URLs rewrite rules
+RewriteRule ^home$ index.php [L,NC]
+RewriteRule ^about-us$ about.php [L,NC]
+RewriteRule ^technologies$ technologies.php [L,NC]
+RewriteRule ^services/$ services-main.php [L,NC]
+RewriteRule ^industries$ industries.php [L,NC]
+RewriteRule ^contact-us$ contact-us.php [L,NC]
+
+# ServicesPage URLs
+RewriteRule ^services/custom-software-development$ custom-software-development.php [L,NC]
+RewriteRule ^services/work-flow-automation$ work-flow-automation.php [L,NC]
+RewriteRule ^services/crm-and-erp-development$ crm-and-erp-development.php [L,NC]
+RewriteRule ^services/web-development$ web-development.php [L,NC]
+RewriteRule ^services/mobile-application-development$ mobile-application-development.php [L,NC]
+RewriteRule ^services/ui-ux-design$ ui-ux-design.php [L,NC]
+RewriteRule ^services/hire-dedicated-developers$ hire-dedicated-developers.php [L,NC]
+RewriteRule ^services/it-consulting$ it-consulting.php [L,NC]
+
+# Industries URLs
+RewriteRule ^industries/hospitality-industry$ hospitality-industry.php [L,NC]
+RewriteRule ^industries/retail-and-ecommerce-solution$ retail-and-ecommerce-solution.php [L,NC]
+RewriteRule ^industries/news-and-entertainment$ news-and-entertainment.php [L,NC]
+RewriteRule ^industries/production-and-service-assurance$ production-and-service-assurance.php [L,NC]
+RewriteRule ^industries/telecommunication-media$ telecommunication-media.php [L,NC]
