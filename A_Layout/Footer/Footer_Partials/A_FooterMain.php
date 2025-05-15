@@ -90,7 +90,7 @@ echo
                             </li>
                             <li>
                                 <a title="Retail &amp; Ecommerce Solution"
-                                    href="retail-and-ecommerce-solution">Retail &amp; Ecommerce Solution</a>
+                                    href="industries/retail-and-ecommerce-solution">Retail &amp; Ecommerce Solution</a>
 
                             </li>
                             <li>

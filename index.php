@@ -743,7 +743,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                             class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root industry-card css-kikq3z">
                                             <div class="MuiCardContent-root css-1qw96cp"><a
                                                     title="Retail &amp; Ecommerce Solution"
-                                                    href="retail-and-ecommerce-solution">
+                                                    href="industries/retail-and-ecommerce-solution">
                                                     <p class="MuiTypography-root MuiTypography-subtitle1 css-3g41r5">
                                                         Retail &amp; Ecommerce Solution</p><button
                                                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-wrts35"
@@ -876,7 +876,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                             class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root industry-card css-kikq3z">
                                             <div class="MuiCardContent-root css-1qw96cp"><a
                                                     title="Retail &amp; Ecommerce Solution"
-                                                    href="retail-and-ecommerce-solution">
+                                                    href="industries/retail-and-ecommerce-solution">
                                                     <p class="MuiTypography-root MuiTypography-subtitle1 css-3g41r5">
                                                         Retail &amp; Ecommerce Solution</p><button
                                                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-wrts35"
