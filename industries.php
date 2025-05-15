@@ -33,7 +33,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         <div
                             class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root industry-card css-dde1j9">
                             <div class="MuiCardContent-root css-1qw96cp"><a title="Hospitality Industry"
-                                    href="hospitality-industry">
+                                    href="industries/hospitality-industry">
                                     <p class="MuiTypography-root MuiTypography-subtitle1 css-3g41r5">Hospitality
                                         Industry</p><button
                                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-wrts35"
@@ -49,7 +49,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         <div
                             class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root industry-card css-c6llss">
                             <div class="MuiCardContent-root css-1qw96cp"><a title="News &amp; Entertainment"
-                                    href="news-and-entertainment">
+                                    href="industries/news-and-entertainment">
                                     <p class="MuiTypography-root MuiTypography-subtitle1 css-3g41r5">News &amp;
                                         Entertainment</p><button
                                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-wrts35"
@@ -81,7 +81,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         <div
                             class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root industry-card css-1cdsvfk">
                             <div class="MuiCardContent-root css-1qw96cp"><a title="Production &amp; Service Assurance"
-                                    href="production-and-service-assurance">
+                                    href="industries/production-and-service-assurance">
                                     <p class="MuiTypography-root MuiTypography-subtitle1 css-3g41r5">Production &amp;
                                         Service Assurance</p><button
                                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-wrts35"
@@ -97,7 +97,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                         <div
                             class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root industry-card css-cuq6v3">
                             <div class="MuiCardContent-root css-1qw96cp"><a title="Telecommunication Media"
-                                    href="telecommunication-media">
+                                    href="industries/telecommunication-media">
                                     <p class="MuiTypography-root MuiTypography-subtitle1 css-3g41r5">Telecommunication
                                         Media</p><button
                                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-wrts35"

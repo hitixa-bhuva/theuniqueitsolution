@@ -20,7 +20,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                 Welcome to Unique IT Solution, your foremost partner in innovative IT services. We lead with
                 state-of-the-art solutions, setting industry benchmarks and revolutionizing business activities.
             </p>
-            <a href="service">
+            <a href="services">
                 <button id="hero-btn"
                     class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus aos-init aos-animate"
                     tabindex="0" type="button" title="View Our Services">
@@ -128,7 +128,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                                     and robust solutions grow with your company.</p>
                                             </div>
                                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                                    href="custom-software-development"><button
+                                                    href="services/custom-software-development"><button
                                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                                         tabindex="0" type="button" title="Discover More">Discover
                                                         More<span
@@ -158,7 +158,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                                     high-impact activities.</p>
                                             </div>
                                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                                    href="work-flow-automation"><button
+                                                    href="services/work-flow-automation"><button
                                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                                         tabindex="0" type="button" title="Discover More">Discover
                                                         More<span
@@ -187,7 +187,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                                     enhances customer interaction for smoother operations</p>
                                             </div>
                                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                                    href="crm-and-erp-development"><button
+                                                    href="services/crm-and-erp-development"><button
                                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                                         tabindex="0" type="button" title="Discover More">Discover
                                                         More<span
@@ -217,7 +217,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                                     purposes, enhancing the online user experience</p>
                                             </div>
                                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                                    href="web-development"><button
+                                                    href="services/web-development"><button
                                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                                         tabindex="0" type="button" title="Discover More">Discover
                                                         More<span
@@ -247,7 +247,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                                     user experiences across platforms.</p>
                                             </div>
                                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                                    href="mobile-application-development"><button
+                                                    href="services/mobile-application-development"><button
                                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                                         tabindex="0" type="button" title="Discover More">Discover
                                                         More<span
@@ -276,7 +276,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                                     functionality.</p>
                                             </div>
                                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                                    href="ui-ux-design"><button
+                                                    href="services/ui-ux-design"><button
                                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                                         tabindex="0" type="button" title="Discover More">Discover
                                                         More<span
@@ -304,7 +304,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                                     hiring models to enhance your workforce effectively.</p>
                                             </div>
                                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                                    href="hire-dedicated-developers"><button
+                                                    href="services/hire-dedicated-developers"><button
                                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                                         tabindex="0" type="button" title="Discover More">Discover
                                                         More<span
@@ -335,7 +335,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                                 </p>
                                             </div>
                                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                                    href="it-consulting"><button
+                                                    href="services/it-consulting"><button
                                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                                         tabindex="0" type="button" title="Discover More">Discover
                                                         More<span
@@ -351,7 +351,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                             </div>
                         </div>
                     </div>
-                    <a href="service"><button
+                    <a href="services"><button
                             class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus aos-init"
                             tabindex="0" type="button" title="Explore More" data-aos="fade-up"><span
                                 class="text">Explore More</span><span
@@ -402,7 +402,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                                     and robust solutions grow with your company.</p>
                                             </div>
                                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                                    href="custom-software-development"><button
+                                                    href="services/custom-software-development"><button
                                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                                         tabindex="0" type="button" title="Discover More">Discover
                                                         More<span
@@ -433,7 +433,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                                     high-impact activities.</p>
                                             </div>
                                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                                    href="work-flow-automation"><button
+                                                    href="services/work-flow-automation"><button
                                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                                         tabindex="0" type="button" title="Discover More">Discover
                                                         More<span
@@ -494,7 +494,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                                     purposes, enhancing the online user experience</p>
                                             </div>
                                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                                    href="web-development"><button
+                                                    href="services/web-development"><button
                                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                                         tabindex="0" type="button" title="Discover More">Discover
                                                         More<span
@@ -525,7 +525,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                                     user experiences across platforms.</p>
                                             </div>
                                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                                    href="mobile-application-development"><button
+                                                    href="services/mobile-application-development"><button
                                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                                         tabindex="0" type="button" title="Discover More">Discover
                                                         More<span
@@ -555,7 +555,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                                     functionality.</p>
                                             </div>
                                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                                    href="ui-ux-design"><button
+                                                    href="services/ui-ux-design"><button
                                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                                         tabindex="0" type="button" title="Discover More">Discover
                                                         More<span
@@ -584,7 +584,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                                     hiring models to enhance your workforce effectively.</p>
                                             </div>
                                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                                    href="hire-dedicated-developers"><button
+                                                    href="services/hire-dedicated-developers"><button
                                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                                         tabindex="0" type="button" title="Discover More">Discover
                                                         More<span
@@ -616,7 +616,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                                 </p>
                                             </div>
                                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                                    href="it-consulting"><button
+                                                    href="services/it-consulting"><button
                                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                                         tabindex="0" type="button" title="Discover More">Discover
                                                         More<span
@@ -650,7 +650,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                             </div>
                         </div>
                     </div>
-                    <a href="service">
+                    <a href="services">
                         <button
                             class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus aos-init aos-animate"
                             tabindex="0" type="button" title="Explore More" data-aos="fade-up">
@@ -706,7 +706,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                         <div
                                             class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root industry-card css-dde1j9">
                                             <div class="MuiCardContent-root css-1qw96cp"><a title="Hospitality Industry"
-                                                    href="hospitality-industry">
+                                                    href="industries/hospitality-industry">
                                                     <p class="MuiTypography-root MuiTypography-subtitle1 css-3g41r5">
                                                         Hospitality Industry</p><button
                                                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-wrts35"
@@ -724,7 +724,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                         <div
                                             class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root industry-card css-c6llss">
                                             <div class="MuiCardContent-root css-1qw96cp"><a
-                                                    title="News &amp; Entertainment" href="news-and-entertainment">
+                                                    title="News &amp; Entertainment" href="industries/news-and-entertainment">
                                                     <p class="MuiTypography-root MuiTypography-subtitle1 css-3g41r5">
                                                         News &amp; Entertainment</p><button
                                                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-wrts35"
@@ -762,7 +762,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                             class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root industry-card css-1cdsvfk">
                                             <div class="MuiCardContent-root css-1qw96cp"><a
                                                     title="Production &amp; Service Assurance"
-                                                    href="production-and-service-assurance">
+                                                    href="industries/production-and-service-assurance">
                                                     <p class="MuiTypography-root MuiTypography-subtitle1 css-3g41r5">
                                                         Production &amp; Service Assurance</p><button
                                                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-wrts35"
@@ -780,7 +780,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                         <div
                                             class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root industry-card css-cuq6v3">
                                             <div class="MuiCardContent-root css-1qw96cp"><a
-                                                    title="Telecommunication Media" href="telecommunication-media">
+                                                    title="Telecommunication Media" href="industries/telecommunication-media">
                                                     <p class="MuiTypography-root MuiTypography-subtitle1 css-3g41r5">
                                                         Telecommunication Media</p>
                                                     <button
@@ -839,7 +839,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                         <div
                                             class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root industry-card css-dde1j9">
                                             <div class="MuiCardContent-root css-1qw96cp"><a title="Hospitality Industry"
-                                                    href="hospitality-industry">
+                                                    href="industries/hospitality-industry">
                                                     <p class="MuiTypography-root MuiTypography-subtitle1 css-3g41r5">
                                                         Hospitality Industry</p><button
                                                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-wrts35"
@@ -857,7 +857,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                         <div
                                             class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root industry-card css-c6llss">
                                             <div class="MuiCardContent-root css-1qw96cp"><a
-                                                    title="News &amp; Entertainment" href="news-and-entertainment">
+                                                    title="News &amp; Entertainment" href="industries/news-and-entertainment">
                                                     <p class="MuiTypography-root MuiTypography-subtitle1 css-3g41r5">
                                                         News &amp; Entertainment</p><button
                                                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-wrts35"
@@ -895,7 +895,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                             class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root industry-card css-1cdsvfk">
                                             <div class="MuiCardContent-root css-1qw96cp"><a
                                                     title="Production &amp; Service Assurance"
-                                                    href="production-and-service-assurance">
+                                                    href="industries/production-and-service-assurance">
                                                     <p class="MuiTypography-root MuiTypography-subtitle1 css-3g41r5">
                                                         Production &amp; Service Assurance</p><button
                                                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-wrts35"
@@ -913,7 +913,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                         <div
                                             class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root industry-card css-cuq6v3">
                                             <div class="MuiCardContent-root css-1qw96cp"><a
-                                                    title="Telecommunication Media" href="telecommunication-media">
+                                                    title="Telecommunication Media" href="industries/telecommunication-media">
                                                     <p class="MuiTypography-root MuiTypography-subtitle1 css-3g41r5">
                                                         Telecommunication Media</p>
                                                     <button

@@ -51,33 +51,33 @@ echo
                         <ul class="site-links">
                             <li>
                                 <a title="Custom Software Development"
-                                    href="custom-software-development">Custom Software Development
+                                    href="services/custom-software-development">Custom Software Development
                                 </a>
                             </li>
                             <li>
-                                <a title="Work Flow Automation" href="work-flow-automation">Work Flow
+                                <a title="Work Flow Automation" href="services/work-flow-automation">Work Flow
                                     Automation</a>
                             </li>
                             <li>
-                                <a title="CRM &amp; ERP Development" href="crm-and-erp-development">CRM &amp;
+                                <a title="CRM &amp; ERP Development" href="services/crm-and-erp-development">CRM &amp;
                                     ERP Development</a>
                             </li>
                             <li>
-                                <a title="Web Development" href="web-development">Web Development</a>
+                                <a title="Web Development" href="services/web-development">Web Development</a>
                             </li>
                             <li>
                                 <a title="Mobile Application Development"
-                                    href="mobile-application-development">Mobile Application Development</a>
+                                    href="services/mobile-application-development">Mobile Application Development</a>
                             </li>
                             <li>
-                                <a title="UI/UX Design" href="ui-ux-design">UI/UX Design</a>
+                                <a title="UI/UX Design" href="services/ui-ux-design">UI/UX Design</a>
                             </li>
                             <li>
-                                <a title="Hire Dedicated Developers" href="hire-dedicated-developers">Hire
+                                <a title="Hire Dedicated Developers" href="services/hire-dedicated-developers">Hire
                                     Dedicated Developers</a>
                             </li>
                             <li>
-                                <a title="IT Consulting" href="it-consulting">IT Consulting</a>
+                                <a title="IT Consulting" href="services/it-consulting">IT Consulting</a>
                             </li>
                         </ul>
                     </div>
@@ -85,7 +85,7 @@ echo
                             class="MuiTypography-root MuiTypography-subtitle1 css-3g41r5">Industries</strong>
                         <ul class="site-links">
                             <li>
-                                <a title="Hospitality Industry" href="hospitality-industry">Hospitality
+                                <a title="Hospitality Industry" href="industries/hospitality-industry">Hospitality
                                     Industry</a>
                             </li>
                             <li>
@@ -94,17 +94,17 @@ echo
 
                             </li>
                             <li>
-                                <a title="News &amp; Entertainment" href="news-and-entertainment">News &amp;
+                                <a title="News &amp; Entertainment" href="industries/news-and-entertainment">News &amp;
                                     Entertainment</a>
                             </li>
                             <li>
                                 <a title="Production &amp; Service Assurance"
-                                    href="production-and-service-assurance">Production &amp; Service
+                                    href="industries/production-and-service-assurance">Production &amp; Service
                                     Assurance</a>
                             </li>
                             <li>
                                 <a title="Telecommunication Media"
-                                    href="telecommunication-media">Telecommunication Media</a>
+                                    href="industries/telecommunication-media">Telecommunication Media</a>
                             </li>
                         </ul>
                     </div>

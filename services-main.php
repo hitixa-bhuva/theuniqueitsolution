@@ -43,7 +43,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                     scalable, adaptable, and robust solutions grow with your company.</p>
                             </div>
                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                    href="custom-software-development"><button
+                                    href="services/custom-software-development"><button
                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                         tabindex="0" type="button" title="Discover More">Discover More<span
                                             class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img
@@ -68,7 +68,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                     high-impact activities.</p>
                             </div>
                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                    href="work-flow-automation"><button
+                                    href="services/work-flow-automation"><button
                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                         tabindex="0" type="button" title="Discover More">Discover More<span
                                             class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img
@@ -93,7 +93,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                     streamlines processes and enhances customer interaction for smoother operations</p>
                             </div>
                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                    href="crm-and-erp-development"><button
+                                    href="services/crm-and-erp-development"><button
                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                         tabindex="0" type="button" title="Discover More">Discover More<span
                                             class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img
@@ -118,7 +118,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                     purposes, enhancing the online user experience</p>
                             </div>
                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                    href="web-development"><button
+                                    href="services/web-development"><button
                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                         tabindex="0" type="button" title="Discover More">Discover More<span
                                             class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img
@@ -144,7 +144,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                     experiences across platforms.</p>
                             </div>
                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                    href="mobile-application-development"><button
+                                    href="services/mobile-application-development"><button
                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                         tabindex="0" type="button" title="Discover More">Discover More<span
                                             class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img
@@ -169,7 +169,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                     functionality.</p>
                             </div>
                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                    href="ui-ux-design"><button
+                                    href="services/ui-ux-design"><button
                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                         tabindex="0" type="button" title="Discover More">Discover More<span
                                             class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img
@@ -194,7 +194,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                     Benefit from flexible hiring models to enhance your workforce effectively.</p>
                             </div>
                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                    href="hire-dedicated-developers"><button
+                                    href="services/hire-dedicated-developers"><button
                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                         tabindex="0" type="button" title="Discover More">Discover More<span
                                             class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img
@@ -219,7 +219,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                     you to diagnose and resolve issues, ensuring rapid success.</p>
                             </div>
                             <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
-                                    href="it-consulting"><button
+                                    href="services/it-consulting"><button
                                         class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
                                         tabindex="0" type="button" title="Discover More">Discover More<span
                                             class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img

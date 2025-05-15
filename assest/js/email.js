@@ -307,7 +307,7 @@ console.log("Collected form data:", { fullName, email, phone, subject, company, 
     console.log("Checking form validation...");
 
     if (!fullName || !email || !phone || !subject || !company ) {
-      // || !description || !fileupload
+      // || !description || !fileupload 
         console.log("Validation failed: Missing required fields.");
     
         if (!fullName) {
@@ -405,7 +405,5 @@ function clearForm() {
     document.getElementById('phone').value = '';
     document.getElementById('subject').value = '';
     document.getElementById('company').value = '';
-    // document.getElementById('description').value = '';
-    // document.getElementById('fileupload').value = '';
     console.log("Form reset successfully.");
 }

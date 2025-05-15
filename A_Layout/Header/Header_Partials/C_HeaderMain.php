@@ -35,7 +35,7 @@ echo
                 <li class="has-submenu ">
                 <a  aria-current="page" class="menu-expanded ' ?><?php if ($page == "services-main.php" || $page == "custom-software-development.php" || $page == "work-flow-automation.php" || $page == "crm-and-erp-development.php" || $page == "web-development.php" || $page == "mobile-application-development.php" || $page == "ui-ux-design.php" || $page == "hire-dedicated-developers.php" || $page == "it-consulting.php") {
                    echo 'active';
-                 } ?><?php echo '" onclick="goToServices(event)" href="service">
+                 } ?><?php echo '" onclick="goToServices(event)" href="services">
                     Services
                     <span class="dropdown-icon" onclick="toggleSubmenu(event)">
                       <img src="./assest/img/svg/arrow-down.svg" alt="Down Arrow" />
@@ -49,35 +49,35 @@ echo
                                 <li><a title="Custom Software Development"  class="' ?><?php if ($page == "custom-software-development.php") {
                                    echo 'active';
                                  } ?><?php echo '"
-                                        href="custom-software-development">Custom Software Development</a>
+                                        href="services/custom-software-development">Custom Software Development</a>
                                 </li>
                                 <li><a title="Work Flow Automation"  class=" ' ?><?php if ($page == "work-flow-automation.php") {
                                    echo 'active';
-                                 } ?><?php echo '" href="work-flow-automation">Work
+                                 } ?><?php echo '" href="services/work-flow-automation">Work
                                         Flow Automation</a></li>
                                 <li><a title="CRM &amp; ERP Development"  class=" ' ?><?php if ($page == "crm-and-erp-development.php") {
                                    echo 'active';
                                  } ?><?php echo '"
-                                        href="crm-and-erp-development">CRM &amp; ERP Development</a></li>
+                                        href="services/crm-and-erp-development">CRM &amp; ERP Development</a></li>
                                 <li><a title="Web Development"  class=" ' ?><?php if ($page == "web-development.php") {
                                    echo 'active';
-                                 } ?><?php echo '" href="web-development">Web
+                                 } ?><?php echo '" href="services/web-development">Web
                                         Development</a></li>
                                 <li><a title="Mobile Application Development"  class=" ' ?><?php if ($page == "mobile-application-development.php") {
                                    echo 'active';
                                  } ?><?php echo '"
-                                        href="mobile-application-development">Mobile Application
+                                        href="services/mobile-application-development">Mobile Application
                                         Development</a></li>
                                 <li><a title="UI/UX Design"  class=" ' ?><?php if ($page == "ui-ux-design.php") {
                                    echo 'active';
-                                 } ?><?php echo '" href="ui-ux-design">UI/UX Design</a></li>
+                                 } ?><?php echo '" href="services/ui-ux-design">UI/UX Design</a></li>
                                 <li><a title="Hire Dedicated Developers"  class=" ' ?><?php if ($page == "hire-dedicated-developers.php") {
                                    echo 'active';
                                  } ?><?php echo '"
-                                        href="hire-dedicated-developers">Hire Dedicated Developers</a></li>
+                                        href="services/hire-dedicated-developers">Hire Dedicated Developers</a></li>
                                 <li><a title="IT Consulting"  class=" ' ?><?php if ($page == "it-consulting.php") {
                                    echo 'active';
-                                 } ?><?php echo '" href="it-consulting">IT Consulting</a>
+                                 } ?><?php echo '" href="services/it-consulting">IT Consulting</a>
                                 </li>
                             </ul>
                         </div>
@@ -107,7 +107,7 @@ echo
                                 <li><a title="Hospitality Industry"  class="' ?><?php if ($page == "hospitality-industry.php") {
                                    echo 'active';
                                  } ?><?php echo '"
-                                        href="hospitality-industry">Hospitality Industry</a>
+                                        href="industries/hospitality-industry">Hospitality Industry</a>
                                 </li>
                                 <li><a title="Retail &amp; Ecommerce Solution"  class="' ?><?php if ($page == "retail-and-ecommerce-solution.php") {
                                    echo 'active';
@@ -117,17 +117,17 @@ echo
                                 <li><a title="News &amp; Entertainment"  class="' ?><?php if ($page == "news-and-entertainment.php") {
                                    echo 'active';
                                  } ?><?php echo '"
-                                        href="news-and-entertainment">News &amp; Entertainment</a>
+                                        href="industries/news-and-entertainment">News &amp; Entertainment</a>
                                 </li>
                                 <li><a title="production and service assurance"  class="' ?><?php if ($page == "production-and-service-assurance.php") {
                                    echo 'active';
                                  } ?><?php echo '"
-                                        href="production-and-service-assurance">Production &amp; Service Assurance</a>
+                                        href="industries/production-and-service-assurance">Production &amp; Service Assurance</a>
                                 </li>
                                  <li><a title="Telecommunication Media"  class="' ?><?php if ($page == "telecommunication-media.php") {
                                    echo 'active';
                                  } ?><?php echo '"
-                                        href="telecommunication-media">Telecommunication Media</a>
+                                        href="industries/telecommunication-media">Telecommunication Media</a>
                                 </li>
                             </ul>
                         </div>
