@@ -55,7 +55,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                         alt="How We Build Custom Software"></div>
                             </div>
                             <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
-                                <div class="content">
+                                <div class="content mt-3">
                                     <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
                                         data-aos="fade-up">Customer Service and Support</h5>
                                     <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init"

@@ -66,8 +66,8 @@
     box-sizing: border-box;
     margin-right: auto;
     display: block;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 40px;
+    padding-right: 24px;
 }
 
 [data-aos^=fade][data-aos^=fade].aos-animate {
@@ -77,40 +77,15 @@
 [data-aos][data-aos][data-aos-duration="700"], body[data-aos-duration="700"] [data-aos] {
     transition-duration: .7s !important;
 }
-.css-k4xlog {
-    padding-left: 40px;
-    padding-right: 40px;
-}
 @media (min-width: 1200px) {
     .css-k4xlog {
         max-width: 1280px !important;
     }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .css-k4xlog {
         max-width: 1072px;
-    }
-}
-
-@media (min-width: 768px) {
-    .css-k4xlog {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-}
-
-@media (min-width: 576px) {
-    .css-k4xlog {
-        padding-left: 24px;
-        padding-right: 24px;
-    }
-}
-
-@media (min-width: 576px) {
-    .css-k4xlog {
-        padding-left: 16px;
-        padding-right: 16px;
     }
 }
 

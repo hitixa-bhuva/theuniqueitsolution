@@ -177,6 +177,10 @@
     .MuiCard-root.service-card {
         width: 331px;
     }
+    .css-k4xlog {
+        padding-left: 40px !important;
+        padding-right: 40px;
+    }
     .vertical-counter ul li span {
         font-size: 40px;
         letter-spacing: .25px;
@@ -403,6 +407,10 @@
     .contact-us-form-wrapper .css-xgs5wp{
         display: flex;
         flex-direction: column-reverse;
+    }
+    .css-k4xlog {
+        padding-left: 16px;
+        padding-right: 16px;
     }
     .css-dbmn0s {
         flex-basis: 100%;

@@ -30,7 +30,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
             <!-- 2.  About IT Solutions That are Unique -->
             <section class="about-it-solution mb-9">
                 <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 MuiGrid-spacing-xl-8 css-ldtpqf intro-about">
-                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut ps-0">
+                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
                         <h3 class="MuiTypography-root MuiTypography-h3 pb-4 css-8ipg8 aos-init" data-aos="fade-up">
                             About IT Solutions That are Unique</h3>
                         <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v aos-init" data-aos="fade-up">

@@ -1772,7 +1772,7 @@ a button:not(.active):hover:after {
 }
 
 .faq .image-wrapper {
-    padding-top: 84px;
+    padding-top: 80px;
 }
 
 .faq .image-wrapper img {
@@ -2842,7 +2842,7 @@ footer .bottom .MuiIconButton-root img {
 
 .progress-bar {
     width: 200px;
-    height: 6px;
+    height: 5px;
     background: #e0e0e0;
     border-radius: 4px;
     overflow: hidden;

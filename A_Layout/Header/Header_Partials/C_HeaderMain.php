@@ -112,7 +112,7 @@ echo
                                 <li><a title="Retail &amp; Ecommerce Solution"  class="' ?><?php if ($page == "retail-and-ecommerce-solution.php") {
                                    echo 'active';
                                  } ?><?php echo '"
-                                        href="retail-and-ecommerce-solution">Retail &amp; Ecommerce Solution</a>
+                                        href="industries/retail-and-ecommerce-solution">Retail &amp; Ecommerce Solution</a>
                                 </li>
                                 <li><a title="News &amp; Entertainment"  class="' ?><?php if ($page == "news-and-entertainment.php") {
                                    echo 'active';

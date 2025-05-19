@@ -22,5 +22,5 @@ window.onload = () => {
   setTimeout(() => {
     loader.style.display = "none";
     content.style.display = "block";
-  }, 1200); // wait 1.2s for the transition (matching CSS duration)
+  }, 1100); // wait 1.2s for the transition (matching CSS duration)
 };

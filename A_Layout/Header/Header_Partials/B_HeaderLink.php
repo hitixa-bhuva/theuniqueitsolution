@@ -19,6 +19,7 @@ echo
 
 
 
+    <link rel="stylesheet" href="./assest/css/dev-responsiv.css">
     <link rel="stylesheet" href="/assest/css/dev-navbar.css"> 
     <link rel="stylesheet" href="./assest/css/dev-style.css">
     <link rel="stylesheet" href="/assest/css/style.css">
@@ -26,7 +27,6 @@ echo
     <link rel="stylesheet" href="./assest/css/spacing.css">
     <link rel="stylesheet" href="./assest/css/variables.css">
     <link rel="stylesheet" href="./assest/css/dev-custom.css">
-    <link rel="stylesheet" href="./assest/css/dev-responsiv.css">
     <link rel="stylesheet" href="./assest/css/dev-responsiv-nav.css">
     <link rel="stylesheet" href="./assest/css/slick-slider.css">  
     </head>
