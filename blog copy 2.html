@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Blog | Your Website</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet">
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0487ff;
+            --primary-dark: #0370d9;
+            --primary-light: #e6f3ff;
+            --dark-color: #333333;
+            --light-color: #f8f9fa;
+            --gray-color: #6c757d;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark-color);
+            background-color: #fbfbfb;
+        }
+
+        /* Blog Cards */
+        .blog-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-card .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .blog-card .badge {
+            background-color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        .blog-card .card-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-card .card-text {
+            color: var(--gray-color);
+            margin-bottom: 1rem;
+        }
+
+        .blog-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: var(--gray-color);
+        }
+
+        .blog-meta i {
+            color: var(--primary-color);
+            margin-right: 0.25rem;
+        }
+
+        /* Featured Blog */
+        .featured-blog {
+            background-color: white;
+            border-left: 4px solid var(--primary-color);
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
+        }
+
+        .featured-blog img {
+            border-radius: 5px;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Search and Filter */
+        .search-box {
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+
+        .search-box input {
+            padding-right: 40px;
+            border-radius: 30px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .search-box button {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            border: none;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .category-filter {
+            background-color: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1.5rem;
+        }
+
+        .filter-title {
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .category-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .category-item:last-child {
+            border-bottom: none;
+        }
+
+        .category-item span {
+            color: var(--gray-color);
+        }
+
+        /* Pagination */
+        .pagination {
+            margin-top: 2rem;
+        }
+
+        .pagination .page-item .page-link {
+            color: var(--dark-color);
+            border: none;
+            margin: 0 3px;
+            border-radius: 5px;
+        }
+
+        .pagination .page-item.active .page-link {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        /* Buttons */
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            border-color: var(--primary-dark);
+        }
+
+        .btn-outline-primary {
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .btn-outline-primary:hover {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        /* Badge Styles */
+        .premium-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            /* background-color: var(--primary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 30px;
+            font-weight: 600; */
+            z-index: 10;
+        }
+
+        /* Popular Tags */
+        .popular-tags .badge {
+            background-color: white;
+            color: var(--gray-color);
+            border: 1px solid #e0e0e0;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            padding: 8px 15px;
+            border-radius: 30px;
+            font-weight: normal;
+            transition: all 0.3s ease;
+        }
+
+        .popular-tags .badge:hover {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        /* Responsive styles */
+        @media (max-width: 767.98px) {
+            .hero-section {
+                padding: 3rem 0;
+            }
+
+            .featured-blog {
+                margin-bottom: 1rem;
+            }
+
+            .blog-card .card-img-top {
+                height: 150px;
+            }
+        }
+    </style>
+  </head>
+  <body>
+
+    <!-- Main Content -->
+    <section class="py-5">
+      <div class="container">
+        <!-- Featured Blog -->
+        <div class="featured-blog p-4 mb-5">
+          <div class="row">
+            <div class="col-md-4 mb-3 mb-md-0">
+              <img src="/api/placeholder/600/400" alt="Featured Blog"
+                class="img-fluid">
+            </div>
+            <div class="col-md-8">
+              <div class="d-flex align-items-center mb-2">
+                <span class="badge bg-primary me-2">FEATURED</span>
+                <small class="text-muted">May 18, 2025</small>
+              </div>
+              <h3 class="mb-3">10 Advanced Strategies to Grow Your Business in
+                2025</h3>
+              <p class="text-muted mb-3">Learn the cutting-edge techniques that
+                industry leaders are using to scale their businesses in the
+                current market landscape. Our expert analysis provides
+                actionable insights you won't find elsewhere.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                  <img src="/api/placeholder/40/40" alt="Author"
+                    class="rounded-circle me-2">
+                  <span>By Sarah Johnson</span>
+                </div>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Blog Listings -->
+          <div class="col-lg-8">
+           
+            <div class="row">
+              <!-- Blog Card 1 -->
+              <div class="col-md-6 mb-4">
+                <div class="blog-card card h-100">
+                  <div class="premium-badge badge bg-primary me-2">BUSINESS</div>
+                  <img src="/api/placeholder/600/400" class="card-img-top"
+                    alt="Blog Image">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center mb-2">
+                      <!-- <span class="badge bg-primary me-2">BUSINESS</span> -->
+                      <small class="text-muted">May 15, 2025</small>
+                    </div>
+                    <h5 class="card-title">How to Build a Successful Remote
+                      Team</h5>
+                    <p class="card-text">Discover the secrets to building and
+                      managing high-performing remote teams in today's digital
+                      workplace.</p>
+                    <div class="blog-meta">
+                      <span><i class="far fa-user"></i> John Smith</span>
+                      <span><i class="far fa-eye"></i> 1.2K Views</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Blog Card 2 -->
+              <div class="col-md-6 mb-4">
+                <div class="blog-card card h-100">
+                  <!-- <div class="premium-badge">Premium</div> -->
+                  <div class="premium-badge badge bg-primary me-2">BUSINESS</div>
+                  <img src="/api/placeholder/600/400" class="card-img-top"
+                    alt="Blog Image">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center mb-2">
+                      <small class="text-muted">May 12, 2025</small>
+                    </div>
+                    <h5 class="card-title">How to Build a Successful Remote
+                      Team</h5>
+                    <p class="card-text">Discover the secrets to building and
+                      managing high-performing remote teams in today's digital
+                      workplace.</p>
+                    <div class="blog-meta">
+                      <span><i class="far fa-user"></i> Emily Chen</span>
+                      <span><i class="far fa-eye"></i> 850 Views</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Blog Card 3 -->
+              <div class="col-md-6 mb-4">
+                <div class="blog-card card h-100">
+                  <div class="premium-badge">Premium</div>
+                  <img src="/api/placeholder/600/400" class="card-img-top"
+                    alt="Blog Image">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center mb-2">
+                      <span class="badge bg-primary me-2">FINANCE</span>
+                      <small class="text-muted">May 10, 2025</small>
+                    </div>
+                    <h5 class="card-title">Investment Strategies for Economic
+                      Uncertainty</h5>
+                    <p class="card-text">Learn proven investment approaches that
+                      can help protect and grow your wealth during volatile
+                      times.</p>
+                    <div class="blog-meta">
+                      <span><i class="far fa-user"></i> David Wilson</span>
+                      <span><i class="far fa-eye"></i> 1.5K Views</span>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-white border-0">
+                    <a href="#" class="btn btn-outline-primary w-100">Read
+                      Article</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Blog Card 4 -->
+              <div class="col-md-6 mb-4">
+                <div class="blog-card card h-100">
+                  <div class="premium-badge">Premium</div>
+                  <img src="/api/placeholder/600/400" class="card-img-top"
+                    alt="Blog Image">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center mb-2">
+                      <span class="badge bg-primary me-2">HEALTH</span>
+                      <small class="text-muted">May 8, 2025</small>
+                    </div>
+                    <h5 class="card-title">The Science Behind Effective
+                      Mindfulness</h5>
+                    <p class="card-text">Discover the research-backed benefits
+                      of mindfulness practices and how to implement them in your
+                      daily routine.</p>
+                    <div class="blog-meta">
+                      <span><i class="far fa-user"></i> Lisa Parker</span>
+                      <span><i class="far fa-eye"></i> 920 Views</span>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-white border-0">
+                    <a href="#" class="btn btn-outline-primary w-100">Read
+                      Article</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Blog Card 5 -->
+              <div class="col-md-6 mb-4">
+                <div class="blog-card card h-100">
+                  <div class="premium-badge">Premium</div>
+                  <img src="/api/placeholder/600/400" class="card-img-top"
+                    alt="Blog Image">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center mb-2">
+                      <span class="badge bg-primary me-2">MARKETING</span>
+                      <small class="text-muted">May 5, 2025</small>
+                    </div>
+                    <h5 class="card-title">Content Marketing Strategies That
+                      Convert</h5>
+                    <p class="card-text">Learn how to create content that not
+                      only engages your audience but also drives measurable
+                      conversions.</p>
+                    <div class="blog-meta">
+                      <span><i class="far fa-user"></i> Michael Brown</span>
+                      <span><i class="far fa-eye"></i> 1.3K Views</span>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-white border-0">
+                    <a href="#" class="btn btn-outline-primary w-100">Read
+                      Article</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Blog Card 6 -->
+              <div class="col-md-6 mb-4">
+                <div class="blog-card card h-100">
+                  <div class="premium-badge">Premium</div>
+                  <img src="/api/placeholder/600/400" class="card-img-top"
+                    alt="Blog Image">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center mb-2">
+                      <span class="badge bg-primary me-2">LEADERSHIP</span>
+                      <small class="text-muted">May 3, 2025</small>
+                    </div>
+                    <h5 class="card-title">Leadership Principles for the Modern
+                      Workplace</h5>
+                    <p class="card-text">Explore the evolving nature of
+                      leadership and the principles that drive success in
+                      today's business environment.</p>
+                    <div class="blog-meta">
+                      <span><i class="far fa-user"></i> Rachel Green</span>
+                      <span><i class="far fa-eye"></i> 780 Views</span>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-white border-0">
+                    <a href="#" class="btn btn-outline-primary w-100">Read
+                      Article</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pagination -->
+            <nav aria-label="Page navigation">
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1"
+                    aria-disabled="true">
+                    <i class="fas fa-chevron-left"></i>
+                  </a>
+                </li>
+                <li class="page-item active"><a class="page-link"
+                    href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Sidebar -->
+          <div class="col-lg-4">
+            <!-- Category Filter -->
+            <div class="category-filter">
+              <h5 class="filter-title">Categories</h5>
+              <div class="category-item">
+                <a href="#">Business</a>
+                <span>(12)</span>
+              </div>
+              <div class="category-item">
+                <a href="#">Technology</a>
+                <span>(8)</span>
+              </div>
+              <div class="category-item">
+                <a href="#">Finance</a>
+                <span>(7)</span>
+              </div>
+              <div class="category-item">
+                <a href="#">Marketing</a>
+                <span>(10)</span>
+              </div>
+              <div class="category-item">
+                <a href="#">Leadership</a>
+                <span>(5)</span>
+              </div>
+              <div class="category-item">
+                <a href="#">Health</a>
+                <span>(6)</span>
+              </div>
+            </div>
+
+            <!-- Popular Posts -->
+            <div class="category-filter">
+              <h5 class="filter-title">Popular Posts</h5>
+              <div class="row mb-3">
+                <div class="col-4">
+                  <img src="/api/placeholder/100/80" alt="Popular Post"
+                    class="img-fluid rounded">
+                </div>
+                <div class="col-8">
+                  <h6 class="mb-1">7 Effective Negotiation Tactics</h6>
+                  <small class="text-muted">May 1, 2025</small>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-4">
+                  <img src="/api/placeholder/100/80" alt="Popular Post"
+                    class="img-fluid rounded">
+                </div>
+                <div class="col-8">
+                  <h6 class="mb-1">Digital Transformation Guide</h6>
+                  <small class="text-muted">April 28, 2025</small>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-4">
+                  <img src="/api/placeholder/100/80" alt="Popular Post"
+                    class="img-fluid rounded">
+                </div>
+                <div class="col-8">
+                  <h6 class="mb-1">Customer Retention Strategies</h6>
+                  <small class="text-muted">April 25, 2025</small>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tags -->
+            <div class="category-filter">
+              <h5 class="filter-title">Popular Tags</h5>
+              <div class="popular-tags">
+                <a href="#" class="badge">Business Strategy</a>
+                <a href="#" class="badge">Marketing</a>
+                <a href="#" class="badge">Leadership</a>
+                <a href="#" class="badge">AI</a>
+                <a href="#" class="badge">Finance</a>
+                <a href="#" class="badge">Remote Work</a>
+                <a href="#" class="badge">Technology</a>
+                <a href="#" class="badge">Innovation</a>
+                <a href="#" class="badge">Productivity</a>
+              </div>
+            </div>
+
+            <!-- Subscribe CTA -->
+            <div class="category-filter text-center"
+              style="background-color: var(--primary-light);">
+              <div class="py-3">
+                <h5 class="filter-title mb-3">Need Help or Have Questions?</h5>
+                <p class="mb-4">Get in touch with us for any inquiries or
+                  assistance.</p>
+                <a href="/contact"
+                  class="btn btn-primary rounded-pill px-4 py-2">Contact Us</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>

@@ -313,7 +313,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
             </div>
         </main>
     </div>
-
+<script src="./assest/js/email.js"></script>
 <?php
 include __DIR__ . '/A_Layout/Footer/footer.php';
 ?>  

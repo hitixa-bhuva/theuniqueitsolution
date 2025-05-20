@@ -134,7 +134,9 @@ echo
                     </div>
                 </div>
             </li>
-           
+           <li><a title="blog"  href="blog"  class=" ' ?><?php if ($page == "blog.php") {
+               echo 'active';
+             } ?><?php echo '">Blog</a></li>
         </ul>
         <a href="contact-us">
             <button

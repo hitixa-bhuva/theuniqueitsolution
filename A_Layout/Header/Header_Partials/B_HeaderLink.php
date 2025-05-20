@@ -1,6 +1,6 @@
 <?php
 echo 
-'
+'   <link rel="stylesheet" href="assest/css/test-case.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -9,16 +9,17 @@ echo
         rel="stylesheet">
        <!-- favicon -->
        <link rel="icon" href="./assest/img/logo/favicon.ico" type="image/x-icon">
-   <!-- favicon -->
-    <title>Home | Unique IT Solutions</title>
+
     <!-- Slick CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-
-
+    
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <link rel="stylesheet" href="./assest/css/dev-responsiv.css">
     <link rel="stylesheet" href="/assest/css/dev-navbar.css"> 
     <link rel="stylesheet" href="./assest/css/dev-style.css">

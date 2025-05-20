@@ -1,6 +1,7 @@
 @import "./reset.css";
 @import "./spacing.css";
 @import "./variables.css";
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 /* misc
 --------------------------------------------------------------------------------------------------------*/
@@ -143,7 +144,7 @@ header ul.submenu li a {
     border-radius: 0;
     color: #1a1a1a;
     font-family: Poppins, sans-serif;
-    font-size: 16   px;
+    font-size: 16 px;
     font-weight: 400;
     letter-spacing: .25px;
     line-height: 28px;
@@ -1011,10 +1012,12 @@ a button:not(.active):hover:after {
 .MuiCard-root.service-card .MuiCardContent-root .icon.blue {
     background-color: #e6f3ff;
 }
+
 .accordion-item:first-of-type {
     border-top-left-radius: 12px !important;
     border-top-right-radius: 12px !important;
 }
+
 .MuiCard-root.service-card .MuiCardContent-root .icon.pink {
     background-color: #fee5ff;
 }
@@ -1976,7 +1979,7 @@ footer .bottom {
 footer .bottom small {
     /* Replace '@include body-3();' with the actual CSS properties from the 'body-3' mixin */
     color: var(--tertiary-text)
-    /* Replace '$tertiary-text' with the actual color value */
+        /* Replace '$tertiary-text' with the actual color value */
     ;
 }
 
@@ -2855,6 +2858,27 @@ footer .bottom .MuiIconButton-root img {
     transition: width 0.3s ease;
 }
 
+.spinner-loader {
+    position: fixed;
+    inset: 0;
+    background-color: #fff;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner-border {
+    width: 60px;
+    height: 60px;
+    border-width: 5px;
+    /* make it thicker */
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #0d6efd #0d6efd #0d6efd transparent;
+    /* 2-color spinner effect */
+}
+
 
 /* portfolio projects
 --------------------------------------------------------------------------------------------------------*/
@@ -2880,14 +2904,16 @@ footer .bottom .MuiIconButton-root img {
     visibility: hidden;
     transform: scale(0.5);
     transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
-    pointer-events: none; /* Prevent click when hidden */
+    pointer-events: none;
+    /* Prevent click when hidden */
 }
 
 .MuiIconButton-root.scroll-to-top-btn.show {
     opacity: 1;
     visibility: visible;
     transform: scale(1);
-    pointer-events: auto; /* Enable click when visible */
+    pointer-events: auto;
+    /* Enable click when visible */
 }
 
 /* Additional styles for the button */
@@ -3002,33 +3028,41 @@ footer .bottom .MuiIconButton-root img {
     body.show-sidebar {
         overflow: hidden;
     }
+
     .show-sidebar header ul {
         left: 0;
         z-index: 99;
     }
+
     .show-sidebar header .sidebar-overlay {
         opacity: 1;
         visibility: visible;
         z-index: 48;
     }
+
     header {
         min-height: 76px;
         padding: 8px 24px;
         justify-content: flex-start;
     }
+
     header .MuiIconButton-root {
         display: inline-flex;
     }
+
     header>a:not(.logo) {
         margin-left: auto;
     }
+
     header .logo {
         margin-left: 16px;
     }
+
     header .logo img {
         height: 40px;
         width: 160px;
     }
+
     header ul {
         position: fixed;
         top: 0;
@@ -3043,9 +3077,11 @@ footer .bottom .MuiIconButton-root img {
         transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
         overflow-y: auto;
     }
+
     header ul li {
         margin-bottom: 8px;
     }
+
     /* header ul li.has-submenu a.menu-expanded {
         background: var(--primary-100);
         color: var(--primary);
@@ -3053,20 +3089,24 @@ footer .bottom .MuiIconButton-root img {
     header ul li.has-submenu a img {
         display: block;
     }
+
     header ul li.has-submenu a.menu-expanded img {
         transform: rotate(365deg);
     }
+
     header ul li .submenu {
         opacity: 1;
         visibility: visible;
         padding: 8px 0 0;
     }
+
     header ul li .submenu li a {
         padding-left: 34px;
         padding-right: 16px;
         position: relative;
         border-radius: 30px;
     }
+
     header ul li .submenu li a::before {
         content: "";
         display: block;
@@ -3079,114 +3119,148 @@ footer .bottom .MuiIconButton-root img {
         position: absolute;
         transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+
     header ul li .submenu li a:hover {
         color: var(--primary);
         background: transparent;
     }
+
     header ul li .submenu li a:hover::before {
         background: var(--primary);
     }
+
     header ul li .submenu li a.active::before {
         background: var(--primary);
     }
+
     .banner.hero-banner {
         padding-top: 180px;
         padding-bottom: 120px;
     }
+
     .banner.hero-banner h2 {
         padding-bottom: 24px;
     }
+
     .banner.hero-banner p {
         padding-bottom: 48px;
     }
+
     .banner.industry-details-banner {
         margin-bottom: 80px;
     }
+
     .banner.service-details-banner {
         padding-top: 76px;
     }
+
     .banner.service-details-banner .banner-content .right img {
         height: 400px;
     }
+
     .outer-card {
         margin: 0;
         border-radius: 0;
     }
+
     .our-services {
         padding-top: 80px;
     }
+
     .industries-we-serve {
         padding-bottom: 80px;
     }
+
     .how-we-work ul {
         max-width: 480px;
     }
+
     .how-we-work ul li .step {
         max-width: 245px;
     }
+
     .how-we-work img {
         width: 320px;
     }
+
     .how-we-work img.illustration-2 {
         right: -100px;
     }
+
     .how-we-work img.illustration-1 {
         left: -100px;
     }
+
     .vertical-counter {
         gap: 16px;
     }
+
     .vertical-counter ul {
         gap: 16px;
     }
+
     .banner.page-banner {
         padding-top: 124px;
         min-height: 456px;
         padding-bottom: 48px;
     }
+
     .section-details .content {
         padding-left: 24px;
     }
+
     .pricing-methods {
         padding-top: 80px;
         padding-bottom: 80px;
     }
+
     .pricing-methods .MuiCard-root .top {
         padding: 32px 32px 24px;
     }
+
     .pricing-methods .MuiCard-root .MuiCardContent-root {
         padding: 24px 32px 40px;
     }
+
     .engineering-culture .image-wrapper {
         justify-content: center;
     }
+
     .engineering-culture .image-wrapper img {
         max-width: 100%;
     }
+
     .engineering-culture .content {
         padding-left: 0;
     }
+
     .industry-problems .MuiCard-root .MuiCardContent-root ul {
         display: block;
     }
+
     .industry-problems .MuiCard-root .MuiCardContent-root ul li {
         max-width: 100%;
         padding-right: 0;
     }
+
     .industry-solutions {
         padding-top: 80px;
         padding-bottom: 80px;
     }
+
     .industry-solutions .content {
         padding-left: 16px;
     }
+
     .industry-solutions ul {
         padding-left: 16px;
         padding-right: 16px;
     }
+
     .solution-impact {
         padding: 64px 48px;
     }
+
     .MuiIconButton-root.scroll-to-top-btn {
         bottom: 24px;
         right: 24px;
@@ -3197,77 +3271,99 @@ footer .bottom .MuiIconButton-root img {
     .banner {
         padding-top: 124px;
     }
+
     .banner.page-banner {
         min-height: 360px;
     }
+
     .banner.service-details-banner h2 {
         padding-bottom: 32px;
     }
+
     .banner.service-details-banner .banner-content .right img {
         height: 300px;
     }
+
     .about-it-solution .image-wrapper img {
         max-width: 480px;
     }
+
     .counter {
         padding-top: 40px;
         padding-bottom: 40px;
     }
+
     .counter ul li span {
         font-size: 40px;
         line-height: 56px;
         letter-spacing: 0.25px;
         padding-bottom: 4px;
     }
+
     .our-services {
         padding-top: 64px;
     }
+
     .software-development-technologies {
         padding: 64px;
     }
+
     .how-we-work img {
         width: 260px;
     }
+
     .faq {
         padding-top: 80px;
         padding-bottom: 80px;
     }
+
     .faq .MuiGrid-root .MuiGrid-item:first-child {
         display: none;
     }
+
     .faq h3 {
         text-align: center;
     }
+
     .request-proposal {
         padding-top: 64px;
         padding-bottom: 48px;
     }
+
     .vertical-counter {
         max-width: 600px;
         margin: 40px auto 16px;
     }
+
     .vertical-counter ul li {
         min-height: 180px;
     }
+
     .section-details .image-wrapper {
         margin-bottom: 16px;
     }
+
     .section-details .image-wrapper img {
         max-width: 400px;
     }
+
     .section-details .content {
         padding-left: 0;
     }
+
     .service-details-content>p {
         padding-bottom: 38px;
     }
+
     .pricing-methods {
         padding-top: 64px;
         padding-bottom: 64px;
     }
+
     .testimonials {
         padding-bottom: 76px;
     }
+
     .testimonials::after {
         content: "";
         position: absolute;
@@ -3279,85 +3375,108 @@ footer .bottom .MuiIconButton-root img {
         background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
         z-index: 1;
     }
+
     .testimonials .content {
         padding-top: 0;
         max-width: 100%;
     }
+
     .testimonials .content h3 {
         text-align: center;
         padding-bottom: 16px !important;
     }
+
     .testimonials .content p {
         text-align: center;
         padding-bottom: 16px;
     }
+
     .testimonials .slider-wrapper {
         display: flex;
         align-items: center;
         justify-content: center;
         margin-left: -40px;
     }
+
     .testimonials .slider-wrapper .slick-slider {
         max-width: 408px;
     }
+
     .testimonials .slider-wrapper .slick-slider .MuiButtonBase-root.slick-arrow {
         bottom: 0;
         top: unset;
         left: 50%;
     }
+
     .testimonials .slider-wrapper .slick-slider .MuiButtonBase-root.slick-arrow.slick-next {
         transform: translateX(calc(-50% + 28px));
     }
+
     .testimonials .slider-wrapper .slick-slider .MuiButtonBase-root.slick-arrow.slick-prev {
         transform: translateX(calc(-50% - 28px));
     }
+
     .testimonials .slider-wrapper .slick-slider .slick-list .slick-track .slick-slide {
         margin-right: 0;
     }
+
     .industry-problems>p {
         padding-bottom: 64px;
     }
+
     .industry-problems .MuiCard-root .MuiCardContent-root {
         padding: 24px;
     }
+
     .industry-solutions .content {
         padding-left: 0;
     }
+
     .industry-solutions ul {
         padding-left: 0;
         padding-right: 0;
         width: 100%;
         gap: 16px;
     }
+
     .industry-solutions ul li {
         max-width: 100%;
     }
+
     .solution-impact {
         padding: 48px;
     }
+
     .contact-us-form-wrapper .contact-info {
         max-width: 100%;
         min-height: auto;
     }
+
     .contact-us-form-wrapper .contact-us-form {
         max-width: 100%;
     }
+
     .MuiCard-root.portfolio-card .MuiCardContent-root .card-image {
         min-height: 280px;
     }
+
     .portfolio-projects {
         margin-top: -24px;
     }
+
     .portfolio-projects .MuiTabs-root {
         overflow: visible;
     }
+
     .portfolio-projects .MuiTabs-root>.MuiButtonBase-root {
         border: 2px solid var(--light-border);
         border-radius: 4px;
     }
+
     .portfolio-projects .MuiTabs-root>.MuiButtonBase-root.Mui-disabled {
         display: none;
     }
+
     .portfolio-projects .MuiTabs-root .MuiTabs-flexContainer {
         gap: 12px;
     }
@@ -3368,19 +3487,24 @@ footer .bottom .MuiIconButton-root img {
         padding-bottom: 64px;
         padding-top: 144px;
     }
+
     .banner.industry-details-banner {
         margin-bottom: 64px;
     }
+
     .banner.service-details-banner {
         margin-bottom: 64px;
     }
+
     .banner.service-details-banner h2 {
         text-align: center;
     }
+
     .banner.service-details-banner .banner-content {
         flex-direction: column;
         padding-bottom: 24px;
     }
+
     .banner.service-details-banner .banner-content .left {
         padding-right: 0;
         display: flex;
@@ -3388,49 +3512,62 @@ footer .bottom .MuiIconButton-root img {
         align-items: center;
         padding-bottom: 24px;
     }
+
     .counter {
         padding-top: 24px;
         padding-bottom: 24px;
     }
+
     .counter ul {
         flex-wrap: wrap;
     }
+
     .counter ul li {
         max-width: 50%;
         flex-basis: 50%;
         margin-top: 24px;
         margin-bottom: 24px;
     }
+
     .industries-we-serve {
         padding-bottom: 64px;
     }
+
     .slider-card .top {
         padding-right: 0;
     }
+
     .slick-slider {
         margin-bottom: 116px;
     }
+
     .slick-slider .MuiButtonBase-root.slick-arrow {
         top: unset;
         bottom: -76px;
         left: 50%;
     }
+
     .slick-slider .MuiButtonBase-root.slick-arrow.slick-prev {
         right: unset;
         transform: translateX(calc(-50% - 28px));
     }
+
     .slick-slider .MuiButtonBase-root.slick-arrow.slick-next {
         transform: translateX(calc(-50% + 28px));
     }
+
     .MuiCard-root.industry-card {
         height: 480px;
     }
+
     .software-development-technologies {
         padding: 60px 48px;
     }
+
     .software-development-technologies .content {
         z-index: 2;
     }
+
     .software-development-technologies::after {
         content: "";
         display: block;
@@ -3443,105 +3580,136 @@ footer .bottom .MuiIconButton-root img {
         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.32) 100%);
         z-index: 1;
     }
+
     .how-we-work .outer-card {
         padding-top: 64px;
         padding-bottom: 42px;
     }
+
     .how-we-work img {
         width: 200px;
     }
+
     .how-we-work img.illustration-2 {
         right: -80px;
     }
+
     .how-we-work img.illustration-1 {
         left: -80px;
     }
+
     .css-ldtpqf>.MuiGrid-item {
         padding-top: 32px;
     }
+
     .our-clients {
         padding: 64px 0;
     }
+
     .our-clients ul {
         margin-bottom: 48px;
     }
+
     .faq {
         padding-top: 64px;
         padding-bottom: 64px;
     }
+
     .request-proposal {
         padding-bottom: 48px;
         padding-top: 64px;
     }
+
     .request-proposal ul {
         flex-direction: column;
         gap: 4px;
     }
+
     .vertical-counter {
         margin-bottom: 8px;
     }
+
     .service-details-content>p {
         padding-bottom: 28px;
     }
+
     .section-details .image-wrapper {
         margin-bottom: 0;
     }
+
     footer hr {
         margin-top: 32px;
     }
+
     .consider-hiring-developer {
         padding: 48px;
     }
+
     .consider-hiring-developer h5 {
         font-size: 24px;
         line-height: 32px;
         letter-spacing: 0.1px;
         padding-bottom: 16px !important;
     }
+
     .testimonials::after {
         left: -24px;
     }
+
     .testimonials::before {
         right: -24px;
     }
+
     .testimonials .slider-wrapper {
         margin-left: -24px;
         margin-right: -24px;
     }
+
     .visit-our-portfolio {
         padding: 48px 48px 0;
     }
+
     .visit-our-portfolio h4 {
         padding-bottom: 24px;
     }
+
     .visit-our-portfolio .MuiButton-root {
         margin-bottom: 48px;
     }
+
     .visit-our-portfolio img.oval-two {
         left: -152px;
     }
+
     .visit-our-portfolio img.oval-three {
         bottom: -110px;
     }
+
     .visit-our-portfolio img.grid-bg {
         bottom: 0;
     }
+
     .industry-problems>p {
         padding-bottom: 48px;
     }
+
     .industry-solutions {
         padding-top: 64px;
         padding-bottom: 64px;
     }
+
     .solution-impact {
         padding: 32px 40px;
     }
+
     .solution-impact ul li:not(:last-child) {
         margin-bottom: 24px;
     }
+
     .MuiCard-root.portfolio-card .MuiCardContent-root .card-image {
         min-height: 220px;
     }
+
     .portfolio-projects .MuiPagination-root {
         margin-top: 40px;
     }
@@ -3552,62 +3720,79 @@ footer .bottom .MuiIconButton-root img {
         padding-left: 16px;
         padding-right: 16px;
     }
+
     header .logo {
         margin-left: 8px;
     }
+
     header .logo img:not(.mobile-logo) {
         display: none;
     }
+
     header .logo img.mobile-logo {
         display: block;
         width: 100%;
     }
+
     .banner.hero-banner {
         padding-bottom: 48px;
         padding-top: 124px;
     }
+
     .banner h2 {
         font-size: 32px;
         line-height: 44px;
         letter-spacing: 0.04px;
     }
+
     .MuiCard-root.service-card .MuiCardContent-root {
         padding: 24px 24px 8px;
     }
+
     .MuiCard-root.service-card .MuiCardActions-root {
         padding: 0 24px 24px;
     }
+
     .MuiCard-root.industry-card {
         height: 480px;
     }
+
     .MuiCard-root.it-consulting-card {
         padding: 24px;
     }
+
     .software-development-technologies {
         padding: 48px 24px;
     }
+
     .how-we-work ul {
         max-width: 320px;
     }
+
     .how-we-work ul li .step {
         max-width: 165px;
     }
+
     .how-we-work img {
         display: none;
     }
+
     .why-choose-us .MuiCard-root .MuiCardContent-root {
         padding: 24px;
     }
+
     .request-proposal {
         padding-left: 24px;
         padding-right: 24px;
     }
+
     .request-proposal>span {
         font-size: 14px;
         line-height: 22px;
         letter-spacing: 0.15px;
         padding-bottom: 16px;
     }
+
     .request-proposal {
         align-items: center;
         background: #0487ff;
@@ -3619,16 +3804,20 @@ footer .bottom .MuiIconButton-root img {
         padding: 80px 60px 60px;
         position: relative;
     }
+
     .request-proposal ul {
         margin-bottom: 32px;
     }
+
     .request-proposal ul li a {
         align-items: center;
         gap: 6px;
     }
+
     .request-proposal ul li a img {
         margin-top: 0;
     }
+
     .request-proposal ul li a span {
         word-break: break-all;
         font-size: 16px;
@@ -3636,15 +3825,18 @@ footer .bottom .MuiIconButton-root img {
         letter-spacing: 0.25px;
         padding-bottom: 0;
     }
+
     .vertical-counter {
         flex-wrap: wrap;
         margin-left: -8px;
         margin-right: -8px;
     }
+
     .vertical-counter ul {
         flex-basis: calc(50% - 16px);
         max-width: calc(50% - 16px);
     }
+
     .vertical-counter ul:nth-child(3) {
         align-self: flex-end;
         margin-top: 0;
@@ -3653,76 +3845,97 @@ footer .bottom .MuiIconButton-root img {
         margin-left: 8px;
         margin-right: 8px;
     }
+
     .vertical-counter ul:nth-child(1) {
         margin-top: 0;
     }
+
     footer hr {
         margin-top: 24px;
     }
+
     footer .bottom {
         flex-direction: column-reverse;
         padding-bottom: 24px;
     }
+
     footer .bottom .social-links {
         margin-bottom: 4px;
     }
+
     .consider-hiring-developer {
         padding: 32px;
     }
+
     .pricing-methods .MuiCard-root .top {
         padding: 24px;
     }
+
     .pricing-methods .MuiCard-root .MuiCardContent-root {
         padding: 24px 24px 32px;
     }
+
     .pricing-methods .MuiCard-root .MuiCardContent-root .bullet-points-list {
         margin-bottom: 24px;
     }
+
     .MuiCard-root.testimonial-card .MuiCardContent-root {
         padding: 24px;
     }
+
     .MuiCard-root.testimonial-card .MuiCardContent-root p {
         font-size: 16px;
         line-height: 28px;
         letter-spacing: 0.25px;
     }
+
     .testimonials::before {
         right: -16px;
         width: 16px;
     }
+
     .testimonials::after {
         width: 16px;
         left: -16px;
     }
+
     .testimonials .slider-wrapper {
         margin-left: -16px;
         margin-right: -16px;
     }
+
     .testimonials .slider-wrapper .slick-slider {
         max-width: 340px;
     }
+
     .testimonials .slider-wrapper .slick-slider .slick-list .slick-track .slick-slide {
         min-height: 440px;
     }
+
     .visit-our-portfolio {
         padding-left: 24px;
         padding-right: 24px;
     }
+
     .solution-impact {
         padding-left: 24px;
         padding-right: 24px;
     }
+
     .solution-impact h4 {
         padding-bottom: 24px;
     }
+
     .solution-impact>img.left {
         left: -10px;
         top: -10px;
     }
+
     .solution-impact>img.right {
         right: -10px;
         bottom: -10px;
     }
+
     .MuiIconButton-root.scroll-to-top-btn {
         bottom: 16px;
         right: 16px;
@@ -4758,13 +4971,18 @@ footer .bottom .MuiIconButton-root img {
     font-weight: 700;
     margin-top: 10px;
 }
-.border-right{
+
+.border-right {
     border: 0;
 }
-.border-bottom{
+
+.border-bottom {
     border: 0;
 }
+
 .hire-oval-right,
-.hire-oval-left{
+.hire-oval-left {
     width: 18%;
 }
+
+
