@@ -12,6 +12,8 @@ RewriteRule ^about-us$ about.php [L,NC]
 RewriteRule ^technologies$ technologies.php [L,NC]
 RewriteRule ^services$ services-main.php [L,NC]
 RewriteRule ^industries$ industries.php [L,NC]
+RewriteRule ^blog$ blog.php [L,NC]
+RewriteRule ^blog-details$ blog-details.php [L,NC]
 RewriteRule ^contact-us$ contact-us.php [L,NC]
 
 # ServicesPage URLs

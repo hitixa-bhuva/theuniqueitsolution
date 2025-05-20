@@ -58,7 +58,7 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                         alt="How We Build Custom Software"></div>
                             </div>
                             <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-yzz2ut">
-                                <div class="content">
+                                <div class="content mt-3">
                                     <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
                                         data-aos="fade-up">Conceptualization and Requirements Gathering</h5>
                                     <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init"
@@ -80,14 +80,17 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                 <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
                                     data-aos="fade-up">User Interface Design and Prototyping</h5>
                                 <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init"
-                                    data-aos="fade-up" data-aos-delay="100">This process emphasizes interactive activities and high-quality user interfaces, converting conceptualized ideas into detailed UI designs.</p>
+                                    data-aos="fade-up" data-aos-delay="100">This process emphasizes interactive activities and high-quality user interfaces, converting conceptualized ideas into detailed UI designs.
+                                <br>
+                                <br>
+                                Prototypes are made to better understand user flow in terms of aesthetics and usability standards concerning branding.
+
+                                <br>
+                                <br>
+                                Collaboration with your team ensures that branding is reflected toward modern design trends while considering users’ preferences, too.
+                                </p>
                                     
-                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init"
-                                data-aos="fade-up" data-aos-delay="100">Prototypes are made to better understand user flow in terms of aesthetics and usability standards concerning branding.</p>
                                 
-                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init"
-                                    data-aos="fade-up" data-aos-delay="100">Collaboration with your team ensures that branding is reflected toward modern design trends while considering users’ preferences, too.</p>
-                                    
                             </div>
                         </div>
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
@@ -122,10 +125,11 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                 <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
                                     data-aos="fade-up">Quality Assurance and Integration</h5>
                                 <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init"
-                                    data-aos="fade-up" data-aos-delay="100">For us, high standards are key based on our testing and quality assurance processes, which guarantee the reliability of the web app and its smooth operation.</p>
-                                    <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init"
-                                        data-aos="fade-up" data-aos-delay="100">We maintain data integrity while integrating with your existing systems to provide a unified user experience across platforms.</p>
-                            </div>
+                                    data-aos="fade-up" data-aos-delay="100">For us, high standards are key based on our testing and quality assurance processes, which guarantee the reliability of the web app and its smooth operation.
+                                <br><br>
+                                We maintain data integrity while integrating with your existing systems to provide a unified user experience across platforms.
+                                </p>
+                                 </div>
                         </div>
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6 css-1lo6hd">
                             <div class="image-wrapper aos-init" data-aos="fade-up"><img loading="lazy"
@@ -146,14 +150,14 @@ include __DIR__ . '/A_Layout/Header/header.php';
                                 <h5 class="MuiTypography-root MuiTypography-h5 pb-3 css-i3gkby aos-init"
                                     data-aos="fade-up">Deployment, Support, and Continuous Improvement</h5>
                                 <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init"
-                                    data-aos="fade-up" data-aos-delay="100">After finishing the development process and testing phases, managing deployment for a timely and efficient launch is relatively easy.</p>
-                                    
-                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init"
-                                data-aos="fade-up" data-aos-delay="100">Our team provides continuous support after launching. Thus, we will just not create and give it to you, but be with you to maintain the system and address any emergency issues.</p>
+                                    data-aos="fade-up" data-aos-delay="100">After finishing the development process and testing phases, managing deployment for a timely and efficient launch is relatively easy.
+                                <br>
+                                <br>
+                                Our team provides continuous support after launching. Thus, we will just not create and give it to you, but be with you to maintain the system and address any emergency issues.
+                                <br><br>
+                                Our aim is that regular updates will keep your web app up-to-date by incorporating new features and enhancements to meet evolving user needs and technological advances.
+                                </p>    
                                 
-                                <p class="MuiTypography-root MuiTypography-body2 pb-4 css-1i5tpjv aos-init"
-                                    data-aos="fade-up" data-aos-delay="100">Our aim is that regular updates will keep your web app up-to-date by incorporating new features and enhancements to meet evolving user needs and technological advances.</p>
-                                    
                             </div>
                         </div>
                     </div>
