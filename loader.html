@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dynamic Dual Loader Example</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    /* First loader (initial load) */
+    #pageLoader {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+
+    #pageLoader .logo {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+
+    .progress-bar {
+      width: 200px;
+      height: 5px;
+      background: #eee;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .progress {
+      height: 100%;
+      background: #007bff;
+      width: 0%;
+      transition: width 0.5s ease;
+    }
+
+    /* Second loader (navigation) */
+    .spinner-loader {
+      position: fixed;
+      top: 0; left: 0;
+      height: 100vh;
+      width: 100vw;
+      background-color: rgba(255, 255, 255, 0.8);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 2000;
+    }
+
+    .spinner-border {
+      width: 3rem;
+      height: 3rem;
+      border: 0.25em solid #ccc;
+      border-top: 0.25em solid #007bff;
+      border-radius: 50%;
+      animation: spin 0.75s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    #content {
+      display: none;
+      padding: 20px;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- First Loader (Initial Load) -->
+  <div class="loader" id="pageLoader">
+    <img src="./assest/img/logo/logo.webp" alt="Unique IT Logo" class="logo" />
+    <div class="progress-bar">
+      <div class="progress" id="progress"></div>
+    </div>
+  </div>
+
+  <!-- Second Loader (Navigation) -->
+  <div id="spinnerLoader" class="spinner-loader">
+    <div class="spinner-border" role="status"></div>
+  </div>
+
+  <!-- Page Content -->
+  <div id="content">
+    <h1>Welcome to Unique IT</h1>
+    <p>This is your website content with dynamic dual loaders.</p>
+    <p>
+      <a href="page2.html">Go to Page 2</a> |
+      <a href="https://google.com" target="_blank">Google (external)</a>
+    </p>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    // First loader: dynamic time with minimum duration
+    const loader = document.getElementById("pageLoader");
+    const content = document.getElementById("content");
+    const progress = document.getElementById("progress");
+
+    let load = 0;
+    const startTime = Date.now();
+    const interval = setInterval(() => {
+      if (load < 95) {
+        load += 1;
+        progress.style.width = load + "%";
+      }
+    }, 20);
+
+    window.onload = () => {
+      clearInterval(interval);
+      progress.style.width = "100%";
+
+      const elapsed = Date.now() - startTime;
+      const minTime = 1000; // 1 second minimum
+      const remaining = Math.max(minTime - elapsed, 0);
+
+      setTimeout(() => {
+        loader.style.display = "none";
+        content.style.display = "block";
+      }, remaining + 200); // smooth delay
+    };
+
+    // Second loader: navigation spinner
+    document.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', function (e) {
+        const isSameTab = !link.target || link.target === '_self';
+        const isInternal = link.href && link.href.includes(location.hostname);
+
+        if (isSameTab && isInternal) {
+          e.preventDefault();
+
+          const spinner = document.getElementById("spinnerLoader");
+          spinner.style.display = "flex";
+
+          const waitTime = Math.floor(Math.random() * (1500 - 500 + 1)) + 500;
+
+          setTimeout(() => {
+            window.location.href = link.href;
+          }, waitTime);
+        }
+      });
+    });
+  </script>
+</body>
+</html>

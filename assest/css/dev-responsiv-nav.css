@@ -1,126 +1,128 @@
 @media (max-width: 1050px) {
-    header ul {
-        position: fixed;
-        top: 0;
-        left: -330px;
-        bottom: 0;
-        background: var(--white);
-        width: 320px;
-        z-index: 1;
-        padding: 24px 16px;
-        border-top-right-radius: 16px;
-        border-bottom-right-radius: 16px;
-        transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
-        overflow-y: auto;
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-    }
+	header ul {
+		position: fixed;
+		top: 0;
+		left: -330px;
+		bottom: 0;
+		background: var(--white);
+		width: 320px;
+		z-index: 1;
+		padding: 24px 16px;
+		border-top-right-radius: 16px;
+		border-bottom-right-radius: 16px;
+		transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
+		overflow-y: auto;
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
 
-    .show-sidebar header ul {
-        left: 0;
-        z-index: 99;
-    }
+	.show-sidebar header ul {
+		left: 0;
+		z-index: 99;
+	}
 
-    header ul li {
-        list-style: none;
-        width: 100%;
-    }
+	header ul li {
+		list-style: none;
+		width: 100%;
+	}
 
-    header ul li a {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        padding: 8px 16px;
-        font-weight: 500;
-        color: #333;
-        text-decoration: none;
-        border-radius: 999px;
-        font-size: 16px;
-        transition: background 0.3s, color 0.3s;
-    }
+	header ul li a {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		padding: 8px 16px;
+		font-weight: 500;
+		color: #333;
+		text-decoration: none;
+		border-radius: 999px;
+		font-size: 16px;
+		transition: background 0.3s, color 0.3s;
+	}
 
-    header ul li a.active {
-        background: #e6f0ff;
-        color: #007bff;
-    }
+	header ul li a.active {
+		background: #e6f0ff;
+		color: #007bff;
+	}
 
-    header ul li a:hover {
-        background: #f5f5f5;
-    }
+	header ul li a:hover {
+		background: #f5f5f5;
+	}
 
-    /* Submenu style */
-    .has-submenu > a img {
-        width: 18px;
-        height: 18px;
-        transform: rotate(0deg);
-        transition: transform 0.3s ease;
-    }
+	/* Submenu style */
+	.has-submenu>a img {
+		width: 18px;
+		height: 18px;
+		transform: rotate(0deg);
+		transition: transform 0.3s ease;
+	}
 
-    .has-submenu.open > a img {
-        transform: rotate(180deg);
-    }
+	.has-submenu.open>a img {
+		transform: rotate(180deg);
+	}
 
-    .submenu {
-        display: none;
-        flex-direction: column;
-        margin-left: 16px;
-        margin-top: 8px;
-        gap: 10px;
-        padding-left: 8px;
-        border-left: 2px solid #eee;
-    }
+	.submenu {
+		display: none;
+		flex-direction: column;
+		margin-left: 16px;
+		margin-top: 8px;
+		gap: 10px;
+		padding-left: 8px;
+		border-left: 2px solid #eee;
+	}
 
-    .has-submenu.open .submenu {
-        display: contents;
-        animation: slideDown 0.3s ease forwards;
-    }
+	.has-submenu.open .submenu {
+		display: contents;
+		animation: slideDown 0.3s ease forwards;
+	}
 
-    .submenu li {
-        position: relative;
-    }
+	.submenu li {
+		position: relative;
+	}
 
-    .submenu li a {
-        font-size: 15px;
-        font-weight: 400;
-        color: #555;
-        padding: 5px 0;
-        display: block;
-    }
+	.submenu li a {
+		font-size: 15px;
+		font-weight: 400;
+		color: #555;
+		padding: 5px 0;
+		display: block;
+	}
 
-    .submenu li a:hover {
-        color: #007bff;
-    }
+	.submenu li a:hover {
+		color: #007bff;
+	}
 
-    /* Simple smooth dropdown animation */
-    @keyframes slideDown {
-        0% {
-            opacity: 0;
-            transform: translateY(-10px);
-        }
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
+	/* Simple smooth dropdown animation */
+	@keyframes slideDown {
+		0% {
+			opacity: 0;
+			transform: translateY(-10px);
+		}
 
-    /* Overlay */
-    .sidebar-overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0,0,0,0.5);
-        z-index: 98;
-    }
+		100% {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
 
-    .sidebar-overlay.active {
-        display: block;
-    }
-    /* header ul li.has-submenu a.menu-expanded img:hover{
+	/* Overlay */
+	.sidebar-overlay {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.5);
+		z-index: 98;
+	}
+
+	.sidebar-overlay.active {
+		display: block;
+	}
+
+	/* header ul li.has-submenu a.menu-expanded img:hover{
         transform: rotate(180deg);
     } */
 }

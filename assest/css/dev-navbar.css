@@ -1,4 +1,84 @@
-a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
     border: 0;
     font-size: 100%;
     font: inherit;
@@ -6,32 +86,40 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     padding: 0;
     vertical-align: initial;
 }
+
 [data-aos^=fade][data-aos^=fade].aos-animate {
     opacity: 1;
     transform: translateZ(0);
 }
-[data-aos][data-aos][data-aos-easing=ease], body[data-aos-easing=ease] [data-aos] {
+
+[data-aos][data-aos][data-aos-easing=ease],
+body[data-aos-easing=ease] [data-aos] {
     transition-timing-function: ease;
 }
-[data-aos][data-aos][data-aos-duration="700"], body[data-aos-duration="700"] [data-aos] {
+
+[data-aos][data-aos][data-aos-duration="700"],
+body[data-aos-duration="700"] [data-aos] {
     transition-duration: .7s;
 }
+
 [data-aos^=fade][data-aos^=fade] {
     opacity: 0;
     transition-property: opacity, transform;
 }
+
 header {
     align-items: center;
     background: #fff;
-    display: flex
-;
+    display: flex;
     justify-content: space-between;
     min-height: 96px;
     padding: 16px 40px;
     transform: none !important;
     z-index: 99;
 }
-.sidebar-overlay, header {
+
+.sidebar-overlay,
+header {
     left: 0;
     position: fixed;
     right: 0;
@@ -39,8 +127,7 @@ header {
 }
 
 .css-wrts35 {
-    display: inline-flex
-;
+    display: inline-flex;
     -webkit-box-align: center;
     align-items: center;
     -webkit-box-pack: center;
@@ -70,35 +157,43 @@ header {
 header .logo {
     display: block;
 }
+
 header .logo img {
     display: block;
     height: 48px;
     width: 192px;
 }
+
 header .logo img.mobile-logo {
     display: none;
 }
+
 header .logo img {
     display: block;
     height: 48px;
     width: 192px;
 }
+
 header ul {
     align-items: center;
-    display: flex
-;
+    display: flex;
     gap: 4px;
 }
+
 header ul {
     list-style-type: none;
 }
-header ul li, header ul li a {
+
+header ul li,
+header ul li a {
     position: relative;
 }
+
 header ul li a.active {
     background: #e6f3ff;
     color: #0487ff;
 }
+
 header ul li a {
     border-radius: 24px;
     color: #4d4d4d;
@@ -111,14 +206,18 @@ header ul li a {
     padding: 8px 16px;
     z-index: 1;
 }
-header ul li, header ul li a {
+
+header ul li,
+header ul li a {
     position: relative;
 }
+
 header ul li.has-submenu a img {
     height: 20px;
-    transition: all .18scubic-bezier(.4,0,.2,1);
+    transition: all .18scubic-bezier(.4, 0, .2, 1);
     width: 20px;
 }
+
 header ul li a:not(.active):after {
     background: #e6f3ff;
     border-radius: 30px;
@@ -130,10 +229,11 @@ header ul li a:not(.active):after {
     top: 50%;
     transform: translate(-50%, -50%) scaleX(0);
     transform-origin: center;
-    transition: all .25scubic-bezier(.4,0,.2,1);
+    transition: all .25scubic-bezier(.4, 0, .2, 1);
     width: 100%;
     z-index: -1;
 }
+
 header ul li.has-submenu a.menu-expanded {
     color: #4d4d4d;
 }
@@ -150,6 +250,7 @@ header ul li a {
     padding: 8px 16px;
     z-index: 1;
 }
+
 .css-c4sutr {
     height: auto;
     overflow: visible;
@@ -157,13 +258,14 @@ header ul li a {
 }
 
 .css-hboir5 {
-    display: flex
-;
+    display: flex;
     width: 100%;
 }
+
 .css-8atqhb {
     width: 100%;
 }
+
 header ul.submenu {
     background-color: #fff;
     border-radius: 16px;
@@ -172,15 +274,14 @@ header ul.submenu {
     opacity: 0;
     padding: 12px 0;
     position: absolute;
-    transition: all .18scubic-bezier(.4,0,.2,1);
+    transition: all .18scubic-bezier(.4, 0, .2, 1);
     visibility: hidden;
     width: 320px;
 }
 
 header ul {
     align-items: center;
-    display: flex
-;
+    display: flex;
     gap: 4px;
 }
 
@@ -193,16 +294,17 @@ header ul.submenu li a {
     letter-spacing: .25px;
     line-height: 28px;
     padding: 8px 24px;
-    transition: all .25scubic-bezier(.4,0,.2,1);
+    transition: all .25scubic-bezier(.4, 0, .2, 1);
 }
+
 header ul li.has-submenu a {
     align-items: center;
-    display: flex
-;
+    display: flex;
     gap: 8px;
     justify-content: space-between;
     padding-right: 12px;
 }
+
 header ul li a {
     border-radius: 24px;
     color: #4d4d4d;
@@ -215,6 +317,7 @@ header ul li a {
     padding: 8px 16px;
     z-index: 1;
 }
+
 .css-7dp2l8 {
     display: inline-flex;
     -webkit-box-align: center;
@@ -250,6 +353,7 @@ header ul li a {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 30px;
 }
+
 .css-7dp2l8 .text {
     position: relative;
     z-index: 1;
@@ -270,16 +374,19 @@ header ul li a {
     transform-origin: center center;
     transition: 250mscubic-bezier(0.4, 0, 0.2, 1);
 }
-.sidebar-overlay, header {
+
+.sidebar-overlay,
+header {
     left: 0;
     position: fixed;
     right: 0;
     top: 0;
 }
+
 .sidebar-overlay {
     background: #00000080;
     bottom: 0;
     opacity: 0;
-    transition: all .18scubic-bezier(.4,0,.2,1);
+    transition: all .18scubic-bezier(.4, 0, .2, 1);
     visibility: hidden;
 }

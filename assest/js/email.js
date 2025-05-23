@@ -1,26 +1,34 @@
 const contactform = document.getElementById("contact-form");
-contactform.addEventListener("submit", function (event) {
+contactform.addEventListener("submit", function(event) {
     event.preventDefault();
     console.log("Form submitted event triggered.");
 
     // Gather data from the form
- // Accessing the form field values
-const fullName = document.getElementById("fullName").value;
-const email = document.getElementById("email").value;
-const phone = document.getElementById("phone").value;
-const subject = document.getElementById("subject").value;
-const company = document.getElementById("company").value;
-const description = document.getElementById("description").value;
-const fileupload = document.getElementById("fileupload").value;
+    // Accessing the form field values
+    const fullName = document.getElementById("fullName").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const subject = document.getElementById("subject").value;
+    const company = document.getElementById("company").value;
+    const description = document.getElementById("description").value;
+    const fileupload = document.getElementById("fileupload").value;
 
 
-console.log("Collected form data:", { fullName, email, phone, subject, company, description, fileupload });
+    console.log("Collected form data:", {
+        fullName,
+        email,
+        phone,
+        subject,
+        company,
+        description,
+        fileupload
+    });
 
 
     // Create email data
     const emailData = {
         "Host": "216.10.241.228",
-        "Port": "587",
+        "Port": "465",
         "SMTPSecure": "ssl",
         "SenderEmail": "hitixa.bhuva@uniqueconsumerservices.com",
         "SenderEmailPassword": "1f1UOc{3U*64",
@@ -306,14 +314,14 @@ console.log("Collected form data:", { fullName, email, phone, subject, company, 
 
     console.log("Checking form validation...");
 
-    if (!fullName || !email || !phone || !subject || !company ) {
-      // || !description || !fileupload 
+    if (!fullName || !email || !phone || !subject || !company || !fileupload) {
+        // || !description || !fileupload 
         console.log("Validation failed: Missing required fields.");
-    
+
         if (!fullName) {
             toggleClassForField('fullName', 'border-danger', 3000);
         }
-        if (!company) {   // OPTIONAL: if you want to validate company name too
+        if (!company) { // OPTIONAL: if you want to validate company name too
             toggleClassForField('company', 'border-danger', 3000);
         }
         if (!subject) {
@@ -325,17 +333,20 @@ console.log("Collected form data:", { fullName, email, phone, subject, company, 
         if (!phone) {
             toggleClassForField('phone', 'border-danger', 3000);
         }
-    //     if (!description) {
-    //       toggleClassForField('description', 'border-danger', 3000);
-    //   }
-    //   if (!fileupload) {
-    //     toggleClassForField('fileupload', 'border-danger', 3000);
-    // }
-    
+        if (!fileupload) {
+            console.log('fileeee')
+        }
+        //     if (!description) {
+        //       toggleClassForField('description', 'border-danger', 3000);
+        //   }
+        //   if (!fileupload) {
+        //     toggleClassForField('fileupload', 'border-danger', 3000);
+        // }
+
         showFeedback('Please fill in all required fields.', 'col-12 text-center py-2 border-danger border text-danger mt-3');
         return;
     }
-    
+
 
     console.log("Validating email...");
     if (!isValidEmail(email)) {
@@ -347,10 +358,10 @@ console.log("Collected form data:", { fullName, email, phone, subject, company, 
     console.log("Sending email request...");
     // Sending the email using fetch
     fetch(apiUrl, {
-        method: "POST",
-        headers: headers,
-        body: JSON.stringify(emailData),
-    })
+            method: "POST",
+            headers: headers,
+            body: JSON.stringify(emailData),
+        })
         .then((response) => response.json()) // Ensure we parse the JSON response
         .then((data) => {
             if (data.status) {

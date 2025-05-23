@@ -1,7 +1,9 @@
 // 1 counter
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
     const counters = document.querySelectorAll(".count");
-    const options = { threshold: 0.5 };
+    const options = {
+        threshold: 0.5
+    };
 
     const startCounter = (entry, observer) => {
         if (entry.isIntersecting) {
@@ -36,26 +38,28 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-        // <!--2  slick slider Our Services -->
-        document.addEventListener("DOMContentLoaded", function () {
-            AOS.init();
+// <!--2  slick slider Our Services -->
+document.addEventListener("DOMContentLoaded", function() {
+    AOS.init();
 
-            new Swiper('.swiper-container', {
-                loop: true,
-                autoplay: {
-                    delay: 3000,
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-            });
-        });
-        
+    new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: {
+            delay: 3000,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+});
+
 // about us counter
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
     const counters = document.querySelectorAll(".vertical-counter li span");
-    const options = { threshold: 0.5 };
+    const options = {
+        threshold: 0.5
+    };
 
     const startCounter = (entry) => {
         if (entry.isIntersecting) {
@@ -89,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // bottom to top
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
     const scrollBtn = document.querySelector(".scroll-to-top-btn");
 
     function toggleScrollBtn() {
@@ -107,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", toggleScrollBtn);
     toggleScrollBtn(); // ✅ Check immediately on load
 
-    scrollBtn.addEventListener("click", function () {
+    scrollBtn.addEventListener("click", function() {
         window.scrollTo({
             top: 0,
             behavior: "smooth"
@@ -116,10 +120,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
 // slider
 if (window.jQuery) {
-    $(document).ready(function () {
+    $(document).ready(function() {
         var slider = $(".slider").slick({
             dots: false,
             infinite: true,
@@ -132,15 +135,14 @@ if (window.jQuery) {
         });
 
         // Custom Navigation Buttons
-        $(".prev").click(function () {
+        $(".prev").click(function() {
             slider.slick("slickPrev");
         });
 
-        $(".next").click(function () {
+        $(".next").click(function() {
             slider.slick("slickNext");
         });
     });
 } else {
     console.error("jQuery failed to load!");
 }
-
