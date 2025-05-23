@@ -1,0 +1,4994 @@
+@import "./reset.css";
+@import "./spacing.css";
+@import "./variables.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* misc
+--------------------------------------------------------------------------------------------------------*/
+
+.image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.outer-card {
+    margin: 0 24px;
+    background: var(--background);
+    border-radius: 24px;
+}
+
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/* header
+--------------------------------------------------------------------------------------------------------*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 40px;
+    min-height: 96px;
+    background: var(--white);
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: none !important;
+}
+
+header.page-scrolled {
+    box-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -2px #0000000d;
+}
+
+.MuiIconButton-root-nav {
+    margin-left: -10px;
+    display: none;
+}
+
+.MuiLink-root {
+    color: var(--secondary-text);
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+}
+
+.logo {
+    display: block;
+}
+
+.logo img {
+    display: block;
+    height: 48px;
+    width: 192px;
+}
+
+.logo .mobile-logo {
+    display: none;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+li.has-submenu a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: space-between;
+    padding-right: 12px;
+}
+
+li.has-submenu a.menu-expanded {
+    color: var(--secondary-text);
+}
+
+li.has-submenu a img {
+    transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 20px;
+    height: 20px;
+}
+
+.submenu {
+    display: block;
+    position: absolute;
+    box-shadow: 0px 20px 50px -12px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    background-color: var(--white);
+    padding: 12px 0;
+    width: 320px;
+    transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.submenu li a {
+    /* Replace the following comment with the actual CSS properties from the body-2 mixin */
+    /* Example: font-size: 16px; font-weight: normal; line-height: 1.5; */
+    color: var(--primary-text);
+    padding: 8px 24px;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 0;
+}
+
+.submenu li a:hover {
+    background: var(--primary-100);
+}
+
+.submenu li a::after {
+    opacity: 0;
+}
+
+header ul.submenu li a {
+    border-radius: 0;
+    color: #1a1a1a;
+    font-family: Poppins, sans-serif;
+    font-size: 16 px;
+    font-weight: 400;
+    letter-spacing: .25px;
+    line-height: 28px;
+    padding: 8px 24px;
+    transition: all .25scubic-bezier(.4, 0, .2, 1);
+}
+
+header ul li.has-submenu a {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    padding-right: 12px;
+}
+
+header li {
+    position: relative;
+}
+
+header li a {
+    color: var(--secondary-text);
+    padding: 8px 16px;
+    border-radius: 24px;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+header li a.active {
+    background: #e6f3ff;
+    color: var(--primary) !important;
+}
+
+header ul li a {
+    border-radius: 24px;
+    color: #4d4d4d;
+    display: block;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: .25px;
+    line-height: 28px;
+    padding: 8px 16px;
+    z-index: 1;
+}
+
+header li .header-sub-menu:not(.active)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #e6f3ff;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0, 1);
+    transform-origin: center;
+    border-radius: 30px;
+    z-index: -1;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+header li a:not(.active)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #e6f3ff;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0, 1);
+    transform-origin: center;
+    border-radius: 30px;
+    z-index: -1;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+header li .header-sub-menu:not(.active):hover::after {
+    transform: translate(-50%, -50%) scale(1, 1);
+}
+
+header li a:not(.active):hover::after {
+    transform: translate(-50%, -50%) scale(1, 1);
+}
+
+header-sub-menu:hover {
+    --bs-link-color-rgb: var(--bs-link-hover-color-rgb);
+}
+
+.banner-content a button:not(.active)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    top: 50%;
+    left: 50%;
+    background: rgb(3, 108, 204);
+    border-radius: 30px;
+    z-index: 0;
+    transform: translate(-50%, -50%) scale(0, 1);
+    transform-origin: center center;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.banner-content a button:not(.active):hover:after {
+    transform: translate(-50%, -50%) scale(1, 1);
+}
+
+li:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.our-services .css-tq2bi6 a button:not(.active):after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: rgb(3, 108, 204);
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0, 1);
+    transform-origin: center;
+    border-radius: 30px;
+    z-index: -1;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.software-development-technologies .content a button:not(.active):after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: rgb(3, 108, 204);
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0, 1);
+    transform-origin: center;
+    border-radius: 30px;
+    z-index: -1;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.software-development-technologies .content a button:not(.active):hover:after {
+    transform: translate(-50%, -50%) scale(1, 1);
+}
+
+.engineering-culture .css-1tz8m30 .content a button:not(.active):after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: rgb(3, 108, 204);
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0, 1);
+    transform-origin: center;
+    border-radius: 30px;
+    z-index: -1;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.engineering-culture .css-1tz8m30 .content a button:not(.active):hover:after {
+    transform: translate(-50%, -50%) scale(1, 1);
+}
+
+.css-tq2bi6 a button:not(.active):hover:after {
+    transform: translate(-50%, -50%) scale(1, 1);
+}
+
+.request-proposal a button:not(.active):after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #0487ff;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ffffff;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0, 1);
+    transform-origin: center;
+    border-radius: 30px;
+    z-index: -1;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.request-proposal a button:not(.active):hover:after {
+    transform: translate(-50%, -50%) scale(1, 1);
+}
+
+
+/* .social-links  a .button-ins:not(.active):after{
+    content: "";
+    display: block;
+    position: absolute;
+    background: #0487ff;
+    left: 85%;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ffffff;
+    top: 91%;
+    transform: translate(-50%, -50%) scale(0, 1);
+    transform-origin: center;
+    border-radius: 30px;
+    z-index: -1;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-links a .button-ins:not(.active):hover:after{
+    transform: translate(-50%, -50%) scale(1, 1);
+}
+.social-links  a .button-fac:not(.active):after{
+    content: "";
+    display: block;
+    position: absolute;
+    background: #0487ff;
+    left: 88%;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ffffff;
+    top: 91%;
+    transform: translate(-50%, -50%) scale(0, 1);
+    transform-origin: center;
+    border-radius: 30px;
+    z-index: -1;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-links a .button-fac:not(.active):hover:after{
+    transform: translate(-50%, -50%) scale(1, 1);
+} */
+
+.engineering-cultur .content a button:not(.active):after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #0487ff;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ffffff;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0, 1);
+    border-radius: 30px;
+    z-index: -1;
+    transform-origin: center center;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.engineering-cultur .content a button:not(.active):hover:after {
+    transform: translate(-50%, -50%) scale(1, 1);
+}
+
+a button:not(.active):hover:after {
+    transform: translate(-50%, -50%) scale(1, 1);
+}
+
+
+/* hero banner
+--------------------------------------------------------------------------------------------------------*/
+
+.banner {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+/* .banner:after {
+    background-color: #0000007a;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+} */
+
+.technologies-banner::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.48);
+    z-index: 0;
+}
+
+.banner.page-banner {
+    min-height: 520px;
+    padding-top: 156px;
+    padding-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MuiBreadcrumbs-root {
+    margin-bottom: 12px;
+}
+
+.MuiBreadcrumbs-ol {
+    justify-content: center;
+}
+
+.MuiBreadcrumbs-li a {
+    color: var(--white);
+}
+
+.MuiBreadcrumbs-li p {
+    color: var(--white);
+    opacity: 0.88;
+}
+
+.MuiBreadcrumbs-li h2 {
+    text-align: center;
+}
+
+.MuiBreadcrumbs-li p {
+    text-align: center;
+}
+
+.banner.industry-details-banner {
+    margin-bottom: 100px;
+}
+
+.banner.industry-details-banner .banner-content {
+    max-width: 1024px;
+}
+
+.banner.service-details-banner {
+    padding-top: 96px;
+    margin-bottom: 80px;
+}
+
+.service-details-banner {
+    padding-top: 96px;
+    margin-bottom: 80px;
+}
+
+.banner.service-details-banner .MuiBreadcrumbs-root {
+    margin-bottom: 12px;
+}
+
+.service-details-banner .MuiBreadcrumbs-root {
+    margin-bottom: 12px;
+}
+
+.css-zinzkl {
+    margin: 0px;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.css-nhb8h9 {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.css-zinzkl .MuiBreadcrumbs-li a {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.15px;
+    font-weight: 500;
+    display: block;
+    color: rgb(26, 26, 26);
+}
+
+.css-3mf706 {
+    display: flex;
+    user-select: none;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.css-zinzkl .MuiBreadcrumbs-li p {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.15px;
+    font-weight: 500;
+    color: #4d4d4d !important;
+}
+
+.banner.service-details-banner.bg-light-purple h2 {
+    color: #7b7bb6;
+}
+
+.banner.service-details-banner.bg-light-purple a {
+    text-decoration: none;
+    transition: all .18s cubic-bezier(.4, 0, .2, 1);
+}
+
+.banner.service-details-banner.bg-light-purple .MuiButton-contained {
+    background: #7b7bb6;
+}
+
+.banner.service-details-banner .MuiButton-contained {
+    min-width: 190px;
+}
+
+.css-107tsus .text {
+    position: relative;
+    z-index: 1;
+}
+
+.banner.service-details-banner.bg-light-purple .MuiButton-contained:after {
+    background: #56567f;
+}
+
+.css-107tsus::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    top: 50%;
+    left: 50%;
+    background: rgb(3, 108, 204);
+    border-radius: 30px;
+    z-index: 0;
+    transform: translate(-50%, -50%) scale(0, 1);
+    transform-origin: center center;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.banner.service-details-banner .banner-content .right img {
+    display: block;
+    height: 471px;
+    width: auto;
+}
+
+.banner.service-details-banner h2 {
+    padding-bottom: 40px;
+}
+
+.banner.service-details-banner .MuiButton-contained {
+    min-width: 190px;
+}
+
+.banner.service-details-banner .banner::after {
+    display: none;
+}
+
+.banner.service-details-banner .banner.bg-light-purple {
+    background: #f1f1ff;
+}
+
+.banner.service-details-banner .banner.bg-light-blue {
+    background: #def4ff;
+}
+
+.banner.service-details-banner .banner.bg-light-purple h2 {
+    color: #7b7bb6;
+}
+
+.banner.service-details-banner .banner.bg-light-purple .MuiButton-contained {
+    background: #7b7bb6;
+}
+
+.banner.service-details-banner .banner.bg-light-purple .MuiButton-contained .banner::after {
+    background: #56567f;
+}
+
+.banner.service-details-banner .banner.bg-light-blue {
+    background: #def4ff;
+}
+
+.banner.service-details-banner .banner.bg-light-blue h2 {
+    color: #4597bf;
+}
+
+.banner.service-details-banner.bg-light-blue .MuiButton-contained {
+    background: #4597bf;
+}
+
+.banner.service-details-banner .banner.bg-light-blue .MuiButton-contained {
+    background: #4597bf;
+}
+
+.banner.service-details-banner .banner.bg-light-pink {
+    background: #f6edff;
+}
+
+.banner.service-details-banner .banner.bg-light-pink h2 {
+    color: #8f71ad;
+}
+
+.banner.service-details-banner .banner.bg-light-pink .MuiButton-contained {
+    background: #8f71ad;
+}
+
+.banner.service-details-banner .banner.bg-light-pink .MuiButton-contained .banner::after {
+    background: #644f79;
+}
+
+.banner.service-details-banner .banner-content {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner.service-details-banner .banner-content .left {
+    padding: 48px 48px 48px 0;
+}
+
+.banner.service-details-banner .banner-content .right img {
+    display: block;
+    height: 471px;
+    width: auto;
+}
+
+.banner-content {
+    max-width: 800px;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-content h2 {
+    color: var(--white);
+}
+
+.banner-content h2 span {
+    color: var(--primary);
+}
+
+.banner-content p {
+    color: rgba(255, 255, 255, 0.88);
+}
+
+.hero-banner {
+    background-image: url("../img/hero/home-hero-banner.webp");
+    padding-top: 204px;
+    padding-bottom: 132px;
+}
+
+.hero-banner h2 {
+    padding-bottom: 40px;
+}
+
+.hero-banner p {
+    padding-bottom: 60px;
+}
+
+.hero-banner .MuiButton-root {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.overlyshadow:after {
+    background-color: #0000007a;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+
+/* service-details-content
+--------------------------------------------------------------------------------------------------------*/
+
+.service-details-content>p {
+    padding-bottom: 80px;
+    color: var(--secondary-text);
+}
+
+
+/* about-it-solution
+--------------------------------------------------------------------------------------------------------*/
+
+.about-it-solution img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.about-it-solution h3 {
+    color: var(--primary-text);
+}
+
+.about-it-solution p {
+    color: #4d4d4d;
+}
+
+
+/* counter
+--------------------------------------------------------------------------------------------------------*/
+
+.counter {
+    border-radius: 24px;
+    background: var(--primary);
+    padding: 60px 0;
+}
+
+.counter ul {
+    display: flex;
+}
+
+.counter ul li {
+    flex: 1;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.counter ul li:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.counter ul li span {
+    /* Replace with actual 'heading-2' styles */
+    /* Example: */
+    /* font-size: 2em;
+       font-weight: bold; */
+    color: var(--white);
+    display: block;
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+.counter ul li span {
+    color: #fff;
+    display: block;
+    font-family: Montserrat, sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: -.5px;
+    line-height: 76px;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+.counter ul li p {
+    font-weight: 500;
+    text-align: center;
+    color: var(--white);
+    opacity: 0.8;
+}
+
+
+/* slick-slider
+--------------------------------------------------------------------------------------------------------*/
+
+.slick-slider {
+    margin-bottom: 48px;
+}
+
+.slick-slider .MuiButtonBase-root.slick-arrow {
+    height: 44px;
+    width: 44px;
+    border: 2px solid #999999;
+    display: flex !important;
+    position: absolute;
+    top: -103px;
+    right: 0;
+    left: unset;
+    transform: none;
+}
+
+.slick-slider .MuiButtonBase-root.slick-arrow.slick-prev {
+    right: 57px;
+}
+
+.slick-slider .MuiButtonBase-root.slick-arrow.slick-disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.slick-slider .MuiButtonBase-root.slick-arrow::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    top: 50%;
+    left: 50%;
+    background: #0487ff;
+    border-radius: 30px;
+    z-index: 0;
+    transform: translate(-50%, -50%) scale(0, 1);
+    transform-origin: center;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.MuiButtonBase-root.slick-arrow::before {
+    content: none;
+}
+
+.MuiButtonBase-root.slick-arrow {
+    transition: background 250ms ease, border 250ms ease;
+}
+
+.MuiButtonBase-root.slick-arrow {
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    color: black;
+    /* default icon color */
+    transition: color 0.6s;
+}
+
+.MuiButtonBase-root.slick-arrow::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: transparent;
+    /* normal background */
+    transition: transform 0.6s, background 0.6s;
+    transform: perspective(600px) rotateY(0deg);
+    transform-origin: center;
+    z-index: 0;
+}
+
+.MuiButtonBase-root.slick-arrow:hover::before {
+    background: #0487ff;
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    border: 1px solid #0487ff;
+}
+
+.MuiButtonBase-root.slick-arrow>* {
+    position: relative;
+    z-index: 1;
+    transition: color 0.6s;
+}
+
+.MuiButtonBase-root.slick-arrow:hover>* {
+    color: #ffffff;
+    /* hover ma icon white thase */
+}
+
+.MuiButtonBase-root.slick-arrow:hover img {
+    width: auto;
+    height: auto;
+    color: #ffffff !important;
+}
+
+.MuiButtonBase-root.slick-arrow:hover img.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* .MuiButtonBase-root.slick-arrow:hover img:not(.active) {
+    opacity: 0;
+    visibility: hidden;
+} */
+
+.MuiButtonBase-root.slick-arrow:hover::after {
+    transform: translate(-50%, -50%) scale(1, 1);
+}
+
+
+/* slider card
+--------------------------------------------------------------------------------------------------------*/
+
+
+/* .slider-card .top {
+    padding-right: 140px;
+} */
+
+.slider-card .top h3 {
+    color: var(--primary-text);
+}
+
+.slider-card .top p {
+    color: var(--secondary-text);
+}
+
+.slider-card .slick-list {
+    margin: 0 -16px;
+    overflow: visible;
+}
+
+.slider-card .slick-list .slick-track {
+    overflow: visible;
+    display: flex;
+    position: relative;
+}
+
+.slider-card a {
+    margin: 0 auto;
+}
+
+
+/* our services
+--------------------------------------------------------------------------------------------------------*/
+
+.our-services {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    overflow: hidden;
+}
+
+
+/* service card
+--------------------------------------------------------------------------------------------------------*/
+
+.MuiCard-root.service-card {
+    height: 100%;
+    max-height: 486px;
+    border: 1px solid var(--light-border);
+    display: flex;
+    flex-direction: column;
+    transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 374px;
+}
+
+.MuiCard-root.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: rgb(0 0 0 / 10%) 0px 20px 25px -5px, rgb(0 0 0 / 4%) 0px 10px 10px -5px;
+}
+
+.MuiCard-root.service-card .MuiCardContent-root {
+    padding: 32px 32px 16px;
+}
+
+.MuiCard-root.service-card .MuiCardContent-root .icon {
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    width: 72px;
+}
+
+.MuiCard-root.service-card .MuiCardContent-root .icon.yellow {
+    background-color: #fff2da;
+}
+
+.MuiCard-root.service-card .MuiCardContent-root .icon.light-green {
+    background-color: #c7fff8;
+}
+
+.MuiCard-root.service-card .MuiCardContent-root .icon.green {
+    background-color: #dfffe6;
+}
+
+.MuiCard-root.service-card .MuiCardContent-root .icon.blue {
+    background-color: #e6f3ff;
+}
+
+.accordion-item:first-of-type {
+    border-top-left-radius: 12px !important;
+    border-top-right-radius: 12px !important;
+}
+
+.MuiCard-root.service-card .MuiCardContent-root .icon.pink {
+    background-color: #fee5ff;
+}
+
+.MuiCard-root.service-card .MuiCardContent-root .icon.purple {
+    background-color: #f1efff;
+}
+
+.MuiCard-root.service-card .MuiCardContent-root .icon img {
+    display: block;
+    height: 48px;
+    width: 48px;
+}
+
+.MuiCard-root.service-card .MuiCardContent-root h6 {
+    font-weight: 700;
+    color: var(--primary-text);
+    padding-bottom: 12px;
+}
+
+.MuiCard-root.service-card .MuiCardContent-root p {
+    color: var(--secondary-text);
+}
+
+.MuiCard-root.service-card .MuiCardActions-root {
+    padding: 0 32px 32px;
+    margin-top: auto;
+}
+
+.MuiCard-root.service-card .MuiCardActions-root a {
+    margin: 0;
+}
+
+.MuiCard-root.service-card .MuiCardActions-root .MuiButton-root {
+    margin-left: -24px;
+    margin-bottom: -19px;
+}
+
+.MuiCard-root.service-card .MuiCardActions-root .MuiButton-root img {
+    width: auto;
+    height: auto;
+    transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.MuiCard-root.service-card .MuiCardActions-root .MuiButton-root::after {
+    display: none;
+}
+
+.MuiCard-root.service-card .MuiCardActions-root .MuiButton-root:hover {
+    background: none;
+}
+
+.MuiCard-root.service-card .MuiCardActions-root .MuiButton-root:hover img {
+    width: auto;
+    height: auto;
+    transform: translateX(8px);
+}
+
+
+/* industries we serve
+--------------------------------------------------------------------------------------------------------*/
+
+.industries-we-serve {
+    overflow: hidden;
+    padding-bottom: 120px;
+}
+
+
+/* industry card
+--------------------------------------------------------------------------------------------------------*/
+
+.MuiCard-root.industry-card {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.MuiCard-root.industry-card:hover {
+    transform: translateY(-10px);
+    box-shadow: rgb(0 0 0 / 10%) 0px 20px 25px -5px, rgb(0 0 0 / 4%) 0px 10px 10px -5px;
+}
+
+.MuiCard-root.industry-card .MuiCardContent-root,
+.MuiCard-root.industry-card:before {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+
+.MuiCard-root.industry-card .MuiCardContent-root:before {
+    background: linear-gradient(90deg, #fff0 0, #fff 50%, #fff0);
+    content: "";
+    display: block;
+    height: 1px;
+    left: 32px;
+    position: absolute;
+    right: 32px;
+    top: 0;
+    z-index: 1;
+}
+
+.MuiCard-root.industry-card:before {
+    background: #0003;
+    border-radius: 24px;
+    content: "";
+    display: block;
+    top: 0;
+    z-index: 1;
+}
+
+.MuiCard-root.industry-card::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 24px;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+
+.MuiCard-root.industry-card .MuiCardContent-root {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.24);
+    backdrop-filter: blur(32px);
+    z-index: 2;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    padding: 0;
+}
+
+.MuiCard-root.industry-card .MuiCardContent-root p {
+    color: var(--white);
+}
+
+.MuiCard-root.industry-card .MuiCardContent-root a {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: 88px;
+    padding: 12px 16px 12px 24px;
+}
+
+.MuiCard-root.industry-card .MuiCardContent-root a:hover .MuiButtonBase-root::after {
+    transform: translate(-50%, -50%) scale(1, 1);
+}
+
+.MuiCard-root.industry-card .MuiCardContent-root::before {
+    content: "";
+    display: block;
+    height: 1px;
+    left: 32px;
+    right: 32px;
+    top: 0;
+    position: absolute;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+    z-index: 1;
+}
+
+.MuiCard-root.industry-card .MuiCardContent-root .MuiIconButton-root img {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+
+/* software development technologies
+--------------------------------------------------------------------------------------------------------*/
+
+.software-development-technologies {
+    border-radius: 24px;
+    padding: 80px;
+    min-height: 629px;
+    background-image: url("../img/home/software-development-technologies.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.software-development-technologies::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, #00427ee0, #00427e29);
+    border-radius: 24px;
+    z-index: 0;
+}
+
+.software-development-technologies .content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.software-development-technologies .content>span {
+    color: rgba(255, 255, 255, 0.88);
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.software-development-technologies h4 {
+    color: var(--white);
+    text-align: center;
+}
+
+.software-development-technologies p {
+    color: rgba(255, 255, 255, 0.88);
+    text-align: center;
+}
+
+
+/* how we work
+--------------------------------------------------------------------------------------------------------*/
+
+.how-we-work {
+    overflow: hidden;
+}
+
+.how-we-work .outer-card {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+.how-we-work h3 {
+    max-width: 800px;
+    text-align: center;
+    color: var(--primary-text);
+    margin: 0 auto;
+}
+
+.how-we-work p {
+    max-width: 800px;
+    text-align: center;
+    color: var(--secondary-text);
+    margin: 0 auto;
+}
+
+.how-we-work ul {
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+}
+
+.how-we-work ul li .step {
+    max-width: 305px;
+    position: relative;
+    padding-bottom: 16px;
+}
+
+.how-we-work ul li:nth-child(odd) .step:before {
+    left: -4px;
+}
+
+.how-we-work ul li:nth-child(odd) .step:after {
+    left: 4.5px;
+}
+
+.how-we-work ul li:not(:last-child) .step:after {
+    background: #0487ff;
+    background: #999;
+    bottom: -2px;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    width: 1px;
+    z-index: 0;
+}
+
+.how-we-work ul li .step:before {
+    background: #0487ff;
+    border: 4px solid #f2f2f2;
+    border-radius: 24px;
+    content: "";
+    display: block;
+    height: 10px;
+    position: absolute;
+    top: 2px;
+    width: 10px;
+    z-index: 1;
+}
+
+.how-we-work ul li:nth-child(2n) .step p,
+.how-we-work ul li:nth-child(2n) .step span {
+    text-align: end;
+}
+
+.how-we-work ul li:nth-child(2n) .step:after {
+    right: 4.5px;
+}
+
+.how-we-work ul li:nth-child(2n) .step {
+    margin-right: auto;
+    padding-right: 22px;
+}
+
+.how-we-work ul li .step {
+    max-width: 305px;
+    padding-bottom: 16px;
+    position: relative;
+}
+
+.how-we-work ul li .step p {
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.how-we-work ul li .step p {
+    color: #0487ff;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .25px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.how-we-work ul li .step span {
+    font-weight: 600;
+    color: var(--primary-text);
+    display: block;
+}
+
+.how-we-work ul li .step::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 24px;
+    border: 4px solid var(--background);
+    top: 2px;
+    width: 18px;
+    height: 18px;
+    background: var(--primary);
+    z-index: 1;
+}
+
+.how-we-work ul li:not(:last-child) .step::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    top: 2px;
+    bottom: -2px;
+    background: #999;
+    z-index: 0;
+}
+
+.how-we-work ul li:nth-child(even) .step {
+    margin-right: auto;
+    padding-right: 22px;
+}
+
+.how-we-work ul li:nth-child(even) .step p,
+.how-we-work ul li:nth-child(even) .step span {
+    text-align: end;
+}
+
+.how-we-work ul li:nth-child(even) .step::before {
+    right: -4px;
+}
+
+.how-we-work ul li:nth-child(even) .step::after {
+    right: 4.5px;
+}
+
+.how-we-work ul li:nth-child(odd) .step {
+    margin-left: auto;
+    padding-left: 22px;
+}
+
+.how-we-work ul li:nth-child(odd) .step p,
+.how-we-work ul li:nth-child(odd) .step span {
+    text-align: start;
+}
+
+.how-we-work ul li:nth-child(odd) .step::before {
+    left: -4px;
+}
+
+.how-we-work ul li:nth-child(odd) .step::after {
+    left: 4.5px;
+}
+
+.how-we-work img {
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    width: auto;
+    height: auto;
+}
+
+.how-we-work img.illustration-1 {
+    left: -50px;
+}
+
+.how-we-work img.illustration-2 {
+    right: -50px;
+}
+
+
+/* why choose us
+--------------------------------------------------------------------------------------------------------*/
+
+.why-choose-us h3 {
+    color: var(--primary-text);
+    text-align: center;
+}
+
+.why-choose-us p {
+    color: var(--secondary-text);
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* .why-choose-us .MuiCardContent-root{
+    background-color: red !important;
+} */
+
+.why-choose-us .MuiGrid-container {
+    overflow: hidden;
+    border-radius: 24px;
+    position: relative;
+}
+
+
+/* .why-choose-us .MuiGrid-container::before {
+    border: 1px solid #e6f3ff;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+} */
+
+.why-choose-us .MuiCard-root {
+    background: #e6f3ff;
+    height: 100%;
+    border-radius: 0;
+    border-bottom: 1px solid var(--primary-150);
+    border-right: 1px solid var(--primary-150);
+}
+
+.why-choose-us .MuiCard-root .MuiCardContent-root {
+    padding: 32px;
+}
+
+.why-choose-us .MuiCard-root .MuiCardContent-root img {
+    display: block;
+    margin-bottom: 22px;
+    height: 58px;
+    width: 58px;
+}
+
+.why-choose-us .MuiCard-root .MuiCardContent-root p {
+    color: var(--primary-text);
+    text-align: left;
+}
+
+.why-choose-us .MuiCard-root .MuiCardContent-root span {
+    color: var(--secondary-text);
+}
+
+
+/* our-clients
+--------------------------------------------------------------------------------------------------------*/
+
+.our-clients {
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+.our-clients h3 {
+    color: var(--primary-text);
+    text-align: center;
+}
+
+.our-clients p {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto 40px;
+    color: var(--secondary-text);
+}
+
+.our-clients ul {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+    max-width: 1024px;
+}
+
+.our-clients ul a {
+    text-decoration: none;
+    color: var(--primary);
+    padding: 0 12px 0 24px;
+    margin-bottom: 12px;
+    display: block;
+    position: relative;
+}
+
+.our-clients ul a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    border-radius: 10px;
+    background: var(--primary);
+    left: 12px;
+    top: 9px;
+}
+
+.our-clients ul a:hover {
+    text-decoration: underline;
+}
+
+.our-clients .slick-slider {
+    margin-bottom: 0;
+    opacity: 0.6;
+}
+
+.our-clients .slick-slider .slick-list .slick-track .slick-slide {
+    padding: 0 40px;
+}
+
+.our-clients .slick-slider .slick-list .slick-track .slick-slide img {
+    display: block !important;
+    width: auto;
+    height: auto;
+}
+
+
+/* testimonials
+--------------------------------------------------------------------------------------------------------*/
+
+.testimonials {
+    position: relative;
+}
+
+.testimonials::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    top: 0;
+    bottom: 0;
+    right: -40px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+    z-index: 1;
+}
+
+.testimonials .content {
+    max-width: 480px;
+    padding-top: 90px;
+}
+
+.testimonials .content h3 {
+    color: var(--primary-text);
+}
+
+.testimonials .content p {
+    color: var(--secondary-text);
+}
+
+.testimonials .slider-wrapper {
+    overflow: hidden;
+    margin-right: -40px;
+}
+
+.testimonials .slick-slider {
+    max-width: 412px;
+    position: static;
+    margin-bottom: 0;
+}
+
+.testimonials .slick-slider .MuiButtonBase-root.slick-arrow {
+    right: unset;
+    left: 0;
+    top: 394px;
+}
+
+.testimonials .slick-slider .MuiButtonBase-root.slick-arrow.slick-next {
+    left: 56px;
+}
+
+.testimonials .slick-slider .slick-list {
+    overflow: visible;
+}
+
+.testimonials .slick-slider .slick-list .slick-track {
+    display: flex;
+}
+
+.testimonials .slick-slider .slick-list .slick-track .slick-slide {
+    float: none;
+    min-height: 496px;
+    display: flex;
+    margin-right: 4px;
+    transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.testimonials .slick-slider .slick-list .slick-track .slick-slide:not(.slick-active) {
+    transform: scale(0.9);
+    opacity: 0.48;
+}
+
+
+/* testimonial-card
+--------------------------------------------------------------------------------------------------------*/
+
+.MuiCard-root.testimonial-card {
+    background: var(--primary-100);
+    height: 100%;
+}
+
+.MuiCard-root.testimonial-card .MuiCardContent-root {
+    padding: 32px 40px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.MuiCard-root.testimonial-card .MuiCardContent-root .icon {
+    height: 58px;
+    width: 58px;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.MuiCard-root.testimonial-card .MuiCardContent-root p {
+    font-weight: 600;
+    color: var(--primary-text);
+    padding-bottom: 24px;
+}
+
+.MuiCard-root.testimonial-card .MuiCardContent-root .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+.MuiCard-root.testimonial-card .MuiCardContent-root .bottom span {
+    display: block;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.MuiCard-root.testimonial-card .MuiCardContent-root .bottom small {
+    display: block;
+    font-weight: 400;
+    color: var(--secondary-text);
+}
+
+.MuiCard-root.testimonial-card .MuiCardContent-root .bottom img {
+    display: block;
+    height: 48px;
+    width: auto;
+}
+
+
+/* engineering culture
+--------------------------------------------------------------------------------------------------------*/
+
+.engineering-culture .image-wrapper {
+    justify-content: flex-start;
+}
+
+.engineering-culture .image-wrapper img {
+    max-width: 540px;
+    width: auto;
+    height: auto;
+}
+
+.engineering-culture .content {
+    padding-left: 24px;
+}
+
+.engineering-culture h3 {
+    color: var(--primary-text);
+}
+
+.engineering-culture p {
+    color: var(--secondary-text);
+}
+
+.engineering-culture ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.engineering-culture ul li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-right: 24px;
+}
+
+.engineering-culture ul li img {
+    display: block;
+    height: 24px;
+    width: 24px;
+}
+
+.engineering-culture ul li span {
+    color: var(--secondary-text);
+}
+
+
+/* faq
+--------------------------------------------------------------------------------------------------------*/
+
+.faq {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.accordion-item:last-of-type {
+    border-bottom-right-radius: 12px !important;
+    border-bottom-left-radius: 12px !important;
+}
+
+.faq .image-wrapper {
+    padding-top: 80px;
+}
+
+.faq .image-wrapper img {
+    max-width: 440px;
+    margin-top: -8px;
+    height: auto;
+    width: auto;
+}
+
+
+/* request proposal
+--------------------------------------------------------------------------------------------------------*/
+
+.request-proposal {
+    border-radius: 24px;
+    background: var(--primary);
+    padding: 80px 60px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+
+.request-proposal h3 {
+    color: var(--white);
+    max-width: 962px;
+    text-align: center;
+}
+
+.request-proposal>span {
+    color: rgba(255, 255, 255, 0.88);
+    display: block;
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+.request-proposal ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.request-proposal ul li small {
+    /* Replace '@include subtitle-3();' with the corresponding CSS properties */
+    color: rgba(255, 255, 255, 0.88);
+    text-transform: uppercase;
+}
+
+.request-proposal ul li small {
+    color: #ffffffe0;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .25px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.request-proposal ul li a {
+    display: flex;
+    gap: 8px;
+    color: var(--white);
+}
+
+.request-proposal ul li a:hover {
+    text-decoration: underline;
+}
+
+.request-proposal ul li a img {
+    display: block;
+    height: 24px;
+    width: 24px;
+    margin-top: 4px;
+}
+
+.request-proposal ul li a span {
+    color: var(--white);
+    padding-bottom: 0;
+}
+
+.request-proposal .MuiButton-root {
+    min-width: 248px;
+}
+
+.request-proposal .MuiButton-root::after {
+    background: var(--primary);
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+}
+
+.request-proposal .MuiButton-root .text {
+    color: var(--primary);
+    transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.request-proposal .MuiButton-root:hover {
+    background-color: var(--white);
+}
+
+.request-proposal .MuiButton-root:hover .text {
+    color: var(--white);
+}
+
+.request-proposal .oval-left {
+    position: absolute;
+    bottom: 44px;
+    left: -127px;
+}
+
+.request-proposal .oval-right {
+    position: absolute;
+    top: -77px;
+    right: -68px;
+}
+
+
+/* footer
+--------------------------------------------------------------------------------------------------------*/
+
+footer a {
+    display: block;
+}
+
+footer img {
+    display: block;
+    width: 192px;
+    height: 100%;
+}
+
+footer .company-description {
+    /* Replace '@include body-3();' with the actual CSS properties from the 'body-3' mixin */
+    color: var(--secondary-text);
+}
+
+footer strong {
+    color: var(--primary-text);
+    padding-bottom: 6px;
+}
+
+footer .site-links a {
+    padding: 6px 0;
+    /* Replace '@include body-2();' with the actual CSS properties from the 'body-2' mixin */
+    color: var(--secondary-text);
+    transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+footer .site-links a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+footer .contact-info li {
+    display: flex;
+    gap: 12px;
+}
+
+footer .contact-info li img {
+    display: block;
+    height: 24px;
+    width: 24px;
+    margin: 2px 0;
+}
+
+footer .contact-info li a {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+    color: var(--secondary-text);
+    transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+footer .contact-info li a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+footer .contact-info li a:hover span {
+    color: var(--primary);
+}
+
+footer .contact-info li span {
+    color: var(--secondary-text);
+}
+
+footer hr {
+    border: 1px solid #adb4b9;
+    margin: 48px 0 0;
+}
+
+footer .bottom {
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .bottom small {
+    /* Replace '@include body-3();' with the actual CSS properties from the 'body-3' mixin */
+    color: var(--tertiary-text)
+        /* Replace '$tertiary-text' with the actual color value */
+    ;
+}
+
+footer .bottom small {
+    color: gray;
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .15px;
+    line-height: 22px;
+}
+
+footer .bottom .MuiIconButton-root img {
+    height: 24px;
+    width: 24px;
+}
+
+
+/* vertical counter
+--------------------------------------------------------------------------------------------------------*/
+
+.vertical-counter {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.vertical-counter ul {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.vertical-counter ul:nth-child(1) {
+    margin-top: 80px;
+}
+
+.vertical-counter ul:nth-child(3) {
+    margin-top: 126px;
+}
+
+.vertical-counter ul li {
+    min-height: 228px;
+    border-radius: 24px;
+    background: var(--primary);
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.vertical-counter ul li span {
+    color: #fff;
+    display: block;
+    font-family: Montserrat, sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: 0;
+    line-height: 60px;
+    padding-bottom: 16px;
+}
+
+.vertical-counter ul li p {
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+.vertical-counter ul li p {
+    color: #fffc;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: .25px;
+    line-height: 28px;
+    text-align: center;
+}
+
+
+/* vision and mission
+--------------------------------------------------------------------------------------------------------*/
+
+.vision-and-mission p {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.css-3sq53o {
+    margin: 0px;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.css-1gpftb1 {
+    margin: 0px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+@media (min-width: 1200px) {
+    .css-4lx7hw {
+        flex-basis: 50%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .css-4lx7hw {
+        flex-basis: 50%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .css-4lx7hw {
+        flex-basis: 100%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 576px) {
+    .css-4lx7hw {
+        flex-basis: 100%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 50%;
+    }
+}
+
+.css-i3gkby {
+    margin: 0px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0.25px;
+}
+
+.css-4lx7hw {
+    box-sizing: border-box;
+    margin: 0px;
+    flex-direction: row;
+    flex-basis: 100%;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    max-width: 50%;
+}
+
+.section-details .image-wrapper img {
+    max-width: 480px;
+}
+
+.image-wrapper img {
+    display: block;
+    width: 100%;
+}
+
+
+/* section details
+--------------------------------------------------------------------------------------------------------*/
+
+.section-details .image-wrapper img {
+    max-width: 480px;
+}
+
+.section-details .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-left: 48px;
+}
+
+.section-details .content p {
+    color: var(--secondary-text);
+}
+
+.section-details .content .bullet-point {
+    display: flex;
+    gap: 8px;
+}
+
+.section-details .content .bullet-point img {
+    display: block;
+    height: 24px;
+    width: 24px;
+    margin-top: 2px;
+}
+
+.section-details .content .bullet-point p {
+    font-weight: 500;
+}
+
+
+/* it consulting card
+--------------------------------------------------------------------------------------------------------*/
+
+.MuiCard-root.it-consulting-card {
+    padding: 32px;
+    border-radius: 24px;
+    border: 1px solid var(--light-border);
+    position: relative;
+    height: 100%;
+    transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 375px;
+}
+
+.MuiCard-root.it-consulting-card:hover {
+    transform: translateY(-10px);
+    box-shadow: rgb(0 0 0 / 10%) 0px 20px 25px -5px, rgb(0 0 0 / 4%) 0px 10px 10px -5px;
+}
+
+.MuiCard-root.it-consulting-card .MuiCardContent-root {
+    padding: 0;
+}
+
+.MuiCard-root.it-consulting-card .MuiCardContent-root img {
+    display: block;
+    margin-bottom: 22px;
+    width: 59px;
+    height: auto;
+}
+
+.MuiCard-root.it-consulting-card .MuiCardContent-root h6 {
+    font-weight: 700;
+    color: var(--primary-text);
+    padding-bottom: 16px;
+}
+
+.MuiCard-root.it-consulting-card .MuiCardContent-root p {
+    color: var(--secondary-text);
+}
+
+.MuiCard-root.it-consulting-card .MuiCardContent-root span {
+    color: var(--white);
+    text-shadow: -2px -2px 0 var(--light-border), 2px -2px 0 var(--light-border), -2px 2px 0 var(--light-border), 2px 2px 0 var(--light-border), 0 -2px 0 var(--light-border), 0 2px 0 var(--light-border), -2px 0 0 var(--light-border), 2px 0 0 var(--light-border);
+    position: absolute;
+    right: 32px;
+    top: 32px;
+}
+
+
+/* consider hiring developer
+--------------------------------------------------------------------------------------------------------*/
+
+.consider-hiring-developer {
+    border-radius: 24px;
+    background: var(--primary);
+    padding: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.consider-hiring-developer h5 {
+    color: var(--white);
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.consider-hiring-developer p {
+    color: rgba(255, 255, 255, 0.88);
+    font-weight: 500;
+    max-width: 948px;
+    margin: 0 auto;
+}
+
+.consider-hiring-developer img {
+    position: absolute;
+    width: auto;
+    height: auto;
+}
+
+.consider-hiring-developer img.right {
+    top: -72px;
+    right: -102px;
+}
+
+.consider-hiring-developer img.left {
+    bottom: -92px;
+    left: -66px;
+}
+
+
+/* benefits of hiring
+--------------------------------------------------------------------------------------------------------*/
+
+.benefits-of-hiring .MuiCard-root .MuiCardContent-root {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    padding: 0;
+}
+
+.benefits-of-hiring .MuiCard-root .MuiCardContent-root img {
+    display: block;
+    height: 76px;
+    width: auto;
+    margin-bottom: 28px;
+}
+
+.benefits-of-hiring .MuiCard-root .MuiCardContent-root p {
+    color: var(--secondary-text);
+}
+
+
+/* pricing methods
+--------------------------------------------------------------------------------------------------------*/
+
+.pricing-methods {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.pricing-methods .MuiCard-root {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--light-border);
+    transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pricing-methods .MuiCard-root:hover {
+    transform: translateY(-10px);
+    box-shadow: rgb(0 0 0 / 10%) 0px 20px 25px -5px, rgb(0 0 0 / 4%) 0px 10px 10px -5px;
+}
+
+.pricing-methods .MuiCard-root .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--light-border);
+    padding: 40px 40px 32px;
+}
+
+.pricing-methods .MuiCard-root .top h6 {
+    text-transform: uppercase;
+}
+
+.pricing-methods .MuiCard-root .top img {
+    display: block;
+    height: 48px;
+    width: 48px;
+}
+
+.pricing-methods .MuiCard-root .MuiCardContent-root {
+    padding: 24px 40px 40px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-methods .MuiCard-root .MuiCardContent-root .bullet-points-list {
+    margin-bottom: 40px;
+}
+
+.pricing-methods .MuiCard-root .MuiCardContent-root a {
+    margin: auto auto 0;
+}
+
+
+/* bullet-points-list
+--------------------------------------------------------------------------------------------------------*/
+
+.bullet-points-list li {
+    margin-bottom: 24px;
+}
+
+.bullet-points-list li ul li {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.bullet-points-list li ul li.title {
+    display: flex;
+    gap: 12px;
+}
+
+.bullet-points-list li ul li.title img {
+    display: block;
+    height: 24px;
+    width: 24px;
+    margin-top: 2px;
+}
+
+.bullet-points-list li ul li.title p {
+    color: var(--primary-text);
+}
+
+.bullet-points-list li ul li:not(.title) {
+    font-size: 14px;
+    /* Adjust according to @include body-2() */
+    color: var(--secondary-text);
+    padding-left: 37px;
+    position: relative;
+}
+
+.bullet-points-list li ul li:not(.title)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    left: 15px;
+    top: 10px;
+    background: var(--tertiary-text);
+    border-radius: 10px;
+}
+
+.bullet-points-list li ul li:last-child,
+.bullet-points-list li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* technologies content
+--------------------------------------------------------------------------------------------------------*/
+
+.technologies-content .image-wrapper img {
+    max-width: 480px;
+}
+
+
+/* visit our portfolio
+--------------------------------------------------------------------------------------------------------*/
+
+.visit-our-portfolio {
+    background: #004b8f;
+    padding: 80px 60px 0;
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.visit-our-portfolio h4 {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--white);
+    padding-bottom: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.visit-our-portfolio .MuiButton-root {
+    display: flex;
+    margin: 0 auto 64px;
+    position: relative;
+    z-index: 1;
+}
+
+.visit-our-portfolio img.section-img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.visit-our-portfolio img:not(.section-img) {
+    position: absolute;
+}
+
+.visit-our-portfolio img.oval-one {
+    top: -153px;
+    left: 50%;
+    transform: translateX(calc(-50% + 187px)) !important;
+}
+
+.visit-our-portfolio img.oval-two {
+    top: 322px;
+    left: -122px;
+}
+
+.visit-our-portfolio img.oval-three {
+    bottom: -57px;
+    right: -102px;
+}
+
+.visit-our-portfolio img.grid-bg {
+    bottom: -133px;
+    left: 50%;
+    transform: translateX(-50%) !important;
+    z-index: 0;
+    width: 100%;
+}
+
+
+/* industry problems
+--------------------------------------------------------------------------------------------------------*/
+
+.industry-problems {
+    display: flex;
+    flex-direction: column;
+}
+
+.industry-problems>p {
+    padding-bottom: 80px;
+    color: var(--primary-text);
+}
+
+.industry-problems .MuiChip-root {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.industry-problems .MuiCard-root {
+    border: 1px solid var(--light-border);
+    height: 100%;
+    transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.industry-problems .MuiCard-root:hover {
+    transform: translateY(-10px);
+    box-shadow: rgb(0 0 0 / 10%) 0px 20px 25px -5px, rgb(0 0 0 / 4%) 0px 10px 10px -5px;
+}
+
+.industry-problems .MuiCard-root .MuiCardContent-root {
+    padding: 32px 40px;
+}
+
+.industry-problems .MuiCard-root .MuiCardContent-root p {
+    text-shadow: -4px -4px 0px #0487ff, 4px -4px 0px #0487ff, -4px 4px 0px #0487ff, 4px 4px 0px #0487ff, 0px 4px 0px #0487ff, 0px -4px 0px #0487ff, 4px 0px 0px #0487ff, -4px 0px 0px #0487ff;
+    opacity: 0.16;
+    color: var(--white);
+}
+
+.industry-problems .MuiCard-root .MuiCardContent-root h6 {
+    font-weight: 700;
+    padding-bottom: 12px;
+    color: var(--primary-text);
+}
+
+.industry-problems .MuiCard-root .MuiCardContent-root span {
+    color: var(--secondary-text);
+    display: block;
+}
+
+.industry-problems .MuiCard-root .MuiCardContent-root ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 8px;
+}
+
+.industry-problems .MuiCard-root .MuiCardContent-root ul li {
+    flex-basis: 50%;
+    max-width: 50%;
+    display: flex;
+    padding: 8px 8px 8px 0;
+    gap: 8px;
+}
+
+.industry-problems .MuiCard-root .MuiCardContent-root ul li img {
+    height: 24px;
+    width: 24px;
+    display: block;
+}
+
+.industry-problems .MuiCard-root .MuiCardContent-root ul li span {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.15px;
+    padding-top: 1px;
+}
+
+
+/* industry solutions
+--------------------------------------------------------------------------------------------------------*/
+
+.industry-solutions {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.industry-solutions .subtext {
+    color: var(--secondary-text);
+}
+
+.industry-solutions .MuiContainer-root {
+    display: flex;
+    flex-direction: column;
+}
+
+.industry-solutions .MuiChip-root {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.industry-solutions .content {
+    padding-left: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.industry-solutions .content h5 {
+    color: var(--primary-text);
+}
+
+.industry-solutions .content p {
+    color: var(--secondary-text);
+}
+
+.industry-solutions ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 48px;
+    padding-right: 48px;
+    gap: 24px;
+    height: 100%;
+}
+
+.industry-solutions ul li {
+    max-width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+    display: flex;
+    gap: 12px;
+    background: var(--white);
+    transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.industry-solutions ul li:hover {
+    transform: translateY(-10px);
+    box-shadow: rgb(0 0 0 / 10%) 0px 20px 25px -5px, rgb(0 0 0 / 4%) 0px 10px 10px -5px;
+}
+
+.industry-solutions ul li img {
+    display: block;
+    height: 24px;
+    width: 24px;
+    margin-top: 2px;
+}
+
+.industry-solutions ul li p {
+    color: var(--secondary-text);
+}
+
+
+/* solution impact
+--------------------------------------------------------------------------------------------------------*/
+
+.solution-impact {
+    border-radius: 24px;
+    padding: 64px 80px;
+    background: #e6f3ff;
+    position: relative;
+    overflow: hidden;
+}
+
+.solution-impact img {
+    position: absolute;
+}
+
+.solution-impact img.left {
+    left: 0;
+    top: 0;
+    width: 10%;
+}
+
+.solution-impact img.right {
+    bottom: 0;
+    right: 0;
+    width: 10%;
+}
+
+.solution-impact h4 {
+    color: var(--primary);
+    padding-bottom: 32px;
+}
+
+.solution-impact ul li {
+    display: flex;
+    gap: 12px;
+}
+
+.solution-impact ul li:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.solution-impact ul li img {
+    display: block;
+    height: 24px;
+    width: 24px;
+    margin: 2px;
+}
+
+.solution-impact ul li p {
+    color: #4d4d4d;
+}
+
+
+/* contact us form wrapper
+--------------------------------------------------------------------------------------------------------*/
+
+.contact-us-form-wrapper .contact-info {
+    background: #e6f3ff;
+    border-radius: 24px;
+    padding: 40px 32px 0;
+    position: relative;
+    max-width: 480px;
+    margin: 0 auto;
+    min-height: 532px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.contact-us-form-wrapper .contact-info>img {
+    width: auto;
+    height: auto;
+}
+
+.contact-us-form-wrapper .contact-info>img.border {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotateY(180deg);
+}
+
+.contact-us-form-wrapper .contact-info>img:not(.border) {
+    display: block;
+    margin: auto auto 0;
+    max-width: 100%;
+}
+
+.contact-us-form-wrapper .contact-info ul {
+    padding-bottom: 24px;
+}
+
+.contact-us-form-wrapper .contact-info ul li {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.contact-us-form-wrapper .contact-info ul li span {
+    color: var(--secondary-text);
+}
+
+.contact-us-form-wrapper .contact-info ul li img {
+    display: block;
+    height: 28px;
+    width: 28px;
+}
+
+.contact-us-form-wrapper .contact-info ul li a {
+    display: flex;
+    gap: 12px;
+}
+
+.contact-us-form-wrapper .contact-info ul li a:hover {
+    text-decoration: underline;
+}
+
+.contact-us-form-wrapper .contact-info ul li a:hover span {
+    color: var(--primary);
+}
+
+.contact-us-form-wrapper .contact-us-form {
+    max-width: 536px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+
+/* portfolio card
+--------------------------------------------------------------------------------------------------------*/
+
+.MuiCard-root.portfolio-card {
+    border-radius: 0;
+}
+
+.MuiCard-root.portfolio-card .MuiCardContent-root {
+    padding: 0;
+}
+
+.MuiCard-root.portfolio-card .MuiCardContent-root .card-image {
+    min-height: 280px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.MuiCard-root.portfolio-card .MuiCardContent-root .card-image .card-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.24);
+    backdrop-filter: blur(16px);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    visibility: hidden;
+    padding: 24px;
+}
+
+.MuiCard-root.portfolio-card .MuiCardContent-root .card-image .card-overlay .button-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.MuiCard-root.portfolio-card .MuiCardContent-root p {
+    color: var(--primary-text);
+}
+
+.MuiCard-root.portfolio-card:hover .MuiCardContent-root .card-image .card-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* site loader
+--------------------------------------------------------------------------------------------------------*/
+
+.loader {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    z-index: 9999;
+}
+
+.loader .logo {
+    height: 48px;
+    margin-bottom: 40px;
+    width: 200px;
+}
+
+.progress-bar {
+    width: 200px;
+    height: 5px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    width: 0%;
+    background-color: #007bff;
+    transition: width 0.3s ease;
+}
+
+.spinner-loader {
+    position: fixed;
+    inset: 0;
+    background-color: #fff;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner-border {
+    width: 60px;
+    height: 60px;
+    border-width: 5px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #0d6efd #0d6efd #0d6efd transparent;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#content {
+    display: none;
+    animation: fadeIn 1s ease !important;
+}
+
+/* portfolio projects
+--------------------------------------------------------------------------------------------------------*/
+
+.portfolio-projects .MuiPagination-root {
+    margin-top: 48px;
+}
+
+.portfolio-projects .MuiPagination-root .MuiPagination-ul {
+    justify-content: center;
+}
+
+
+/* scroll to top button
+--------------------------------------------------------------------------------------------------------*/
+
+.MuiIconButton-root.scroll-to-top-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.5);
+    transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+    /* Prevent click when hidden */
+}
+
+.MuiIconButton-root.scroll-to-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    pointer-events: auto;
+    /* Enable click when visible */
+}
+
+/* Additional styles for the button */
+.MuiIconButton-root.scroll-to-top-btn:hover {
+    background-color: rgb(3, 108, 204);
+}
+
+.MuiIconButton-root.scroll-to-top-btn::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(4, 135, 255, 0.32);
+    filter: blur(6px);
+    border-radius: 30px;
+    bottom: -8px;
+    left: 2px;
+    z-index: 0;
+    transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.MuiIconButton-root.scroll-to-top-btn:focus::before {
+    filter: blur(0);
+    bottom: 0;
+}
+
+
+/* file upload
+--------------------------------------------------------------------------------------------------------*/
+
+.file-upload {
+    width: 100%;
+    padding: 24px;
+    background: var(--primary-100);
+    border: 2px dashed var(--primary-200);
+    border-radius: 8px;
+    position: relative;
+}
+
+.file-upload.dragging {
+    border-color: var(--primary);
+}
+
+.file-upload img {
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin: 0 auto 12px;
+}
+
+.file-upload p {
+    color: var(--primary-text);
+    text-align: center;
+    padding-bottom: 4px;
+}
+
+.file-upload label {
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.file-upload span {
+    display: block;
+    text-align: center;
+    color: var(--secondary-text);
+}
+
+.file-upload input {
+    height: 0;
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    right: -999px;
+}
+
+.file-upload .MuiIconButton-root {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: var(--white);
+    padding: 6px;
+}
+
+.file-upload .MuiIconButton-root img {
+    width: 16px;
+    height: 16px;
+}
+
+.file-upload .MuiIconButton-root img.active {
+    margin-left: -16px;
+}
+
+
+/* media queries
+--------------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 1200px) {
+    header ul li.has-submenu a:hover img {
+        transform: rotate(180deg);
+    }
+}
+
+@media (max-width: 1439px) {
+    .MuiCard-root.portfolio-card .MuiCardContent-root .card-image {
+        min-height: 220px;
+    }
+}
+
+@media (max-width: 1199px) {
+    body.show-sidebar {
+        overflow: hidden;
+    }
+
+    .show-sidebar header ul {
+        left: 0;
+        z-index: 99;
+    }
+
+    .show-sidebar header .sidebar-overlay {
+        opacity: 1;
+        visibility: visible;
+        z-index: 48;
+    }
+
+    header {
+        min-height: 76px;
+        padding: 8px 24px;
+        justify-content: flex-start;
+    }
+
+    header .MuiIconButton-root {
+        display: inline-flex;
+    }
+
+    header>a:not(.logo) {
+        margin-left: auto;
+    }
+
+    header .logo {
+        margin-left: 16px;
+    }
+
+    header .logo img {
+        height: 40px;
+        width: 160px;
+    }
+
+    header ul {
+        position: fixed;
+        top: 0;
+        left: -280px;
+        bottom: 0;
+        background: var(--white);
+        width: 280px;
+        z-index: 1;
+        padding: 16px 12px;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+        transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
+        overflow-y: auto;
+    }
+
+    header ul li {
+        margin-bottom: 8px;
+    }
+
+    /* header ul li.has-submenu a.menu-expanded {
+        background: var(--primary-100);
+        color: var(--primary);
+    } */
+    header ul li.has-submenu a img {
+        display: block;
+    }
+
+    header ul li.has-submenu a.menu-expanded img {
+        transform: rotate(365deg);
+    }
+
+    header ul li .submenu {
+        opacity: 1;
+        visibility: visible;
+        padding: 8px 0 0;
+    }
+
+    header ul li .submenu li a {
+        padding-left: 34px;
+        padding-right: 16px;
+        position: relative;
+        border-radius: 30px;
+    }
+
+    header ul li .submenu li a::before {
+        content: "";
+        display: block;
+        height: 4px;
+        width: 4px;
+        border-radius: 10px;
+        background: var(--tertiary-text);
+        left: 18px;
+        top: 20px;
+        position: absolute;
+        transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    header ul li .submenu li a:hover {
+        color: var(--primary);
+        background: transparent;
+    }
+
+    header ul li .submenu li a:hover::before {
+        background: var(--primary);
+    }
+
+    header ul li .submenu li a.active::before {
+        background: var(--primary);
+    }
+
+    .banner.hero-banner {
+        padding-top: 180px;
+        padding-bottom: 120px;
+    }
+
+    .banner.hero-banner h2 {
+        padding-bottom: 24px;
+    }
+
+    .banner.hero-banner p {
+        padding-bottom: 48px;
+    }
+
+    .banner.industry-details-banner {
+        margin-bottom: 80px;
+    }
+
+    .banner.service-details-banner {
+        padding-top: 76px;
+    }
+
+    .banner.service-details-banner .banner-content .right img {
+        height: 400px;
+    }
+
+    .outer-card {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .our-services {
+        padding-top: 80px;
+    }
+
+    .industries-we-serve {
+        padding-bottom: 80px;
+    }
+
+    .how-we-work ul {
+        max-width: 480px;
+    }
+
+    .how-we-work ul li .step {
+        max-width: 245px;
+    }
+
+    .how-we-work img {
+        width: 320px;
+    }
+
+    .how-we-work img.illustration-2 {
+        right: -100px;
+    }
+
+    .how-we-work img.illustration-1 {
+        left: -100px;
+    }
+
+    .vertical-counter {
+        gap: 16px;
+    }
+
+    .vertical-counter ul {
+        gap: 16px;
+    }
+
+    .banner.page-banner {
+        padding-top: 124px;
+        min-height: 456px;
+        padding-bottom: 48px;
+    }
+
+    .section-details .content {
+        padding-left: 24px;
+    }
+
+    .pricing-methods {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .pricing-methods .MuiCard-root .top {
+        padding: 32px 32px 24px;
+    }
+
+    .pricing-methods .MuiCard-root .MuiCardContent-root {
+        padding: 24px 32px 40px;
+    }
+
+    .engineering-culture .image-wrapper {
+        justify-content: center;
+    }
+
+    .engineering-culture .image-wrapper img {
+        max-width: 100%;
+    }
+
+    .engineering-culture .content {
+        padding-left: 0;
+    }
+
+    .industry-problems .MuiCard-root .MuiCardContent-root ul {
+        display: block;
+    }
+
+    .industry-problems .MuiCard-root .MuiCardContent-root ul li {
+        max-width: 100%;
+        padding-right: 0;
+    }
+
+    .industry-solutions {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .industry-solutions .content {
+        padding-left: 16px;
+    }
+
+    .industry-solutions ul {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .solution-impact {
+        padding: 64px 48px;
+    }
+
+    .MuiIconButton-root.scroll-to-top-btn {
+        bottom: 24px;
+        right: 24px;
+    }
+}
+
+@media (max-width: 991px) {
+    .banner {
+        padding-top: 124px;
+    }
+
+    .banner.page-banner {
+        min-height: 360px;
+    }
+
+    .banner.service-details-banner h2 {
+        padding-bottom: 32px;
+    }
+
+    .banner.service-details-banner .banner-content .right img {
+        height: 300px;
+    }
+
+    .about-it-solution .image-wrapper img {
+        max-width: 480px;
+    }
+
+    .counter {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .counter ul li span {
+        font-size: 40px;
+        line-height: 56px;
+        letter-spacing: 0.25px;
+        padding-bottom: 4px;
+    }
+
+    .our-services {
+        padding-top: 64px;
+    }
+
+    .software-development-technologies {
+        padding: 64px;
+    }
+
+    .how-we-work img {
+        width: 260px;
+    }
+
+    .faq {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .faq .MuiGrid-root .MuiGrid-item:first-child {
+        display: none;
+    }
+
+    .faq h3 {
+        text-align: center;
+    }
+
+    .request-proposal {
+        padding-top: 64px;
+        padding-bottom: 48px;
+    }
+
+    .vertical-counter {
+        max-width: 600px;
+        margin: 40px auto 16px;
+    }
+
+    .vertical-counter ul li {
+        min-height: 180px;
+    }
+
+    .section-details .image-wrapper {
+        margin-bottom: 16px;
+    }
+
+    .section-details .image-wrapper img {
+        max-width: 400px;
+    }
+
+    .section-details .content {
+        padding-left: 0;
+    }
+
+    .service-details-content>p {
+        padding-bottom: 38px;
+    }
+
+    .pricing-methods {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .testimonials {
+        padding-bottom: 76px;
+    }
+
+    .testimonials::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 40px;
+        top: 0;
+        bottom: 0;
+        left: -40px;
+        background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+        z-index: 1;
+    }
+
+    .testimonials .content {
+        padding-top: 0;
+        max-width: 100%;
+    }
+
+    .testimonials .content h3 {
+        text-align: center;
+        padding-bottom: 16px !important;
+    }
+
+    .testimonials .content p {
+        text-align: center;
+        padding-bottom: 16px;
+    }
+
+    .testimonials .slider-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -40px;
+    }
+
+    .testimonials .slider-wrapper .slick-slider {
+        max-width: 408px;
+    }
+
+    .testimonials .slider-wrapper .slick-slider .MuiButtonBase-root.slick-arrow {
+        bottom: 0;
+        top: unset;
+        left: 50%;
+    }
+
+    .testimonials .slider-wrapper .slick-slider .MuiButtonBase-root.slick-arrow.slick-next {
+        transform: translateX(calc(-50% + 28px));
+    }
+
+    .testimonials .slider-wrapper .slick-slider .MuiButtonBase-root.slick-arrow.slick-prev {
+        transform: translateX(calc(-50% - 28px));
+    }
+
+    .testimonials .slider-wrapper .slick-slider .slick-list .slick-track .slick-slide {
+        margin-right: 0;
+    }
+
+    .industry-problems>p {
+        padding-bottom: 64px;
+    }
+
+    .industry-problems .MuiCard-root .MuiCardContent-root {
+        padding: 24px;
+    }
+
+    .industry-solutions .content {
+        padding-left: 0;
+    }
+
+    .industry-solutions ul {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        gap: 16px;
+    }
+
+    .industry-solutions ul li {
+        max-width: 100%;
+    }
+
+    .solution-impact {
+        padding: 48px;
+    }
+
+    .contact-us-form-wrapper .contact-info {
+        max-width: 100%;
+        min-height: auto;
+    }
+
+    .contact-us-form-wrapper .contact-us-form {
+        max-width: 100%;
+    }
+
+    .MuiCard-root.portfolio-card .MuiCardContent-root .card-image {
+        min-height: 280px;
+    }
+
+    .portfolio-projects {
+        margin-top: -24px;
+    }
+
+    .portfolio-projects .MuiTabs-root {
+        overflow: visible;
+    }
+
+    .portfolio-projects .MuiTabs-root>.MuiButtonBase-root {
+        border: 2px solid var(--light-border);
+        border-radius: 4px;
+    }
+
+    .portfolio-projects .MuiTabs-root>.MuiButtonBase-root.Mui-disabled {
+        display: none;
+    }
+
+    .portfolio-projects .MuiTabs-root .MuiTabs-flexContainer {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner.hero-banner {
+        padding-bottom: 64px;
+        padding-top: 144px;
+    }
+
+    .banner.industry-details-banner {
+        margin-bottom: 64px;
+    }
+
+    .banner.service-details-banner {
+        margin-bottom: 64px;
+    }
+
+    .banner.service-details-banner h2 {
+        text-align: center;
+    }
+
+    .banner.service-details-banner .banner-content {
+        flex-direction: column;
+        padding-bottom: 24px;
+    }
+
+    .banner.service-details-banner .banner-content .left {
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 24px;
+    }
+
+    .counter {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .counter ul {
+        flex-wrap: wrap;
+    }
+
+    .counter ul li {
+        max-width: 50%;
+        flex-basis: 50%;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .industries-we-serve {
+        padding-bottom: 64px;
+    }
+
+    .slider-card .top {
+        padding-right: 0;
+    }
+
+    .slick-slider {
+        margin-bottom: 116px;
+    }
+
+    .slick-slider .MuiButtonBase-root.slick-arrow {
+        top: unset;
+        bottom: -76px;
+        left: 50%;
+    }
+
+    .slick-slider .MuiButtonBase-root.slick-arrow.slick-prev {
+        right: unset;
+        transform: translateX(calc(-50% - 28px));
+    }
+
+    .slick-slider .MuiButtonBase-root.slick-arrow.slick-next {
+        transform: translateX(calc(-50% + 28px));
+    }
+
+    .MuiCard-root.industry-card {
+        height: 480px;
+    }
+
+    .software-development-technologies {
+        padding: 60px 48px;
+    }
+
+    .software-development-technologies .content {
+        z-index: 2;
+    }
+
+    .software-development-technologies::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 24px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.32) 100%);
+        z-index: 1;
+    }
+
+    .how-we-work .outer-card {
+        padding-top: 64px;
+        padding-bottom: 42px;
+    }
+
+    .how-we-work img {
+        width: 200px;
+    }
+
+    .how-we-work img.illustration-2 {
+        right: -80px;
+    }
+
+    .how-we-work img.illustration-1 {
+        left: -80px;
+    }
+
+    .css-ldtpqf>.MuiGrid-item {
+        padding-top: 32px;
+    }
+
+    .our-clients {
+        padding: 64px 0;
+    }
+
+    .our-clients ul {
+        margin-bottom: 48px;
+    }
+
+    .faq {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .request-proposal {
+        padding-bottom: 48px;
+        padding-top: 64px;
+    }
+
+    .request-proposal ul {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .vertical-counter {
+        margin-bottom: 8px;
+    }
+
+    .service-details-content>p {
+        padding-bottom: 28px;
+    }
+
+    .section-details .image-wrapper {
+        margin-bottom: 0;
+    }
+
+    footer hr {
+        margin-top: 32px;
+    }
+
+    .consider-hiring-developer {
+        padding: 48px;
+    }
+
+    .consider-hiring-developer h5 {
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.1px;
+        padding-bottom: 16px !important;
+    }
+
+    .testimonials::after {
+        left: -24px;
+    }
+
+    .testimonials::before {
+        right: -24px;
+    }
+
+    .testimonials .slider-wrapper {
+        margin-left: -24px;
+        margin-right: -24px;
+    }
+
+    .visit-our-portfolio {
+        padding: 48px 48px 0;
+    }
+
+    .visit-our-portfolio h4 {
+        padding-bottom: 24px;
+    }
+
+    .visit-our-portfolio .MuiButton-root {
+        margin-bottom: 48px;
+    }
+
+    .visit-our-portfolio img.oval-two {
+        left: -152px;
+    }
+
+    .visit-our-portfolio img.oval-three {
+        bottom: -110px;
+    }
+
+    .visit-our-portfolio img.grid-bg {
+        bottom: 0;
+    }
+
+    .industry-problems>p {
+        padding-bottom: 48px;
+    }
+
+    .industry-solutions {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .solution-impact {
+        padding: 32px 40px;
+    }
+
+    .solution-impact ul li:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    .MuiCard-root.portfolio-card .MuiCardContent-root .card-image {
+        min-height: 220px;
+    }
+
+    .portfolio-projects .MuiPagination-root {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 575px) {
+    header {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    header .logo {
+        margin-left: 8px;
+    }
+
+    header .logo img:not(.mobile-logo) {
+        display: none;
+    }
+
+    header .logo img.mobile-logo {
+        display: block;
+        width: 100%;
+    }
+
+    .banner.hero-banner {
+        padding-bottom: 48px;
+        padding-top: 124px;
+    }
+
+    .banner h2 {
+        font-size: 32px;
+        line-height: 44px;
+        letter-spacing: 0.04px;
+    }
+
+    .MuiCard-root.service-card .MuiCardContent-root {
+        padding: 24px 24px 8px;
+    }
+
+    .MuiCard-root.service-card .MuiCardActions-root {
+        padding: 0 24px 24px;
+    }
+
+    .MuiCard-root.industry-card {
+        height: 480px;
+    }
+
+    .MuiCard-root.it-consulting-card {
+        padding: 24px;
+    }
+
+    .software-development-technologies {
+        padding: 48px 24px;
+    }
+
+    .how-we-work ul {
+        max-width: 320px;
+    }
+
+    .how-we-work ul li .step {
+        max-width: 165px;
+    }
+
+    .how-we-work img {
+        display: none;
+    }
+
+    .why-choose-us .MuiCard-root .MuiCardContent-root {
+        padding: 24px;
+    }
+
+    .request-proposal {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .request-proposal>span {
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.15px;
+        padding-bottom: 16px;
+    }
+
+    .request-proposal {
+        align-items: center;
+        background: #0487ff;
+        border-radius: 24px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 80px;
+        overflow: hidden;
+        padding: 80px 60px 60px;
+        position: relative;
+    }
+
+    .request-proposal ul {
+        margin-bottom: 32px;
+    }
+
+    .request-proposal ul li a {
+        align-items: center;
+        gap: 6px;
+    }
+
+    .request-proposal ul li a img {
+        margin-top: 0;
+    }
+
+    .request-proposal ul li a span {
+        word-break: break-all;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.25px;
+        padding-bottom: 0;
+    }
+
+    .vertical-counter {
+        flex-wrap: wrap;
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+
+    .vertical-counter ul {
+        flex-basis: calc(50% - 16px);
+        max-width: calc(50% - 16px);
+    }
+
+    .vertical-counter ul:nth-child(3) {
+        align-self: flex-end;
+        margin-top: 0;
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .vertical-counter ul:nth-child(1) {
+        margin-top: 0;
+    }
+
+    footer hr {
+        margin-top: 24px;
+    }
+
+    footer .bottom {
+        flex-direction: column-reverse;
+        padding-bottom: 24px;
+    }
+
+    footer .bottom .social-links {
+        margin-bottom: 4px;
+    }
+
+    .consider-hiring-developer {
+        padding: 32px;
+    }
+
+    .pricing-methods .MuiCard-root .top {
+        padding: 24px;
+    }
+
+    .pricing-methods .MuiCard-root .MuiCardContent-root {
+        padding: 24px 24px 32px;
+    }
+
+    .pricing-methods .MuiCard-root .MuiCardContent-root .bullet-points-list {
+        margin-bottom: 24px;
+    }
+
+    .MuiCard-root.testimonial-card .MuiCardContent-root {
+        padding: 24px;
+    }
+
+    .MuiCard-root.testimonial-card .MuiCardContent-root p {
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.25px;
+    }
+
+    .testimonials::before {
+        right: -16px;
+        width: 16px;
+    }
+
+    .testimonials::after {
+        width: 16px;
+        left: -16px;
+    }
+
+    .testimonials .slider-wrapper {
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+
+    .testimonials .slider-wrapper .slick-slider {
+        max-width: 340px;
+    }
+
+    .testimonials .slider-wrapper .slick-slider .slick-list .slick-track .slick-slide {
+        min-height: 440px;
+    }
+
+    .visit-our-portfolio {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .solution-impact {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .solution-impact h4 {
+        padding-bottom: 24px;
+    }
+
+    .solution-impact>img.left {
+        left: -10px;
+        top: -10px;
+    }
+
+    .solution-impact>img.right {
+        right: -10px;
+        bottom: -10px;
+    }
+
+    .MuiIconButton-root.scroll-to-top-btn {
+        bottom: 16px;
+        right: 16px;
+    }
+}
+
+
+/* about us page  */
+
+
+/* ============================================================================ */
+
+.banner.page-banner .banner-content {
+    margin: -4px auto 0;
+}
+
+.banner.page-banner .banner-content h2,
+.banner.page-banner .banner-content p {
+    text-align: center;
+}
+
+.banner-development:after {
+    background-color: #f1f1ff !important;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+@media (min-width: 1200px) {
+    .css-ldtpqf {
+        width: calc(100% + 64px);
+        margin-left: -64px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .css-ldtpqf {
+        margin-top: -64px;
+    }
+}
+
+.css-ldtpqf {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: wrap;
+}
+
+@media (min-width: 1200px) {
+    .css-ldtpqf>.MuiGrid-item {
+        padding-left: 64px;
+        padding-top: 64px;
+    }
+}
+
+@media (min-width: 992px) {
+    .css-yzz2ut {
+        order: 1;
+    }
+}
+
+@media (min-width: 1200px) {
+    .css-yzz2ut {
+        flex-basis: 50%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .css-yzz2ut {
+        flex-basis: 50%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .css-yzz2ut {
+        flex-basis: 100%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+    }
+}
+
+@media (min-width: 576px) {
+    .css-yzz2ut {
+        flex-basis: 100%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+    }
+}
+
+.css-yzz2ut {
+    box-sizing: border-box;
+    margin: 0px;
+    flex-direction: row;
+}
+
+@media (min-width: 992px) {
+    .css-1lo6hd {
+        order: 2;
+    }
+}
+
+@media (min-width: 0px) {
+    .css-1lo6hd {
+        order: 1;
+    }
+}
+
+@media (min-width: 1200px) {
+    .css-1lo6hd {
+        flex-basis: 50%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .css-1lo6hd {
+        flex-basis: 50%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .css-1lo6hd {
+        flex-basis: 100%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+    }
+}
+
+@media (min-width: 576px) {
+    .css-1lo6hd {
+        flex-basis: 100%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+    }
+}
+
+.css-1lo6hd {
+    box-sizing: border-box;
+    margin: 0px;
+    flex-direction: row;
+    flex-basis: 100%;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+}
+
+
+/* custom-software-development */
+
+.banner.service-details-banner.bg-light-purple {
+    background: rgb(241, 241, 255);
+}
+
+.banner.service-details-banner {
+    margin-bottom: 80px;
+    padding-top: 96px;
+}
+
+.banner {
+    position: relative;
+}
+
+
+/* crm-and-erp-development */
+
+.banner.service-details-banner.bg-light-blue {
+    background: #def4ff;
+}
+
+.banner.service-details-banner.bg-light-blue h2 {
+    color: #4597bf !important;
+}
+
+
+/* Web Development */
+
+.banner.service-details-banner.bg-light-pink {
+    background: #f6edff;
+}
+
+.banner.service-details-banner.bg-light-pink h2 {
+    color: #8f71ad;
+}
+
+.banner.service-details-banner.bg-light-pink .MuiButton-contained {
+    background: #8f71ad;
+}
+
+.css-1t9tuk4 {
+    margin: 0px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    color: rgb(4, 135, 255);
+}
+
+.css-1i5tpjv {
+    margin: 0px;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+}
+
+
+/* hire dedicated development  */
+
+.consider-hiring-developer {
+    background: #0487ff;
+    border-radius: 24px;
+    overflow: hidden;
+    padding: 60px;
+    position: relative;
+}
+
+.consider-hiring-developer h5 {
+    color: #fff;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.css-4mcfl {
+    margin: 0px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0.25px;
+    text-align: center;
+}
+
+.css-3sq53o {
+    margin: 0px;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.consider-hiring-developer p {
+    color: #ffffffe0;
+    font-weight: 500;
+    margin: 0 auto;
+    max-width: 948px;
+}
+
+.consider-hiring-developer img {
+    height: auto;
+    position: absolute;
+    width: auto;
+}
+
+.consider-hiring-developer img.left {
+    bottom: -92px;
+    left: -66px;
+}
+
+
+/* hire-dedicated-developers */
+
+.css-64t9a5 {
+    margin: 0px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: 0.25px;
+    text-align: center;
+}
+
+.css-1a4bul5 {
+    margin: 0px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    text-align: center;
+}
+
+.css-12xbt9p {
+    margin: 0px;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    text-align: center;
+}
+
+.benefits-of-hiring .MuiCard-root .MuiCardContent-root p {
+    color: #4d4d4d;
+}
+
+@media (min-width: 1200px) {
+    .css-opks6z {
+        width: calc(100% + 40px);
+        margin-left: -40px;
+    }
+}
+
+@media (min-width: 0px) {
+    .css-opks6z {
+        width: calc(100% + 32px);
+        margin-left: -32px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .css-opks6z {
+        margin-top: -40px;
+    }
+}
+
+@media (min-width: 0px) {
+    .css-opks6z {
+        margin-top: -32px;
+    }
+}
+
+.css-opks6z {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+}
+
+@media (min-width: 1200px) {
+    .css-opks6z>.MuiGrid-item {
+        padding-left: 40px;
+    }
+}
+
+@media (min-width: 0px) {
+    .css-opks6z>.MuiGrid-item {
+        padding-left: 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .css-opks6z>.MuiGrid-item {
+        padding-top: 40px;
+    }
+}
+
+@media (min-width: 0px) {
+    .css-opks6z>.MuiGrid-item {
+        padding-top: 40px;
+    }
+}
+
+[data-aos^=fade][data-aos^=fade] {
+    opacity: 0;
+    transition-property: opacity, transform;
+}
+
+@media (min-width: 1200px) {
+    .css-1oaod6a {
+        flex-basis: 33.3333%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 33.3333%;
+    }
+}
+
+.css-167ndxh {
+    background-color: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: none;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+.benefits-of-hiring .MuiCard-root .MuiCardContent-root {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.css-107tsus:hover::after {
+    transform: translate(-50%, -50%) scale(1, 1);
+}
+
+.css-107tsus::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    top: 50%;
+    left: 50%;
+    background: rgb(3, 108, 204);
+    border-radius: 30px;
+    z-index: 0;
+    transform: translate(-50%, -50%) scale(0, 1);
+    transform-origin: center center;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pricing-methods .MuiCard-root .top {
+    align-items: center;
+    border-bottom: 1px solid #e1e7ec;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 40px 32px;
+}
+
+.pricing-methods .MuiCard-root .top h6 {
+    text-transform: uppercase;
+}
+
+.css-stzg0q {
+    margin: 0px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: rgb(4, 135, 255);
+}
+
+.pricing-methods .MuiCard-root .MuiCardContent-root {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 24px 40px 40px;
+}
+
+.pricing-methods .MuiCard-root .top img {
+    display: block;
+    height: 48px;
+    width: 48px;
+}
+
+.pricing-methods .MuiCard-root .MuiCardContent-root {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 24px 40px 40px;
+}
+
+.bullet-points-list li {
+    margin-bottom: 24px;
+}
+
+.pricing-methods .MuiCard-root .MuiCardContent-root .bullet-points-list {
+    margin-bottom: 40px;
+}
+
+.bullet-points-list li ul li.title {
+    display: flex;
+    gap: 12px;
+}
+
+.bullet-points-list li ul li {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.bullet-points-list li {
+    margin-bottom: 24px;
+}
+
+.bullet-points-list li ul li.title p {
+    color: #1a1a1a;
+}
+
+.css-4s5e1 {
+    margin: 0px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+}
+
+.bullet-points-list li ul li.title img {
+    display: block;
+    height: 24px;
+    margin-top: 2px;
+    width: 24px;
+}
+
+.pricing-methods .MuiCard-root .MuiCardContent-root a {
+    margin: auto auto 0;
+}
+
+.css-4s5e1 {
+    margin: 0px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+}
+
+.bullet-points-list li ul li:not(.title) {
+    color: #4d4d4d;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .25px;
+    line-height: 28px;
+    padding-left: 37px;
+}
+
+
+/* it-consulting */
+
+@media (max-width: 1200px) {
+    .css-16rxbyr {
+        width: calc(100% + 40px);
+        margin-left: -40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .css-16rxbyr {
+        width: calc(100% + 24px);
+        margin-left: -24px;
+    }
+}
+
+@media (max-width: 0px) {
+    .css-16rxbyr {
+        width: calc(100% + 16px);
+        margin-left: -16px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .css-16rxbyr {
+        margin-top: -40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .css-16rxbyr {
+        margin-top: -24px;
+    }
+}
+
+@media (max-width: 0px) {
+    .css-16rxbyr {
+        margin-top: -16px;
+    }
+}
+
+.css-16rxbyr {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+}
+
+.MuiCard-root.it-consulting-card {
+    border: 1px solid #e1e7ec;
+    border-radius: 24px;
+    height: 100%;
+    padding: 32px;
+    position: relative;
+    transition: all .18s cubic-bezier(.4, 0, .2, 1);
+}
+
+.css-167ndxh {
+    background-color: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: none;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+.MuiCard-root.it-consulting-card .MuiCardContent-root {
+    padding: 0;
+}
+
+.MuiCard-root.it-consulting-card .MuiCardContent-root img {
+    display: block;
+    height: auto;
+    margin-bottom: 22px;
+    width: 59px;
+}
+
+.css-18xehxy {
+    flex-basis: 33.3333% !important;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    max-width: 33.3333% !important;
+}
+
+.css-16rxbyr>.MuiGrid-item {
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+@media (max-width: 1200px) {
+    .css-18xehxy {
+        flex-basis: 33.3333%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 33.3333%;
+    }
+}
+
+@media (max-width: 992px) {
+    .css-18xehxy {
+        flex-basis: 33.3333%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 33.3333%;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-18xehxy {
+        flex-basis: 50%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .css-18xehxy {
+        flex-basis: 100%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 100%;
+    }
+}
+
+.css-18xehxy {
+    box-sizing: border-box;
+    margin: 0px;
+    flex-direction: row;
+    flex-basis: 100%;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    max-width: 100%;
+}
+
+.MuiCard-root.it-consulting-card {
+    border: 1px solid #e1e7ec;
+    border-radius: 24px;
+    height: 100%;
+    padding: 32px;
+    position: relative;
+    transition: all .18s cubic-bezier(.4, 0, .2, 1);
+}
+
+.css-167ndxh {
+    background-color: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: none;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+
+/* Hospitality Industry */
+
+.banner.page-banner .banner-content .MuiBreadcrumbs-root {
+    margin-bottom: 12px;
+}
+
+.css-zinzkl {
+    margin: 0px;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.banner.page-banner .banner-content .MuiBreadcrumbs-root .MuiBreadcrumbs-ol {
+    justify-content: center;
+}
+
+.css-nhb8h9 {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.banner.page-banner .banner-content .MuiBreadcrumbs-root .MuiBreadcrumbs-li p {
+    color: #fff !important;
+    opacity: .88;
+}
+
+
+/* hospitality-industry */
+
+.industry-problems {
+    display: flex;
+    flex-direction: column;
+}
+
+.industry-problems .MuiChip-root {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.css-5g400l {
+    max-width: 100%;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 0.8125rem;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: unset;
+    vertical-align: middle;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: rgb(210, 81, 73);
+    height: auto;
+    white-space: nowrap;
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: 0px;
+    text-decoration: none;
+    border-style: solid;
+    border-color: rgba(210, 81, 73, 0.7);
+    border-image: initial;
+    padding: 10px 24px 10px 20px;
+    border-radius: 100px;
+    border-width: 2px;
+}
+
+.css-5g400l .MuiChip-icon {
+    margin-left: 0px;
+    margin-right: 8px;
+    width: 24px;
+}
+
+.css-sqlmkz {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    padding: 0px;
+    font-family: Montserrat, sans-serif;
+}
+
+.css-hrdle6 {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+}
+
+.css-hrdle6 {
+    width: calc(100% + 32px);
+    margin-left: -32px;
+}
+
+.css-1pdy5ci {
+    flex-basis: 50%;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    max-width: 50%;
+}
+
+.css-hrdle6>.MuiGrid-item {
+    padding-left: 32px;
+    padding-top: 32px;
+}
+
+.industry-solutions {
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.outer-card {
+    background: #f2f2f2;
+    border-radius: 24px;
+    margin: 0 24px;
+}
+
+.industry-solutions .MuiContainer-root {
+    display: flex;
+    flex-direction: column;
+}
+
+.industry-solutions .MuiChip-root {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.css-770t7w {
+    max-width: 100%;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 0.8125rem;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: unset;
+    vertical-align: middle;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: rgb(58, 186, 102);
+    height: auto;
+    white-space: nowrap;
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: 0px;
+    text-decoration: none;
+    border-style: solid;
+    border-color: rgba(58, 186, 102, 0.7);
+    border-image: initial;
+    padding: 10px 24px 10px 20px;
+    border-radius: 100px;
+    border-width: 2px;
+}
+
+.css-770t7w .MuiChip-icon {
+    margin-left: 0px;
+    margin-right: 8px;
+    width: 24px;
+}
+
+.css-sqlmkz {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    padding: 0px;
+    font-family: Montserrat, sans-serif;
+}
+
+
+/* contact form style */
+
+.form-floating {
+    position: relative;
+    display: flex;
+    justify-content: end;
+}
+
+.form-floating>label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.2s ease;
+    pointer-events: none;
+    font-size: 1rem;
+    color: #999;
+}
+
+.form-control {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1.5rem 0.75rem 0.5rem 2.5rem;
+    /* Left space for icon */
+}
+
+.form-floating input:focus,
+.form-floating textarea:focus {
+    border-color: #0d6efd;
+    /* Bootstrap blue */
+    box-shadow: none;
+}
+
+.form-floating>.form-control:focus~label,
+.form-floating>.form-control:not(:placeholder-shown)~label {
+    top: 0.1rem;
+    font-size: 0.75rem;
+    color: #0d6efd;
+}
+
+
+/* Icon inside input */
+
+.form-floating .input-icon {
+    position: absolute;
+    top: 50%;
+    left: 0.75rem;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+#drop-area {
+    border: 2px dashed #ccc;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+#drop-area.highlight {
+    border-color: #007bff;
+    background-color: #f0f8ff;
+    transform: scale(0.98);
+    /* 👈 Slight Zoom-Out */
+}
+
+#drop-area {
+    border: 2px dashed #cce5ff;
+    background: #f0f8ff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#drop-area.highlight {
+    border-color: #66b0ff;
+    transform: scale(1.02);
+}
+
+#upload-prompt {
+    transition: all 0.3s ease;
+}
+
+#file-preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+    text-align: left;
+    padding: 20px;
+}
+
+.file-icon {
+    width: 40px;
+}
+
+.file-details {
+    text-align: left;
+}
+
+#file-name-text {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+#file-size-text {
+    font-size: 14px;
+    color: gray;
+}
+
+.remove-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.file-upload>img {
+    display: block;
+    height: 40px;
+    margin: 0 auto 12px;
+    width: 40px;
+}
+
+.file-upload {
+    border: 2px dashed #ccc;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.file-upload.highlight {
+    border-color: #4285f4;
+    background-color: #e8f0fe;
+}
+
+.hidden {
+    display: none;
+}
+
+.file-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.solution-highlight {
+    font-size: 19px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.border-right {
+    border: 0;
+}
+
+.border-bottom {
+    border: 0;
+}
+
+.hire-oval-right,
+.hire-oval-left {
+    width: 18%;
+}
