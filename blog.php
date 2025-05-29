@@ -20,19 +20,19 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <div id="blog-badges" class="article-tags d-flex flex-wrap gap-2 justify-content-center blog-badge mt-0">
-                        <span class="badge filter-badge active" data-category="all">All</span>
-                        <span class="badge filter-badge" data-category="react">React</span>
-                        <span class="badge filter-badge" data-category="angular">Angular</span>
-                        <span class="badge filter-badge" data-category="frontend">Frontend Development</span>
-                        <span class="badge filter-badge" data-category="js-frameworks">JavaScript Frameworks</span>
-                        <span class="badge filter-badge" data-category="web-dev">Web Development</span>
+                    <div id="blog-badges" class="article-tags d-flex flex-wrap gap-2 justify-content-center blog-badge mt-0 aos-init" data-aos="fade-up">
+                        <span class="badge filter-badge  active"  data-category="all">All</span>
+                        <span class="badge filter-badge "  data-category="react">React</span>
+                        <span class="badge filter-badge "  data-category="angular">Angular</span>
+                        <span class="badge filter-badge "  data-category="frontend">Frontend Development</span>
+                        <span class="badge filter-badge "  data-category="js-frameworks">JavaScript Frameworks</span>
+                        <span class="badge filter-badge "  data-category="web-dev">Web Development</span>
                     </div>
                     <!-- Blog Listings -->
                     <div class="col-lg-8">
                         <div class="row" id="blog-list">
                             <!-- Blog Card 1 -->
-                            <div id="blog-1" class="col-md-6 mb-4 blog-item react frontend js-frameworks">
+                            <div id="blog-1" class="aos-init col-md-6 mb-4 blog-item react frontend js-frameworks" data-aos="fade-up">
                                 <a href="blog-details">
                                     <div class="blog-card card h-100">
                                         <div class="premium-badge badge bg-primary me-2">BUSINESS</div>
@@ -53,7 +53,7 @@
                                 </a>
                             </div>
                             <!-- Blog Card 3 -->
-                            <div id="blog-2" class="col-md-6 mb-4 blog-item angular frontend js-frameworks web-dev">
+                            <div id="blog-2" class="aos-init col-md-6 mb-4 blog-item angular frontend js-frameworks web-dev" data-aos="fade-up">
                                 <div class="blog-card card h-100">
                                     <div class="premium-badge badge bg-primary me-2">FINANCE</div>
                                     <img src="./assest/img/blog-page/blog-2.png" class="card-img-top" alt="Blog Image" />
@@ -71,7 +71,7 @@
                                 </div>
                             </div>
                             <!-- Blog Card 4 -->
-                            <div id="blog-3" class="col-md-6 mb-4 blog-item frontend web-dev">
+                            <div id="blog-3" class="aos-init col-md-6 mb-4 blog-item frontend web-dev" data-aos="fade-up">
                                 <div class="blog-card card h-100">
                                     <div class="premium-badge badge bg-primary me-2">HEALTH</div>
                                     <img src="./assest/img/blog-page/blog-3.png" class="card-img-top" alt="Blog Image" />
@@ -89,7 +89,7 @@
                                 </div>
                             </div>
                             <!-- Blog Card 5 -->
-                            <div id="blog-4" class="col-md-6 mb-4 blog-item js-frameworks web-dev">
+                            <div id="blog-4" class="aos-init col-md-6 mb-4 blog-item js-frameworks web-dev" data-aos="fade-up">
                                 <div class="blog-card card h-100">
                                     <div class="premium-badge badge bg-primary me-2">MARKETING</div>
                                     <img src="./assest/img/blog-page/blog-4.png" class="card-img-top" alt="Blog Image" />
@@ -107,7 +107,7 @@
                                 </div>
                             </div>
                             <!-- Blog Card 6 -->
-                            <div id="blog-5" class="col-md-6 mb-4 blog-item js-frameworks web-dev">
+                            <div id="blog-5" class="aos-init col-md-6 mb-4 blog-item js-frameworks web-dev" data-aos="fade-up">
                                 <div class="blog-card card h-100">
                                     <div class="premium-badge badge bg-primary me-2">LEADERSHIP</div>
                                     <img src="./assest/img/blog-page/blog-5.png" class="card-img-top" alt="Blog Image" />
@@ -129,7 +129,7 @@
                     <!-- Sidebar -->
                     <div class="col-lg-4">
                         <div class="sticky-sidebar">
-                            <div class="category-filter">
+                            <div class="category-filter aos-init" data-aos="fade-up">
                                 <h5 class="filter-title">Categories</h5>
                                 <div class="category-item">
                                     <a href="#">Business</a>
@@ -156,7 +156,7 @@
                                     <span>(6)</span>
                                 </div>
                             </div>
-                            <div class="category-filter">
+                            <div class="category-filter  aos-init" data-aos="fade-up">
                                 <h5 class="filter-title">Popular Posts</h5>
                                 <div class="row mb-3">
                                     <div class="col-4">
@@ -186,11 +186,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="category-filter text-center" style="background-color: var(--primary-light);">
+                            <div class="category-filter text-center"  style="background-color: var(--primary-light);">
                                 <div class="py-3">
-                                    <h5 class="filter-title mb-3">Need Help or Have Questions?</h5>
-                                    <p class="mb-4">Get in touch with us for any inquiries or assistance.</p>
-                                    <a href="/contact" class="btn btn-primary rounded-pill px-4 py-2">Contact Us</a>
+                                    <h5 class="filter-title mb-3 aos-init" data-aos="fade-up">Need Help or Have Questions?</h5>
+                                    <p class="mb-4 aos-init" data-aos="fade-up">Get in touch with us for any inquiries or assistance.</p>
+                                    <a href="/contact" class="btn btn-primary rounded-pill px-4 py-2 aos-init" data-aos="fade-up">Contact Us</a>
                                 </div>
                             </div>
                         </div>

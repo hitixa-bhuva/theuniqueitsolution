@@ -1559,40 +1559,37 @@ footer .site-links a {
 #hero-section {
     opacity: 0;
     animation: heroFadeIn 1s ease-out forwards;
-    animation-delay: 1s;
+    animation-delay: 0s;
     /* Wait 1 second before starting */
 }
 
-/* Image comes in fast after section */
 #hero-img {
     opacity: 0;
     transform: translateY(50px);
     animation: heroFadeUp 0.5s ease-out forwards;
-    animation-delay: 1.2s;
+    animation-delay: 0.1s;
 }
 
-/* Title */
 #hero-title {
     opacity: 0;
     transform: translateY(50px);
     animation: heroFadeUp 0.3s ease-out forwards;
-    animation-delay: 1.4s;
+    animation-delay: 0.3s;
 }
 
-/* Text */
 #hero-text {
     opacity: 0;
     transform: translateY(50px);
     animation: heroFadeUp 0.3s ease-out forwards;
-    animation-delay: 1.6s;
-}
+    animation-delay: 0.5s;
+} 
 
 /* Button */
 #hero-btn {
     opacity: 0;
     transform: translateY(50px);
     animation: heroFadeUp 0.3s ease-out forwards;
-    animation-delay: 1.8s;
+    animation-delay: 1.7s;
 }
 
 /* Animations */
