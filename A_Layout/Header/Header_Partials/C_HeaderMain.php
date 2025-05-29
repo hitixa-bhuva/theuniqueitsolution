@@ -5,7 +5,7 @@ echo
 
   '
 <body>
-    <!-- <div class="loader" id="pageLoader" style="display: none;">
+     <div class="loader" id="pageLoader">
     <img src="./assest/img/logo/logo.webp" alt="Unique IT Logo" class="logo" />
     <div class="progress-bar">
       <div class="progress" id="progress"></div>
@@ -14,18 +14,7 @@ echo
   <div id="spinnerLoader" class="spinner-loader" style="display:none;">
   <div class="spinner-border text-primary" role="status">
   </div>
-</div> -->
-<div class="loader" id="pageLoader">
-    <img src="./assest/img/logo/logo.webp" alt="Unique IT Logo" class="logo" />
-    <div class="progress-bar">
-      <div class="progress" id="progress"></div>
-    </div>
-  </div>
-
-  <!-- Second Loader (during navigation) -->
-  <div id="spinnerLoader" class="spinner-loader" style="display: none;">
-    <div class="spinner-border" role="status"></div>
-  </div>
+</div> 
     <!-- 1 navbar -->
     <header class="page-scrolled aos-init aos-animate" data-aos="fade-in" >
         <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-root-nav MuiIconButton-sizeSmall css-wrts35 ps-0"

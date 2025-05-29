@@ -1128,26 +1128,26 @@
             <div class="tilesfinder-container mb-9">
                 <div class="tilesfinder-row tilesfinder-g-0">
                     <div class="tilesfinder-col-md-6 tilesfinder-p-4">
-                        <h2 class="tilesfinder-fw-bold tilesfinder-mb-4 tilesfinder-display-6"><span class="tilesfinder-gradient-text">Tiles Finders</span> – A Tile Only Visual Platform</h2>
-                        <p class="tilesfinder-text-secondary tilesfinder-mb-4">
+                        <h2 class="tilesfinder-fw-bold tilesfinder-mb-4 tilesfinder-display-6  aos-init" data-aos="fade-up"><span class="tilesfinder-gradient-text">Tiles Finders</span> – A Tile Only Visual Platform</h2>
+                        <p class="tilesfinder-text-secondary tilesfinder-mb-4  aos-init" data-aos="fade-up">
                             Tiles Finders is a unique visual discovery platform inspired by Pinterest, built specifically for the tile industry...
                         </p>
-                        <h5 class="tilesfinder-fw-semibold tilesfinder-mb-3">Platform Features</h5>
-                        <div class="tilesfinder-d-flex tilesfinder-flex-wrap tilesfinder-mb-4">
-                            <div class="tilesfinder-feature-badge" title="Advanced filters">
+                        <h5 class="tilesfinder-fw-semibold tilesfinder-mb-3  aos-init" data-aos="fade-up">Platform Features</h5>
+                        <div class="tilesfinder-d-flex tilesfinder-flex-wrap tilesfinder-mb-4  aos-init" data-aos="fade-up">
+                            <div class="tilesfinder-feature-badge  aos-init" data-aos="fade-up" title="Advanced filters">
                                 <!-- Icon -->
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0487ff" viewBox="0 0 24 24" style="margin-right: 0.5rem;">
                                     <path d="M3 12h18v2H3v-2zm3-5h12v2H6V7zm-3 10h18v2H3v-2z" />
                                 </svg>
                                 Advanced filters
                             </div>
-                            <div class="tilesfinder-feature-badge" title="3D visualization">
+                            <div class="tilesfinder-feature-badge  aos-init" data-aos="fade-up" title="3D visualization">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0487ff" viewBox="0 0 24 24" style="margin-right: 0.5rem;">
                                     <path d="M12 2l8 4.5v9L12 22l-8-6.5v-9L12 2zm0 2.18L7.5 7l4.5 2.82 4.5-2.82-4.5-2.82zm0 12.64l4.5-3.68v-4.64L12 14.82l-4.5-3.64v4.64l4.5 3.68z" />
                                 </svg>
                                 3D visualization
                             </div>
-                            <div class="tilesfinder-feature-badge" title="360° views">
+                            <div class="tilesfinder-feature-badge  aos-init" data-aos="fade-up" title="360° views">
                                 <!-- eye icon -->
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0487ff" viewBox="0 0 24 24" style="margin-right: 0.5rem;" aria-hidden="true">
                                     <path d="M12 5c-7 0-11 7-11 7s4 7 11 7 11-7 11-7-4-7-11-7zm0 12a5 5 0 1 1 0-10 5 5 0 0 1 0 10z" />
@@ -1155,21 +1155,21 @@
                                 </svg>
                                 360° views
                             </div>
-                            <div class="tilesfinder-feature-badge" title="Inquiry system">
+                            <div class="tilesfinder-feature-badge  aos-init" data-aos="fade-up" title="Inquiry system">
                                 <!-- paper-plane icon -->
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0487ff" viewBox="0 0 24 24" style="margin-right: 0.5rem;" aria-hidden="true">
                                     <path d="M2.01 21L23 12 2.01 3v7l15 2-15 2v7z" />
                                 </svg>
                                 Inquiry system
                             </div>
-                            <div class="tilesfinder-feature-badge" title="Role-based access">
+                            <div class="tilesfinder-feature-badge  aos-init" data-aos="fade-up" title="Role-based access">
                                 <!-- shield-user icon -->
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0487ff" viewBox="0 0 24 24" style="margin-right: 0.5rem;" aria-hidden="true">
                                     <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zM12 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                 </svg>
                                 Role-based access
                             </div>
-                            <div class="tilesfinder-feature-badge" title="Admin dashboard">
+                            <div class="tilesfinder-feature-badge  aos-init" data-aos="fade-up" title="Admin dashboard">
                                 <!-- cogs icon -->
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0487ff" viewBox="0 0 24 24" style="margin-right: 0.5rem;" aria-hidden="true">
                                     <path
@@ -1180,30 +1180,30 @@
                             </div>
                             <!-- Add other badges the same way... -->
                         </div>
-                        <div class="tilesfinder-impact-box tilesfinder-mb-4">
-                            <h6 class="tilesfinder-fw-semibold tilesfinder-mb-2">Impact</h6>
-                            <p class="tilesfinder-text-secondary tilesfinder-mb-0">
+                        <div class="tilesfinder-impact-box tilesfinder-mb-4  aos-init" data-aos="fade-up">
+                            <h6 class="tilesfinder-fw-semibold tilesfinder-mb-2  aos-init" data-aos="fade-up">Impact</h6>
+                            <p class="tilesfinder-text-secondary tilesfinder-mb-0 aos-init" data-aos="fade-up">
                                 Tiles Finders offers a modern and seamless experience for discovering tiles, empowering businesses to reach new customers and streamlining product exploration and inquiry.
                             </p>
                         </div>
-                        <div class="tilesfinder-d-flex tilesfinder-align-items-center">
+                        <div class="tilesfinder-d-flex tilesfinder-align-items-center  aos-init" data-aos="fade-up">
                             <a href="#" class="tilesfinder-btn-primary-custom tilesfinder-me-3" aria-label="View Project">
                                 View Project
                                 <span class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br">
                                     <img loading="lazy" src="./assest/img/svg/ic-right-arrow-whit.svg" alt="Right Arrow" />
                                 </span>
                             </a>
-                            <a href="#" class="tilesfinder-text-primary tilesfinder-fw-medium" style="text-decoration: none; display: inline-flex; align-items: center;" aria-label="Read Case Study">
+                            <!-- <a href="#" class="tilesfinder-text-primary tilesfinder-fw-medium" style="text-decoration: none; display: inline-flex; align-items: center;" aria-label="Read Case Study">
                                 Read Case Study
                                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#0487ff" style="margin-left: 0.25rem;" viewBox="0 0 24 24">
                                     <path d="M9 6l6 6-6 6" />
                                 </svg>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
-                    <div class="tilesfinder-col-md-6 tilesfinder-p-4 tilesfinder-d-flex tilesfinder-align-items-center tilesfinder-justify-content-center" style="background-color: #f8f9fa;">
-                        <div class="tilesfinder-image-container">
-                            <img src="./assest/img/home/case-study-tilesfinder.png" alt="Tiles Finders Platform" />
+                    <div class="tilesfinder-col-md-6 tilesfinder-p-4 tilesfinder-d-flex tilesfinder-align-items-center tilesfinder-justify-content-center  aos-init" data-aos="fade-up" style="background-color: #f8f9fa;">
+                        <div class="tilesfinder-image-container aos-init"  data-aos="fade-up">
+                            <img src="./assest/img/home/case-study-tilesfinder.png" class="aos-init" data-aos="fade-up" alt="Tiles Finders Platform" />
                         </div>
                     </div>
                 </div>
