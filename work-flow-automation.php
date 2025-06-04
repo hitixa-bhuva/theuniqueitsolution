@@ -6,6 +6,12 @@
 <?php
    include __DIR__ . '/A_Layout/Header/header.php';
    ?>
+  <!-- Spinner Loader for About and Contact Pages -->
+  <div id="spinnerLoader" class="spinner-loader"> 
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
 <div class="wrapper">
     <main>
         <section class="banner banner-development service-details-banner bg-light-purple">
@@ -263,6 +269,7 @@
         </div>
     </main>
 </div>
+    <script src="./assest/js/loader.js"></script>
 <?php
    include __DIR__ . '/A_Layout/Footer/footer.php';
    ?>

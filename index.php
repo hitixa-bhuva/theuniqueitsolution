@@ -6,7 +6,14 @@
 <?php
    include __DIR__ . '/A_Layout/Header/header.php';
    ?>
-<div class="wrapper" id="content">
+ <!-- Home Page Loader -->
+  <div class="loader" id="pageLoader">
+    <img src="./assest/img/logo/logo.webp" alt="Unique IT Logo" class="logo" />
+    <div class="progress-bar">
+      <div class="progress" id="progress"></div>
+    </div>
+  </div>
+<div class="wrapper">
     <main>
         <!-- 2 Your Challenges Our Expertise -->
         <section class="banner overlyshadow hero-banner mb-9">
@@ -72,576 +79,591 @@
         </div>
         <!-- 5 our Services -->
         <section class="our-services slider-card outer-card mb-9 aos-init desktop-view-show" data-aos="fade-in">
-            <div class="MuiContainer-root MuiContainer-maxWidthXl css-tq2bi6">
-                <div class="row">
-                    <div class="col-md-10 col-xl-11">
-                        <div class="top pb-6">
-                            <h3 class="MuiTypography-root MuiTypography-h3 pb-3 css-8ipg8 aos-init" data-aos="fade-up">
-                                Our Services
-                            </h3>
-                            <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v aos-init" data-aos="fade-up">
-                                We specialize in providing top-tier Web Development, Custom Software Solutions, and Mobile App Development, leveraging the latest technologies to deliver exceptional results.
-                            </p>
+                <div class="MuiContainer-root MuiContainer-maxWidthXl css-tq2bi6">
+                    <div class="row">
+                        <div class="col-md-10 col-xl-11">
+                            <div class="top pb-6">
+                                <h3 class="MuiTypography-root MuiTypography-h3 pb-3 css-8ipg8 aos-init"
+                                    data-aos="fade-up">Our
+                                    Services</h3>
+                                <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v aos-init"
+                                    data-aos="fade-up">We
+                                    specialize in providing top-tier Web Development, Custom Software Solutions, and
+                                    Mobile App
+                                    Development, leveraging the latest technologies to deliver exceptional results.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-xl-1 d-flex justify-content-center align-items-center">
+                            <div class="slider-controls aos-init" data-aos="fade-up">
+                                <button
+                                    class="slick-arrow MuiButtonBase-root prev-btn slick-arrow slick-disabled  servies-prev-btn"
+                                    type="button" >
+                                    <img src="./assest/img/svg/ic-nav-arrow-left.svg" alt="Previous">
+                                    <img src="./assest/img/svg/ic-nav-arrow-left-white.svg" alt="Previous">
+                                </button>
+                                <button
+                                    class="slick-arrow MuiButtonBase-root prev-btn slick-arrow slick-disabled  servies-next-btn"
+                                    type="button">
+                                    <img src="./assest/img/svg/ic-nav-arrow-right.svg" alt="Next">
+                                    <img src="./assest/img/svg/ic-nav-arrow-right-white.svg" alt="Next">
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-2 col-xl-1 d-flex justify-content-center align-items-center">
-                        <div class="slider-controls aos-init" data-aos="fade-up">
-                            <button class="slick-arrow MuiButtonBase-root prev-btn slick-arrow slick-disabled servies-prev-btn" type="button">
-                                <img src="./assest/img/svg/ic-nav-arrow-left.svg" alt="Previous" />
-                                <img src="./assest/img/svg/ic-nav-arrow-left-white.svg" alt="Previous" />
-                            </button>
-                            <button class="slick-arrow MuiButtonBase-root prev-btn slick-arrow slick-disabled servies-next-btn" type="button">
-                                <img src="./assest/img/svg/ic-nav-arrow-right.svg" alt="Next" />
-                                <img src="./assest/img/svg/ic-nav-arrow-right-white.svg" alt="Next" />
-                            </button>
+
+                    <div data-aos="fade-up" class="aos-init">
+                        <div class="slider-wrapper" data-aos="fade-up">
+                            <div class="servicer-slider home-service-crad">
+                                <div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false">
+                                    <div>
+                                        <div
+                                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
+                                            <div class="MuiCardContent-root css-1qw96cp">
+                                                <div class="icon yellow"><img
+                                                        src="./assest/img/svg/ic-custom-software-development.svg"
+                                                        alt="Custom Software Development"></div>
+                                                <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">Custom
+                                                    Software Development</h6>
+                                                <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">We
+                                                    prioritize custom software design, collaborating closely with
+                                                    you from planning to implementation. Our scalable, adaptable,
+                                                    and robust solutions grow with your company.</p>
+                                            </div>
+                                            <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
+                                                    href="services/custom-software-development"><button
+                                                        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
+                                                        tabindex="0" type="button" title="Discover More">Discover
+                                                        More<span
+                                                            class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img
+                                                                loading="lazy"
+                                                                src="./assest/img/svg/ic-right-arrow-primary..svg"
+                                                                alt="Right Arrow"></span><span
+                                                            class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-index="1" class="slick-slide slick-active" tabindex="-1" aria-hidden="false">
+                                    <div>
+                                        <div
+                                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
+                                            <div class="MuiCardContent-root css-1qw96cp">
+                                                <div class="icon light-green"><img
+                                                        src="./assest/img/svg/ic-work-flow-automation.svg"
+                                                        alt="Work Flow Automation"></div>
+                                                <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">Work Flow
+                                                    Automation</h6>
+                                                <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">
+                                                    Simplify your business operations with our advanced workflow
+                                                    automation solutions. Eliminate time-consuming manual tasks and
+                                                    boost productivity, freeing your team to focus on strategic,
+                                                    high-impact activities.</p>
+                                            </div>
+                                            <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
+                                                    href="services/work-flow-automation"><button
+                                                        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
+                                                        tabindex="0" type="button" title="Discover More">Discover
+                                                        More<span
+                                                            class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img
+                                                                loading="lazy"
+                                                                src="./assest/img/svg/ic-right-arrow-primary..svg"
+                                                                alt="Right Arrow"></span><span
+                                                            class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true" >
+                                    <div>
+                                        <div
+                                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
+                                            <div class="MuiCardContent-root css-1qw96cp">
+                                                <div class="icon pink"><img
+                                                        src="./assest/img/svg/ic-crm-erp-development.svg"
+                                                        alt="CRM &amp; ERP Development"></div>
+                                                <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">CRM &amp;
+                                                    ERP Development</h6>
+                                                <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">
+                                                    Tailor-made ERP and CRM systems boost efficiency and client
+                                                    relationships. Our integrated solution streamlines processes and
+                                                    enhances customer interaction for smoother operations</p>
+                                            </div>
+                                            <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
+                                                    href="services/crm-and-erp-development"><button
+                                                        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
+                                                        tabindex="0" type="button" title="Discover More">Discover
+                                                        More<span
+                                                            class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img
+                                                                loading="lazy"
+                                                                src="./assest/img/svg/ic-right-arrow-primary..svg"
+                                                                alt="Right Arrow"></span><span
+                                                            class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true">
+                                    <div>
+                                        <div
+                                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
+                                            <div class="MuiCardContent-root css-1qw96cp">
+                                                <div class="icon blue"><img
+                                                        src="./assest/img/svg/ic-web-development.svg"
+                                                        alt="Web Development"></div>
+                                                <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">Web
+                                                    Development</h6>
+                                                <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">
+                                                    Professional website development ensures a strong online
+                                                    presence. We design responsive, SEO-optimized websites tailored
+                                                    to your business objectives, whether for e-commerce or corporate
+                                                    purposes, enhancing the online user experience</p>
+                                            </div>
+                                            <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
+                                                    href="services/web-development"><button
+                                                        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
+                                                        tabindex="0" type="button" title="Discover More">Discover
+                                                        More<span
+                                                            class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img
+                                                                loading="lazy"
+                                                                src="./assest/img/svg/ic-right-arrow-primary..svg"
+                                                                alt="Right Arrow"></span><span
+                                                            class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-index="4" class="slick-slide" tabindex="-1" aria-hidden="true">
+                                    <div>
+                                        <div
+                                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
+                                            <div class="MuiCardContent-root css-1qw96cp">
+                                                <div class="icon green"><img
+                                                        src="./assest/img/svg/ic-mobile-development.svg"
+                                                        alt="Mobile Application Development"></div>
+                                                <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">Mobile
+                                                    Application Development</h6>
+                                                <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">We
+                                                    offer full-stack mobile app development for Android and iOS,
+                                                    delivering user-friendly, feature-rich apps. Whether it's for
+                                                    business or e-commerce, our specialized team ensures engaging
+                                                    user experiences across platforms.</p>
+                                            </div>
+                                            <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
+                                                    href="services/mobile-application-development"><button
+                                                        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
+                                                        tabindex="0" type="button" title="Discover More">Discover
+                                                        More<span
+                                                            class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img
+                                                                loading="lazy"
+                                                                src="./assest/img/svg/ic-right-arrow-primary..svg"
+                                                                alt="Right Arrow"></span><span
+                                                            class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-index="5" class="slick-slide" tabindex="-1" aria-hidden="true">
+                                    <div>
+                                        <div
+                                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
+                                            <div class="MuiCardContent-root css-1qw96cp">
+                                                <div class="icon purple"><img src="./assest/img/svg/ic-ui-ux-design.svg"
+                                                        alt="UI/UX Design"></div>
+                                                <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">UI/UX
+                                                    Design</h6>
+                                                <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">Our
+                                                    unique UI/UX designs delight thousands of customers, enhancing
+                                                    user experience and engagement. These visually appealing
+                                                    interfaces ensure smooth user journeys with both beauty and
+                                                    functionality.</p>
+                                            </div>
+                                            <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
+                                                    href="services/ui-ux-design"><button
+                                                        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
+                                                        tabindex="0" type="button" title="Discover More">Discover
+                                                        More<span
+                                                            class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img
+                                                                loading="lazy"
+                                                                src="./assest/img/svg/ic-right-arrow-primary..svg"
+                                                                alt="Right Arrow"></span><span
+                                                            class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-index="6" class="slick-slide" tabindex="-1" aria-hidden="true">
+                                    <div>
+                                        <div
+                                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
+                                            <div class="MuiCardContent-root css-1qw96cp">
+                                                <div class="icon pink"><img src="./assest/img/svg/ic-hire-developer.svg"
+                                                        alt="Hire Dedicated Developers"></div>
+                                                <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">Hire
+                                                    Dedicated Developers</h6>
+                                                <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">Grow
+                                                    your team instantly with our expert developers, available for
+                                                    short-term tasks or long-term projects. Benefit from flexible
+                                                    hiring models to enhance your workforce effectively.</p>
+                                            </div>
+                                            <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
+                                                    href="services/hire-dedicated-developers"><button
+                                                        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
+                                                        tabindex="0" type="button" title="Discover More">Discover
+                                                        More<span
+                                                            class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img
+                                                                loading="lazy"
+                                                                src="./assest/img/svg/ic-right-arrow-primary..svg"
+                                                                alt="Right Arrow"></span><span
+                                                            class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-index="7" class="slick-slide" tabindex="-1" aria-hidden="true">
+                                    <div>
+                                        <div
+                                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
+                                            <div class="MuiCardContent-root css-1qw96cp">
+                                                <div class="icon yellow"><img
+                                                        src="./assest/img/svg/ic-it-consulting.svg" alt="IT Consulting">
+                                                </div>
+                                                <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">IT
+                                                    Consulting</h6>
+                                                <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">
+                                                    Utilize our IT consultancy services to align your infrastructure
+                                                    with business goals, secure against breaches, and integrate
+                                                    cutting-edge technologies swiftly. Our consultants work closely
+                                                    with you to diagnose and resolve issues, ensuring rapid success.
+                                                </p>
+                                            </div>
+                                            <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
+                                                    href="services/it-consulting"><button
+                                                        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
+                                                        tabindex="0" type="button" title="Discover More">Discover
+                                                        More<span
+                                                            class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img
+                                                                loading="lazy"
+                                                                src="./assest/img/svg/ic-right-arrow-primary..svg"
+                                                                alt="Right Arrow"></span><span
+                                                            class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <a href="services"><button
+                            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus aos-init"
+                            tabindex="0" type="button" title="Explore More" data-aos="fade-up"><span
+                                class="text">Explore More</span><span
+                                class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img
+                                    loading="lazy" src="./assest/img/svg/ic-right-arrow-whit.svg"
+                                    alt="Right Arrow"></span><span
+                                class="MuiTouchRipple-root css-w0pj6f"></span></button>
+                    </a>
+                    
                 </div>
-                <div data-aos="fade-up" class="aos-init">
-                    <div class="slider-wrapper" data-aos="fade-up">
-                        <div class="servicer-slider home-service-crad">
-                            <div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false">
-                                <div>
-                                    <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
-                                        <div class="MuiCardContent-root css-1qw96cp">
-                                            <div class="icon yellow"><img src="./assest/img/svg/ic-custom-software-development.svg" alt="Custom Software Development" /></div>
+            </section>
 
-                                            <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">Custom Software Development</h6>
-                                            <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">
-                                                We prioritize custom software design, collaborating closely with you from planning to implementation. Our scalable, adaptable, and robust solutions grow with your company.
-                                            </p>
-                                        </div>
-                                        <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o">
-                                            <a href="services/custom-software-development">
-                                                <button
-                                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
-                                                    tabindex="0"
-                                                    type="button"
-                                                    title="Discover More"
-                                                >
-                                                    Discover More
-                                                    <span class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img loading="lazy" src="./assest/img/svg/ic-right-arrow-primary..svg" alt="Right Arrow" /></span>
+            <!-- 425 our Services -->
+            <section class="our-services slider-card outer-card mb-9 aos-init phone-view-show" data-aos="fade-in">
+                <div class="MuiContainer-root MuiContainer-maxWidthXl css-tq2bi6">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <div class="top pb-6">
+                                <h3 class="MuiTypography-root MuiTypography-h3 pb-3 css-8ipg8 aos-init"
+                                    data-aos="fade-up">Our
+                                    Services</h3>
+                                <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v aos-init"
+                                    data-aos="fade-up">We
+                                    specialize in providing top-tier Web Development, Custom Software Solutions, and
+                                    Mobile App
+                                    Development, leveraging the latest technologies to deliver exceptional results.</p>
+                            </div>
+                        </div>
+                    </div>
 
-                                                    <span class="MuiTouchRipple-root css-w0pj6f"></span>
-                                                </button>
-                                            </a>
+                    <div data-aos="fade-up" class="aos-init">
+                        <div class="slider-wrapper" data-aos="fade-up">
+                            <div class="servicer-slider home-service-crad">
+                                <div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1"
+                                    aria-hidden="false" style="outline: none; width: 488px;">
+                                    <div>
+                                        <div
+                                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
+                                            <div class="MuiCardContent-root css-1qw96cp">
+                                                <div class="icon yellow"><img
+                                                        src="./assest/img/svg/ic-custom-software-development.svg"
+                                                        alt="Custom Software Development"></div>
+                                                <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">Custom
+                                                    Software Development</h6>
+                                                <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">We
+                                                    prioritize custom software design, collaborating closely with
+                                                    you from planning to implementation. Our scalable, adaptable,
+                                                    and robust solutions grow with your company.</p>
+                                            </div>
+                                            <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
+                                                    href="services/custom-software-development"><button
+                                                        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
+                                                        tabindex="0" type="button" title="Discover More">Discover
+                                                        More<span
+                                                            class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img
+                                                                loading="lazy"
+                                                                src="./assest/img/svg/ic-right-arrow-primary..svg"
+                                                                alt="Right Arrow"></span><span
+                                                            class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div data-index="1" class="slick-slide slick-active" tabindex="-1" aria-hidden="false">
-                                <div>
-                                    <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
-                                        <div class="MuiCardContent-root css-1qw96cp">
-                                            <div class="icon light-green"><img src="./assest/img/svg/ic-work-flow-automation.svg" alt="Work Flow Automation" /></div>
-
-                                            <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">Work Flow Automation</h6>
-                                            <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">
-                                                Simplify your business operations with our advanced workflow automation solutions. Eliminate time-consuming manual tasks and boost productivity, freeing your team to focus on strategic,
-                                                high-impact activities.
-                                            </p>
-                                        </div>
-                                        <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o">
-                                            <a href="services/work-flow-automation">
-                                                <button
-                                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
-                                                    tabindex="0"
-                                                    type="button"
-                                                    title="Discover More"
-                                                >
-                                                    Discover More
-                                                    <span class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img loading="lazy" src="./assest/img/svg/ic-right-arrow-primary..svg" alt="Right Arrow" /></span>
-
-                                                    <span class="MuiTouchRipple-root css-w0pj6f"></span>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true">
-                                <div>
-                                    <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
-                                        <div class="MuiCardContent-root css-1qw96cp">
-                                            <div class="icon pink"><img src="./assest/img/svg/ic-crm-erp-development.svg" alt="CRM &amp; ERP Development" /></div>
-
-                                            <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">CRM &amp; ERP Development</h6>
-                                            <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">
-                                                Tailor-made ERP and CRM systems boost efficiency and client relationships. Our integrated solution streamlines processes and enhances customer interaction for smoother operations
-                                            </p>
-                                        </div>
-                                        <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o">
-                                            <a href="services/crm-and-erp-development">
-                                                <button
-                                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
-                                                    tabindex="0"
-                                                    type="button"
-                                                    title="Discover More"
-                                                >
-                                                    Discover More
-                                                    <span class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img loading="lazy" src="./assest/img/svg/ic-right-arrow-primary..svg" alt="Right Arrow" /></span>
-
-                                                    <span class="MuiTouchRipple-root css-w0pj6f"></span>
-                                                </button>
-                                            </a>
+                                <div data-index="1" class="slick-slide slick-active" tabindex="-1" aria-hidden="false"
+                                    style="outline: none; width: 488px;">
+                                    <div>
+                                        <div
+                                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
+                                            <div class="MuiCardContent-root css-1qw96cp">
+                                                <div class="icon light-green"><img
+                                                        src="./assest/img/svg/ic-work-flow-automation.svg"
+                                                        alt="Work Flow Automation"></div>
+                                                <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">Work Flow
+                                                    Automation</h6>
+                                                <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">
+                                                    Simplify your business operations with our advanced workflow
+                                                    automation solutions. Eliminate time-consuming manual tasks and
+                                                    boost productivity, freeing your team to focus on strategic,
+                                                    high-impact activities.</p>
+                                            </div>
+                                            <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
+                                                    href="services/work-flow-automation"><button
+                                                        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
+                                                        tabindex="0" type="button" title="Discover More">Discover
+                                                        More<span
+                                                            class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img
+                                                                loading="lazy"
+                                                                src="./assest/img/svg/ic-right-arrow-primary..svg"
+                                                                alt="Right Arrow"></span><span
+                                                            class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true">
-                                <div>
-                                    <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
-                                        <div class="MuiCardContent-root css-1qw96cp">
-                                            <div class="icon blue"><img src="./assest/img/svg/ic-web-development.svg" alt="Web Development" /></div>
-
-                                            <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">Web Development</h6>
-                                            <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">
-                                                Professional website development ensures a strong online presence. We design responsive, SEO-optimized websites tailored to your business objectives, whether for e-commerce or corporate
-                                                purposes, enhancing the online user experience
-                                            </p>
-                                        </div>
-                                        <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o">
-                                            <a href="services/web-development">
-                                                <button
-                                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
-                                                    tabindex="0"
-                                                    type="button"
-                                                    title="Discover More"
-                                                >
-                                                    Discover More
-                                                    <span class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img loading="lazy" src="./assest/img/svg/ic-right-arrow-primary..svg" alt="Right Arrow" /></span>
-
-                                                    <span class="MuiTouchRipple-root css-w0pj6f"></span>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-index="4" class="slick-slide" tabindex="-1" aria-hidden="true">
-                                <div>
-                                    <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
-                                        <div class="MuiCardContent-root css-1qw96cp">
-                                            <div class="icon green"><img src="./assest/img/svg/ic-mobile-development.svg" alt="Mobile Application Development" /></div>
-
-                                            <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">Mobile Application Development</h6>
-                                            <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">
-                                                We offer full-stack mobile app development for Android and iOS, delivering user-friendly, feature-rich apps. Whether it's for business or e-commerce, our specialized team ensures engaging user
-                                                experiences across platforms.
-                                            </p>
-                                        </div>
-                                        <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o">
-                                            <a href="services/mobile-application-development">
-                                                <button
-                                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
-                                                    tabindex="0"
-                                                    type="button"
-                                                    title="Discover More"
-                                                >
-                                                    Discover More
-                                                    <span class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img loading="lazy" src="./assest/img/svg/ic-right-arrow-primary..svg" alt="Right Arrow" /></span>
-
-                                                    <span class="MuiTouchRipple-root css-w0pj6f"></span>
-                                                </button>
-                                            </a>
+                                <div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true"
+                                    style="outline: none; width: 488px;">
+                                    <div>
+                                        <div
+                                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
+                                            <div class="MuiCardContent-root css-1qw96cp">
+                                                <div class="icon pink"><img
+                                                        src="./assest/img/svg/ic-crm-erp-development.svg"
+                                                        alt="CRM &amp; ERP Development"></div>
+                                                <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">CRM &amp;
+                                                    ERP Development</h6>
+                                                <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">
+                                                    Tailor-made ERP and CRM systems boost efficiency and client
+                                                    relationships. Our integrated solution streamlines processes and
+                                                    enhances customer interaction for smoother operations</p>
+                                            </div>
+                                            <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
+                                                    href="./assest/img/svg/ic-crm-erp-development.svg"><button
+                                                        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
+                                                        tabindex="0" type="button" title="Discover More">Discover
+                                                        More<span
+                                                            class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img
+                                                                loading="lazy"
+                                                                src="./assest/img/svg/ic-right-arrow-primary..svg"
+                                                                alt="Right Arrow"></span><span
+                                                            class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div data-index="5" class="slick-slide" tabindex="-1" aria-hidden="true">
-                                <div>
-                                    <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
-                                        <div class="MuiCardContent-root css-1qw96cp">
-                                            <div class="icon purple"><img src="./assest/img/svg/ic-ui-ux-design.svg" alt="UI/UX Design" /></div>
-
-                                            <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">UI/UX Design</h6>
-                                            <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">
-                                                Our unique UI/UX designs delight thousands of customers, enhancing user experience and engagement. These visually appealing interfaces ensure smooth user journeys with both beauty and
-                                                functionality.
-                                            </p>
-                                        </div>
-                                        <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o">
-                                            <a href="services/ui-ux-design">
-                                                <button
-                                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
-                                                    tabindex="0"
-                                                    type="button"
-                                                    title="Discover More"
-                                                >
-                                                    Discover More
-                                                    <span class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img loading="lazy" src="./assest/img/svg/ic-right-arrow-primary..svg" alt="Right Arrow" /></span>
-
-                                                    <span class="MuiTouchRipple-root css-w0pj6f"></span>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-index="6" class="slick-slide" tabindex="-1" aria-hidden="true">
-                                <div>
-                                    <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
-                                        <div class="MuiCardContent-root css-1qw96cp">
-                                            <div class="icon pink"><img src="./assest/img/svg/ic-hire-developer.svg" alt="Hire Dedicated Developers" /></div>
-
-                                            <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">Hire Dedicated Developers</h6>
-                                            <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">
-                                                Grow your team instantly with our expert developers, available for short-term tasks or long-term projects. Benefit from flexible hiring models to enhance your workforce effectively.
-                                            </p>
-                                        </div>
-                                        <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o">
-                                            <a href="services/hire-dedicated-developers">
-                                                <button
-                                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
-                                                    tabindex="0"
-                                                    type="button"
-                                                    title="Discover More"
-                                                >
-                                                    Discover More
-                                                    <span class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img loading="lazy" src="./assest/img/svg/ic-right-arrow-primary..svg" alt="Right Arrow" /></span>
-
-                                                    <span class="MuiTouchRipple-root css-w0pj6f"></span>
-                                                </button>
-                                            </a>
+                                <div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true"
+                                    style="outline: none; width: 488px;">
+                                    <div>
+                                        <div
+                                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
+                                            <div class="MuiCardContent-root css-1qw96cp">
+                                                <div class="icon blue"><img
+                                                        src="./assest/img/svg/ic-web-development.svg"
+                                                        alt="Web Development"></div>
+                                                <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">Web
+                                                    Development</h6>
+                                                <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">
+                                                    Professional website development ensures a strong online
+                                                    presence. We design responsive, SEO-optimized websites tailored
+                                                    to your business objectives, whether for e-commerce or corporate
+                                                    purposes, enhancing the online user experience</p>
+                                            </div>
+                                            <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
+                                                    href="services/web-development"><button
+                                                        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
+                                                        tabindex="0" type="button" title="Discover More">Discover
+                                                        More<span
+                                                            class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img
+                                                                loading="lazy"
+                                                                src="./assest/img/svg/ic-right-arrow-primary..svg"
+                                                                alt="Right Arrow"></span><span
+                                                            class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div data-index="7" class="slick-slide" tabindex="-1" aria-hidden="true">
-                                <div>
-                                    <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
-                                        <div class="MuiCardContent-root css-1qw96cp">
-                                            <div class="icon yellow"><img src="./assest/img/svg/ic-it-consulting.svg" alt="IT Consulting" /></div>
-                                            <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">IT Consulting</h6>
-                                            <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">
-                                                Utilize our IT consultancy services to align your infrastructure with business goals, secure against breaches, and integrate cutting-edge technologies swiftly. Our consultants work closely
-                                                with you to diagnose and resolve issues, ensuring rapid success.
-                                            </p>
+                                <div data-index="4" class="slick-slide" tabindex="-1" aria-hidden="true"
+                                    style="outline: none; width: 488px;">
+                                    <div>
+                                        <div
+                                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
+                                            <div class="MuiCardContent-root css-1qw96cp">
+                                                <div class="icon green"><img
+                                                        src="./assest/img/svg/ic-mobile-development.svg"
+                                                        alt="Mobile Application Development"></div>
+                                                <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">Mobile
+                                                    Application Development</h6>
+                                                <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">We
+                                                    offer full-stack mobile app development for Android and iOS,
+                                                    delivering user-friendly, feature-rich apps. Whether it's for
+                                                    business or e-commerce, our specialized team ensures engaging
+                                                    user experiences across platforms.</p>
+                                            </div>
+                                            <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
+                                                    href="services/mobile-application-development"><button
+                                                        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
+                                                        tabindex="0" type="button" title="Discover More">Discover
+                                                        More<span
+                                                            class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img
+                                                                loading="lazy"
+                                                                src="./assest/img/svg/ic-right-arrow-primary..svg"
+                                                                alt="Right Arrow"></span><span
+                                                            class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
+                                            </div>
                                         </div>
-                                        <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o">
-                                            <a href="services/it-consulting">
-                                                <button
-                                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
-                                                    tabindex="0"
-                                                    type="button"
-                                                    title="Discover More"
-                                                >
-                                                    Discover More
-                                                    <span class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img loading="lazy" src="./assest/img/svg/ic-right-arrow-primary..svg" alt="Right Arrow" /></span>
-
-                                                    <span class="MuiTouchRipple-root css-w0pj6f"></span>
-                                                </button>
-                                            </a>
+                                    </div>
+                                </div>
+                                <div data-index="5" class="slick-slide" tabindex="-1" aria-hidden="true"
+                                    style="outline: none; width: 488px;">
+                                    <div>
+                                        <div
+                                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
+                                            <div class="MuiCardContent-root css-1qw96cp">
+                                                <div class="icon purple"><img src="./assest/img/svg/ic-ui-ux-design.svg"
+                                                        alt="UI/UX Design"></div>
+                                                <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">UI/UX
+                                                    Design</h6>
+                                                <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">Our
+                                                    unique UI/UX designs delight thousands of customers, enhancing
+                                                    user experience and engagement. These visually appealing
+                                                    interfaces ensure smooth user journeys with both beauty and
+                                                    functionality.</p>
+                                            </div>
+                                            <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
+                                                    href="services/ui-ux-design"><button
+                                                        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
+                                                        tabindex="0" type="button" title="Discover More">Discover
+                                                        More<span
+                                                            class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img
+                                                                loading="lazy"
+                                                                src="./assest/img/svg/ic-right-arrow-primary..svg"
+                                                                alt="Right Arrow"></span><span
+                                                            class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-index="6" class="slick-slide" tabindex="-1" aria-hidden="true"
+                                    style="outline: none; width: 488px;">
+                                    <div>
+                                        <div
+                                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
+                                            <div class="MuiCardContent-root css-1qw96cp">
+                                                <div class="icon pink"><img src="./assest/img/svg/ic-hire-developer.svg"
+                                                        alt="Hire Dedicated Developers"></div>
+                                                <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">Hire
+                                                    Dedicated Developers</h6>
+                                                <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">Grow
+                                                    your team instantly with our expert developers, available for
+                                                    short-term tasks or long-term projects. Benefit from flexible
+                                                    hiring models to enhance your workforce effectively.</p>
+                                            </div>
+                                            <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
+                                                    href="services/hire-dedicated-developers"><button
+                                                        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
+                                                        tabindex="0" type="button" title="Discover More">Discover
+                                                        More<span
+                                                            class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img
+                                                                loading="lazy"
+                                                                src="./assest/img/svg/ic-right-arrow-primary..svg"
+                                                                alt="Right Arrow"></span><span
+                                                            class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-index="7" class="slick-slide" tabindex="-1" aria-hidden="true"
+                                    style="outline: none; width: 488px;">
+                                    <div>
+                                        <div
+                                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
+                                            <div class="MuiCardContent-root css-1qw96cp">
+                                                <div class="icon yellow"><img
+                                                        src="./assest/img/svg/ic-it-consulting.svg" alt="IT Consulting">
+                                                </div>
+                                                <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">IT
+                                                    Consulting</h6>
+                                                <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">
+                                                    Utilize our IT consultancy services to align your infrastructure
+                                                    with business goals, secure against breaches, and integrate
+                                                    cutting-edge technologies swiftly. Our consultants work closely
+                                                    with you to diagnose and resolve issues, ensuring rapid success.
+                                                </p>
+                                            </div>
+                                            <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o"><a
+                                                    href="services/it-consulting"><button
+                                                        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
+                                                        tabindex="0" type="button" title="Discover More">Discover
+                                                        More<span
+                                                            class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img
+                                                                loading="lazy"
+                                                                src="./assest/img/svg/ic-right-arrow-primary..svg"
+                                                                alt="Right Arrow"></span><span
+                                                            class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <a href="services">
-                    <button
-                        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus aos-init"
-                        tabindex="0"
-                        type="button"
-                        title="Explore More"
-                        data-aos="fade-up"
-                    >
-                        <span class="text">Explore More</span><span class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img loading="lazy" src="./assest/img/svg/ic-right-arrow-whit.svg" alt="Right Arrow" /></span>
-
-                        <span class="MuiTouchRipple-root css-w0pj6f"></span>
-                    </button>
-                </a>
-            </div>
-        </section>
-        <!-- 425 our Services -->
-        <section class="our-services slider-card outer-card mb-9 aos-init phone-view-show" data-aos="fade-in">
-            <div class="MuiContainer-root MuiContainer-maxWidthXl css-tq2bi6">
-                <div class="row">
-                    <div class="col-md-10">
-                        <div class="top pb-6">
-                            <h3 class="MuiTypography-root MuiTypography-h3 pb-3 css-8ipg8 aos-init" data-aos="fade-up">
-                                Our Services
-                            </h3>
-                            <p class="MuiTypography-root MuiTypography-body1 css-1b7jm6v aos-init" data-aos="fade-up">
-                                We specialize in providing top-tier Web Development, Custom Software Solutions, and Mobile App Development, leveraging the latest technologies to deliver exceptional results.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="fade-up" class="aos-init">
-                    <div class="slider-wrapper" data-aos="fade-up">
-                        <div class="servicer-slider home-service-crad">
-                            <div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 488px;">
-                                <div>
-                                    <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
-                                        <div class="MuiCardContent-root css-1qw96cp">
-                                            <div class="icon yellow"><img src="./assest/img/svg/ic-custom-software-development.svg" alt="Custom Software Development" /></div>
-
-                                            <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">Custom Software Development</h6>
-                                            <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">
-                                                We prioritize custom software design, collaborating closely with you from planning to implementation. Our scalable, adaptable, and robust solutions grow with your company.
-                                            </p>
-                                        </div>
-                                        <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o">
-                                            <a href="services/custom-software-development">
-                                                <button
-                                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
-                                                    tabindex="0"
-                                                    type="button"
-                                                    title="Discover More"
-                                                >
-                                                    Discover More
-                                                    <span class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img loading="lazy" src="./assest/img/svg/ic-right-arrow-primary..svg" alt="Right Arrow" /></span>
-
-                                                    <span class="MuiTouchRipple-root css-w0pj6f"></span>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-index="1" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline: none; width: 488px;">
-                                <div>
-                                    <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
-                                        <div class="MuiCardContent-root css-1qw96cp">
-                                            <div class="icon light-green"><img src="./assest/img/svg/ic-work-flow-automation.svg" alt="Work Flow Automation" /></div>
-
-                                            <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">Work Flow Automation</h6>
-                                            <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">
-                                                Simplify your business operations with our advanced workflow automation solutions. Eliminate time-consuming manual tasks and boost productivity, freeing your team to focus on strategic,
-                                                high-impact activities.
-                                            </p>
-                                        </div>
-                                        <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o">
-                                            <a href="services/work-flow-automation">
-                                                <button
-                                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
-                                                    tabindex="0"
-                                                    type="button"
-                                                    title="Discover More"
-                                                >
-                                                    Discover More
-                                                    <span class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img loading="lazy" src="./assest/img/svg/ic-right-arrow-primary..svg" alt="Right Arrow" /></span>
-
-                                                    <span class="MuiTouchRipple-root css-w0pj6f"></span>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 488px;">
-                                <div>
-                                    <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
-                                        <div class="MuiCardContent-root css-1qw96cp">
-                                            <div class="icon pink"><img src="./assest/img/svg/ic-crm-erp-development.svg" alt="CRM &amp; ERP Development" /></div>
-
-                                            <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">CRM &amp; ERP Development</h6>
-                                            <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">
-                                                Tailor-made ERP and CRM systems boost efficiency and client relationships. Our integrated solution streamlines processes and enhances customer interaction for smoother operations
-                                            </p>
-                                        </div>
-                                        <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o">
-                                            <a href="./assest/img/svg/ic-crm-erp-development.svg">
-                                                <button
-                                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
-                                                    tabindex="0"
-                                                    type="button"
-                                                    title="Discover More"
-                                                >
-                                                    Discover More
-                                                    <span class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img loading="lazy" src="./assest/img/svg/ic-right-arrow-primary..svg" alt="Right Arrow" /></span>
-
-                                                    <span class="MuiTouchRipple-root css-w0pj6f"></span>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 488px;">
-                                <div>
-                                    <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
-                                        <div class="MuiCardContent-root css-1qw96cp">
-                                            <div class="icon blue"><img src="./assest/img/svg/ic-web-development.svg" alt="Web Development" /></div>
-
-                                            <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">Web Development</h6>
-                                            <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">
-                                                Professional website development ensures a strong online presence. We design responsive, SEO-optimized websites tailored to your business objectives, whether for e-commerce or corporate
-                                                purposes, enhancing the online user experience
-                                            </p>
-                                        </div>
-                                        <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o">
-                                            <a href="services/web-development">
-                                                <button
-                                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
-                                                    tabindex="0"
-                                                    type="button"
-                                                    title="Discover More"
-                                                >
-                                                    Discover More
-                                                    <span class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img loading="lazy" src="./assest/img/svg/ic-right-arrow-primary..svg" alt="Right Arrow" /></span>
-
-                                                    <span class="MuiTouchRipple-root css-w0pj6f"></span>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-index="4" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 488px;">
-                                <div>
-                                    <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
-                                        <div class="MuiCardContent-root css-1qw96cp">
-                                            <div class="icon green"><img src="./assest/img/svg/ic-mobile-development.svg" alt="Mobile Application Development" /></div>
-
-                                            <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">Mobile Application Development</h6>
-                                            <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">
-                                                We offer full-stack mobile app development for Android and iOS, delivering user-friendly, feature-rich apps. Whether it's for business or e-commerce, our specialized team ensures engaging user
-                                                experiences across platforms.
-                                            </p>
-                                        </div>
-                                        <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o">
-                                            <a href="services/mobile-application-development">
-                                                <button
-                                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
-                                                    tabindex="0"
-                                                    type="button"
-                                                    title="Discover More"
-                                                >
-                                                    Discover More
-                                                    <span class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img loading="lazy" src="./assest/img/svg/ic-right-arrow-primary..svg" alt="Right Arrow" /></span>
-
-                                                    <span class="MuiTouchRipple-root css-w0pj6f"></span>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-index="5" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 488px;">
-                                <div>
-                                    <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
-                                        <div class="MuiCardContent-root css-1qw96cp">
-                                            <div class="icon purple"><img src="./assest/img/svg/ic-ui-ux-design.svg" alt="UI/UX Design" /></div>
-
-                                            <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">UI/UX Design</h6>
-                                            <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">
-                                                Our unique UI/UX designs delight thousands of customers, enhancing user experience and engagement. These visually appealing interfaces ensure smooth user journeys with both beauty and
-                                                functionality.
-                                            </p>
-                                        </div>
-                                        <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o">
-                                            <a href="services/ui-ux-design">
-                                                <button
-                                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
-                                                    tabindex="0"
-                                                    type="button"
-                                                    title="Discover More"
-                                                >
-                                                    Discover More
-                                                    <span class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img loading="lazy" src="./assest/img/svg/ic-right-arrow-primary..svg" alt="Right Arrow" /></span>
-
-                                                    <span class="MuiTouchRipple-root css-w0pj6f"></span>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-index="6" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 488px;">
-                                <div>
-                                    <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
-                                        <div class="MuiCardContent-root css-1qw96cp">
-                                            <div class="icon pink"><img src="./assest/img/svg/ic-hire-developer.svg" alt="Hire Dedicated Developers" /></div>
-
-                                            <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">Hire Dedicated Developers</h6>
-                                            <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">
-                                                Grow your team instantly with our expert developers, available for short-term tasks or long-term projects. Benefit from flexible hiring models to enhance your workforce effectively.
-                                            </p>
-                                        </div>
-                                        <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o">
-                                            <a href="services/hire-dedicated-developers">
-                                                <button
-                                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
-                                                    tabindex="0"
-                                                    type="button"
-                                                    title="Discover More"
-                                                >
-                                                    Discover More
-                                                    <span class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img loading="lazy" src="./assest/img/svg/ic-right-arrow-primary..svg" alt="Right Arrow" /></span>
-
-                                                    <span class="MuiTouchRipple-root css-w0pj6f"></span>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-index="7" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 488px;">
-                                <div>
-                                    <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root service-card css-167ndxh">
-                                        <div class="MuiCardContent-root css-1qw96cp">
-                                            <div class="icon yellow"><img src="./assest/img/svg/ic-it-consulting.svg" alt="IT Consulting" /></div>
-                                            <h6 class="MuiTypography-root MuiTypography-h6 css-fnn40u">IT Consulting</h6>
-                                            <p class="MuiTypography-root MuiTypography-body2 css-1i5tpjv">
-                                                Utilize our IT consultancy services to align your infrastructure with business goals, secure against breaches, and integrate cutting-edge technologies swiftly. Our consultants work closely
-                                                with you to diagnose and resolve issues, ensuring rapid success.
-                                            </p>
-                                        </div>
-                                        <div class="MuiCardActions-root MuiCardActions-spacing css-ny0n9o">
-                                            <a href="services/it-consulting">
-                                                <button
-                                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-vd4c3j"
-                                                    tabindex="0"
-                                                    type="button"
-                                                    title="Discover More"
-                                                >
-                                                    Discover More
-                                                    <span class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br"><img loading="lazy" src="./assest/img/svg/ic-right-arrow-primary..svg" alt="Right Arrow" /></span>
-
-                                                    <span class="MuiTouchRipple-root css-w0pj6f"></span>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="row">
+                        <div class="col-md-2 d-flex justify-content-center align-items-center prenet-btn-margin">
+                            <div class="slider-controls aos-init" data-aos="fade-up">
+                                <button
+                                    class="slick-arrow MuiButtonBase-root prev-btn slick-arrow slick-disabled  servies-prev-btn"
+                                    type="button">
+                                    <img src="./assest/img/svg/ic-nav-arrow-left.svg" alt="Previous">
+                                    <img src="./assest/img/svg/ic-nav-arrow-left-white.svg" alt="Previous">
+                                </button>
+                                <button
+                                    class="slick-arrow MuiButtonBase-root prev-btn slick-arrow slick-disabled  servies-next-btn"
+                                    type="button">
+                                    <img src="./assest/img/svg/ic-nav-arrow-right.svg" alt="Next">
+                                    <img src="./assest/img/svg/ic-nav-arrow-right-white.svg" alt="Next">
+                                </button>
                             </div>
                         </div>
                     </div>
+                    <a href="services">
+                        <button
+                            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus aos-init aos-animate"
+                            tabindex="0" type="button" title="Explore More" data-aos="fade-up">
+                            <span class="text">Explore More</span>
+                            <span class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br">
+                                <img loading="lazy" src="./assest/img/svg/ic-right-arrow-whit.svg" alt="Right Arrow">
+                            </span>
+                            <span class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
                 </div>
-                <div class="row">
-                    <div class="col-md-2 d-flex justify-content-center align-items-center prenet-btn-margin">
-                        <div class="slider-controls aos-init" data-aos="fade-up">
-                            <button class="slick-arrow MuiButtonBase-root prev-btn slick-arrow slick-disabled servies-prev-btn" type="button">
-                                <img src="./assest/img/svg/ic-nav-arrow-left.svg" alt="Previous" />
-                                <img src="./assest/img/svg/ic-nav-arrow-left-white.svg" alt="Previous" />
-                            </button>
-                            <button class="slick-arrow MuiButtonBase-root prev-btn slick-arrow slick-disabled servies-next-btn" type="button">
-                                <img src="./assest/img/svg/ic-nav-arrow-right.svg" alt="Next" />
-                                <img src="./assest/img/svg/ic-nav-arrow-right-white.svg" alt="Next" />
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <a href="services">
-                    <button
-                        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-107tsus aos-init aos-animate"
-                        tabindex="0"
-                        type="button"
-                        title="Explore More"
-                        data-aos="fade-up"
-                    >
-                        <span class="text">Explore More</span>
-                        <span class="MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-lkx0br">
-                            <img loading="lazy" src="./assest/img/svg/ic-right-arrow-whit.svg" alt="Right Arrow" />
-                        </span>
-                        <span class="MuiTouchRipple-root css-w0pj6f"></span>
-                    </button>
-                </a>
-            </div>
-        </section>
+            </section>
+
         <!-- 6 Industries We Serve-->
         <section class="industries-we-serve slider-card aos-init desktop-view-show" data-aos="fade-up">
             <div class="MuiContainer-root MuiContainer-maxWidthXl css-tq2bi6">
@@ -1335,6 +1357,8 @@
         </div>
     </main>
 </div>
+<script src="./assest/js/loader.js"></script>
+
 <?php
    include __DIR__ . '/A_Layout/Footer/footer.php';
    ?>

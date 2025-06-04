@@ -6,7 +6,7 @@ echo
 
 <head>
 
-<base href="https://localhost/uniqueitsolution/theuniqueitsolution/">
+<base href="https://theuniqueitsolution.com/demo/">
 
 
 

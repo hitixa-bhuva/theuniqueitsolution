@@ -7,6 +7,12 @@
 <?php
    include __DIR__ . '/A_Layout/Header/header.php';
    ?>
+  <!-- Spinner Loader for About and Contact Pages -->
+  <div id="spinnerLoader" class="spinner-loader"> 
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
 <div class="wrapper">
     <main>
         <!-- 1. hero Who We Are -->
@@ -361,6 +367,7 @@
         </div>
     </main>
 </div>
+    <script src="./assest/js/loader.js"></script>
 <?php
    include __DIR__ . '/A_Layout/Footer/footer.php';
    ?>

@@ -6,6 +6,10 @@
 <?php
    include __DIR__ . '/A_Layout/Header/header.php';
    ?>
+   <div id="spinnerLoader" class="spinner-loader">
+  <div class="spinner-border text-primary" role="status">
+  </div>
+</div> 
 <div class="wrapper">
     <main>
         <!-- 1. hero Contact Us -->
@@ -378,6 +382,7 @@
         uploadPrompt.style.display = "block";
     }
 </script>
+    <script src="./assest/js/loader.js"></script>
 <?php
    include __DIR__ . '/A_Layout/Footer/footer.php';
    ?>

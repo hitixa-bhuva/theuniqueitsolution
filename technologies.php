@@ -7,6 +7,10 @@
 <?php
    include __DIR__ . '/A_Layout/Header/header.php';
    ?>
+      <div id="spinnerLoader" class="spinner-loader">
+  <div class="spinner-border text-primary" role="status">
+  </div>
+</div> 
 <div class="wrapper">
     <main>
         <!-- 1. Technologies hero -->
@@ -254,6 +258,7 @@
         </div>
     </main>
 </div>
+    <script src="./assest/js/loader.js"></script>
 <?php
    include __DIR__ . '/A_Layout/Footer/footer.php';
    ?>

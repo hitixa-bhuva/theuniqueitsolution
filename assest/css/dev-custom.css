@@ -1558,62 +1558,61 @@ footer .site-links a {
 /* Section fade-in with longer wait before start */
 #hero-section {
     opacity: 0;
-    animation: heroFadeIn 1s ease-out forwards;
-    animation-delay: 0s;
-    /* Wait 1 second before starting */
+    animation: heroFadeIn 1.2s ease forwards;
+    animation-delay: 0.2s;
 }
 
-#hero-img {
+ #hero-img {
     opacity: 0;
     transform: translateY(50px);
-    animation: heroFadeUp 0.5s ease-out forwards;
-    animation-delay: 0.1s;
+    animation: heroFadeUp 0.6s ease forwards;
+    animation-delay: 0.4s;
 }
 
 #hero-title {
     opacity: 0;
     transform: translateY(50px);
-    animation: heroFadeUp 0.3s ease-out forwards;
-    animation-delay: 0.3s;
+    animation: heroFadeUp 0.6s ease forwards;
+    animation-delay: 1s;
 }
 
 #hero-text {
     opacity: 0;
     transform: translateY(50px);
-    animation: heroFadeUp 0.3s ease-out forwards;
-    animation-delay: 0.5s;
-} 
+    animation: heroFadeUp 0.6s ease forwards;
+    animation-delay: 1.2s;
+}
 
-/* Button */
 #hero-btn {
     opacity: 0;
     transform: translateY(50px);
-    animation: heroFadeUp 0.3s ease-out forwards;
-    animation-delay: 1.7s;
+    animation: heroFadeUp 0.6s ease forwards;
+    animation-delay: 1.3s;
 }
 
-/* Animations */
-@keyframes heroFadeIn {
-    from {
-        opacity: 0;
+    /* Keyframes */
+    @keyframes heroFadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
     }
 
-    to {
-        opacity: 1;
-    }
-}
+    @keyframes heroFadeUp {
+        0% {
+            opacity: 0;
+            transform: translateY(50px);
+        }
 
-@keyframes heroFadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 
 /* ================================blog page styly========================= */

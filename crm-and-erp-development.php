@@ -6,6 +6,10 @@
 <?php
    include __DIR__ . '/A_Layout/Header/header.php';
    ?>
+      <div id="spinnerLoader" class="spinner-loader">
+  <div class="spinner-border text-primary" role="status">
+  </div>
+</div> 
 <div class="wrapper">
     <main>
         <section class="banner service-details-banner bg-light-blue" id="hero-section" style="background: #def4ff !important;">
@@ -278,6 +282,7 @@
         </div>
     </main>
 </div>
+    <script src="./assest/js/loader.js"></script>
 <?php
    include __DIR__ . '/A_Layout/Footer/footer.php';
    ?>
