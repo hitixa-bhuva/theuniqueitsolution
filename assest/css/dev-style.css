@@ -2825,7 +2825,7 @@ footer .bottom .MuiIconButton-root img {
 
 /* site loader
 --------------------------------------------------------------------------------------------------------*/
-
+/* 
 .loader {
     position: fixed;
     inset: 0;
@@ -2886,6 +2886,147 @@ footer .bottom .MuiIconButton-root img {
 #content {
     display: none;
     animation: fadeIn 1s ease !important;
+} */
+
+/* .loader {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    z-index: 9999;
+}
+
+.loader .logo {
+    height: 48px;
+    margin-bottom: 40px;
+    width: 200px;
+}
+
+.progress-bar {
+    width: 200px;
+    height: 5px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    width: 0%;
+    background-color: #007bff;
+    transition: width 0.3s ease;
+}
+
+.spinner-loader {
+    position: fixed;
+    inset: 0;
+    background-color: #fff;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner-border {
+    width: 60px;
+    height: 60px;
+    border-width: 5px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #0d6efd #0d6efd #0d6efd transparent;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#content {
+    display: none;
+    animation: fadeIn 1s ease !important;
+} */
+
+/* Loader for home page */
+.loader {
+     position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    z-index: 9999;
+}
+.loader .logo {
+  height: 48px;
+    margin-bottom: 40px;
+    width: 200px;
+}
+.progress-bar {
+  width: 200px;
+    height: 5px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+#progress-bar {
+  width: 0%;
+  height: 4px;
+  background-color: #007bff;
+}
+
+@keyframes loadProgress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.progress {
+  width: 0;
+  height: 100%;
+  background: #007bff;
+  animation: loadProgress 0.9s linear forwards;
+}
+@keyframes loadProgress {
+  to {
+    width: 100%;
+  }
+}
+
+/* Spinner Loader for about/contact */
+.spinner-loader {
+  position: fixed;
+  inset: 0;
+  background-color: #fff;
+  display: flex; /* Needed to center */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.spinner-border {
+  width: 50px;
+  height: 50px;
+  border-width: 5px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #0d6efd #0d6efd #0d6efd transparent;
+  animation: spin 1s linear infinite; /* Apply the spin animation */
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* portfolio projects
@@ -4991,4 +5132,11 @@ footer .bottom .MuiIconButton-root img {
 .hire-oval-right,
 .hire-oval-left {
     width: 18%;
+}
+.form-control:focus {
+    color: none !important;
+    background-color: none !important;
+    border-color: none !important;
+    outline: 0;
+    box-shadow: none !important;
 }

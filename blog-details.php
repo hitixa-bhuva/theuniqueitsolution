@@ -5,7 +5,13 @@
 ?>
 <?php
    include __DIR__ . '/A_Layout/Header/header.php';
-?>
+   ?>
+  <!-- Spinner Loader for About and Contact Pages -->
+  <div id="spinnerLoader" class="spinner-loader"> 
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
 <div class="wrapper">
     <main>
         <!-- 1. Blog hero -->
@@ -83,7 +89,7 @@
                             <h3>Expert Analysis: Remote Work Operating Systems for Global Teams</h3>
                             <p>Our team interviewed 30+ remote-first companies to understand what makes remote teams thrive. The result? A proven operating model that improved productivity by 50% and reduced attrition rates by 60%.</p>
                             <p><strong>Want to access our full remote team playbook?</strong></p>
-                            <a href="#" class="btn btn-primary">Contact Now</a>
+                            <a href="contact-us" class="btn btn-primary">Contact Now</a>
                         </div>
                         <div id="performance aos-init" data-aos="fade-up">
                             <h2>Productivity: Keeping Remote Teams Engaged and Efficient</h2>
@@ -203,7 +209,7 @@
                         <div class="related-service mtp-3 aos-init" data-aos="fade-up">
                             <h6 class="fw-bold mb-2">React Development Company</h6>
                             <p class="mb-3 related-service-para">Know more about our React development services.</p>
-                            <a href="#" class="btn btn-primary btn-sm">LEARN MORE</a>
+                            <a href="about-us" class="btn btn-primary btn-sm">LEARN MORE</a>
                         </div>
                         <!-- Developer Hiring Card -->
                         <div class="developer-card text-center p-4 mt aos-init" data-aos="fade-up" style="background-image: url('./assest/img/blog-page/blog-detail-ad.png');">
@@ -221,7 +227,7 @@
                         <div class="category-filter need-help text-center mt-4 p-4 aos-init" data-aos="fade-up">
                             <h6 class="filter-title mb-2 fw-bold">Need Help or Have Questions?</h6>
                             <p class="mb-3">Get in touch with us for any inquiries or assistance.</p>
-                            <a href="/contact" class="btn btn-primary rounded-pill px-4 py-2 btn-sm">Contact Us</a>
+                            <a href="contact-us" class="btn btn-primary rounded-pill px-4 py-2 btn-sm">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -229,6 +235,7 @@
         </div>
     </main>
 </div>
+  <script src="./assest/js/loader.js"></script>
 <?php
    include __DIR__ . '/A_Layout/Footer/footer.php';
-?>
+   ?>

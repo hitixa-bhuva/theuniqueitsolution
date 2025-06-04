@@ -1,15 +1,22 @@
 <?php
-   $Title = "About the Unique IT Solution | Top IT Solutions Provider Ahmedabad";
+  $Title = "About the Unique IT Solution | Top IT Solutions Provider Ahmedabad";
    $MetaDescription = "Learn about Unique IT Solution — your trusted partner for custom software, mobile apps, and digital transformation services.";
    $MetaKeywords = "About software company Ahmedabad, IT company profile, software services provider, software outsourcing";
-?>
+
+   ?>
 <?php
    include __DIR__ . '/A_Layout/Header/header.php';
    ?>
-<div class="wrapper" id="content">
+  <!-- Spinner Loader for About and Contact Pages -->
+  <div id="spinnerLoader" class="spinner-loader"> 
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+<div class="wrapper">
     <main>
-        <!-- 1. hero Who We Are -->
-        <section class="banner overlyshadow page-banner mb-9" id="hero-section" style="background-image: url(./assest/img/hero/about-us-banner.webp);">
+        <!-- 1. Blog hero -->
+         <section class="banner overlyshadow page-banner mb-9" id="hero-section" style="background-image: url(./assest/img/hero/about-us-banner.webp);">
             <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
                 <div class="banner-content">
                     <h2 class="MuiTypography-root MuiTypography-h2 pb-3 css-17zkhbb" id="hero-title">Who We Are</h2>
@@ -17,7 +24,8 @@
                 </div>
             </div>
         </section>
-        <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
+
+       <div class="MuiContainer-root MuiContainer-maxWidthXl css-k4xlog">
             <!-- 2.  About IT Solutions That are Unique -->
             <section class="about-it-solution mb-9">
                 <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 MuiGrid-spacing-xl-8 css-ldtpqf intro-about">
@@ -161,6 +169,8 @@
         </div>
     </main>
 </div>
+
+    <script src="./assest/js/loader.js"></script>
 <?php
    include __DIR__ . '/A_Layout/Footer/footer.php';
-?>
+   ?>

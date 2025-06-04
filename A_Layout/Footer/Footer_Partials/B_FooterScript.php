@@ -65,7 +65,7 @@ echo
     <script src="./assest/js/services-slider.js"></script>
     <script src="./assest/js/industries-slider.js"></script>
     <script src="./assest/js/animation.js"></script>
-    <script src="./assest/js/loader.js"></script>
+
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

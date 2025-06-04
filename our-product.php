@@ -7,6 +7,12 @@
 <?php
    include __DIR__ . '/assest/A_Layout/Header/header.php';
    ?>
+  <!-- Spinner Loader for About and Contact Pages -->
+  <div id="spinnerLoader" class="spinner-loader"> 
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
 <!-- hero -->
 <div class="container-fluid my-24 d-flex justify-content-center p-0">
     <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center border hero-section-our-product" data-aos="fade-up">
@@ -289,6 +295,7 @@
     </div>
 </div>
 <!-- footer -->
+     <script src="./assest/js/loader.js"></script>
 <?php
    include __DIR__ . '/assest/A_Layout/Footer/footer.php';
    ?>
