@@ -309,11 +309,11 @@
         "application/msword",
         "application/vnd.ms-excel",
         "text/plain",
-        "application/vnd.openxmlformats-officedocument.wordprocessingml.document", // docx
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document", 
         "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-    ]; // xlsx
+    ]; 
 
-    // Prevent default drag behaviors
+
     ["dragenter", "dragover", "dragleave", "drop"].forEach((eventName) => {
         dropArea.addEventListener(eventName, preventDefaults, false);
     });
@@ -323,7 +323,7 @@
         e.stopPropagation();
     }
 
-    // Highlight on dragover
+   
     ["dragenter", "dragover"].forEach((eventName) => {
         dropArea.addEventListener(eventName, () => dropArea.classList.add("dragover"), false);
     });
@@ -332,7 +332,7 @@
         dropArea.addEventListener(eventName, () => dropArea.classList.remove("dragover"), false);
     });
 
-    // Handle dropped files
+
     dropArea.addEventListener("drop", (e) => {
         const dt = e.dataTransfer;
         const files = dt.files;
@@ -341,14 +341,14 @@
         }
     });
 
-    // Handle file input change
+
     fileInput.addEventListener("change", () => {
         if (fileInput.files.length > 0) {
             handleFile(fileInput.files[0]);
         }
     });
 
-    // Handle file selection & validation
+    
     function handleFile(file) {
         if (!allowedTypes.includes(file.type)) {
             alert("File type not allowed. Allowed: .doc, .pdf, .xls, .txt");
@@ -356,7 +356,7 @@
             return;
         }
         if (file.size > 4 * 1024 * 1024) {
-            // 4 MB limit
+           
             alert("File is too large. Max size is 4 MB.");
             resetPreview();
             return;
@@ -368,7 +368,7 @@
         filePreview.style.display = "block";
     }
 
-    // Remove file and reset UI
+    
     removeBtn.addEventListener("click", (e) => {
         e.stopPropagation();
         resetPreview();
