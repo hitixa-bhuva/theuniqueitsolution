@@ -2420,3 +2420,11 @@ footer .site-links a {
     align-items: center;
     width: 100%;
 }
+
+
+.social-links button.customhoverinicon:hover {
+    background-color: #0487ff; 
+    border-radius: 50%;
+    transition: background-color 0.3s ease-out, border-radius 0.3s ease-out;
+}
+
